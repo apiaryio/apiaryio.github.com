@@ -222,11 +222,11 @@ body {
 
 #wrathLogotype {
 	margin: 0px auto;
-	margin-top: 25px;
-	width: 543px;
-	height: 169px;
+	margin-top: 35px;
+	width: 372px;
+	height: 103px;
 	background-repeat: no-repeat;
-	background-image: url(design/wrathJSlogotype.png);
+	background-image: url(design/apiaryIOogotype.png);
 }
 
 hgroup#wrathJSlogotypeAndTagline {
