@@ -1,0 +1,21 @@
+---
+root: 
+static: http://static.apiary.io
+version: 1337277062
+menu:
+  - ['http://apiary.io/', 'Home']
+  - ['http://apiary.io/blueprint', 'API Blueprint']
+  - ['http://blog.apiary.io/', 'Blog']
+  - ['http://apiary.io/team', 'Team']
+  - ['http://apiary.io/jobs', 'Jobs']
+permalink: /:year/:month/:day/:title
+lsi: false
+pygments: true
+
+# Site configuration
+url:          http://blog.apiary.io
+title:        The Apiary Blog
+description:  Updates on everyone's favourite REST API tools company
+keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
+author:       Apiary
+email:        jakub@apiary.io
