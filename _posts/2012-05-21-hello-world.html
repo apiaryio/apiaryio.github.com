@@ -12,18 +12,24 @@ layout: post
 
 <ul>
   <li>
-    <p><strong>Proxy + Pass-Through</strong> - In addition to providing a mock server based on your API documentation, we've added a transparent HTTP proxy. Your API users can now access your real API server through Apiary and get all the benefits of visualising their API usage and comparing it to the provided documentation. Most recently we've started proxying all traffic to your API, even those resources that are not documented yet. This can be a great help in identifying and fixing gaps in your documentation.</p>
+    <p><strong>Proxy + Pass-Through</strong> - In addition to providing a mock server based on your API documentation, we've added a transparent HTTP proxy. Your API users can now access your real API server through Apiary and get all the benefits of visualising their API usage and comparing it to the provided documentation. Most recently we've started proxying all traffic to your API, even those resources that are not documented yet. This can be a great help in identifying and fixing gaps in your documentation. You can switch the proxy on your <a href="http://apiary.io/settings">Settings page</a>.</p>
   </li>
   <li>
-    <p><strong>JSON Schema support</strong> - Sometimes comparing the data that your customers are sending to the documentation in a simple text diff is simply not sufficient to help your users debug the problem. We've added support for describing your data structures using JSON Schema. Your documentation can now have integrated data validation directly embedded! We're currently trying this out, if your interested in trying this out then <a href="http://apiary.io/team">talk to us</a>.</p>
+    <p><strong>JSON Schema support</strong> - Sometimes comparing the data that your customers are sending to the documentation in a simple text diff is simply not sufficient to help your users debug the problem. We've added support for describing your data structures using JSON Schema. Your documentation can now have tightly integrated data validation! We're currently testing this, <a href="http://apiary.io/team">talk to us</a> if your interested.</p>
   </li>
   <li>
-    
+    <p><strong>Partial Query-String support</strong> - If you're passing parameters to your API via <a href="http://en.wikipedia.org/wiki/Query_string">querystring</a> then these would not match existing API resources. That is, until we started ignoring querystring part of the URL for comparison purposes. We still plan on better URL parametrisation using <a href="http://www.mnot.net/javascript/url_template/">URL</a> <a href="http://tools.ietf.org/html/rfc6570">Templates</a> in the future.</p>
   </li>
-
-- querystring
-- github sync
-- private traffic
-- cors
-- syntax highlights + code samples
-- better traffic diffs</ul>
+  <li>
+    <p><strong>Github Integration</strong> - Your API documentation should be versioned in the same way as your API code. Ideally even in the same repository - so that all your branching/versioning applies to both parts at once. We've added Github integration so that Apiary can update your documentation each time you push changes to it. Generic Git repository support still coming, <a href="http://apiary.io/team">let us know</a> if you need it.</p>
+  </li>
+  <li>
+    <p><strong>Private Traffic</strong> - Sometimes, the data you can be sending through the debugging proxy isn't exactly public matter. We've added support for randomized URLs for each user - thus you can send data to your own, private mock/proxy server, and view it only if you know the right URL.</p>
+  </li>
+  <li>
+    <p><strong>Syntax Highlights + Code Samples</strong> - Our documentation now features code examples in different languages. Best of all - if you're missing your favorite language, feel free to <a href="https://github.com/apiaryio/language-templates">write the language template</a> and we'll include it promptly.</p>
+  </li>
+  <li>
+    <p><strong>Many more</strong> - we've improved the traffic viewer greatly, we've added support for <a href="http://enable-cors.org/">Cross-Origin Resource Sharing</a> if you need that for your mock server, we've added support for HTTPS across the board - and many more. However, if there's something you're still missing, please do <a href="http://apiary.io/team">let us know</a>.</p>
+  </li>
+</ul>
