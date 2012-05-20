@@ -34,7 +34,7 @@
     <header>
       <div id="stripe">
         <div id="mainMenu">
-          <a href="/"><img src="{{ site.static }}/homepage/css/design/apiaryIOlogo.png" width="105" height="31"></a>
+          <a href="http://apiary.io/"><img src="{{ site.static }}/homepage/css/design/apiaryIOlogo.png" width="105" height="31"></a>
           <ul>
             {% for item in site.menu %}
             <a href="{{ item[0] }}"{% if item[1] == 'Blog' %} class="selected"{% endif %}><li>{{ item[1] }}</li></a>
@@ -43,8 +43,8 @@
         </div>
         <div id="userMenu">
           <ul>
-            <!--<a class="cta" href="/register"><li><em>Sign Up For Free!</em></li></a>-->
-            <a href="/login"><li>Sign In</li></a>
+            <!--<a class="cta" href="http://apiary.io/register"><li><em>Sign Up For Free!</em></li></a>-->
+            <a href="http://apiary.io/login"><li>Sign In</li></a>
           </ul>
         </div>
       </div>
@@ -83,7 +83,7 @@
       </div>-->
       <div id="footNotes">
         <p id="copyrights">Copyright 2012 Apiary Ltd. All rights reserved.</p>
-        <p id="interaction">Follow us on <a href="http://twitter.com/apiaryio" target="_blank">Twitter</a> • <a href="/team">Contact Us</a></p>
+        <p id="interaction">Follow us on <a href="http://twitter.com/apiaryio" target="_blank">Twitter</a> • <a href="http://apiary.io/team">Contact Us</a></p>
       </div>
       <!--<div id="evilBee"></div>-->
     </footer>
@@ -94,7 +94,7 @@
     <script> DD_belatedPNG.fix('img, .png_bg'); </script>
   <![endif]-->
 
-{{ tracking }}
+{{ site.tracking }}
 
 </body>
 </html>
