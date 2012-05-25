@@ -34,7 +34,7 @@
     <header>
       <div id="stripe">
         <div id="mainMenu">
-          <a href="http://apiary.io/"><img src="{{ site.static }}/homepage/css/design/apiaryIOlogo.png" width="105" height="31"></a>
+          <!--<a href="http://apiary.io/"><img src="{{ site.static }}/homepage/css/design/apiaryIOlogo.png" width="105" height="31"></a>-->
           <ul>
             {% for item in site.menu %}
             <a href="{{ item[0] }}"{% if item[1] == 'Blog' %} class="selected"{% endif %}><li>{{ item[1] }}</li></a>
@@ -43,10 +43,11 @@
         </div>
         <div id="userMenu">
           <ul>
-            <!--<a class="cta" href="http://apiary.io/register"><li><em>Sign Up For Free!</em></li></a>-->
-            <a href="http://apiary.io/login"><li>Sign In</li></a>
+            <a href="/login"><li><em>Sign back in</em> <i class="icon-signin"></i></li></a>
+            <a class="cta" href="/register"><li>Cut the talk, let me <mark>sign up</mark>!</li></a>
           </ul>
         </div>
+
       </div>
     </header>
 
@@ -55,7 +56,6 @@
     </div>
 
     <footer>
-      <div id="shadowHackTwo"></div>
       <!--<section id="quotes">
         <div id="q1" class="quote">
           <h1>apiary.io aims to take the headache out of API creation and documentation</h1>
@@ -82,8 +82,8 @@
         <a href="http://nodeknockout.com/" target="_blank" title="apiary.io (former WrathJS) won the utility category in node.js hackathon Node Knockout in Autumn 2010 with its first prototype."><img src="{{ site.static }}/homepage/css/design/nodeKO.png" width="137" height="37"></a>
       </div>-->
       <div id="footNotes">
-        <p id="copyrights">Copyright 2012 Apiary Ltd. All rights reserved.</p>
-        <p id="interaction">Follow us on <a href="http://twitter.com/apiaryio" target="_blank">Twitter</a> • <a href="http://apiary.io/team">Contact Us</a></p>
+        <p id="copyrights">Copyright 2012 Apiary Ltd. All rights reserved. <a href="#">Terms of Use</a> • <a href="#">Privacy Policy</a></p>
+        <p id="interaction"><a href="#"><i class="icon-envelope"></i> E-mail Newsletter</a> • <a href="http://twitter.com/apiaryio" target="_blank"><i class="icon-twitter-sign"></i> Twitter</a> • <a href="#"><i class="icon-github-sign"></i> GitHub</a></p>
       </div>
       <!--<div id="evilBee"></div>-->
     </footer>
