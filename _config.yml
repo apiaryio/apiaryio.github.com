@@ -12,7 +12,7 @@ keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, 
 author:       Apiary
 email:        jakub@apiary.io
 static: http://static.apiary.io
-version: 1337277062
+version: 1338334424
 menu:
   - ['http://apiary.io/', 'Home']
   - ['http://apiary.io/blueprint', 'API Blueprint']
