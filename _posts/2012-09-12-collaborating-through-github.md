@@ -18,7 +18,8 @@ One of our most popular [feature requests](https://apiary.uservoice.com/forums/1
 4. You can now edit the blueprint on your local computer, push it into GitHub&mdash;and your documentation changes instantly. We receive webhooks from GitHub and scan for changes to the API Blueprint.
 5. You can cooperatively edit with everybody, and let Git take care of the merging/versioning.
     
-    <blockquote>**Note:** From now on, your repository is the source of authority - any changes you make directly in Apiary will be overwritten during your next push to GitHub</blockquote>
+> **Note:** From now on, your repository is the source of authority - any changes you make directly in Apiary will be overwritten during your next push to GitHub
+
 6. To simplify the edit-preview-commit-push cycle of the git workflow, we've created an [Apiary Ruby Gem](https://github.com/apiaryio/apiary-client) to help you preview the documentation before pushing to GitHub. Just run
 
         sudo gem install apiaryio
@@ -47,4 +48,4 @@ One of our most popular [feature requests](https://apiary.uservoice.com/forums/1
            version                                     Show version
         
 
-    <blockquote>We're also working on syntax highlighting for your editor&mdash;[let us know](mailto:support@apiary.io) which editor you're using!</blockquote>
+> We're also working on syntax highlighting for your editor &mdash; [let us know](mailto:support@apiary.io) which editor you're using!
