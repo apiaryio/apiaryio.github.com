@@ -44,4 +44,4 @@ One of our most popular [feature requests](https://apiary.uservoice.com/forums/1
 
            version                                     Show version
 
-> We're also working on syntax highlighting for your editor&mdash;[let us know](mailto:support@apiary.io) which editor you're using!
+> We're also working on syntax highlighting for your editor&mdash;[let us know](http://support.apiary.io/forums/120125-general/suggestions/3078545-create-package-for-sublime-text) which editor you're using!
