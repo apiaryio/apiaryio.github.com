@@ -2,7 +2,6 @@
 title: Collaborating Through GitHub
 excerpt: One of our most popular feature requests is **collaboration among multiple users**. Here's how you can use our GitHub integration to do that
 layout: post
-published: false
 ---
 
 # Collaborating Through GitHub
