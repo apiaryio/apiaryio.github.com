@@ -23,7 +23,7 @@ As Apiary matures, we're coming out of our stealth mode to talk publicly about t
 **Dec 4 @ Paris, France**  
 [API Days 2012](http://apidays.io/) Jakub will present on API Documentation best practices
 
-<iframe width="300" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=EPITA+14+Rue+Voltaire+94270+Le+Kremlin-Bic%C3%A8tre+France&amp;ie=UTF8&amp;hq=EPITA+14+Rue+Voltaire+94270+Le+Kremlin-Bic%C3%A8tre+France&amp;t=m&amp;cid=6348805043946748990&amp;hnear=&amp;ll=48.815851,2.36249&amp;spn=0.003391,0.006416&amp;z=16&amp;output=embed"></iframe>
+<iframe width="300" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=EPITA+14+Rue+Voltaire+94270+Le+Kremlin-Bic%C3%A8tre+France&amp;ie=UTF8&amp;hq=EPITA+14+Rue+Voltaire+94270+Le+Kremlin-Bic%C3%A8tre+France&amp;t=m&amp;cid=6348805043946748990&amp;hnear=&amp;ll=48.815851,2.36249&amp;spn=0.003391,0.006416&amp;z=16&amp;output=embed">map: https://maps.google.com/maps?q=EPITA+14+Rue+Voltaire+94270+Le+Kremlin-Bic%C3%A8tre+France&amp;ie=UTF8&amp;hq=EPITA+14+Rue+Voltaire+94270+Le+Kremlin-Bic%C3%A8tre+France&amp;t=m&amp;cid=6348805043946748990&amp;hnear=&amp;ll=48.815851,2.36249&amp;spn=0.003391,0.006416&amp;z=16&amp;source=embed</iframe>
 [View Larger Map](https://maps.google.com/maps?q=EPITA+14+Rue+Voltaire+94270+Le+Kremlin-Bic%C3%A8tre+France&amp;ie=UTF8&amp;hq=EPITA+14+Rue+Voltaire+94270+Le+Kremlin-Bic%C3%A8tre+France&amp;t=m&amp;cid=6348805043946748990&amp;hnear=&amp;ll=48.815851,2.36249&amp;spn=0.003391,0.006416&amp;z=16&amp;source=embed)
 
 If you have a chance, please drop by, say hello and tell us how you're using APIs.
