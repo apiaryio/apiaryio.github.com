@@ -15,8 +15,9 @@ Apiary is coming back to [Pioneers Festival](http://pioneersfestival.com/) at Vi
 [View Larger Map](https://maps.google.com/maps?q=Hofburg,+Heldenplatz,+Wien&amp;hl=en&amp;sll=48.208831,16.371882&amp;sspn=0.019076,0.043774&amp;oq=Hofburg,+Wien&amp;gl=at&amp;hq=Hofburg,+Heldenplatz,+Wien&amp;t=m&amp;ie=UTF8&amp;ll=48.207229,16.364737&amp;spn=0.013728,0.025663&amp;z=14&amp;iwloc=A&amp;source=embed)
 
 
-**Nov 1 @ New York, US**  
-Jakub ([@jakubnesetril](http://twitter.com/jakubnesetril)) will talk at [API Strategy & Practice Conference](http://www.apistrategyconference.com/sessions.php) about the Apiary approach to building APIs the agile way.
+<p><strong>CONFERENCE RESCHEDULED <del>Nov 1 @ New York, US</del></strong> </p>
+
+**Conference was rescheduled due to huricane Sandy. More details coming on alternative date.** Jakub ([@jakubnesetril](http://twitter.com/jakubnesetril)) will talk at [API Strategy & Practice Conference](http://www.apistrategyconference.com/sessions.php) about the Apiary approach to building APIs the agile way.
 
 <iframe width="300" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=40.750256,-73.973942&amp;num=1&amp;ie=UTF8&amp;t=m&amp;ll=40.751004,-73.97334&amp;spn=0.001951,0.003208&amp;z=17&amp;output=embed">map: https://maps.google.com/maps?q=40.750256,-73.973942&amp;num=1&amp;ie=UTF8&amp;t=m&amp;ll=40.751004,-73.97334&amp;spn=0.001951,0.003208&amp;z=17&amp;source=embed</iframe>
 [View Larger Map](https://maps.google.com/maps?q=40.750256,-73.973942&amp;num=1&amp;ie=UTF8&amp;t=m&amp;ll=40.751004,-73.97334&amp;spn=0.001951,0.003208&amp;z=17&amp;source=embed)
