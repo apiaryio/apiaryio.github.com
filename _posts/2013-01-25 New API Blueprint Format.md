@@ -2,8 +2,7 @@
 title: Evolving the API Blueprint Format
 excerpt: As we are growing so are our users needs. To reflect this, address arising needs as well as simplifying the process of designing your API we are improving Apiary.io API Blueprint Format.
 layout: post
-published: false
-date: 2013-01-25 09:00:00 +1000
+date: 2013-01-28 09:00:00 +1000
 ---
 
 # Evolving the API Blueprint Format
