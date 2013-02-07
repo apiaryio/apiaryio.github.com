@@ -16,7 +16,8 @@ Both grammar and javascript parser (works both in browser and in
 [node.js](http://nodejs.org/)) are open-source and
 [available on github](https://github.com/apiaryio/blueprint-parser).
 It is based on [PEG.js](http://pegjs.majda.cz/)
-and I'd like to thank its author, [David Majda](http://majda.cz/), for writing it and contributing enormously.
+and I'd like to thank its author, [David Majda](http://majda.cz/),
+for writing it and also contributing enormously to Apiary blueprint grammar.
 
 # Backward compatibility
 
