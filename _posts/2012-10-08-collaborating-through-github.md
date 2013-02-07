@@ -2,9 +2,8 @@
 title: Collaborating Through GitHub
 excerpt: One of our most popular feature requests is collaboration among multiple users. Here's how you can use our GitHub integration to do that
 layout: post
+author: jakub
 ---
-
-# Collaborating Through GitHub
 
 One of our most popular [feature requests](https://apiary.uservoice.com/forums/120125-general/suggestions/3003895-share-one-api-among-several-users) is **collaboration among multiple users**. We hear you and we're working on it, but it will take time —we want to get the collaboration model right. However, that doesn't mean you can't start collaborating with your colleagues on your API design right away. We [launched our GitHub integration](http://blog.apiary.io/2012/05/21/to-our-wonderful-beta-testers/) a couple months back. Here's how to use it to your advantage!
 

@@ -2,9 +2,8 @@
 title: Apiary at Events in Nov-Dec 2012
 excerpt: As Apiary matures, we're coming out of our stealth mode to talk publicly about the “apiary doctrine”—why we build things the way we do, why so many people love them, and how it all comes together into a larger vision.
 layout: post
+author: jakub
 ---
-
-# Apiary at Events in Nov-Dec 2012
 
 As Apiary matures, we're coming out of our stealth mode to talk publicly about the “apiary doctrine”—why we build things the way we do, why so many people love them, and how it all comes together into a larger vision:
 

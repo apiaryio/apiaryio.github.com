@@ -6,8 +6,6 @@ date: 2013-02-05 18:00:00 +1000
 author: lukas
 ---
 
-# New and improved PEG parser
-
 I'm excited to to announce that I have finally completed migration
 to our new parser. It is more robust, more formal, totally open-source
 and will serve as a base for further improvements of our syntax.
