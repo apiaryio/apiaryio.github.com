@@ -3,9 +3,9 @@ title: Evolving the API Blueprint Format
 excerpt: As we are growing so are our users needs. To reflect this, address arising needs as well as simplifying the process of designing your API we are improving Apiary.io API Blueprint Format.
 layout: post
 date: 2013-01-28 09:00:00 +1000
+author: zdenek
 ---
 
-# Evolving the API Blueprint Format
 Apiary.io is growing and so are our users' needs. We want to fuel the endless possibilities of where your API can go. We want to give you the best tools to design and maintain any REST-based API without boundaries or limits. Yet we must also guide newcomers who are just tapping the API World. 
 
 We are constantly improving our API Blueprint Format and I would like to share with you our thoughts on how it will evolve in the weeks to come.

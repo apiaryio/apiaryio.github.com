@@ -8,6 +8,12 @@ pygments: true
 url:          http://blog.apiary.io
 title:        The Apiary Blog
 description:  Updates on everyone's favourite REST API tools company
+authors:
+  zdenek:
+    name: Zdenek Nemec
+    display_name: Z
+    email: z@apiary.io
+    twitter: @zdne
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
 author:       Apiary
 email:        jakub@apiary.io
