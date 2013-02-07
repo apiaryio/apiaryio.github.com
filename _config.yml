@@ -16,10 +16,12 @@ authors:
     twitter: "@zdne"
   lukas:
     name: Lukas Linhart
+    display_name: Lukas Linhart
     email: "lukas@apiary.io"
     twitter: "@almadcz"
   jakub:
     name: Jakub Nesetril
+    display_name: Jakub Nesetril
     email: "jakub@apiary.io"
     twitter: "@jakubnesetril"
     
