@@ -12,8 +12,17 @@ authors:
   zdenek:
     name: Zdenek Nemec
     display_name: Z
-    email: z@apiary.io
-    twitter: @zdne
+    email: "z@apiary.io"
+    twitter: "@zdne"
+  lukas:
+    name: Lukas Linhart
+    email: "lukas@apiary.io"
+    twitter: "@almadcz"
+  jakub:
+    name: Jakub Nesetril
+    email: "jakub@apiary.io"
+    twitter: "@jakubnesetril"
+    
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
 author:       Apiary
 email:        jakub@apiary.io
