@@ -3,6 +3,7 @@ title: New and improved PEG parser
 excerpt: We are happy to announce that we have completed migration to a rewrite of our blueprint parser. The parser is now open-source and will serve as a base for further improvements of our format.
 layout: post
 date: 2013-02-05 18:00:00 +1000
+author: Lukas
 ---
 
 # New and improved PEG parser
