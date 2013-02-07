@@ -7,7 +7,7 @@ date: 2013-02-05 18:00:00 +1000
 
 # New and improved PEG parser
 
-We are delighted to let you know that we have completed migration
+I'm excited to to announce that I have finally completed migration
 to our new parser. It is more robust, more formal, totally open-source
 and will serve as a base for further improvements of our syntax.
 
@@ -16,7 +16,7 @@ Both grammar and javascript parser (works both in browser and in
 [node.js](http://nodejs.org/)) are open-source and
 [available on github](https://github.com/apiaryio/blueprint-parser).
 It is based on [PEG.js](http://pegjs.majda.cz/)
-and I'd like to thank its author, [David Majda](http://majda.cz/), for writing it.
+and I'd like to thank its author, [David Majda](http://majda.cz/), for writing it and contributing enormously.
 
 # Backward compatibility
 
@@ -24,7 +24,8 @@ We have worked hard to maintain backward compatibility. However, there
 are some areas where the behavior of the old parser
 was undefined and while it is valid with new parser, it may lead to
 unexpected results. Therefore, we encourage you to take a look at your
-documentation to verify everything is in order.
+documentation, verify everything is OK and [let us know](http://support.apiary.io/)
+if you need help.
 
 The main change comes with header and payload definition. In some places,
 the old parser incorrectly accepted empty newlines inside headers or
@@ -59,8 +60,8 @@ The new parser will allow us to be more agile in the [evolution of our format](/
 [The grammar](https://github.com/apiaryio/blueprint-parser/blob/master/src/apiary-blueprint-parser.pegjs)
 now also serves as a formal definition of our language.
 
-We have received some interest from the open-source world in collaborating with our format, should it be automatic generation of [frisby.js](http://frisbyjs.com/) tests or scaffolding of Ruby apps. We are all open-source beasts here, so we embrace this collaboration wholeheartly.
-Hopefully, the new parser should make this easier for all of us.
+Many people from the open-source community asked us how they can integrate with our format, whether that is automatic generation of [frisby.js](http://frisbyjs.com/) tests or scaffolding of Ruby apps. We love open-source, so we embrace this collaboration wholeheartly.
+Hopefully, the new parser should make this easier for us all.
 
 To be future-proof, you should use a [generator for your language](http://en.wikipedia.org/wiki/Comparison_of_parser_generators#Parsing_expression_grammars.2C_deterministic_boolean_grammars)
 and use our grammar directly. Also, don't forget to subscribe to our
@@ -72,6 +73,3 @@ where you can find information about new releases and important changes.
 Created something cool with apiary? Let us know! Mention [us on twitter](http://twitter.com/apiaryio) or write me to [lukas@apiary.io](mailto:lukas@apiary.io).
 
 We'll be glad to hear from you!
-
-
-
