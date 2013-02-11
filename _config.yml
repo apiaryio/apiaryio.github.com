@@ -28,7 +28,7 @@ authors:
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
 author:       Apiary
 email:        jakub@apiary.io
-static: "http://static.apiary.io"
+static: "https://apiary-static.s3.amazonaws.com/appstatic"
 version: 1338364425
 menu:
   - ['http://apiary.io/', 'Home']
