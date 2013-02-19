@@ -1,30 +1,29 @@
 ---
-title: New API Blueprint Format – The Basics.
-excerpt: Discussing basic features of the New API Blueprint Format – Markdown, Multiple requests and responses and commenting on parameters.
+title: New API Blueprint Format – The Basics
+excerpt: Discussing basic features of the New API Blueprint Format – Markdown, API endpoints, multiple requests and responses and commenting on parameters.
 layout: post
-date: 2014-02-19 09:00:00 +1000
+date: 2014-02-20 09:00:00 +1000
 author: zdenek
 published: false
 ---
 
 This is the second article in the series about upcoming API Blueprint format changes. As promised [before](http://blog.apiary.io/2013/01/27/New-API-Blueprint-Format/) I will continue introducing changes to the API Blueprint Format. Today we will discuss basics of the New API Blueprint Format upon which we will build later on.
 
-I will be using remote procedure call (RPC)-style REST API snippets to demonstrate new format basics. That is a classic (pragmatic, if you prefer) REST API which is characterized by listing of its endpoints bound with HTTP verbs. Hypermedia APIs will be subject of a future post.
-
 ## Markdown
-New API Blueprints will be **entirely** written in **Markdown**. In addition to Markdown advanced blueprints will rely on several [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) features. However, for discussing basics, all that matters is that New API Blueprint is completely Markdown from line number one to the end.
+New API Blueprints will be entirely written in [Markdown](http://daringfireball.net/projects/markdown/). In addition to Markdown advanced blueprints will rely on several [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) features. However, for discussing basics, all that matters is that New API Blueprint is completely Markdown from line number one to the end.
 
 A Markdown API Blueprint document follows given structure. At the very heart of this structure is an API endpoint. In fact, New API Blueprint document is essentially a collection of API endpoints. There are additional components such as the API Overview Section but we will now focus only on API endpoints for now.
 
 ## API Endpoint
 An endpoint usually represents a resource on the server. It is represented by an URI relative to API root and one or more HTTP verbs (methods). 
 
-In API Blueprint an API endpoint is defined as a Markdown header with optional HTTP method followed by an URI. After the header follows structured discussion of the endpoint. The endpoint discussion consists of sections of predefined meaning. These sections are delimited by a nested Markdown headers with reserved section names (e.g. `## Request). Finally, the API endpoint is closed by Markdown's horizontal ruler.
+In API Blueprint an API endpoint is defined as a Markdown header with optional HTTP method followed by an URI. After the header follows structured discussion of the endpoint. The endpoint discussion consists of sections of predefined meaning. These sections are delimited by a nested Markdown headers with reserved section names (e.g. `## Request`). Finally, the API endpoint is closed by Markdown's horizontal ruler.
 
 For example:
 
 	# GET /message_of_the_day
 	Retrieves message of the day.
+	
 	## Response 200 (application/json)
 		{ "message" : "Hello World" }
 		
@@ -32,7 +31,7 @@ For example:
 	
 represents an endpoint _message_of_the_day_ which upon being requested with HTTP GET method returns status code of `200` with response header `Content-Type: application/json` and response body `{ "message" : "Hello World!" }`.
 
-## Discussing URI parameters and payload fields
+## Discussing parameters
 One of much requested features of the New Format is the ability to discuss both URI and payload parameters. While you can always do this on your own using any Markdown-formatted text as endpoint discussion the New API Blueprint Format will introduce direct support for discussing parameters and body payload. 
 
 Consider an endpoint that allows you to retrieve message of the day for any given date:
@@ -49,6 +48,8 @@ Consider an endpoint that allows you to retrieve message of the day for any give
 		{ "message" : "Hello World" }
 		
 	---
+	
+As you can see the `@` sign denotes URI parameter while `@.` stands for local scope parameters. Also in this example we have used MongoDB - style [dot notation](http://docs.mongodb.org/manual/core/document/#dot-notation) for reaching into a JSON object.
 
 ## Multiple requests and responses
 Occasionally it may be a good design to have an endpoint that accepts multiple different requests. Far more common situation is that an endpoint will offer more than one response. New Format is built with that in mind. 
