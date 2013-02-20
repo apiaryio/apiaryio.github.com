@@ -2,7 +2,7 @@
 title: New API Blueprint Format Basics
 excerpt: Discussing basic features of the New API Blueprint Format – Markdown, API endpoints, multiple requests and responses and commenting on parameters.
 layout: post
-date: 2014-02-20 09:00:00 +1000
+date: 2013-02-20 09:00:00 +1000
 author: zdenek
 published: false
 ---
@@ -17,7 +17,7 @@ A Markdown API Blueprint document follows given structure. At the very heart of 
 ## API Endpoint
 An endpoint usually represents a resource on the server. It is represented by an URI relative to API root and one or more HTTP verbs (methods). 
 
-In API Blueprint an API endpoint is defined as a Markdown header with optional HTTP method followed by an URI. After the header follows structured discussion of the endpoint. The endpoint discussion consists of sections of predefined meaning. These sections are delimited by a nested Markdown headers with reserved section names (e.g. `## Request`). Finally, the API endpoint is closed by Markdown's horizontal ruler.
+In API Blueprint an API endpoint is defined as a Markdown header with optional HTTP method followed by an URI. After the header follows structured discussion of the endpoint. The endpoint discussion consists of sections of predefined meaning. These sections are delimited by a **nested** Markdown headers with reserved section names (e.g. `## Request`). You are free to use any properly nested header in everywhere where a discussion is expected as long as it doesn't clash with reserved header names.
 
 API Endpoint structure:
 
@@ -30,8 +30,6 @@ For example:
 	
 	## Response 200 (application/json)
 		{ "message" : "Hello World" }
-		
-	---
 	
 represents an endpoint _message_of_the_day_ which upon being requested with HTTP GET method returns status code of `200` with response header `Content-Type: application/json` and response body `{ "message" : "Hello World!" }`.
 
@@ -50,8 +48,6 @@ Consider an endpoint that allows you to retrieve message of the day for any give
 	@.message (string) ... Extraordinaire message of the day.
 	
 		{ "message" : "Hello World" }
-		
-	---
 	
 As you can see the `@` sign denotes URI parameter while `@.` stands for local scope parameters. Also in this example we have used MongoDB - style [dot notation](http://docs.mongodb.org/manual/core/document/#dot-notation) for reaching into a JSON object.
 
@@ -74,8 +70,6 @@ Consider an endpoint that allows you to create new message of the day either as 
 		
 	## Response 404 (application/json)
 		{ "status" : "not found" }
-		
-	---
 	
 Note that "New MOTD" and "Duplicate MOTD" strings in request headers are just mere identifiers of the particular `Request` section. Also note we usually suggest to document only regular state responses and save error states for general API Overview discussion.
 
