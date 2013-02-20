@@ -1,5 +1,5 @@
 ---
-title: New API Blueprint Format – The Basics
+title: New API Blueprint Format Basics
 excerpt: Discussing basic features of the New API Blueprint Format – Markdown, API endpoints, multiple requests and responses and commenting on parameters.
 layout: post
 date: 2014-02-20 09:00:00 +1000
@@ -18,6 +18,10 @@ A Markdown API Blueprint document follows given structure. At the very heart of 
 An endpoint usually represents a resource on the server. It is represented by an URI relative to API root and one or more HTTP verbs (methods). 
 
 In API Blueprint an API endpoint is defined as a Markdown header with optional HTTP method followed by an URI. After the header follows structured discussion of the endpoint. The endpoint discussion consists of sections of predefined meaning. These sections are delimited by a nested Markdown headers with reserved section names (e.g. `## Request`). Finally, the API endpoint is closed by Markdown's horizontal ruler.
+
+API Endpoint structure:
+
+![API Endpoint Structure](/images/2013-02-19-API-endpoint.png)
 
 For example:
 
