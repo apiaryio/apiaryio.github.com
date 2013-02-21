@@ -7,17 +7,17 @@ author: zdenek
 published: false
 ---
 
-This is the second article in the series about upcoming API Blueprint format changes. As promised [before](http://blog.apiary.io/2013/01/27/New-API-Blueprint-Format/) I will continue introducing changes to the API Blueprint Format. Today we will discuss basics of the New API Blueprint Format upon which we will build later on.
+This is the second article in the series about upcoming API Blueprint format changes. As promised [earlier](http://blog.apiary.io/2013/01/27/New-API-Blueprint-Format/) I will continue to introduce changes to the API Blueprint Format. Today we will discuss the basics of the New API Blueprint Format upon which we will later build.
 
 ## Markdown
-New API Blueprints will be entirely written in [Markdown](http://daringfireball.net/projects/markdown/). In addition to Markdown advanced blueprints will rely on several [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) features. However, for discussing basics, all that matters is that New API Blueprint is completely Markdown from line number one to the end.
+New API Blueprints will be written entirely in [Markdown](http://daringfireball.net/projects/markdown/). In addition to Markdown, advanced blueprints will rely on several [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) features. However, for discussing basics, all that matters is that the New API Blueprint is completely Markdown from the first line to the end.
 
-A Markdown API Blueprint document follows given structure. At the very heart of this structure is an API endpoint. In fact, New API Blueprint document is essentially a collection of API endpoints. There are additional components such as the API Overview Section but we will now focus only on API endpoints for now.
+A Markdown API Blueprint document follows a given structure. At the very heart of this structure is an API endpoint. In fact, a New API Blueprint document is essentially a collection of API endpoints. There are additional components such as the API Overview Section but for now we will focus only on API endpoints.
 
 ## API Endpoint
-An endpoint usually represents a resource on the server. It is represented by an URI relative to API root and one or more HTTP verbs (methods). 
+An endpoint usually represents a resource on the server. It is represented by a URI relative to the API root, and one or more HTTP verbs (methods). 
 
-In API Blueprint an API endpoint is defined as a Markdown header with optional HTTP method followed by an URI. After the header follows structured discussion of the endpoint. The endpoint discussion consists of sections of predefined meaning. These sections are delimited by a **nested** Markdown headers with reserved section names (e.g. `## Request`). You are free to use any properly nested header in everywhere where a discussion is expected as long as it doesn't clash with reserved header names.
+In an API Blueprint, an API endpoint is defined as a Markdown header with an optional HTTP method followed by a URI. After the header follows a structured description of the endpoint. The endpoint description consists of sections of predefined meaning. These sections are delimited by **nested** Markdown headers with reserved section names (e.g. `## Request`). You are free to use any properly nested header anywhere a description is expected as long as it doesn't clash with reserved header names.
 
 API Endpoint structure:
 
@@ -31,12 +31,12 @@ For example:
 	## Response 200 (application/json)
 		{ "message" : "Hello World" }
 	
-represents an endpoint _message_of_the_day_ which upon being requested with HTTP GET method returns status code of `200` with response header `Content-Type: application/json` and response body `{ "message" : "Hello World!" }`.
+represents an endpoint _message_of_the_day_, which upon being requested with the HTTP GET method will return a status code of `200` with the response header `Content-Type: application/json` and response body `{ "message" : "Hello World!" }`.
 
-## Discussing parameters
-One of much requested features of the New Format is the ability to discuss both URI and payload parameters. While you can always do this on your own using any Markdown-formatted text as endpoint discussion the New API Blueprint Format will introduce direct support for discussing parameters and body payload. 
+## Defining parameters
+One of much requested features of the new format is the ability to define both URI and payload parameters. While you can always do this on your own using any Markdown-formatted text in the endpoint description, the New API Blueprint Format will introduce direct support for defining parameters and body payload. 
 
-Consider an endpoint that allows you to retrieve message of the day for any given date:
+Consider an endpoint that allows you to retrieve a message of the day for any given date:
 
 	# GET /message_of_the_day{/date}
 	Retrieves message of the day. If no @date is specified a message for the current day is returned.
@@ -49,12 +49,12 @@ Consider an endpoint that allows you to retrieve message of the day for any give
 	
 		{ "message" : "Hello World" }
 	
-As you can see the `@` sign denotes URI parameter while `@.` stands for local scope parameters. Also in this example we have used MongoDB - style [dot notation](http://docs.mongodb.org/manual/core/document/#dot-notation) for reaching into a JSON object.
+As you can see the `@` sign denotes a URI parameter while `@.` stands for local scope parameters. Also in this example we have used MongoDB - style [dot notation](http://docs.mongodb.org/manual/core/document/#dot-notation) for reaching into a JSON object.
 
 ## Multiple requests and responses
-Occasionally it may be a good design to have an endpoint that accepts multiple different requests. Far more common situation is that an endpoint will offer more than one response. New Format is built with that in mind. 
+Occasionally it may be a good design to have an endpoint that accepts multiple different requests. A far more common situation is that an endpoint will offer more than one response. The new format is built with that in mind. 
 
-Consider an endpoint that allows you to create new message of the day either as a copy of a message from another day or as a completely new one:
+Consider an endpoint that allows you to create a new message of the day either as a copy of a message from another day or as a completely new one:
 
 	# PUT /message_of_the_day
 	Creates message of the day for the current day either from **scratch** or as a **copy** of an existing message.
@@ -71,13 +71,13 @@ Consider an endpoint that allows you to create new message of the day either as 
 	## Response 404 (application/json)
 		{ "status" : "not found" }
 	
-Note that "New MOTD" and "Duplicate MOTD" strings in request headers are just mere identifiers of the particular `Request` section. Also note we usually suggest to document only regular state responses and save error states for general API Overview discussion.
+Note that "New MOTD" and "Duplicate MOTD" strings in the request headers are just identifiers of the particular `Request` section. Also note we usually suggest documenting only regular state responses and saving error states for the general API Overview discussion.
 
 ## Comments
-The last feature of New API Blueprint Format I want to discuss today are the comments. Simply use HTML-style comments (`<!--` and `-->`) anywhere in your blueprint document to comment out a block of blueprint or make additional notes. We believe this will be very useful for both newcomers and experienced users.
+The last feature of New API Blueprint Format I want to discuss today are the comments. Simply use HTML-style comments (`<!--` and `-->`) anywhere in your blueprint document to comment out a block of blueprint or make additional notes. We believe that this will be very useful for both newcomers and experienced users.
 
 ## Additional example
-If you would like to see a little bit more complex example that demonstrates additional basic features such as multiple HTTP methods on one endpoint or response headers you can find it on [GitHub](https://gist.github.com/zdne/4977305). You can preview it as a [rendered document](https://gist.github.com/zdne/4977305) (benefits of Markdown) or its [raw source](https://gist.github.com/zdne/4977305/raw/0001e513f2467b8d154eef270f4a76caa1e4ada3/BasicExample.md).
+If you would like to see a slightly more complex example that demonstrates the additional basic features such as multiple HTTP methods on one endpoint or response headers you can find it on [GitHub](https://gist.github.com/zdne/4977305). You can preview it as a [rendered document](https://gist.github.com/zdne/4977305) (benefits of Markdown) or its [raw source](https://gist.github.com/zdne/4977305/raw/0001e513f2467b8d154eef270f4a76caa1e4ada3/BasicExample.md).
 
 ## Coming up next
 In the next post I will be discussing intermediate features of New API Blueprint Format such as Blueprint Modules, References, User-specific tokens, Multimedia and Authentication.
