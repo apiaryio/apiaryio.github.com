@@ -30,7 +30,7 @@ For example:
 	## Response 200 (application/json)
 		{ "message" : "Hello World" }
 	
-represents an endpoint _message_of_the_day_, which upon being requested with the HTTP GET method will return a status code of `200` with the response header `Content-Type: application/json` and response body `{ "message" : "Hello World!" }`.
+represents an endpoint "message_of_the_day", which upon being requested with the HTTP GET method will return a status code of `200` with the response header `Content-Type: application/json` and response body `{ "message" : "Hello World!" }`.
 
 ## Defining parameters
 One of much requested features of the new format is the ability to define both URI and payload parameters. While you can always do this on your own using any Markdown-formatted text in the endpoint description, the New API Blueprint Format will introduce direct support for defining parameters and body payload. 
