@@ -14,7 +14,7 @@ First I would like to thank to our awesome users who did contribute to the New F
 
 Note that this first version is only a mere milestone on the [Format evolution](http://blog.apiary.io/2013/01/27/New-API-Blueprint-Format/). However we still keep the main thing the main thing: The **API Blueprint must be the best way possible for both designing and documenting your API**.
 
-## Roll Out
+## Roll Out: Gradual Opt-In
 The rollout will be on opt-in basis. That is we won't "switch" everything to new format immediately. Instead the two (legacy and 1A) formats will live in parallel for some time. You will be able to opt-in for the New Format by specifying format version in your blueprint's [metadata](https://github.com/apiaryio/blueprint-parser/blob/zdne/format1A/doc/APIBlueprintSpecification.md#41-metadata-section-metadatasection).
 
 Also there will be automatic lossless transition from the legacy format to the New Format possible. No need to rewrite anything by hand. 
