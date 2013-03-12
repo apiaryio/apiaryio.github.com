@@ -19,7 +19,7 @@ The rollout will be on an opt-in basis - that is, we won't "switch" everything t
 
 Also the transition from the legacy to the New Format will be automatic and lossless. No need to rewrite anything by hand. 
 
-With that said, if you are familiar with the current format or don't want to dive in right away it is perfectly fine to start with your API today without any fear that you will have to start over once the New Format arrives.
+With that said, if you are familiar with the current format or don't want to dive in right away, it is perfectly fine to start working on your API today without any fear that you will have to re-do it all once the New Format arrives.
 
 As always I would love to hear from you. You can reach me on [my email](z@apiary.io) or comment on [New API Blueprint Format](http://support.apiary.io/forums/120125-general/suggestions/2970802-new-api-blueprint-format).
 
