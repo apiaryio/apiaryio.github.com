@@ -4,7 +4,7 @@ excerpt: New API Blueprint Format specification has been closed as we are gettin
 layout: post
 date: 2013-03-29 09:00:00 +1000
 author: zdenek
-published: NO
+published: YES
 ---
 
 As you may know the [New API Blueprint Format](http://blog.apiary.io/2013/02/20/New-API-Blueprint-Format-Basics/) will be rolling out soon and today I would like to discuss how it will be done. 
