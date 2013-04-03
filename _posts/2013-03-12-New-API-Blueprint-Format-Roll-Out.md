@@ -9,6 +9,8 @@ published: YES
 
 As you may know the [New API Blueprint Format](http://blog.apiary.io/2013/02/20/New-API-Blueprint-Format-Basics/) will be rolling out soon and today I would like to discuss how it will be done. 
 
+Before we get started please note the New Format is not live as of the date of writing this post. I will make an official announcement here on Apiary blog and inside Apiary application once the Format goes live.
+
 ## 1A Format Specification
 First I would like to thank our awesome users who contributed to the New Format in reaction to my previous [post](http://blog.apiary.io/2013/02/20/New-API-Blueprint-Format-Basics/). 
 
@@ -31,6 +33,7 @@ The rollout will be on an opt-in basis - that is, we won't "switch" everything t
 Also the transition from the legacy to the New Format will be automatic and lossless. No need to rewrite anything by hand. 
 
 With that said, if you are familiar with the current format or don't want to dive in right away, it is perfectly fine to start working on your API today without any fear that you will have to re-do it all once the New Format arrives.
+
 
 As always I would love to hear from you. You can reach me on [my email](z@apiary.io) or comment on [New API Blueprint Format](http://support.apiary.io/forums/120125-general/suggestions/2970802-new-api-blueprint-format).
 
