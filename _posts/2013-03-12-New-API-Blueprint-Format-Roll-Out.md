@@ -23,19 +23,17 @@ In the process we have made quite a few changes to the Format. For example, to i
 			
 		{ "message" : "Hello World" }
 
-You can find the New Format's [final specification](https://github.com/apiaryio/blueprint-parser/blob/zdne/format1A/doc/APIBlueprintSpecification.md) in our (open sourced) [parser repository](https://github.com/apiaryio/blueprint-parser/tree/zdne/format1A). The specification is also accompanied by a few [examples](https://github.com/apiaryio/blueprint-parser/tree/zdne/format1A/examples) if you want to get a quick peek at what it will look like.
+You can find the New Format's [specification](https://github.com/apiaryio/api-blueprint/blob/master/API%20Blueprint%20Specification.md) its [repository](https://github.com/apiaryio/api-blueprint). The specification is completely open-sourced and it is also accompanied by a [tutorial](https://github.com/apiaryio/api-blueprint/blob/master/examples/1.%20Simplest%20API.md) and examples.
 
 Note that this first version is only a mere milestone on the [Format evolution](http://blog.apiary.io/2013/01/27/New-API-Blueprint-Format/). However we still keep the main thing the main thing: The **API Blueprint must be the best way possible to both design and document your API**.
 
 ## Roll Out: Gradual Opt-In
-The rollout will be on an opt-in basis - that is, we won't "switch" everything to new format immediately. Instead the two (legacy and 1A) formats will live in parallel for some time. You will be able to opt-in for the New Format by specifying format version in your blueprint's [metadata](https://github.com/apiaryio/blueprint-parser/blob/zdne/format1A/doc/APIBlueprintSpecification.md#41-metadata-section-metadatasection).
+The rollout will be on an opt-in basis - that is, we won't "switch" everything to new format immediately. Instead the two (legacy and 1A) formats will live in parallel for some time. You will be able to opt-in for the New Format by specifying format version in your blueprint's metadata.
 
 Also the transition from the legacy to the New Format will be automatic and lossless. No need to rewrite anything by hand. 
 
 With that said, if you are familiar with the current format or don't want to dive in right away, it is perfectly fine to start working on your API today without any fear that you will have to re-do it all once the New Format arrives.
 
-
-As always I would love to hear from you. You can reach me on [my email](z@apiary.io) or comment on [New API Blueprint Format](http://support.apiary.io/forums/120125-general/suggestions/2970802-new-api-blueprint-format).
-
+As always I would love to hear from you. You can reach me on [my email](z@apiary.io).
 
 
