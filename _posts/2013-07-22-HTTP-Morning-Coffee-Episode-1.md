@@ -1,13 +1,13 @@
 ---
-title: HTTP Morning Coffee Episode 1: Forget the URI space
-excerpt: Quick Notes on 
+title: HTTP Morning Coffee Episode 1
+excerpt: Forget the URI Space
 layout: post
 date: 2013-07-22 09:00:00 +1000
 author: zdenek
-published: NO
+published: YES
 ---
 
-_This post is part of our new series Morning Coffee where people behing Apiary are discussing their thoughts on everything API. This time, it's [@ntmlk](https://twitter.com/ntmlk) and [@zdne](https://twitter.com/zdne), high on morning coffee:_
+_This post is part of our new series Morning Coffee where people behind Apiary briefly discuss their thoughts on everything API. This time, it's [@ntmlk](https://twitter.com/ntmlk) and [@zdne](https://twitter.com/zdne), high on morning coffee:_
 
 ## Discussion
 + Discussing **NodeUp** podcast [episode forty four](http://nodeup.com/fortyfour)
