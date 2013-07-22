@@ -7,7 +7,7 @@ author: zdenek
 published: YES
 ---
 
-_This post is part of our new series Morning Coffee where people behind Apiary briefly discuss their thoughts on everything API. This time, it's [@ntmlk](https://twitter.com/ntmlk) and [@zdne](https://twitter.com/zdne), high on morning coffee:_
+_This post is part of our new series Morning Coffee where people behind Apiary briefly discuss their thoughts on everything API. This time, it is [@ntmlk](https://twitter.com/ntmlk) and [@zdne](https://twitter.com/zdne), high on a morning coffee:_
 
 ## Discussion
 + Discussing **NodeUp** podcast [episode forty four](http://nodeup.com/fortyfour)
@@ -18,11 +18,12 @@ _This post is part of our new series Morning Coffee where people behind Apiary b
 + He built the REST engine on top of the URI space and routing DSL
 + Modeling URI is irrelevant, the URI space could be flat
 + It is just a matter of aesthetics 
-+ For the same reason [@steveklabnik](https://twitter.com/steveklabnik) is wrong in his (otherwise brilliant) [A digression about actions](http://blog.steveklabnik.com/posts/2011-07-03-nobody-understands-rest-or-http#a_digression_about_actions) article
++ For the same reason [@steveklabnik](https://twitter.com/steveklabnik) is wrong in [A digression about actions](http://blog.steveklabnik.com/posts/2011-07-03-nobody-understands-rest-or-http#a_digression_about_actions) section of his, otherwise brilliant article.
++ It is good to have a nice and tidy URI space but one shouldn't design his or her API around it
 
 ## Steps to reproduce
-+ 35g of NDIMAINI AA, Square Mile Coffee Roasters
++ 35g of NDIMAINI AA, [Square Mile Coffee Roasters](http://squaremilecoffee.com)
 + Chemex
-+ 500g water at 90deg  C
++ 500g water at 90°C
 + 30sec pre-infusion 
 + 3min extraction
