@@ -14,10 +14,10 @@ _This post is part of our new series Morning Coffee where people behind Apiary b
 + Rails-ism and how Rails shaped the world of Web APIs
 + [@dhh](https://twitter.com/dhh) (and Rails) have done an incredible great service for the API community 
 + Unfortunately they have committed to a **major crime**
-+ He tied a representation of resource with the URI space
-+ He built the REST engine on top of the URI space and routing DSL
++ They tied a representation of resource with the URI space
++ They built the REST engine on top of the URI space and routing DSL
 + Modeling URI is irrelevant, the URI space could be flat
-+ It is just a matter of aesthetics 
++ Modeling URI It is just a matter of aesthetics 
 + For the same reason [@steveklabnik](https://twitter.com/steveklabnik) is wrong in [A digression about actions](http://blog.steveklabnik.com/posts/2011-07-03-nobody-understands-rest-or-http#a_digression_about_actions) section of his, otherwise brilliant article.
 + It is good to have a nice and tidy URI space but one shouldn't design his or her API around it
 
