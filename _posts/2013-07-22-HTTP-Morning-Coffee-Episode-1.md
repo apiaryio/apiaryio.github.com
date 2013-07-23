@@ -13,7 +13,7 @@ _This post is part of our new series Morning Coffee where people behind Apiary b
 + Discussing **NodeUp** podcast [episode forty four](http://nodeup.com/fortyfour)
 + Rails-ism and how Rails shaped the world of Web APIs
 + [@dhh](https://twitter.com/dhh) (and Rails) have done an incredible great service for the API community 
-+ Unfortunately they have committed to a **major crime**
++ Unfortunately they have also committed a **major crime**
 + They tied a representation of resource with the URI space
 + They built the REST engine on top of the URI space and routing DSL
 + Modeling URI is irrelevant, the URI space could be flat
