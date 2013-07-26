@@ -37,7 +37,7 @@ Let's see what happens if CORS headers are missing in the response
 	$ echo $?
 	1 
 
-If you are a Node.js ninja, you can enjoy using the [Gavel JS API][jsapi]
+If you are a Node.js ninja, you can enjoy using the [Gavel JS API][gavel.js]
 
 Gavel's first version is very thin. It comes only with a boolean interface which decides if a pair of HTTP Requests or Responses are valid against themselves or are not. We'd like to make this a starting point of a discussion about [headers validation][] and output format for [validation errors][]. Feel free to submit an [GitHub issue][] and tell us what you want. We'll be even more excited if you contribute. 
 
