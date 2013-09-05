@@ -1,5 +1,5 @@
 ---
-title: Bam! This si Gavel.
+title: Bam! This is Gavel.
 excerpt: We are introducing our brand new HTTP validation package.
 layout: post
 date: 2013-07-25 09:00:00 +1000
