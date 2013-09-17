@@ -36,9 +36,9 @@ email:        jakub@apiary.io
 static: "https://apiary-static.s3.amazonaws.com/appstatic"
 version: 1338364425
 menu:
-  - ['https://apiary.io/how-it-works', 'How It Works']
-  - ['https://apiary.io/blog', 'Blog']
-  - ['https://apiary.io/company', 'Company']
+  - ['http://apiary.io/how-it-works', 'How It Works']
+  - ['http://apiary.io/blog', 'Blog']
+  - ['http://apiary.io/company', 'Company']
   - ['https://login.apiary.io/login', 'Sign In']
 tracking: >
   <script>
