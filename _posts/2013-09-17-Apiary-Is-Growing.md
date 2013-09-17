@@ -7,8 +7,6 @@ author: jakub
 published: YES
 ---
 
-# Apiary is Growing
-
 This morning I'm happy to announce that Apiary has raised $1.63 million in seed funding from Baseline, Flybridge and other great investors. While I'll leave the investment details to the PR wire, I wanted to take a moment to talk about what this means for us, and what it means for you—our users.
 
 ## Free as in Free Beer
