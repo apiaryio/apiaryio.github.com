@@ -1,18 +1,18 @@
 ---
 layout: default
 ---
-
-{% assign author = site.authors[page.author] %}
-<div class="genericPage blogPost">
-  <img class="allNewsLogo" src="{{ site.static }}/homepage/css/design/allNewsApiarySmall.png" width="160" height="90">
-  <a href="/"><i class="icon-arrow-left"></i> Back to Articles</a>
+<div class="blog">
+  {% assign author = site.authors[page.author] %}
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+      
+    <h1>{{ page.title }}</h1>
+    {% if author %}  
+      <p><span class="minority">By</span> <strong>{{ author.display_name }}</strong>
+        ({% if author.email %}<a href="https://twitter.com/{{author.twitter}}">{{ author.twitter }}</a>, {% endif %}{% if author.email %}<a href="mailto:{{ author.email }}">{{ author.email }}</a>{% endif %}) <span class="minority">on</span> {{ page.date | date_to_string }}
+      </p>
+    {% endif %}
     
-  <h1>{{ page.title }}</h1>
-  {% if author %}  
-    <p class="author">by {{ author.display_name }}
-      ({% if author.email %}<a href="https://twitter.com/{{author.twitter}}">{{ author.twitter }}</a>, {% endif %}{% if author.email %}<a href="mailto:{{ author.email }}">{{ author.email }}</a>{% endif %})
-    </p>
-  {% endif %}
-  
-{{ content }}
+  {{ content }}
+  </div>
 </div>

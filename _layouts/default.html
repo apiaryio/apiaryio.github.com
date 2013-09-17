@@ -10,15 +10,15 @@
   <link rel="alternate" type="application/rss+xml" title="{{site.title}} Feed" href="{{site.url}}/feed.xml" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="https://dwmsib5861bg2.cloudfront.net/assets/styles/fonts-f9adc9c6e08cdb9e.css">
-  <link rel="stylesheet" href="https://dwmsib5861bg2.cloudfront.net/assets/styles/modules/footer/footer-a09f5720c7f60c0e.css">
-  <link rel="stylesheet" href="https://dwmsib5861bg2.cloudfront.net/assets/styles/modules/website-9af84fc4fb95dc0b.css">
+  <link rel="stylesheet" href="https://static.apiary.dev:9000/styles/fonts.css">
+  <link rel="stylesheet" href="https://static.apiary.dev:9000/styles/modules/footer/footer.css">
+  <link rel="stylesheet" href="https://static.apiary.dev:9000/styles/modules/website.css">
   <!-- /Styles -->
 
   {{ site.tracking }}
 
 </head>
-<body class="website blog">
+<body class="website">
 
 <!-- website-header -->
   <header id="websiteHeader"><div class="positioning">
@@ -26,11 +26,6 @@
     <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
   </div></header>
 <!-- /website-header -->
-
-
-  <div id="content">
-  {{ content }}
-  </div>
 
 <!-- website-navigation -->
   <div id="navigation">
@@ -45,6 +40,10 @@
     </nav>
   </div>
 <!-- /website-navigation -->
+
+<div>
+  {{ content }}
+</div>
 
 <!-- website-footer -->
   <hr>

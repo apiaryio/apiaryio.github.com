@@ -2,16 +2,24 @@
 title: Welcome
 layout: default
 ---
-<div class="genericPage blogArticles">
+<!--<div class="blogHeader mainSectionWrap">
+  <div class="positioning">
+    <h1 class="largerTopSpace">All things Apiary</h1>
+    <h2>Apiary Inside Out</h2>
+    <p>We are all very lucky. We build stuff for developers. We have big dreams. We work hard &amp; fast, but don't cut corners. We take pride in being early adopters—In Wayne Gretzky's terms: “skating where the puck is going to be”.</p>
+  </div>
+</div>-->
 
-  <h1><img src="{{ site.static }}/homepage/css/design/allNewsApiary.png" alt="All News Apiary" width="358" height="272"></h1>
-    {% for post in site.posts %}
-    <div>
-      <p><span class="blog-date">{{ post.date | date_to_string }}</span></p>
-      <p><a href="{{ post.url }}" class="blog-link">{{ post.title }}</a></p>
-      <p class="perex"><em class="blog-excerpt">{{ post.excerpt }} </em></p>
-    </div>
-    <img class="divous" src="{{ site.static }}/homepage/css/design/divider.png" width="101" height="5">
-    {% endfor %}
-
+<div class="blog">
+  <div class="blogArticles">
+  
+      {% for post in site.posts %}
+      <div class="blogPost"><a href="{{ post.url }}" class="shapeshifter">
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.excerpt }}</p>
+        <p class="authorDate">{{ site.authors[post.author].name }} — {{ post.date | date_to_string }}</p>
+      </a></div>
+      {% endfor %}
+  
+  </div>
 </div>
