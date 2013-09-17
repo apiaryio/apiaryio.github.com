@@ -21,7 +21,7 @@ I believe that good service to developers is a **form of partnership**, where it
 
 We're also super-excited to be joining the [amazing lineup] of developer-focused companies as a member of **Heavybit program** and getting help from Heroku's co-founder **James Lindenbaum** and his [all-star team]. If you're in San Francisco, come and say hi at our new offices on [9th Street].
 
-## Brigtht Future for Us All
+## Bright Future for Us All
 
 Over the last 12 months, you've created over **25,000 APIs in Apiary**, making it the **largest hub of APIs**, unmatched in scope, run by you. We couldn't be more thankful! But both we and web APIs are really just getting started. We have some big ideas on how to simplify the lifecycle of designing, developing and supporting APIs—and now we  have the resources to make them happen.
 
