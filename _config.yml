@@ -36,14 +36,13 @@ email:        jakub@apiary.io
 static: "https://apiary-static.s3.amazonaws.com/appstatic"
 version: 1338364425
 menu:
-  - ['http://apiary.io/', 'Home']
-  - ['http://apiary.io/blueprint', 'API Blueprint']
-  - ['http://blog.apiary.io/', 'Blog']
-  - ['http://apiary.io/team', 'Team']
-  - ['http://apiary.io/jobs', 'Jobs']
+  - ['https://apiary.io/how-it-works', 'How It Works']
+  - ['https://apiary.io/blog', 'Blog']
+  - ['https://apiary.io/company', 'Company']
+  - ['https://login.apiary.io/login', 'Sign In']
 tracking: >
   <script>
-   var _gaq = [['_setAccount', 'UA-18252923-1'], ['_setDomainName', '.apiary.io'], ['_trackPageview']];
+   var _gaq = [['_setAccount', 'UA-18252923-1'], ['_trackPageview']];
    (function(d, t) {
     var g = d.createElement(t),
         s = d.getElementsByTagName(t)[0];
@@ -51,24 +50,4 @@ tracking: >
     g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g, s);
    })(document, 'script');
-  </script>
-  <script type="text/javascript">
-    var GoSquared={};
-    GoSquared.acct = "GSN-493742-G";
-    (function(w){
-        function gs(){
-            w._gstc_lt=+(new Date); var d=document;
-            var g = d.createElement("script"); g.type = "text/javascript"; g.async = true; g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
-            var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(g, s);
-        }
-        w.addEventListener?w.addEventListener("load",gs,false):w.attachEvent("onload",gs);
-    })(window);
-  </script>
-  <script type="text/javascript">
-    var uvOptions = {};
-    (function() {
-      var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
-      uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/QfFjfKUkAgUNRFdUmuX6A.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
-    })();
   </script>

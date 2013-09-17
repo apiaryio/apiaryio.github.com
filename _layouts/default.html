@@ -1,91 +1,143 @@
 <!doctype html>
-
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="utf-8">
 
-  <title>{{ page.title }}&mdash;The Apiary Blog</title>
-  <meta name="description" content="…" />
-  <meta name="author" content="apiary.io @janmoravec @jakubnesetril" />
+  <title>{{ page.title }}&mdash;Apiary Blog</title>
 
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
-  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <meta name="author" content="Apiary">
   <link rel="alternate" type="application/rss+xml" title="{{site.title}} Feed" href="{{site.url}}/feed.xml" />
 
-  <link rel="shortcut icon" href="{{ site.static }}/favicon.ico" />
-  <link rel="apple-touch-icon-precomposed" href="{{ site.static }}/apple-touch-icon-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.static }}/apple-touch-icon-72x72-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.static }}/apple-touch-icon-114x114-precomposed.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.static }}/apple-touch-icon-144x144-precomposed.png" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://dwmsib5861bg2.cloudfront.net/assets/styles/fonts-f9adc9c6e08cdb9e.css">
+  <link rel="stylesheet" href="https://dwmsib5861bg2.cloudfront.net/assets/styles/modules/footer/footer-a09f5720c7f60c0e.css">
+  <link rel="stylesheet" href="https://dwmsib5861bg2.cloudfront.net/assets/styles/modules/website-9af84fc4fb95dc0b.css">
+  <!-- /Styles -->
 
-  <link rel="stylesheet" href="{{ site.static }}/css/font-awesome.css?v={{ site.version }}">
-  <link rel="stylesheet" href="{{ site.static }}/homepage/css/style.css?v={{ site.version }}">
+  {{ site.tracking }}
 
 </head>
+<body class="website blog">
 
-<body class="blog">
+<!-- website-header -->
+  <header id="websiteHeader"><div class="positioning">
+    <a class="headerLogotypeLink" href="http://apiary.io/"><h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1><div class="headerLogotype"></div></a>
+    <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
+  </div></header>
+<!-- /website-header -->
 
-  <div id="container">
 
-    <header>
-      <div id="stripe">
-        <div id="mainMenu">
-          <a href="http://apiary.io/"><img src="{{ site.static }}/css/design2/apiary-io-beta-logo-1x.png" width="160" height="30"></a>
-          <ul>
-            {% for item in site.menu %}
-            <a href="{{ item[0] }}"{% if item[1] == 'Blog' %} class="selected"{% endif %}><li>{{ item[1] }}</li></a>
-            {% endfor %}
-          </ul>
-        </div>
-        <div id="userMenu">
-          <ul>
-            <a href="https://login.apiary.io/login"><li><em>Sign in</em> <i class="icon-signin"></i></li></a>
-            <a class="cta" href="http://apiary.io/register"><li>Cut the talk, let me <mark>sign up</mark>!</li></a>
-          </ul>
-        </div>
+  <div id="content">
+  {{ content }}
+  </div>
 
-      </div>
-    </header>
+<!-- website-navigation -->
+  <div id="navigation">
+    <nav class="websiteNav positioning">
+      <ul class="clearAfter websiteNavMenu">
+        {% for item in site.menu %}
+        <li class="websiteNavItem"><a class="websiteNavLink" href="{{ item[0] }}">{{ item[1] }}</a></li>
+        {% endfor %}
+      </ul>
+      <a class="websiteNavLink websiteNavLinkHighlighted" href="https://login.apiary.io/register" class="signIn">Sign Up</a>
+      <a class="websiteNavLink backToTop" href="#~"><span class="visuallyhidden">Back to top</span></a>
+    </nav>
+  </div>
+<!-- /website-navigation -->
 
-    <div id="content">
-    {{ content }}
-    </div>
+<!-- website-footer -->
+  <hr>
 
-    <footer>
-      <div id="soc">
-        <div class="cntnr">
-          <a href="https://github.com/apiaryio" title="GitHub" class="crazySmallSquare adjst" target="_blank"><div class="Pas octo"></div><div class="Act octo"></div></a>
-          <a href="https://twitter.com/apiaryio" title="Twitter" class="crazySmallSquare" target="_blank"><div class="Pas bird"></div><div class="Act bird"></div></a>
-          <a href="https://facebook.com/apiary.io" title="Facebook" class="crazySmallSquare" target="_blank"><div class="Pas fb"></div><div class="Act fb"></div></a>
-        </div>
-      </div>
-     	<div id="subscribator">
-     	  <form action="http://apiary.us2.list-manage1.com/subscribe/post?u=b89934a238dcec9533f4a834a&amp;id=08f2bdde55" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-       	  <fieldset>
-  		    	<p>apiary.io E-mail Newsletter</p>
-  					<input class="textField" type="email" pattern="[^ @]+@[^ @]+\.[^ @]{2,}" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your e-mail address" tabindex="5">
-            <input class="button big quiet righty" type="submit" value="Remember Me!" name="subscribe" id="mc-embedded-subscribe" tabindex="6">
-          </fieldset>
-     	  </form>
-      </div>
-      <div id="footNotes">
-        <p id="copyrights">Copyright 2013 Apiary Ltd. All rights reserved.<!-- <a href="#">Terms of Use</a> • <a href="#">Privacy Policy</a> --> <a href="http://fortawesome.github.com/Font-Awesome" target="_blank">Thanks to Font Awesome guys!</a></p>
-      </div>
-    </footer>
-  </div> <!-- end of #container -->
+<footer id="applicationFooter">
 
-  <!--[if lt IE 7 ]>
-    <script src="{{ site.static }}/homepage/js/libs/dd_belatedpng.js"></script>
-    <script> DD_belatedPNG.fix('img, .png_bg'); </script>
-  <![endif]-->
+  <div class="applicationFooterRow">
+    <!--<aside class="applicationFooterColumn">
+      <a class="applicationFooterLogo" href="">
+        <span class="applicationFooterLogoContainer">
+          <i class="logo passiveLogo"></i><i class="logo activeLogo"></i>
+        </span>
+        <span class="applicationFooterLogotypeContainer">
+          <i class="logotype passiveLogotype"></i><i class="logotype activeLogotype"></i>
+        </span>
+      </a>
+    </aside>-->
+    <div class="applicationFooterColumns">
+    <div class="applicationFooterColumn">
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Platform</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiary.io/how-it-works">How It Works</a></li>
+        <li><a class="applicationFooterListLink" href="http://support.apiary.io ">Help</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Company</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiary.io/blog">Blog</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#team">Team</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#contact">Contact</a></li>
+        <li><a class="applicationFooterListLink" href="https://dwmsib5861bg2.cloudfront.net/assets/files/apiary-press-kit-8b391bc24f3255fc.zip">Press Kit</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Open Source</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiblueprint.org">API Blueprint</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/snowcrash">Snowcrash</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Social</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
+        <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
+        <li><a class="applicationFooterListLink" href="https://facebook.com/apiary.io">Facebook</a></li>
+      </ul>
+    </div></div>
+  </div>
 
-{{ site.tracking }}
+  <div class="applicationFooterRow">
+    <p class="applicationFooterCopyright">&copy; Apiary Ltd. All rights reserved. <span class="applicationFooterCopyrightLinks">• <a href="http://apiary.io/tos" class="applicationFooterCopyrightLink">Terms</a> • <a href="https://www.iubenda.com/privacy-policy/323220" class="applicationFooterCopyrightLink">Privacy</a></span></p>
+  </div>
+</footer>
+<!-- /website-footer -->
 
+<script>
+  var scrolledMuch = false;
+  document.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      if (!scrolledMuch) {
+        scrolledMuch = true;
+        document.body.id = 'scrollBody';
+      }
+    }
+    else {
+      if (scrolledMuch) {
+        scrolledMuch = false;
+        document.body.id = 'noscrollBody';
+      }
+    }
+  }
+  if ('ontouchstart' in document.documentElement) {
+    /*
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    }
+    else {
+      setTimeout(function(){window.scrollTo(0,0);},10);
+    }
+    */
+  }
+  var d = document.getElementById('promo'), h = document.getElementById('websiteHeader'), w, recompute = function() {
+    w = Math.max(window.innerHeight, 850);
+    d.children[0].style.marginTop = ((w - 124) / 2) + 100 - (Array.prototype.slice.call(d.children, 0).reduce(function(a, b) { return a+b.offsetHeight }, 0) / 2) + 'px';
+    d.style.minHeight = (window.innerHeight - 30) + 'px';
+  };
+  if (d && h) {
+    recompute();
+    window.onresize = recompute;
+  }
+
+  document.documentElement.className += ' js';
+</script>
 </body>
 </html>
