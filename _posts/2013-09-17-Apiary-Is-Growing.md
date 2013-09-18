@@ -7,7 +7,7 @@ author: jakub
 published: YES
 ---
 
-This morning I'm happy to announce that Apiary has raised $1.63 million in seed funding from Baseline, Flybridge and other great investors. While I'll leave the investment details to the PR wire, I wanted to take a moment to talk about what this means for us, and what it means for you—our users.
+This morning I'm happy to announce that Apiary has raised $1.63 million in seed funding from Baseline, Flybridge and other great investors. While I'll leave the investment details to the [PR wire], I wanted to take a moment to talk about what this means for us, and what it means for you—our users.
 
 ## Free as in Free Beer
 
@@ -39,3 +39,4 @@ Over the last 12 months, you've created over **25,000 APIs in Apiary**, making i
 [all-star team]: http://www.heavybit.com/people
 [9th Street]: http://apiary.io/company#contact
 [premium features]: http://apiary.io/#plans
+[PR wire]: http://www.businesswire.com/news/home/20130917006806/en/Apiary-Secures-1.6-Million-Funding
