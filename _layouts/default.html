@@ -101,42 +101,11 @@
 </footer>
 <!-- /website-footer -->
 
+<script src="http://apiary-static.s3.amazonaws.com/assets/js/website-scroll.js"></script>
 <script>
-  var scrolledMuch = false;
-  document.onscroll = function () {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      if (!scrolledMuch) {
-        scrolledMuch = true;
-        document.body.id = 'scrollBody';
-      }
-    }
-    else {
-      if (scrolledMuch) {
-        scrolledMuch = false;
-        document.body.id = 'noscrollBody';
-      }
-    }
-  }
-  if ('ontouchstart' in document.documentElement) {
-    /*
-    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    }
-    else {
-      setTimeout(function(){window.scrollTo(0,0);},10);
-    }
-    */
-  }
-  var d = document.getElementById('promo'), h = document.getElementById('websiteHeader'), w, recompute = function() {
-    w = Math.max(window.innerHeight, 850);
-    d.children[0].style.marginTop = ((w - 124) / 2) + 100 - (Array.prototype.slice.call(d.children, 0).reduce(function(a, b) { return a+b.offsetHeight }, 0) / 2) + 'px';
-    d.style.minHeight = (window.innerHeight - 30) + 'px';
-  };
-  if (d && h) {
-    recompute();
-    window.onresize = recompute;
-  }
-
+  websiteScroll();
   document.documentElement.className += ' js';
 </script>
+
 </body>
 </html>
