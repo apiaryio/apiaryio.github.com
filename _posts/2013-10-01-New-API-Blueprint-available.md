@@ -9,7 +9,7 @@ published: NO
 
 The new [API Blueprint](http://apiblueprint.org) has officially arrived at Apiary. The API Blueprint is a documentation-oriented API description language that [drives everything in Apiary](http://apiary.io/how-it-works). Today I am proud to announce the availability of its new, from the ground redesigned, version at Apiary.
 
-While it might take additional weeks before the new API Blueprint becomes the default format of Apiary you can already opt-in today. To get started with the new API Blueprint simply login into Apiary.io, create a new API and start with the `FORMAT: 1A` line. Visit the [API Blueprint Tutorial](https://github.com/apiaryio/api-blueprint/blob/master/examples/1.%20Simplest%20API.md) for a quick dive into its syntax.
+While it might take a bit more time before the new API Blueprint becomes the default format of Apiary you can already opt-in today. To get started with the new API Blueprint simply login into Apiary.io, create a new API and start with the `FORMAT: 1A` line. Visit the [API Blueprint Tutorial](https://github.com/apiaryio/api-blueprint/blob/master/examples/1.%20Simplest%20API.md) for a quick dive into its syntax.
 
 ## The New & the Old
 API Blueprint builds upon the legacy of the original API Blueprint format. It remains the perfect lightweight form for capturing ideas about your new API while delivering robustness, readability, scaleability, and DRY-ness.
