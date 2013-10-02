@@ -2,9 +2,9 @@
 title: New API Blueprint available at Apiary
 excerpt: "A great leap forward for your API design"
 layout: post
-date: 2013-10-20 10:00:00 -0800
+date: 2013-10-02 9:00:00 +0100
 author: zdenek
-published: NO
+published: YES
 ---
 
 The new [API Blueprint](http://apiblueprint.org) has officially arrived at Apiary. The API Blueprint is a documentation-oriented API description language that [drives everything in Apiary](http://apiary.io/how-it-works). Today I am proud to announce the availability of its new, from the ground redesigned, version at Apiary.
