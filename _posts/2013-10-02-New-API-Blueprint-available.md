@@ -19,7 +19,7 @@ Its new [parser](https://github.com/apiaryio/snowcrash) takes care of helping yo
 ## Completely Open
 Both the API Blueprint and its reference parser are completely open sourced. You can, and I hope you will, influence its future in its [Milestones](https://github.com/apiaryio/api-blueprint/issues/milestones).
 
-In addition, you are more than welcome to use the API Blueprint, its parser or the [tools built on top of it](http://apiblueprint.org/#bindings) at any point in your own toolchain. Just do not forget to to let the API Blueprint community know!
+In addition, you are more than welcome to use the API Blueprint, its parser or the [tools built on top of it](http://apiblueprint.org/#tooling) at any point in your own toolchain. Just do not forget to to let the API Blueprint community know!
 
 ## Integration with Apiary
 The new API Blueprint represent such a great update to the current API Blueprint that not all of its features has been yet fully embraced within the Apiary. All of these, including the automated conversion from the legacy format to the new one, will arrive during the course of this autumn. 
