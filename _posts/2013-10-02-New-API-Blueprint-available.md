@@ -12,9 +12,9 @@ The new [API Blueprint](http://apiblueprint.org) has officially arrived at Apiar
 While it might take a bit more time before the new API Blueprint becomes the default format of Apiary you can already opt-in today. To get started with the new API Blueprint simply login into Apiary.io, create a new API and start with the `FORMAT: 1A` line. Visit the [API Blueprint Tutorial](https://github.com/apiaryio/api-blueprint/blob/master/examples/1.%20Simplest%20API.md) for a quick dive into its syntax.
 
 ## The New & the Old
-API Blueprint builds upon the legacy of the original API Blueprint format. It remains the perfect lightweight form for capturing ideas about your new API while delivering robustness, readability, scaleability, and DRY-ness.
+API Blueprint builds upon the legacy of the original API Blueprint format. It remains the perfect lightweight form for capturing ideas about your new API while delivering robustness, readability, scaleability and DRY-ness.
 
-It's new [parser](https://github.com/apiaryio/snowcrash) takes care of helping you throughout the API design process giving your reasonable explanations instead of just the infamous `"Me explode"` message should a syntax problem occur.
+Its new [parser](https://github.com/apiaryio/snowcrash) takes care of helping you throughout the API design process giving your reasonable explanations instead of just the infamous `"Me explode"` message should a syntax problem occur.
 
 ## Completely Open
 Both the API Blueprint and its reference parser are completely open sourced. You can, and I hope you will, influence its future in its [Milestones](https://github.com/apiaryio/api-blueprint/issues/milestones).
