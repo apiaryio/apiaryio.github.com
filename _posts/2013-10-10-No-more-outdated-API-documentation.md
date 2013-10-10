@@ -7,8 +7,6 @@ author: netmilk
 published: YES
 ---
 
-# No more outdated API documentation!
-
 Your API is only as good as its documentation. API Documentation is a must for any public API and a need for you private APIs. To have always valid documentation is a holy grail for any API owner. That is why I'm very excited to announce the release of the **[Dredd][] command-line test runner for [API Blueprint][]**. 
 
 ![Dredd](http://blog.apiary.io/images/Dredd.png?1)
@@ -34,38 +32,37 @@ I have promised always up-to-date API documentation. You might think that to not
 Dredd is a command-line test runner for testing of your backend API application on the HTTP layer. **Dredd enables documentation-driven development and test-driven development of your APIs.** 
 
     $ npm install -g dredd
-        $ dredd ./apiary.apib http://localhost:3000
-            Machines > Machines collection > Create a Machine > :
-                  POST /machines "{\n  \"type\": \"b...
-                        PASS
-                            $ echo $?
-                                0
-                                
-                                
-                                Testing API Blueprint amplifies the contract benefits. When you negotiate a change in the contract tests will fail until your implementation is in accordance with the documentation. Similarly, should you rename a key in an HTTP response JSON you have to discuss it with the contract to make the tests pass. 
-                                
-                                
-                                [Apiary]: http://apiary.io
-                                [Readme]: https://github.com/apiaryio/dredd-example/blob/master/README.md
-                                [code]: https://github.com/apiaryio/dredd-example/blob/master/app.coffee
-                                [blueprint]: https://gist.github.com/netmilk/6885268
-                                [documentation]: http://docs.dreddexample.apiary.io/
-                                [mock]: http://docs.dreddexample.apiary.io/traffic
-                                [dredd-example]: git@github.com:apiaryio/dredd-example.git
-                                [Express.js]: http://expressjs.com/
-                                [issues]: https://github.com/apiaryio/dredd-example/issues
-                                [support]: mailto:support@apiary.io
-                                [Dredd]: https://github.com/apiaryio/dredd
-                                [API Blueprint]: http://apiblueprint.org/
-                                [Travis-CI]: https://travis-ci.org/
-                                [Codeship]: https://www.codeship.io/
-                                [Teamcity]: http://www.jetbrains.com/teamcity/
-                                [Circle-CI]: https://circleci.com/
-                                [Jenkins]: http://jenkins-ci.org/
-                                [Hudson]: http://hudson-ci.org/
-                                [Atlassian Bamboo]: https://www.atlassian.com/software/bamboo
-                                [Semaphore]: https://semaphoreapp.com/
-                                [Node.js]: http://nodejs.org/
-                                [NPM]: https://npmjs.org/
-                                [NVM]: https://github.com/creationix/nvm
-                                
+    $ dredd ./apiary.apib http://localhost:3000
+    Machines > Machines collection > Create a Machine > :
+      POST /machines "{\n  \"type\": \"b...
+      PASS
+    $ echo $?
+    0
+
+
+Testing API Blueprint amplifies the contract benefits. When you negotiate a change in the contract tests will fail until your implementation is in accordance with the documentation. Similarly, should you rename a key in an HTTP response JSON you have to discuss it with the contract to make the tests pass. 
+
+
+[Apiary]: http://apiary.io
+[Readme]: https://github.com/apiaryio/dredd-example/blob/master/README.md
+[code]: https://github.com/apiaryio/dredd-example/blob/master/app.coffee
+[blueprint]: https://gist.github.com/netmilk/6885268
+[documentation]: http://docs.dreddexample.apiary.io/
+[mock]: http://docs.dreddexample.apiary.io/traffic
+[dredd-example]: git@github.com:apiaryio/dredd-example.git
+[Express.js]: http://expressjs.com/
+[issues]: https://github.com/apiaryio/dredd-example/issues
+[support]: mailto:support@apiary.io
+[Dredd]: https://github.com/apiaryio/dredd
+[API Blueprint]: http://apiblueprint.org/
+[Travis-CI]: https://travis-ci.org/
+[Codeship]: https://www.codeship.io/
+[Teamcity]: http://www.jetbrains.com/teamcity/
+[Circle-CI]: https://circleci.com/
+[Jenkins]: http://jenkins-ci.org/
+[Hudson]: http://hudson-ci.org/
+[Atlassian Bamboo]: https://www.atlassian.com/software/bamboo
+[Semaphore]: https://semaphoreapp.com/
+[Node.js]: http://nodejs.org/
+[NPM]: https://npmjs.org/
+[NVM]: https://github.com/creationix/nvm
