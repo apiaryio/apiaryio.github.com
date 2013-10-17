@@ -1,5 +1,5 @@
 ---
-title: "Howto test REST API with API Blueprint and Dredd"
+title: "How To Test REST API with API Blueprint and Dredd"
 excerpt: "Glue together your API Documentation and the backend"
 layout: post
 date: 2013-10-17 18:00:00 +0100
