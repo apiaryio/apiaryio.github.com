@@ -42,7 +42,9 @@ Dredd is a command-line test runner for testing of your backend API application 
 
 Testing API Blueprint amplifies the contract benefits. When you negotiate a change in the contract tests will fail until your implementation is in accordance with the documentation. Similarly, should you rename a key in an HTTP response JSON you have to discuss it with the contract to make the tests pass.
 
+Next: [Howto test REST API with API Blueprint and Dredd][howto] 
 
+[howto]: http://blog.apiary.io/2013/10/17/How-to-test-api-with-api-blueprint-and-dredd/
 [Apiary]: http://apiary.io
 [Readme]: https://github.com/apiaryio/dredd-example/blob/master/README.md
 [code]: https://github.com/apiaryio/dredd-example/blob/master/app.coffee
