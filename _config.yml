@@ -37,8 +37,10 @@ static: "https://apiary-static.s3.amazonaws.com/appstatic"
 version: 1338364425
 menu:
   - ['http://apiary.io/how-it-works', 'How It Works']
+  - ['http://apiary.io/blueprint', 'API Blueprint']
   - ['http://blog.apiary.io/', 'Blog']
   - ['http://apiary.io/company', 'Company']
+  - ['http://apiary.io/jobs', 'Jobs']
   - ['https://login.apiary.io/login', 'Sign In']
 tracking: >
   <script>
