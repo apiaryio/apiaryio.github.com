@@ -55,7 +55,7 @@ Bellow you can find a short list of selected blueprints alongside with notes on 
 
 - [**Tesla Model S REST API**](https://github.com/timdorr/model-s-api/blob/master/apiary.apib) – [*view in Apiary*](https://app.apiary.io/download/editor?from=https://raw2.github.com/timdorr/model-s-api/master/apiary.apib)
 
-	*a car with API!*
+	*a car with an API!*
 
 - [**Helpful API**](https://github.com/asm-helpful/helpful-web/blob/master/apiary.apib) – [*view in Apiary*](https://app.apiary.io/download/editor?from=https://raw2.github.com/asm-helpful/helpful-web/master/apiary.apib)
 
