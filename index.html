@@ -2,13 +2,7 @@
 title: Welcome
 layout: default
 ---
-<!--<div class="blogHeader mainSectionWrap">
-  <div class="positioning">
-    <h1 class="largerTopSpace">All things Apiary</h1>
-    <h2>Apiary Inside Out</h2>
-    <p>We are all very lucky. We build stuff for developers. We have big dreams. We work hard &amp; fast, but don't cut corners. We take pride in being early adopters—In Wayne Gretzky's terms: “skating where the puck is going to be”.</p>
-  </div>
-</div>-->
+{% assign useComments = false %}
 
 <div class="blog">
   <div class="blogArticles">
@@ -18,8 +12,24 @@ layout: default
         <h1>{{ post.title }}</h1>
         <p>{{ post.excerpt }}</p>
         <p class="authorDate">{{ site.authors[post.author].name }} — {{ post.date | date_to_string }}</p>
+        {% if post.comments %}
+          <p class="commentsLink"><a href="{{ post.url }}#comments" data-disqus-identifier="{{ post.url }}"></a></p>
+          {% assign useComments = true %}
+        {% endif %}
       </a></div>
       {% endfor %}
   
   </div>
 </div>
+
+{% if useComments %}
+<script type="text/javascript">
+var disqus_shortname = 'apiaryblog';
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+{% endif %}
