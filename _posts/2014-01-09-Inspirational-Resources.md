@@ -5,6 +5,7 @@ layout: post
 date: 2014-01-09 10:00:00 +0100
 author: zdenek
 published: YES
+comments: true
 ---
 
 Everybody needs an inspiration. Moreover when on the quest for a better API. Inspiring or offending, instructive or just simply time saving – it is often worth looking how others dealt with the challenges one have to face. 
