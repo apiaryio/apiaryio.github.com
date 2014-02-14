@@ -11,21 +11,25 @@
 
   <meta name="application-name" content="Apiary">
   <meta name="twitter:card" content="summary">
+  <meta property="og:type"  content="article">
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta property="twitter:account_id" content="183960592">
-  <meta property="og:type" content="article">
+  <meta name="twitter:title" content="{{ page.title }}&mdash;Apiary Blog">
   <meta property="og:title" content="{{ page.title }}&mdash;Apiary Blog">
-  <meta property="og:image" content="http://apiary-static.s3.amazonaws.com/assets/images/apiary-logotype-3D-only.png">
+
   {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt | escape }}&mdash;Apiary Blog">
-    <meta property="og:description" content="{{ page.excerpt | escape }}&mdash;Apiary Blog">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta name="description" content="{{ page.excerpt | escape }}&mdash;Apiary Blog">
+    <meta name="twitter:description" content="{{ page.excerpt | escape }}&mdash;Apiary Blog">
+    <meta property="og:description" content="{{ page.excerpt | escape }}&mdash;Apiary Blog">
   {% else %}
-    <meta name="description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta name="twitter:image" content="http://apiary-static.s3.amazonaws.com/assets/images/apiary-logotype-3D-only.png">
+    <meta property="og:image"  content="http://apiary-static.s3.amazonaws.com/assets/images/apiary-logotype-3D-only.png">
     <meta property="og:url" content="{{ site.url }}">
+    <meta name="description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta name="twitter:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
   {% endif %}
 
   <link rel="shortcut icon" href="/favicon.ico">
