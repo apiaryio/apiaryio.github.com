@@ -6,7 +6,7 @@
 
 # Running
 
-- `jekyll --server --auto`
+- `jekyll serve -w`
 
 The server will automatically recompile all the changes you make to text files, except for `_config.yml`. In order to see changes to `_config.yml`, you need to restart the server manually.
 
