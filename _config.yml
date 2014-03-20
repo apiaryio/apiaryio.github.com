@@ -29,6 +29,12 @@ authors:
     display_name: Jakub Nesetril
     email: "jakub@apiary.io"
     twitter: "jakubnesetril"
+  jan:
+    name: Jan Moravec
+    display_name: Jan Moravec
+    email: "jan@apiary.io"
+    twitter: "janmoravec"
+
     
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
 author:       Apiary
