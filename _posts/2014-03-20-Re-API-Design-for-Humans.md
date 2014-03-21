@@ -42,8 +42,7 @@ What if everything can be done without building own interactive documentation, s
 
 </style>
 
-![Introducing Apiary Documentation](https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/spin.gif)
-
+<img src="https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/spin.gif" class="centered" alt="Introducing Apiary Documentation">
 
 ## Perspectives
 
@@ -134,7 +133,7 @@ iPadSwitchElement.addEventListener('click', showPad, false);
 
 The second phase is coding. You've decided which action you want to hack and the “machine part” will show you a code sample in the language of your choice, expected results, detailed descriptions of parameters and even lets you make an API call with customized variables directly from within your browser.
 
-![Animated GIF with usage of Machine Column](https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/console.gif)
+<img src="https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/console.gif" class="centered" alt="Animated GIF with usage of Machine Column">
 
 
 ## One Step Further
