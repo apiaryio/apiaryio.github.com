@@ -26,6 +26,7 @@ However a good documentation is **far beyond a simple HTML page** nowadays, and 
 What if everything can be done without building own interactive documentation, setup, hosting and maintenance? And written in something cleaner than HTML—[an enriched Markdown](http://apiblueprint.org)? Open-sourced and free? Something StackOverflow [has answers](http://stackoverflow.com/questions/tagged/apiblueprint) to? With [additional tools](http://apiblueprint.org/#tooling) built by growing community every day?
 
 <style>
+
 @media only screen and (min-width: 480px) {
   .centered {
     margin-left: -55px;
@@ -38,6 +39,7 @@ What if everything can be done without building own interactive documentation, s
     margin-left: 0px !important;
   }
 }
+
 </style>
 
 ![Introducing Apiary Documentation](https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/spin.gif)
@@ -50,6 +52,7 @@ The API documentation is typically used in two different ways with almost opposi
 First comes the discovery phase; finding out what an API can do, what the authors of an API gave you to play with. We call it a “human part” of an API. This evaluation should be easily done on the go—this is the reason why **we focused to deliver a delightful experience even on touch devices**.
 
 <style>
+
 .switcher {
   color: rgba(60, 65, 81, 0.5);
   text-align: center;
@@ -83,6 +86,7 @@ First comes the discovery phase; finding out what an API can do, what the author
 .hidden {
   display: none;
 }
+
 </style>
 
 <p style="margin-bottom: 0px;">
@@ -95,6 +99,7 @@ First comes the discovery phase; finding out what an API can do, what the author
 </p>
 
 <script>
+
 var iPhoneAnimationElement = document.getElementById('iPhoneAnimation'),
     iPadAnimationElement = document.getElementById('iPadAnimation')
     iPhoneSwitchElement = document.getElementById('iPhoneSwitch')
@@ -124,9 +129,10 @@ var showPad = function() {
 
 iPhoneSwitchElement.addEventListener('click', showPhone, false);
 iPadSwitchElement.addEventListener('click', showPad, false);
+
 </script>
 
-The second phase is coding. You've decided which action you want to hack and the “machine part” will **show you a code sample in the language of your choice, expected results, detailed descriptions of parameters and even lets you make an API call with customized variables directly from within your browser**.
+The second phase is coding. You've decided which action you want to hack and the “machine part” will show you a code sample in the language of your choice, expected results, detailed descriptions of parameters and even lets you make an API call with customized variables directly from within your browser.
 
 ![Animated GIF with usage of Machine Column](https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/console.gif)
 
