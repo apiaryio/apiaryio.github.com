@@ -1,10 +1,10 @@
 ---
-title: "Launching New Documentation"
-excerpt: "We redesigned the way how Apiary documentations are rendered. Learn more about what's new and about our design decision process."
+title: "Our Next Generation of API Documentation"
+excerpt: "We reimagined the Apiary documentations. Learn more about what's new and what drove our design decisions."
 layout: post
 date: 2014-03-20 16:00:00 -0900
 author: jan
-published: NO
+published: YES
 comments: true
 ---
 
@@ -12,7 +12,7 @@ comments: true
 
 I recently revisited a great [blog article](http://37signals.com/svn/posts/3018-api-design-for-humans) by Noah Lorang of Basecamp about importance of API design and documentation. Almost three years have passed since the article has been published. Today, I'm happy to present you with slightly prolonged reply from Apiary team. Our newest creation.
 
-Web APIs flooded our world at faster pace than anyone could anticipate. In absence of tools and services we were left to good old fashioned DYI. We could hardly imagine anything as boring as doing something others have already done.
+Web APIs flooded our world at faster pace than anyone could anticipate. In absence of good API tools, what's left is good old fashioned DYI. But I can hardly think of something as boring as reinventing the wheel for each and every API.
 
 That day, Apiary was born.
 
@@ -32,12 +32,12 @@ What if everything can be done without building own interactive documentation, s
 
 The API documentation is typically used in two different ways with almost opposite requirements.
 
-First&mdash;a discovery phase; evaluating what API can do, what developers on the other side gave you to play with. We call it a “human part” of an API. This evaluation should be easily done on the go—this is the reason why we focused to deliver a delightful experience on touch devices. (See it also on [iPad](https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/ipad.gif).)
+First comes the discovery phase; finding out what an API can do, what the authors of an API gave you to play with. We call it a “human part” of an API. This evaluation should be easily done on the go—this is the reason why we focused to deliver a delightful experience even on touch devices. (See it also on [iPad](https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/ipad.gif).)
 
 
 ![Animated GIF with touch events demo—iPhone](https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/iphone.gif)
 
-The second phase is the implementation, you decide which action you want to hack and the “machine part” will show you code sample in language of your choice, expected results, detailed descriptions of parameters and lets your call the resource with modified variables from within your browser.
+The second phase is coding. You've decided which action you want to hack and the “machine part” will show you a code sample in the language of your choice, expected results, detailed descriptions of parameters and even lets you make an API call with customized variables directly from within your browser.
 
 ![Animated GIF with usage of Machine Column](https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/console.gif)
 
@@ -51,25 +51,24 @@ With only a few clicks, any consumer of your API gets debugging proxy base URL t
 
 ## Our Work Is Never Over
 
-What if documentation runs out of date? We're still working on seamless and unobtrusive way how the documentation can test itself and alert you when it goes out of sync during continuous integration process. But [first steps](http://blog.apiary.io/2013/10/17/How-to-test-api-with-api-blueprint-and-dredd/) has already been made with [Dredd](https://github.com/apiaryio/dredd).
+What if documentation runs out of date? We're still working on seamless and unobtrusive way how the documentation can test itself and alert you when it goes out of sync during continuous integration process. But [first steps](http://blog.apiary.io/2013/10/17/How-to-test-api-with-api-blueprint-and-dredd/) has already been made with [Dredd](https://github.com/apiaryio/dredd). We're also working hard on better support in areas like authentication and body parameters. We're taking our time, but we want to get it right.
 
-As the world of APIs evolves, your documentation and support tools from Apiary do as well. The next big thing for us is to cover authentication and body parameters. We promise to get it right. No more 18 oAuth specifications to read through.
-
-Another big request we're getting is to be able to embed documentation to your website with your header and customised colours and typefaces. It's coming later this year.
+We've also started offering customized, branded API documentations, embedded into your website (for examples, see [Akamai](https://developer.akamai.com/api) or [GoodData](https://developer.gooddata.com/api)). We're still figuring out how to integrate this next-generation of our API documentation into these contexts, but it's coming later this year.
 
 
-## Action Speaks Better Than Words
+## Actions Speak Louder Than Words
 
 Let me show you a couple of examples:
 
 * [Apiary Default API](http://docs.defaultapi.apiary.io/)
 * [Gist Fox API](http://docs.gistfoxapi.apiary.io/?3ColumnDocumentation=1)
 * [Indinesian Elections 2014](http://docs.candidateapi.apiary.io/?3ColumnDocumentation=1)
-* [NeuroScale](http://docs.neuroscale.apiary.io/?3ColumnDocumentation=1)
 * [Wink](http://docs.wink.apiary.io/?3ColumnDocumentation=1)
 * [SendOutCards](http://docs.socapi.apiary.io/?3ColumnDocumentation=1)
 
-> All editors/administrators of all 60,000 APIs can [opt-in](https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/switch.gif) (Settings > Beta Area > New Documentation) for the new documentation as of now.
+## Getting Started Yourself
+
+All editors & administrators Apiary-powered APIs can [opt-in](https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/switch.gif) (Settings > Beta Area > New Documentation) for the new documentation as of now.
 
 Before general release, there are still a few things which need to be fixed and added (like permalinks, polishing code samples, etc.), but it's only matter of weeks.
 
