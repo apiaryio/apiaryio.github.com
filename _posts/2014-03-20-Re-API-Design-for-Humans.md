@@ -12,7 +12,7 @@ comments: true
 
 I recently revisited a great [blog article](http://37signals.com/svn/posts/3018-api-design-for-humans) by Noah Lorang of Basecamp about importance of API design and documentation. Almost three years have passed since the article has been published. Today, I'm happy to present you with slightly prolonged reply from Apiary team. Our newest creation.
 
-Web APIs flooded our world at faster pace than anyone could anticipate. In absence of good API tools, what's left is good old fashioned DYI. But I can hardly think of something as boring as reinventing the wheel for each and every API.
+Web APIs flooded our world at faster pace than anyone could anticipate. In absence of good API tools, what's left is good old fashioned DIY. But I can hardly think of something as boring as reinventing the wheel for each and every API.
 
 That day, Apiary was born.
 
