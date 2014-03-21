@@ -66,12 +66,12 @@ Let me show you a couple of examples:
 * [Wink](http://docs.wink.apiary.io/?3ColumnDocumentation=1)
 * [SendOutCards](http://docs.socapi.apiary.io/?3ColumnDocumentation=1)
 
-## Getting Started Yourself
+## Getting Started
 
-All editors & administrators Apiary-powered APIs can [opt-in](https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/switch.gif) (Settings > Beta Area > New Documentation) for the new documentation as of now.
+All editors & administrators of Apiary-powered APIs can [opt-in](https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/switch.gif) (Settings > Beta Area > New Documentation) for the new documentation as of now.
 
 Before general release, there are still a few things which need to be fixed and added (like permalinks, polishing code samples, etc.), but it's only matter of weeks.
 
-Today we are taking the next step on our mission—to make web APIs easier to design, maintain, discover and pleasant to consume. I'd love to invite you to take Apiary for a spin and I'm looking forward to your feedback.
+Today we are taking the next step on our mission—to make web APIs easier to design, maintain, discover and pleasant to consume. I'd love to invite you to take Apiary for a spin.
 
 I'm looking forward to hear your comments.
