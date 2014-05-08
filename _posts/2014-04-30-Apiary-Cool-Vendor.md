@@ -1,5 +1,5 @@
 ---
-title: "Apiary selected as Cool&nbsp;Vendor in 2014"
+title: "Apiary selected as Gartner&nbsp;Cool&nbsp;Vendor in 2014"
 excerpt: "Alongside massive growth of Apiary users, more and more large companies use Apiary. Gartner has reflected this in their new selected of Cool Vendors for 2014"
 layout: post
 date: 2014-04-30 19:00:00 -0900
