@@ -50,7 +50,6 @@ version: 1338364425
 menu:
   - ['http://apiary.io/how-it-works', 'How It Works']
   - ['http://apiary.io/products', 'Product']
-  - ['http://apiary.io/blueprint', 'API Blueprint']
   - ['http://blog.apiary.io/', 'Blog']
   - ['http://apiary.io/company', 'Company']
   - ['https://login.apiary.io/login', 'Sign In']
