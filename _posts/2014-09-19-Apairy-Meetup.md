@@ -2,22 +2,22 @@
 title: "Apiary's First Meetup"
 excerpt: "A successful first meetup by Apiary team at Heavybit Industries"
 layout: post
-date: 2014-09-19 13:50:00 
+date: 2014-09-19 13:50:00
 author: neha
 published: YES
 comments: true
 ---
 
 
-We were really excited to host our first meetup yesterday in the cool space at [Heavybit Industries][]. We wanted to get together a group of core Apiary users, help them meet the Apiary team and for all of us to catch up on latest API trends and topics. 
+We were really excited to host our first meetup yesterday in the cool space at [Heavybit Industries][]. We wanted to get together a group of core Apiary users, help them meet the Apiary team and for all of us to catch up on latest API trends and topics.
 
 We kept it traditional with authentic Czech food and Pilsner Urquell beer, which everyone seemed to enjoy a lot.
 
-To kick off the discussion, our CEO Jakub gave a brief update on the latest developments at Apiary (and a sneak peak of things to follow) and [Kris Chant][] of ExactTarget had a great lightning talk on API Style Guides and keeping APIs consistent across multiple teams. 
+To kick off the discussion, our CEO Jakub gave a brief update on the latest developments at Apiary (and a sneak peak of things to follow) and [Kris Chant][] of ExactTarget had a great lightning talk on API Style Guides and keeping APIs consistent across multiple teams.
 
-![API Meetup](/images/2014-09-19-Meetup-Blogpost/Meetup.png)
+![API Meetup](/images/2014-09-19-Meetup-Blogpost/meetup.png)
 
-We have also printed a bunch of cool new T-shirts 
+We have also printed a bunch of cool new T-shirts
 
 ![T-Shirts](/images/2014-09-19-Meetup-Blogpost/t-shirts.png)
 
