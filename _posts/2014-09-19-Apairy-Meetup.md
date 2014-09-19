@@ -17,7 +17,9 @@ To kick off the discussion, our CEO Jakub gave a brief update on the latest deve
 
 ![API Meetup](/images/2014-09-19-Meetup-Blogpost/meetup.png)
 
-We have also printed a bunch of cool new T-shirts
+![kris](/images/2014-09-19-Meetup-Blogpost/kris.png)
+
+We have also printed a bunch of cool new T-shirts. 
 
 ![T-Shirts](/images/2014-09-19-Meetup-Blogpost/t-shirts.png)
 
