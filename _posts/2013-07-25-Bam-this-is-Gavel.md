@@ -13,15 +13,15 @@ I'm very proud to introduce Gavel—our first contribution to the Testing Cultur
 > **1** A small mallet used by a presiding officer or an auctioneer to signal for attention or order or to mark the conclusion of a transaction.
 > **2** A maul used by masons in fitting stones.
 
-The complexity of [HTTP and its specification is incredible][http], but there are lots of pragmatic conventions in the real world. Gavel is our attemp to [invite you to the open discussion][contribution] about conventions in the real world of HTTP and ship it as Node.JS library to have a toy to play with right now.
+The complexity of [HTTP and its specification is incredible][http], but there are lots of pragmatic conventions in the real world. Gavel is our attempt to [invite you to the open discussion][contribution] about conventions in the real world of HTTP and ship it as Node.JS library to have a toy to play with right now.
 
-HTTP is platform and language independent by nature. So is Gavel. All of Gavel's documentation is written in [Cucumber][], ready to be implemented in variety of languages supported by Cucumber or its derivates. Documentation is  hosted on [Relish][], an awesome, documentation-oriented platform for managing Cucumber features. We love it because it enables same iterative design process as Apiary and our [API Blueprint][] it does.
+HTTP is platform and language independent by nature. So is Gavel. All of Gavel's documentation is written in [Cucumber][], ready to be implemented in variety of languages supported by Cucumber or its derivates. Documentation is  hosted on [Relish][], an awesome, documentation-oriented platform for managing Cucumber features. We love it because it enables the same iterative design process as Apiary and our [API Blueprint][].
 
 ![Gavel logo](https://raw.github.com/apiaryio/gavel/master/img/gavel.png)
 
 ## Using Gavel
 
-Gavel comes with CLI interface so first version is very minimalistic:
+Gavel comes with CLI interface so the first version is very minimalistic:
 
     $ npm install -g gavel curl-trace-parser
 	$ curl --trace - http://httpbin.org/ip | curl-trace-parser  > expected
