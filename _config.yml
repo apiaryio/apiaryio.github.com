@@ -40,7 +40,11 @@ authors:
     display_name: Neha Sondhi
     email: "neha@apiary.io"
     twitter: "NSondhi5"
-
+  mark:
+    name: Mark W. Foster
+    display_name: Mark W. Foster
+    email: "mark@apiary.io"
+    twitter: "fosrias"
 
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
 author:       Apiary
