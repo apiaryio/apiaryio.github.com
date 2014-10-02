@@ -2,7 +2,8 @@
 # Steps to create a blog post
 
  - Clone the repo: https://github.com/apiaryio/apiaryio.github.com
- - Create a new branch and add file under the `_posts` folder using the naming convention: `yyyy-mm-dd-name-of-blog.md`'
+ - Create a new branch and add file under the `_posts` folder using the naming 
+ convention: `yyyy-mm-dd-name-of-blog.md`
  - Add images under the `_images` folder and make them either .png or .jpeg format. The width of the image should be 640px.
  - Add your details in the _config.yml file to be configured as an author.
  - Run jekyll to see the file locally on [localhost:4000](http://localhost:4000)
