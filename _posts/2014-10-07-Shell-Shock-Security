@@ -8,9 +8,9 @@ published: yes
 comments: true
 ---
 
-The recent annoucement of the Shellshock bug [CVE-2014-6271][], followed by [CVE-2014-7169][] had raised concerns about security of customer data. 
+The recent announcement of the Shellshock bug [CVE-2014-6271][], followed by [CVE-2014-7169][] had raised concerns about security of customer data. 
 
-At Apiary, we are pleased to announce that we do not have any GNU Bash-run service. We have also checked all our service providers who have anything to do with customer data and have confirmed that neither do they run any service by GNU Bash. Therefore, we are sure that there is no security flaw to be expolited in our system.
+At Apiary, we are pleased to announce that we do not have any GNU Bash-run service. We have also checked all our service providers who have anything to do with customer data and have confirmed that neither of them run any service by GNU Bash. Therefore, we are sure that there is no security flaw to be exploited in our system.
 
 Apart from that, we have also updated all local /bin/bash binaries, as stated by all our service providers. 
 
