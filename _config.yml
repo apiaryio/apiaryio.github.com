@@ -45,6 +45,12 @@ authors:
     display_name: Mark W. Foster
     email: "mark@apiary.io"
     twitter: "fosrias"
+  nick:
+    name: Nick Barnwell
+    display_name: Nick Barnwell
+    email: "nib@microsoft.com"
+    twitter: "@nickbarnwell"
+   
 
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
 author:       Apiary
