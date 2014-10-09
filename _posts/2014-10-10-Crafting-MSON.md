@@ -13,9 +13,9 @@ I do need to describe data, give them a (semantic) meaning and explain what you 
 
 I am a human too. Being a software engineer for so many years I have seen lots and lots of schemas, tables and arbitrary documents trying to capture what the data means. 
 
-Schemas are powerful, but if you have ever tried to write one you probably felt it is more pain that it needs to be. And not just for writing. Reading a schema is no fun either. Frankly, there are people who can't read schema but still might care about your data.
+Schemas are powerful, but if you have ever tried to write one you probably felt it is more pain than it needs to be. And not just for writing. Reading a schema is no fun either. Frankly, there are people who can't read schema but still might care about your data.
 
-Have you ever seen a document on GitHub trying to describe a JSON blob? There is so many of them. And every single one with has its own formatting and rules its author had to come up with. Now, there is nothing wrong with the diversity but what if we can unite these plain text, human readable documents? What if we can  not only make them human readable but also a machine readable, so a program can verify whether an actual data matches what is written in this document? 
+Have you ever seen a document on GitHub trying to describe a JSON blob? There are so many of them. And every single one with has its own formatting and rules its author had to come up with. Now, there is nothing wrong with the diversity, but what if we can unite these as (or in) plain text, human readable documents? What if we can  not only make them human readable but also a machine readable, so a program can verify whether an actual data matches what is written in this document? 
 
 Let’s not stop dreaming! What if you can get various format serializations (representations) from such a document? 
 
