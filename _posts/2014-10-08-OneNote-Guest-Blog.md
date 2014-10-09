@@ -19,13 +19,13 @@ when we launched our [completely redesigned developer portal][dondc].
 Thus, began our search for an API design and documentation solution that:
 
 * Offered developers fantastic documentation and an interactive console
-* Worked with tools we already know and use daily, like `pandoc` and `git`
+* Worked with tools we already know and use daily, like [pandoc][] and [git][]
 * Was extensible, open, and standards-based, should we need to suggest
   enhancements or build out features specific to our requirements.
 
 In the course of our investigation we tried just about every solution on the
 market before coming across Apiary. The quality of the generated
-documentation, the flexibility of the APIBlueprint format, and the small touches
+documentation, the flexibility of the API Blueprint format, and the small touches
 like the Traffic Inspector and GitHub syncing got us interested. The bevy of
 [tools they offer to developers][apiary-gh] and their willingness to accept
 [pull requests][apib-prs] sealed the deal.
@@ -48,3 +48,5 @@ developers the thoughtfully designed APIs and documentation that they deserve.
 [apiary-gh]: https://github.com/apiaryio
 [apib-prs]: https://github.com/apiaryio/api-blueprint/pulls?q=is%3Apr+is%3Aclosed
 [launched]: http://blogs.msdn.com/b/onenotedev/archive/2014/09/17/announcing-the-new-onenote-dev-center-with-interactive-docs.aspx
+[pandoc]: http://johnmacfarlane.net/pandoc/
+[git]: http://git-scm.com/
