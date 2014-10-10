@@ -4,7 +4,7 @@ author: zdenek
 excerpt: "The journey of data structure design-needs"
 layout: post
 date: 2014-10-10 08:50:00
-published: no
+published: yes
 comments: true
 ---
 
