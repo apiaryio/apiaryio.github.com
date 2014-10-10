@@ -11,7 +11,7 @@ comments: true
 # Crafting MSON
 I do need to describe data, give them a (semantic) meaning and explain what you might (or might not) get. 
 
-I am a human too. Being a software engineer for so many years I have seen lots and lots of schemas, tables and arbitrary documents trying to capture what the data means. 
+Being a software engineer for so many years I have seen lots and lots of schemas, tables and arbitrary documents trying to capture what the data means. 
 
 Schemas are powerful, but if you have ever tried to write one you probably felt it is more pain than it needs to be. And not just for writing. Reading a schema is no fun either. Frankly, there are people who can't read schema but still might care about your data.
 
@@ -30,24 +30,24 @@ This is MSON – the plain text syntax for describing arbitrary data structures.
 ## Status
 I am running late with the delivery. 
 
-The initial proposal was released as back as April 2014. At the first glance the format has changed very little since that. Actually, the example above is identical to what it would be back in April. So where did those five months go?
+The initial proposal was released back in April 2014. At first glance, the format has changed very little since that. Actually, the example above is identical to what it would be back in April. So where did those five months go?
 
 Details. Details for some, but to me those months were spent on consistency between all the constructs, clarity of the language and most importantly, simplicity.
 
-Exhausted but happy, I can proudly present you mature (but still young) syntax for describing data structures in plain text – [MSON][]. 
+Exhausted but happy, I can proudly present you **mature (but still young) syntax** for describing data structures in plain text – [MSON][]. 
 
 After five months of refining and polishing every detail, we have arrived at the point where I can say we have THE right syntax. Powerful, yet elegant, and unobtrusive, to capture most data structure design-needs. DRY enough to help you condense your ideas in a really contained space should you need to. Flexible and verbose enough to allow you put it as much details, drawings or tables as you want. Compact, consistent and tidy. All this in a human readable form machines can understand too.
 
 At the moment MSON does not include all the powerful features JSON Schema has. This wasn't in our story (at least for now). Still, the way MSON is designed, it can be easily extended on-demand later.
 
-You can start using the [MSON syntax][] today for describing your data in plain text. But there is so much more to come. 
+You can **start using the [MSON syntax][] today** for describing your data in plain text. But there is so much more to come. 
 
 ## Future Steps
 We are currently working on the MSON parser that will allow other applications to manipulate MSON documents through the [MSON AST][] (which is, no surprise, described in MSON).
 
 On such application, currently being developed, is a "representation producer" – a tool that will take MSON and will create a serialization of it in requested media type. Another example is the upcoming integration with [API Blueprint][] to facilitate the [description] of HTTP message-bodies and API resources in general.
 
-If we share at least a part the journey together, please, give MSON a try next time you will be designing a data structure and let me know – [z@apiary.io](mailto:z@apiary.io).
+If we share at least a part of the journey together, please, give MSON a try next time you will be designing a data structure and let me know. I would love to hear your thoughts. 
 
 Thank you!
 
