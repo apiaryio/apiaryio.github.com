@@ -8,7 +8,6 @@ published: yes
 comments: true
 ---
 
-# Crafting MSON
 I do need to describe data, give them a (semantic) meaning and explain what you might (or might not) get. 
 
 Being a software engineer for so many years I have seen lots and lots of schemas, tables and arbitrary documents trying to capture what the data means. 
