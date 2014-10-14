@@ -6,6 +6,7 @@ layout: post
 date: 2014-10-10 08:50:00
 published: yes
 comments: true
+featured: true
 ---
 
 I do need to describe data, give them a (semantic) meaning and explain what you might (or might not) get. 
