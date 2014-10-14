@@ -4,22 +4,53 @@ layout: default
 ---
 {% assign useComments = false %}
 
+{% assign featuredCount = 0 %}
+{% for post in site.posts %}
+  {% if post.featured %}
+    {% assign featuredCount = featuredCount | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+
 <div class="blog">
+
   <div class="blogArticles">
-
+    {% if featuredCount > 0 %}
+    <!-- featured posts (if any) -->
+    <div class="featuredBlogArticles">
+      <h2>Featured post{% if featuredCount > 1 %}s{% endif %}</h2>
       {% for post in site.posts %}
-      <div class="blogPost"><a href="{{ post.url }}">
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.excerpt }}</p>
-        <p class="authorDate inline">{{ site.authors[post.author].name }} — {{ post.date | date_to_string }}</p>
-      </a>
-        {% if post.comments %}
-          <p class="commentsCount"><a href="{{ post.url }}/#comments" class="commentsLink" data-disqus-identifier="{{ post.url }}"></a></p>
-          {% assign useComments = true %}
+        {% if post.featured %}
+          <div class="blogPost"><a href="{{ post.url }}">
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.excerpt }}</p>
+            <p class="authorDate inline">{{ site.authors[post.author].name }} — {{ post.date | date_to_string }}</p>
+          </a>
+            {% if post.comments %}
+              <p class="commentsCount"><a href="{{ post.url }}/#comments" class="commentsLink" data-disqus-identifier="{{ post.url }}"></a></p>
+              {% assign useComments = true %}
+            {% endif %}
+          </div>
         {% endif %}
-      </div>
       {% endfor %}
+    </div>
+    {% endif %}
 
+    <!-- non-featured posts -->
+    {% for post in site.posts %}
+      {% unless post.featured %}
+        <div class="blogPost"><a href="{{ post.url }}">
+          <h1>{{ post.title }}</h1>
+          <p>{{ post.excerpt }}</p>
+          <p class="authorDate inline">{{ site.authors[post.author].name }} — {{ post.date | date_to_string }}</p>
+        </a>
+          {% if post.comments %}
+            <p class="commentsCount"><a href="{{ post.url }}/#comments" class="commentsLink" data-disqus-identifier="{{ post.url }}"></a></p>
+            {% assign useComments = true %}
+          {% endif %}
+        </div>
+      {% endunless %}
+    {% endfor %}
   </div>
 </div>
 

@@ -50,12 +50,13 @@ authors:
     display_name: Nick Barnwell
     email: "nib@microsoft.com"
     twitter: "@nickbarnwell"
-   
+
 
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
 author:       Apiary
 email:        jakub@apiary.io
-static: "https://apiary-static.s3.amazonaws.com/appstatic"
+static: "http://apiary-static.s3.amazonaws.com/assets"
+# static: "https://static.apiary.dev:9000"
 version: 1338364425
 menu:
   - ['http://apiary.io/how-it-works', 'How It Works']

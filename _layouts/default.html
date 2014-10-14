@@ -24,8 +24,8 @@
     <meta name="twitter:description" content="{{ page.excerpt | escape }}&mdash;Apiary Blog">
     <meta property="og:description" content="{{ page.excerpt | escape }}&mdash;Apiary Blog">
   {% else %}
-    <meta name="twitter:image" content="http://apiary-static.s3.amazonaws.com/assets/images/apiary-logotype-3D-only.png">
-    <meta property="og:image"  content="http://apiary-static.s3.amazonaws.com/assets/images/apiary-logotype-3D-only.png">
+    <meta name="twitter:image" content="{{ site.static }}/images/apiary-logotype-3D-only.png">
+    <meta property="og:image"  content="{{ site.static }}/images/apiary-logotype-3D-only.png">
     <meta property="og:url" content="{{ site.url }}">
     <meta name="description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
     <meta name="twitter:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
@@ -35,9 +35,9 @@
   <link rel="shortcut icon" href="/favicon.ico">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="http://apiary-static.s3.amazonaws.com/assets/styles/fonts.css">
-  <link rel="stylesheet" href="http://apiary-static.s3.amazonaws.com/assets/styles/modules/footer/footer.css">
-  <link rel="stylesheet" href="http://apiary-static.s3.amazonaws.com/assets/styles/modules/website.css">
+  <link rel="stylesheet" href="{{ site.static }}/styles/fonts.css">
+  <link rel="stylesheet" href="{{ site.static }}/styles/modules/footer/footer.css">
+  <link rel="stylesheet" href="{{ site.static }}/styles/modules/website.css">
   <!-- /Styles -->
 
   {{ site.tracking }}
@@ -93,7 +93,7 @@
         <li><a class="applicationFooterListLink" href="http://apiary.io/company#team">Team</a></li>
         <li><a class="applicationFooterListLink" href="http://apiary.io/jobs">Jobs</a></li>
         <li><a class="applicationFooterListLink" href="http://apiary.io/company#contact">Contact</a></li>
-        <li><a class="applicationFooterListLink" href="http://apiary-static.s3.amazonaws.com/assets/files/apiary-press-kit.zip">Press Kit</a></li>
+        <li><a class="applicationFooterListLink" href="{{ site.static }}/files/apiary-press-kit.zip">Press Kit</a></li>
       </ul>
     </div><div class="applicationFooterColumn">
       <h3 class="applicationFooterTitle">Open Source</h3>
@@ -120,7 +120,7 @@
 </footer>
 <!-- /website-footer -->
 
-<script src="http://apiary-static.s3.amazonaws.com/assets/js/website-scroll.js"></script>
+<script src="{{ site.static }}/js/website-scroll.js"></script>
 <script>
   websiteScroll();
   document.documentElement.className += ' js';
