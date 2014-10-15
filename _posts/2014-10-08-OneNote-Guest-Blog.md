@@ -6,6 +6,7 @@ layout: post
 date: 2014-10-09 08:50:00
 published: yes
 comments: true
+featured: true
 ---
 
 From its inception the [OneNote API][dondc] team has been committed to
