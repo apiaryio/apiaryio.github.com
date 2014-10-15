@@ -3,7 +3,7 @@ title: New Code Samples for Go and Swift
 author: stephen
 excerpt: "Apiary now has code samples for both Go and Swift"
 layout: post
-date: 2014-10-14 08:50:00
+date: 2014-10-16 08:50:00
 published: yes
 comments: true
 ---
