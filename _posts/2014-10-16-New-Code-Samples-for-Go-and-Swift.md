@@ -10,9 +10,11 @@ comments: true
 
 We are very excited to announce that we have added code samples in Apiary for both the [Go](http://golang.org/) and [Swift](https://developer.apple.com/swift/) languages. There has been a growing excitement around these languages for a while now, and we've worked hard to get them added.
 
-## On Using Code Samples
+![Swift and Go Example](/images/2014-10-16-New-Code-Samples-for-Go-and-Swift/swift-go.gif)
 
-![Swift and Go Example](/images/2014-10-16-New-Code-Samples-for-Go-and-Swift/swift-go-640.gif)
+You can see how to access these new languages above.
+
+## On Using Code Samples
  
 One of the great things about using Apiary is that it provides a central place to collaborate with people in many different roles and with many different skill sets and backgrounds. On the technical side of this collaboration, API architects, developers, and testers use a wide range of languages to develop and test both the clients and the servers. Going from documentation to a usable API is important to do quickly and easily.
 
