@@ -50,6 +50,11 @@ authors:
     display_name: Nick Barnwell
     email: "nib@microsoft.com"
     twitter: "@nickbarnwell"
+  stephen:
+    name: Stephen Mizell
+    display_name: Stephen Mizell
+    email: "stephen@apiary.io"
+    twitter: "Stephen_Mizell"
 
 
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
