@@ -55,6 +55,11 @@ authors:
     display_name: Stephen Mizell
     email: "stephen@apiary.io"
     twitter: "Stephen_Mizell"
+  andrew:
+    name: Andrew Brown
+    display_name: Andrew Brown
+    email: "andrew@apiary.io"
+    twitter: "@uberdru"
 
 
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
