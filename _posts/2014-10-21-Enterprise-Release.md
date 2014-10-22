@@ -3,7 +3,7 @@ title: Make it so - Apiary enters the Enterprise
 author: andrew
 excerpt: "A game-changer for large, distributed API teams"
 layout: post
-date: 2014-10-21 08:50:00
+date: 2014-10-22 08:50:00
 published: yes
 comments: true
 featured: true
