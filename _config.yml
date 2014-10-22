@@ -4,6 +4,8 @@ permalink: /:year/:month/:day/:title
 lsi: false
 pygments: true
 markdown: kramdown
+gems:
+  - jekyll-redirect-from
 
 # Site configuration
 url:          http://blog.apiary.io

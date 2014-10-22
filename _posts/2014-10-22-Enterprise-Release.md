@@ -7,6 +7,7 @@ date: 2014-10-22 08:50:00
 published: yes
 comments: true
 featured: true
+redirect_from: /2014/10/21/Enterprise-Release/
 ---
 
 It has been an exciting summer at Apiary. I joined at the beginning in June to lead Apiary’s enterprise project. This week, we've crossed 100,000 APIs described in Apiary. And today, we announce the result of a lot of discussion with customers &mdash; [**Apiary for Enterprise**][Apiary for Enterprise]. As APIs are becoming mainstream, large teams around the world are solving the same problems: making sure that their APIs adhere to the same, shared design principles. Apiary for Enterprise is designed to solve that problem once and for all.
