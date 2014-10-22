@@ -46,7 +46,7 @@ With [this release][post], Apiary introduces a simple way to express design deci
 
 In keeping with the Apiary’s developer-friendly ethos, we have kept [Apiary for Enterprise][] lightweight, elegant, and usable. Our goal is to make all developers lives easier, whether they are implementing or consuming APIs. By providing real-time feedback on API designs, we hope to ensure that developers spend less time refactoring inconsistent APIs, and more time building new ones. We also hope that developers who consume APIs will have an easier time as APIs become more predictable and consistent. 
 
-To know more about this plan and its features, you can contact me at andrew@apiary.io
+To know more about this plan and its features, you can contact me at [andrew@apiary.io](mailto:andrew@apiary.io).
 
 
 [Apiary for Enterprise]: http://enterprise.apiary.io
