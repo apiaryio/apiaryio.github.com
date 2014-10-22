@@ -1,9 +1,9 @@
 ---
-title: Make it so - Apiary enters the Enterprise
+title: Make it so &mdash; Apiary enters the Enterprise
 author: andrew
 excerpt: "A game-changer for large, distributed API teams"
 layout: post
-date: 2014-10-21 08:50:00
+date: 2014-10-22 08:50:00
 published: yes
 comments: true
 featured: true
@@ -24,7 +24,7 @@ Throughout the API lifecycle, there are a million decisions that need to be made
 
 Then there are the seemingly insignificant decisions:
 
-* Should we support just POST and PUT or also support PATCH?
+* Should we support just ```POST``` and ```PUT``` or also support ```PATCH```?
 * Should we use camel case?
 * Should a DELETE return a response payload or not?
 * What HTTP status codes should be supported for each method?
