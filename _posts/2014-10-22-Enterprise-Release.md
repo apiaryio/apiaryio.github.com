@@ -1,5 +1,5 @@
 ---
-title: Make it so &mdash; Apiary enters the Enterprise
+title: Make it so — Apiary enters the Enterprise
 author: andrew
 excerpt: "A game-changer for large, distributed API teams"
 layout: post
