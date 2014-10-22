@@ -26,7 +26,7 @@ Then there are the seemingly insignificant decisions:
 
 * Should we support just ```POST``` and ```PUT``` or also support ```PATCH```?
 * Should we use camel case?
-* Should a DELETE return a response payload or not?
+* Should a ```DELETE``` return a response payload or not?
 * What HTTP status codes should be supported for each method?
 * What time format should we use?
 
