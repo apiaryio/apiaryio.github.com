@@ -2,7 +2,7 @@
 root:
 permalink: /:year/:month/:day/:title
 lsi: false
-pygments: true
+highlights: true
 markdown: kramdown
 gems:
   - jekyll-redirect-from
