@@ -8,7 +8,7 @@ published: true
 comments: true
 ---
 
-We thought we'd put together a blog post to highlight another way for you to work work with Apiary, and that is through using our [Apiary CLI tool](http://client.apiary.io/). Everyone has their own workflow, and sometimes that workflow involves their favorite editor and the command line. This Apiary CLI tool can allow you to stay in that workflow while interacting directly with Apiary through our [API](http://docs.apiary.apiary.io/).
+We thought we'd put together a blog post to highlight another way for you to work with Apiary, and that is through using our [Apiary CLI tool](http://client.apiary.io/). Everyone has their own workflow, and sometimes that workflow involves their favorite editor and the command line. This Apiary CLI tool can allow you to stay in that workflow while interacting directly with Apiary through our [API](http://docs.apiary.apiary.io/).
 
 ## Previewing Locally
 
@@ -24,7 +24,7 @@ This is great for allowing Apiary to be part of your current workflow without re
 
 ## Fetching from Apiary
 
-To make this work even better with your workflow, you can also [fetch](http://client.apiary.io/#fetch) and [publish](http://client.apiary.io/#publish) your API Blueprints. If you have existing documenation at Apiary, you can easily grab that document for developing and previewing locally.
+To make this work even better with your workflow, you can also [fetch](http://client.apiary.io/#fetch) and [publish](http://client.apiary.io/#publish) your API Blueprints. If you have existing documentation at Apiary, you can easily grab that document for developing and previewing locally.
 
 ~~~shell
 apiary fetch --api-name=API_NAME
