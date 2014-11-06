@@ -18,7 +18,7 @@ With the Apiary CLI tool, you can [preview](http://client.apiary.io/#preview) wh
 apiary preview --server
 ~~~
 
-By default, this is going to be looking for a file in the current directory for an API Blueprint named `apiary.apib`, which can be changed. Every refresh of the page will send your API Blueprint to Apiary to be rendered and sent back to you.
+By default, this is going to be looking in the current directory for an API Blueprint file named `apiary.apib`, which can be changed with the `--path` flag. Every refresh of the page will send your API Blueprint to Apiary to be rendered and sent back to you.
 
 This is great for allowing Apiary to be part of your current workflow without requiring you to use our editor, and since you see exactly what we generate, you know your changes will be right when you publish them.
 
@@ -45,4 +45,3 @@ No need to copy and paste to Apiary–just publish your changes and keep working
 ## Conclusion
 
 The goal with this is to make your life easier by providing tools that can fit directly into your workflow. The Apiary CLI tool is [open source](https://github.com/apiaryio/apiary-client), and we are always interested in pull requests. Additionally, if you have any thoughts on ways to make this tool even better, please let us know!
-
