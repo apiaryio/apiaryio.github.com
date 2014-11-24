@@ -62,6 +62,11 @@ authors:
     display_name: Andrew Brown
     email: "andrew@apiary.io"
     twitter: "@uberdru"
+  kyle:
+    name: Kyle Fuller
+    display_name: Kyle
+    email: "kyle@apiary.io"
+    twitter: "@kylefuller"
 
 
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
