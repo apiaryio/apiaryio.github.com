@@ -8,21 +8,23 @@
  convention: `yyyy-mm-dd-name-of-blog.md` (you can use the rake command below)
  - Add images under the `images` folder and make them either .png or .jpeg format. The width of the image should be 640px. If you have images you can use the rake command below for creating an image directory.
  - Add your details in the _config.yml file to be configured as an author.
- - Run jekyll to see the file locally on [localhost:4000](http://localhost:4000) with `jekyll serve -w`
+ - Run jekyll to see the file locally on [localhost:4000](http://localhost:4000) with `rake serve`
  - Commit your file and get it reviewed by other team members by sending pull requests
  - After reviewing, oncall person will merge the pull request
 
 
-## Installing Jekyll and Dependencies
+## Installing Dependencies
 
 ```bash
-bundle install
+$ bundle install
 ```
 
-## Running jekyll
+## Development
+
+To start a local server that shows all posts including drafts:
 
 ```bash
-jekyll serve -w
+$ rake serve
 ```
 
 The server will automatically recompile all the changes you make to text files, except for `_config.yml`. In order to see changes to `_config.yml`, you need to restart the server manually.

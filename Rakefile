@@ -43,3 +43,25 @@ task :image_dir, :title do |t, args|
   slug = slugify title
   make_image_dir slug
 end
+
+namespace :serve do
+  desc 'Runs a local server *with* draft posts and watches for changes'
+  task :drafts do
+    puts 'Starting the server locally on http://localhost:4000'
+    sh 'open http://localhost:4000'
+    sh 'bundle exec jekyll serve --watch --drafts --port 4000'
+  end
+
+  desc 'Runs a local server *without* draft posts and watches for changes'
+  task :published do
+    puts 'Starting the server locally on http://localhost:4000'
+    sh 'open http://localhost:4000'
+    sh 'bundle exec jekyll serve --watch --port 4000'
+  end
+end
+
+desc 'Runs a local server with draft posts and watches for changes'
+task :serve => 'serve:drafts'
+
+task :default => :serve
+
