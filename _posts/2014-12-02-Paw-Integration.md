@@ -8,7 +8,7 @@ published: true
 comments: true
 ---
 
-We’ve been collaborating with the team behind [Paw](http://luckymarmot.com/paw), “The ultimate REST client for Mac.” You can now [download our API Blueprint extensions](http://luckymarmot.com/paw/extensions/?q=api+blueprint) for Paw which allows you to import and export API Blueprint to and from Paw.
+We’ve been collaborating with the team behind [Paw](http://luckymarmot.com/paw), “The ultimate REST client for Mac.” You can now [download our API Blueprint extensions](http://luckymarmot.com/paw/extensions/?q=api+blueprint) for Paw which allow you to import and export API Blueprints to and from Paw.
 
 Paw is a full-featured and beautifully designed Mac app that makes interaction with HTTP APIs delightful. It offers a powerful set of features and stands out from the other clients.
 
@@ -18,7 +18,7 @@ We offer two extensions for Paw. The first one allows you to import your API Blu
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/NZQXpDyqfGI" frameborder="0" allowfullscreen></iframe>
 
-Our second extension allows you to export your requests in Paw as API Blueprint so you can copy the request and response into your blueprint.
+Our second extension allows you to export your requests in Paw as an API Blueprint so you can copy the request and response into your blueprint.
 
 <img width="599" height="386" src="/images/2014-12-02-Paw-Integration/code-generator.png" alt="API Blueprint Code Generator in Paw" />
 
@@ -26,5 +26,5 @@ Whether you are an API creator or consumer, the integration with Paw helps you b
 
 The API Blueprint extensions are completely [open source](https://github.com/apiaryio?query=Paw), and we welcome any feedback or pull requests.
 
-To celebrate the launch of our Paw extensions. We've got a couple of coupon codes to give-away to the first few people who email [kyle@apiary.io](mailto:kyle@apiary.io).
+To celebrate the launch of our Paw extensions, we've got a couple of coupon codes to give-away to the first few people who email [kyle@apiary.io](mailto:kyle@apiary.io).
 
