@@ -1,6 +1,6 @@
 ---
 title: Next Version of API Documentation
-excerpt: Starting today, we are setting the ‘New Documentation’ as the default documentation for all new APIs.
+excerpt: Starting today, we are setting the New Documentation as the default documentation for all new APIs.
 layout: post
 date: 2014-12-04 19:00:00 +0100
 author: frantisek
@@ -8,13 +8,13 @@ published: true
 comments: true
 ---
 
-Starting today, we are setting the *‘New Documentation’* as the default documentation for all new APIs. Now, when you create a new API, it'll use the new three-column layout.
+Starting today, we are setting the New Documentation as the default documentation for all new APIs. Now, when you create a new API, it'll use the new three-column layout.
 
 Over the past few months we have heard a lot of your requests and added tons of new features in the three-column layout documentation. Let me highlight a few of them.
 
 ## Live Preview
 
-I hope you will appreciate the live preview of *‘New Documentation’* next to the Apiary web editor; preview is updated in real-time as you type.
+I hope you will appreciate the live preview of the New Documentation next to the Apiary web editor; preview is updated in real-time as you type.
 
 <a href="/images/2014-12-04-Next-Version-of-API-Documentation/live-preview.png" style="text-decoration: none; border-bottom: 0px;">
   <img src="/images/2014-12-04-Next-Version-of-API-Documentation/live-preview.png" style="width: 100%; height: auto; padding-top: 20px; padding-bottom: 20px;">
@@ -38,15 +38,11 @@ We have redesigned the 3rd column, aka the *‘Machine Column’*.
   <img src="/images/2014-12-04-Next-Version-of-API-Documentation/new-machine-column.png" style="width: 100%; height: auto; padding-top: 20px; padding-bottom: 20px;">
 </a>
 
-The production URL *(`HOST` in your API blueprint)* is displayed by default.
-
-You can also specify language and host *(both used for code example)* right where the request is shown.
-
-There's a new *‘Try’* button serving as an invitation to the Console. The *‘Call Resource’* button in Console has been extended with `Host` part.
+The production URL *(`HOST` in your API blueprint)* is displayed by default. You can also specify language and host *(both used for code example)* right where the request is shown. There's a new *‘Try’* button serving as an invitation to the Console. The *‘Call Resource’* button in Console has been extended with `HOST` part.
 
 ## URI Templates
 
-What's more —  *‘New Documentation’* highlights URI templates in the 3rd column and in code examples.
+What's more—the New Documentation highlights URI templates in the 3rd column and in code examples.
 
 <a href="/images/2014-12-04-Next-Version-of-API-Documentation/uri-templates.png" style="text-decoration: none; border-bottom: 0px;">
   <img src="/images/2014-12-04-Next-Version-of-API-Documentation/uri-templates.png" style="width: 100%; height: auto; padding-top: 20px; padding-bottom: 20px;">
@@ -54,10 +50,10 @@ What's more —  *‘New Documentation’* highlights URI templates in the 3rd c
 
 ---
 
-I encourage you to switch to the *‘New Documentation’* and try these new features; you can refer to the [recent article](http://blog.apiary.io/2014/03/21/Re-API-Design-for-Humans/) to learn how to do so.
+I encourage you to switch to the New Documentation and try these new features; you can refer to our [recent article](http://blog.apiary.io/2014/03/21/Re-API-Design-for-Humans/) to learn how to do so.
 
 Please note, we will soon be switching all the existing API documentations to this new layout.
 
-In the meantime, we would love to hear your feedback—if there is anything we can fix, add or improve in the *‘New Documentation’*, please let us know.
+In the meantime, we would love to hear your feedback—if there is anything we can fix, add or improve in the New Documentation, please let us know.
 
 Thanks a lot!
