@@ -32,7 +32,7 @@ Now you can link to a specific resource group, resource, or action. Just right c
 
 ## Brand New Machine Column
 
-We have redesigned the third column, aka the “Machine Column”.
+We have redesigned the third column, aka the “Machine Column.”
 
 <a href="/images/2014-12-04-Next-Version-of-API-Documentation/new-machine-column.png" style="text-decoration: none; border-bottom: 0px;">
   <img src="/images/2014-12-04-Next-Version-of-API-Documentation/new-machine-column.png" style="width: 100%; height: auto; padding-top: 20px; padding-bottom: 20px;">
