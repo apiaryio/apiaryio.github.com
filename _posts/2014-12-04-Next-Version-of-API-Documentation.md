@@ -30,15 +30,15 @@ Live preview allows you to see how your API documentation will look before you s
 
 Now you can link to a specific resource group, resource, or action. Just right click and copy the link, or grab the permalink from the address bar.
 
-## Brand New ‘Machine Column’
+## Brand New “Machine Column”
 
-We have redesigned the 3rd column, aka the *‘Machine Column’*.
+We have redesigned the third column, aka the “Machine Column”.
 
 <a href="/images/2014-12-04-Next-Version-of-API-Documentation/new-machine-column.png" style="text-decoration: none; border-bottom: 0px;">
   <img src="/images/2014-12-04-Next-Version-of-API-Documentation/new-machine-column.png" style="width: 100%; height: auto; padding-top: 20px; padding-bottom: 20px;">
 </a>
 
-The production URL *(`HOST` in your API blueprint)* is displayed by default. You can also specify language and host *(both used for code example)* right where the request is shown. There's a new *‘Try’* button serving as an invitation to the Console. The *‘Call Resource’* button in Console has been extended with `HOST` part.
+The production URL (`HOST` in your API blueprint) is displayed by default. You can also specify language and host (both used for code example) right where the request is shown. There's a new “Try” button serving as an invitation to the Console. The “Call Resource” button in Console has been extended with `HOST` part.
 
 ## URI Templates
 
