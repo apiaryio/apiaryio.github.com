@@ -8,9 +8,9 @@ published: true
 comments: true
 ---
 
-Starting today, we are setting the new documentation as the default documentation for all new APIs. Now, when you create a new API, it'll use the new three-column layout.
+Starting today, we are setting the new documentation as the default for all new APIs. Now, when you create a new API, it'll use the new three-column layout.
 
-Over the past few months we have heard a lot of your requests and added tons of new features in the three-column layout documentation. Let me highlight a few of them.
+Over the past few months we have heard a lot of your requests and added tons of great features in the new documentation. Let me highlight a few of them.
 
 ## Live Preview
 
@@ -30,7 +30,7 @@ Live preview allows you to see how your API documentation will look before you s
 
 Now you can link to a specific resource group, resource, or action. Just right click and copy the link, or grab the permalink from the address bar.
 
-## Brand New “Machine Column”
+## Brand New Machine Column
 
 We have redesigned the third column, aka the “Machine Column”.
 
