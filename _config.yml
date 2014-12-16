@@ -81,6 +81,7 @@ static: "http://apiary-static.s3.amazonaws.com/assets"
 version: 1338364425
 menu:
   - ['http://apiary.io/how-it-works', 'How It Works']
+  - ['http://apiary.io/pricing', 'Pricing']
   - ['http://apiary.io/products', 'Product']
   - ['http://blog.apiary.io/', 'Blog']
   - ['http://apiary.io/company', 'Company']
