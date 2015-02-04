@@ -4,6 +4,9 @@ permalink: /:year/:month/:day/:title
 lsi: false
 highlights: true
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 gems:
   - jekyll-redirect-from
 
