@@ -40,7 +40,7 @@ You can also deploy your own instance of the Polls API to Heroku with a single c
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/apiaryio/polls-api)
 
-The Polls API is also a [hypermedia](TODO) API supporting the [HAL](http://stateless.co/hal_specification.html) and [Siren](https://github.com/kevinswiber/siren) hypermedia content-types based on [content negotiation](https://github.com/apiaryio/api-blueprint/blob/master/examples/6.%20Requests.md). This is demonstrated in an advanced version of the Polls API [example blueprint](http://docs.pollshypermedia.apiary.io/).
+The Polls API is also a [hypermedia](http://www.infoq.com/articles/hypermedia-api-tutorial-part-one) API supporting the [HAL](http://stateless.co/hal_specification.html) and [Siren](https://github.com/kevinswiber/siren) hypermedia content-types based on [content negotiation](https://github.com/apiaryio/api-blueprint/blob/master/examples/6.%20Requests.md). This is demonstrated in an advanced version of the Polls API [example blueprint](http://docs.pollshypermedia.apiary.io/).
 
 ---
 
