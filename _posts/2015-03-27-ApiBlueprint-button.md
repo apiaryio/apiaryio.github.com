@@ -18,7 +18,7 @@ Whenever you're surfing a public blueprint, a new **API Blueprint** button will 
 
 <img src="/images/2015-02-18-ApiBlueprint-button/apiblueprintbutton.png" />
 
-Sharing your API Blueprint with the community is very easy. Simply go to your API settings and ensure "Public Blueprint" switch is turned on.
+Start sharing your API blueprint with other API enthusiasts, by enabling this feature within your API settings. Simply toggle the 'Public Blueprint' setting on and you're ready to start socializing your API blueprint.
 
 <img src="/images/2015-02-18-ApiBlueprint-button/settings.png" />
 
