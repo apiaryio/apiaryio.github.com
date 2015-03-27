@@ -8,11 +8,10 @@ published: true
 comments: true
 ---
 
-Superb and concise documentation is one of our priorities at Apiary. But frankly, we weren't doing the most stellar job when it came to documenting our very own product and the plethora of awesome tools we are working on. 
+Everything at Apiary starts with API Blueprint and API Blueprint starts with its tutorial. Since providing superb and concise documentation is our priority, there is no other document that should stand more for our values. 
+But frankly, the old tutorial was too long, unnecessary complex and wasn't complemented by blueprint examples,  real code and the rest of Apiary. This is changing right now with our new API Blueprint tutorial.
 
-This is changing right now. Allow me to introduce you to our brand new and much simplified API Blueprint tutorial. 
-
-We have completely redesigned the tutorial, stripped any clutter, and saved advanced topics for later.  In addition, the new tutorial no longer relies on any upfront knowledge of Markdown. You can get started with API Blueprint in less than thousands words, counting blueprint snippets and footnotes! 
+We have completely rewritten the tutorial, stripped any clutter, and saved advanced topics for later.  In addition, the new tutorial no longer relies on any upfront knowledge of Markdown. You can get started with API Blueprint in less than thousands words, counting blueprint snippets and footnotes! 
 
 **Learning API Blueprint has never been easier** – check our new tutorial by yourself at <http://apiary.io/blueprint>.
 
