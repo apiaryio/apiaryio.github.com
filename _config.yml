@@ -11,7 +11,7 @@ gems:
   - jekyll-redirect-from
 
 # Site configuration
-url:          https://blog.apiary.io
+url:          http://blog.apiary.io
 title:        The Apiary Blog
 description:  Updates on everyone's favourite REST API tools company
 authors:
@@ -79,15 +79,15 @@ authors:
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
 author:       Apiary
 email:        jakub@apiary.io
-static: "https://apiary-static.s3.amazonaws.com/assets"
+static: "http://apiary-static.s3.amazonaws.com/assets"
 # static: "https://static.apiary.dev:9000"
 version: 1338364425
 menu:
-  - ['http://apiary.io/how-it-works', 'How It Works']
-  - ['http://apiary.io/pricing', 'Pricing']
-  - ['http://apiary.io/products', 'Product']
-  - ['https://blog.apiary.io/', 'Blog']
-  - ['http://apiary.io/company', 'Company']
+  - ['https://apiary.io/how-it-works', 'How It Works']
+  - ['https://apiary.io/pricing', 'Pricing']
+  - ['https://apiary.io/products', 'Product']
+  - ['http://blog.apiary.io/', 'Blog']
+  - ['https://apiary.io/company', 'Company']
   - ['https://login.apiary.io/login', 'Sign In']
 tracking: >
   <script>
