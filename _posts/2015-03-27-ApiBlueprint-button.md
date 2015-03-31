@@ -14,10 +14,10 @@ Whenever you're viweing public documentation, a new **API Blueprint** button wil
 
 <img src="/images/2015-02-18-ApiBlueprint-button/apiblueprintbutton.png" />
 
-To start sharing your API blueprint with other API enthusiasts, by enabling this feature within your API settings. Simply toggle the 'Public Blueprint' setting on and you're ready to start sharing your API blueprint with others.
+Start sharing your API blueprint with other API enthusiasts, by enabling this feature within your API settings. Simply toggle the 'Public Blueprint' setting on and you're ready to start sharing your API blueprint.
 
 <img src="/images/2015-02-18-ApiBlueprint-button/settings.png" />
 
-Socializing and learning from other public blueprints won't stop here. We have many more great features in store to help promote learning through collaboration. Next, we plan to merge this experience with our editor so that in a single click, you can open and edit the shared blueprint using our powerful tools.
+This is just the beginning of being able to socialize and learn from other public API blueprints. We have many more great features in store to help promote learning through collaboration. Next, we plan to merge this experience with our editor so that in a single click, you can open and edit the shared blueprint using our powerful tools.
 
 So, what are you waiting for? View other public blueprints and share yours to give back!
