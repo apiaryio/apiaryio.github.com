@@ -1,6 +1,6 @@
 ---
-title: Sharing is caring - socialize your public API blueprints
-excerpt: Learn the art of API blueprint through socialization and collaboration.
+title: Sharing Is Caring - Socialize Your Public API Blueprints
+excerpt: Learn the art of API Blueprint through socialization and collaboration.
 layout: post
 date: 2015-03-27 00:00:00 +0100
 author: vincenzo
