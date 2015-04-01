@@ -1,15 +1,14 @@
 ---
-title: New API Blueprint tutorial
+title: New API Blueprint Tutorial
 excerpt: Learning API Blueprint has never been easier.
 layout: post
-date: 2015-03-25 16:00:00 +0000
+date: 2015-04-01 16:00:00 +0000
 author: zdenek
 published: true
 comments: true
 ---
 
-Everything at Apiary starts with API Blueprint and API Blueprint starts with its tutorial. Providing superb and concise documentation is our priority and API Blueprint should be a direct representation of these goals.
-But frankly, the previous tutorial was far too long, unnecessarily complex, and lacked blueprint examples, real code, and the overall vision of Apiary. This pained us so much, that we decided to create a new API Blueprint tutorial.
+Everything at Apiary starts with API Blueprint and API Blueprint starts with its tutorial. Providing superb and concise documentation is our priority and API Blueprint should be a direct representation of these goals. But frankly, the previous tutorial was far too long, unnecessarily complex, and lacked blueprint examples, real code, and the overall vision of Apiary. This pained us so much, that we decided to create a new API Blueprint tutorial.
 
 As a result, we decided to completely rewrite the tutorial so that any user, despite his or her experience, could easily use and understand API Blueprint without any prior knowledge of Markdown. You can get started with API Blueprint in less than thousands words, counting blueprint snippets and footnotes!
 
