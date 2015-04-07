@@ -26,5 +26,5 @@ Whether you are an API creator or consumer, the integration with Paw helps you b
 
 The API Blueprint extensions are completely [open source](https://github.com/apiaryio?query=Paw), and we welcome any feedback or pull requests.
 
-To celebrate the launch of our Paw extensions, we've got a couple of coupon codes to give-away to the first few people who email [kyle@apiary.io](mailto:kyle@apiary.io).
+~~To celebrate the launch of our Paw extensions, we've got a couple of coupon codes to give-away to the first few people who email [kyle@apiary.io](mailto:kyle@apiary.io).~~
 
