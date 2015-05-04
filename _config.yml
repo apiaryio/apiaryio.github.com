@@ -75,24 +75,32 @@ authors:
     display_name: František
     email: "frantisek@apiary.io"
     twitter: "@Baggz"
+<<<<<<< HEAD
   dave:
     name: Dave Goldberg
     display_name: Dave
     email: "dave.goldberg@capitalone.com"
     twitter: "@davidgoldberg"
+=======
+  vincenzo:
+    name: Vincenzo Chianese
+    display_name: Vincenzo
+    email: "vincenzo@apiary.io"
+    twitter: "@D3DVincent"
+>>>>>>> master
 
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
 author:       Apiary
 email:        jakub@apiary.io
-static: "http://apiary-static.s3.amazonaws.com/assets"
+static: "https://apiary.a.ssl.fastly.net/assets"
 # static: "https://static.apiary.dev:9000"
 version: 1338364425
 menu:
-  - ['http://apiary.io/how-it-works', 'How It Works']
-  - ['http://apiary.io/pricing', 'Pricing']
-  - ['http://apiary.io/products', 'Product']
+  - ['https://apiary.io/how-it-works', 'How It Works']
+  - ['https://apiary.io/pricing', 'Pricing']
+  - ['https://apiary.io/products', 'Product']
   - ['http://blog.apiary.io/', 'Blog']
-  - ['http://apiary.io/company', 'Company']
+  - ['https://apiary.io/company', 'Company']
   - ['https://login.apiary.io/login', 'Sign In']
 tracking: >
   <script>
