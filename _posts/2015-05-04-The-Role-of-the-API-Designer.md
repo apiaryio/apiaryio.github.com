@@ -17,10 +17,11 @@ Specific implementations will, of course, vary wildly between organizations. But
 
 ## Legacy Culture
 Beyond just having a legacy infrastructure, unless there’s been 100% turnover of people in your company, there will be a legacy culture of getting things done the “old way”. It’s a rational response when faced with ongoing business concerns that are being met with current technology. Beyond being rational, it’s not actually something that you can (or should desire to) eliminate in one fell swoop. Rather, you can start replacing culture the same way you switch out a system or database by doing the following:
-1.     Build new culture on the side, separate from existing one.
-2.     Run both at the same time, but with the old culture still being the official one.
-3.     Run both at the same time, but the new culture becomes the standard bearer.
-4.     Wash, rinse and repeat until you reach a cultural tipping point.
+
+1. Build new culture on the side, separate from existing one.
+2. Run both at the same time, but with the old culture still being the official one.
+3. Run both at the same time, but the new culture becomes the standard bearer.
+4. Wash, rinse and repeat until you reach a cultural tipping point.
 
 It should get easier as you go and as the business executives start to notice some areas moving faster than others. It becomes easier to get buy-in for each incremental project.
 
