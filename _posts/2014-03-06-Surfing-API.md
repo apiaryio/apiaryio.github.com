@@ -52,34 +52,37 @@ The example server is written in Ruby using [Sinatra][] and [Roar][] to better d
 
 Let's look at the `Folder` resource - a data model as used in backend, perhaps coming from a database: 
 
-
-    class Folder
-      attr_accessor :id
-      attr_accessor :name
-      attr_accessor :description
-      attr_accessor :parent
-      attr_accessor :meta
-    end
-
+```ruby
+class Folder
+  attr_accessor :id
+  attr_accessor :name
+  attr_accessor :description
+  attr_accessor :parent
+  attr_accessor :meta
+end
+```
 
 In REST we do not send the resources around as they are. Instead we interact with their *representations*. With [Roar][] I can easily create a resource representation using the appropriate representer, specifying what attributes to represent:
 
+```ruby
+module FolderJSONRepresentation
+  include Roar::Representer::JSON
 
-    module FolderJSONRepresentation
-      include Roar::Representer::JSON
-
-      property :id
-      property :name
-      property :description
-      property :parent
-      property :meta
-    end
+  property :id
+  property :name
+  property :description
+  property :parent
+  property :meta
+end
+```
 
 and then apply the representer on a resource:
 
-    folder = Folder.new
-    folder.extend(FolderJSONRepresentation)
-    folder.to_json  # returning JSON representation of Folder
+```ruby
+folder = Folder.new
+folder.extend(FolderJSONRepresentation)
+folder.to_json  # returning JSON representation of Folder
+```
 
 Similarly I can define and use the HAL or any other (e.g. XML) representation for the `Folder` resource. Following this pattern we can keep the backend data models free of any representation clutter and also radically simplify the API content negotiation.
 
@@ -95,39 +98,43 @@ Having my cake and eat it I will demonstrate using the API on this (slightly con
 
 How hard can this be using Ruby and [HyperResource](https://github.com/gamache/hyperresource)?
 
+```ruby
+api = HyperResource.new(root: 'http://mock-gtdtodoapi.apiary.io')
+api.folders.get.each do |f|
 
-    api = HyperResource.new(root: 'http://mock-gtdtodoapi.apiary.io')
-    api.folders.get.each do |f|
-      
-      folder = Folder.new
-      folder.extend(FolderHALRepresentation)
-      folder.from_hash(f.get.body)
+  folder = Folder.new
+  folder.extend(FolderHALRepresentation)
+  folder.from_hash(f.get.body)
 
-      puts "==> folder (#{f.id}):"
-      puts "  name: #{folder.name}"
-      puts "  description: #{folder.description}"
-      puts "  parent: #{folder.parent}"
-      puts "  meta: #{folder.meta}\n\n"
-    end 
+  puts "==> folder (#{f.id}):"
+  puts "  name: #{folder.name}"
+  puts "  description: #{folder.description}"
+  puts "  parent: #{folder.parent}"
+  puts "  meta: #{folder.meta}\n\n"
+end
+```
 
-
-What happens here? 
+What happens here?
 
 First I navigate to the root of GTD Todo API. In this case using the Apiary mock server: 
 
-    api = HyperResource.new(root: 'http://mock-gtdtodoapi.apiary.io')
-
+```ruby
+api = HyperResource.new(root: 'http://mock-gtdtodoapi.apiary.io')
+```
 
 Then I follow the `folders` link retrieving the `folders` resource HAL representation and iterate every embedded `folder` in it:
 
+```ruby
+api.folders.get.each do |f|
+```
 
-    api.folders.get.each do |f|
+Finally I will create an empty instance of the `Folder` resource (sharing the same data model with the server). Extend it with HAL Roar representer and fetch in the folder body following the `self` link of the embedded item:
 
-Finally I will create an empty instance of the `Folder` resource (sharing the same data model with the server). Extend it with HAL Roar representer and fetch in the folder body following the `self` link of the embedded item: 
-
-    folder = Folder.new
-    folder.extend(FolderHALRepresentation)
-    folder.from_hash(f.get.body)
+```ruby
+folder = Folder.new
+folder.extend(FolderHALRepresentation)
+folder.from_hash(f.get.body)
+```
 
 Voilà, here is one of the folders ready to print out!
 

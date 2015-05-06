@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/kylef/rouge
+  revision: 7380391df32f3e040ace9bc8633ebb2d4636a4fb
+  branch: kylef/apiblueprint-lexer
+  specs:
+    rouge (1.8.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -57,7 +64,6 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.2.0)
-    rouge (1.7.4)
     safe_yaml (1.0.4)
     sass (3.4.6)
     timers (4.0.1)
@@ -72,4 +78,4 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-redirect-from
-  rouge
+  rouge!
