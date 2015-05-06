@@ -123,44 +123,44 @@
 
 <p>This example is going to make use of one of our example blueprints, “Polls API”. I’ve pulled out an excerpt of the example blueprint and it looks something like the following. Take a look at the <a href="http://docs.pollsapi.apiary.io/">full version</a> (<a href="https://github.com/apiaryio/api-blueprint/blob/be00b000e47561419f654374dd975a02083354e8/examples/Polls%20API.md">source</a>).</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="gh"># Polls</span>
-Polls is a simple web service that allows consumers to view polls and vote in them.
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gh"># Polls</span><span class="err">
+</span>Polls is a simple web service that allows consumers to view polls and vote in them.<span class="err">
 
-<span class="gu">## Group Question</span>
-Resource related to questions in the API.
+</span><span class="p">##</span><span class="k"> Group </span><span class="gh">Question</span><span class="err">
+</span>Resource related to questions in the API.<span class="err">
 
-<span class="gu">## Question [/questions/{question_id}]</span>
-<span class="p">+</span> Parameters
-<span class="p">    +</span> question_id (number) ... ID of the Question in form of an integer
+</span><span class="p">##</span><span class="gh"> Question </span><span class="s">[/questions/{question_id}]</span><span class="err">
+</span><span class="p">+</span> Parameters<span class="err">
+</span><span class="p">    +</span> question_id (number) ... ID of the Question in form of an integer<span class="err">
 
-<span class="gu">### View a question detail [GET]</span>
+</span><span class="p">###</span><span class="gh"> View a question detail </span><span class="s">[GET]</span><span class="err">
 
-<span class="gu">## Choice [/questions/{question_id}/choices/{choice_id}]</span>
-<span class="p">
-+</span> Parameters
-<span class="p">    +</span> question_id (number) ... ID of the Question in form of an integer
-<span class="p">    +</span> choice_id (number) ... ID of the Choice in form of an integer
+</span><span class="p">##</span><span class="gh"> Choice </span><span class="s">[/questions/{question_id}/choices/{choice_id}]</span><span class="err">
+</span><span class="p">
++ </span><span class="k">Parameters</span><span class="err">
+</span><span class="p">    +</span> question_id (number) ... ID of the Question in form of an integer<span class="err">
+</span><span class="p">    +</span> choice_id (number) ... ID of the Choice in form of an integer<span class="err">
 
-<span class="gu">### Vote [PUT]</span>
+</span><span class="p">###</span><span class="gh"> Vote </span><span class="s">[PUT]</span><span class="err">
 
-This action allows you to vote on a question's choice.
+</span>This action allows you to vote on a question's choice.<span class="err">
 
-<span class="gu">## Questions collection [/questions{?page}]</span>
-<span class="p">+</span> Parameters
-<span class="p">    +</span> page (optional, number) ... The page of questions to return
+</span><span class="p">##</span><span class="gh"> Questions collection </span><span class="s">[/questions{?page}]</span><span class="err">
+</span><span class="p">+</span> Parameters<span class="err">
+</span><span class="p">    +</span> page (optional, number) ... The page of questions to return<span class="err">
 
-<span class="gu">### List all questions [GET]</span>
-<span class="gu">### Create a new question [POST]</span>
-</code></pre>
+</span><span class="p">###</span><span class="gh"> List all questions </span><span class="s">[GET]</span><span class="err">
+</span><span class="p">###</span><span class="gh"> Create a new question </span><span class="s">[POST]</span><span class="err">
+</span></code></pre>
 </div>
 
 <p>We can pull out any of the actions from our blueprint by the resource and action name in Swift:</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="k">if</span> <span class="k">let</span> <span class="nv">transition</span> <span class="o">=</span> <span class="n">blueprint</span><span class="p">?</span><span class="o">.</span><span class="nf">transition</span><span class="p">(</span><span class="s">"Choice"</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="s">"Vote"</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// Perform, or introspect your transition.
-</span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-  <span class="c1">// Gracefully handle the absence of the transition.
-</span><span class="p">}</span>
+  <span class="c1">// Perform, or introspect your transition.</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="c1">// Gracefully handle the absence of the transition.</span>
+<span class="p">}</span>
 </code></pre>
 </div>
 
