@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Back to the roots. Meet HTTP.&mdash;Apiary Blog</title>
+  <title>Bam! This is Gavel.&mdash;Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,14 +15,14 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Back to the roots. Meet HTTP.&mdash;Apiary Blog">
-  <meta property="og:title" content="Back to the roots. Meet HTTP.&mdash;Apiary Blog">
+  <meta name="twitter:title" content="Bam! This is Gavel.&mdash;Apiary Blog">
+  <meta property="og:title" content="Bam! This is Gavel.&mdash;Apiary Blog">
 
   
-    <meta property="og:url" content="http://blog.apiary.io/2013/07/23/Back-to-the-roots">
-    <meta name="description" content="When was the last time you actually saw HTTP?&mdash;Apiary Blog">
-    <meta name="twitter:description" content="When was the last time you actually saw HTTP?&mdash;Apiary Blog">
-    <meta property="og:description" content="When was the last time you actually saw HTTP?&mdash;Apiary Blog">
+    <meta property="og:url" content="http://blog.apiary.io/2013/07/24/Bam-this-is-Gavel">
+    <meta name="description" content="We are introducing our brand new HTTP validation package.&mdash;Apiary Blog">
+    <meta name="twitter:description" content="We are introducing our brand new HTTP validation package.&mdash;Apiary Blog">
+    <meta property="og:description" content="We are introducing our brand new HTTP validation package.&mdash;Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
@@ -87,74 +87,71 @@
   
   <div class="blogArticle">
     <a href="/" class="backToArticles">Back to Articles</a>
-    <h1>Back to the roots. Meet HTTP.</h1>
+    <h1>Bam! This is Gavel.</h1>
     
       <p><span class="minority">By</span> <strong>netmilk</strong>
-        (<a href="https://twitter.com/ntmlk">ntmlk</a>, <a href="mailto:adam@apiary.io">adam@apiary.io</a>) <span class="minority">on</span>&nbsp;23&nbsp;Jul&nbsp;2013
+        (<a href="https://twitter.com/ntmlk">ntmlk</a>, <a href="mailto:adam@apiary.io">adam@apiary.io</a>) <span class="minority">on</span>&nbsp;24&nbsp;Jul&nbsp;2013
       </p>
       <p><span class="blogShare">
-<a href="https://twitter.com/share" class="twitter-share-button" data-text="Back to the roots. Meet HTTP." data-url="http://blog.apiary.io/2013/07/23/Back-to-the-roots" data-via="apiaryio"></a>
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Bam! This is Gavel." data-url="http://blog.apiary.io/2013/07/24/Bam-this-is-Gavel" data-via="apiaryio"></a>
 <span class="g-plusone" data-size="medium" data-count="true"></span>
-<span class="fb-share-button" data-send="false" data-href="http://blog.apiary.io/2013/07/23/Back-to-the-roots" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+<span class="fb-share-button" data-send="false" data-href="http://blog.apiary.io/2013/07/24/Bam-this-is-Gavel" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
 </span></p>
     
 
-  <p>There are a lot of people talking about HTTP. Really. <a href="http://www.w3.org/Protocols/HTTP/1.0/spec.html">For a long time.</a> <a href="http://www.w3.org/Protocols/">Academics</a>, <a href="http://roy.gbiv.com/">visionaries</a>, <a href="http://www.steveklabnik.com/">hipsters</a>. Everybody and everything is talking HTTP. Twitter, Facebook, Web applications in general, browsers, APIs, mobile devices. Even your <a href="http://www.belkin.com/us/wemo">house</a>, <a href="http://developers.meethue.com/">lamp</a> and even a <a href="http://docs.timdorr.apiary.io/">car</a> can speak HTTP. It has been said that it is so simple it can be used in even the most <a href="http://arduino.cc/en/Tutorial/WebServer">simple computer processors</a>. <a href="http://api500.com/post/52003926392/the-next-conferences-on-apis-to-attend-in-2013">Everyone is talking about it.</a> But oh my, where is it? Can I touch it? When was the last time you actually saw it? It’s so abstract! It’s hidden on the lowest level. It’s incredible how hard it is to get a raw, naked <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html">HTTP messages</a>. So where is HTTP and what does it actually look like?</p>
+  <p>I’m very proud to introduce Gavel—our first contribution to the Testing Culture we are so passionate about. We have isolated HTTP validation behavior from our interactive console, created platform independent specification and are shipping it as implementation in Node.JS</p>
 
-<p>There are ways to find it. You can see what is happening in your <a href="http://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome">browser</a> or <a href="http://stackoverflow.com/questions/11267540/how-to-log-specific-request-details-to-rails-server-logs">in your backend server</a>. But this is not the raw, un-pre-processed ASCII representation of a <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html">HTTP message</a> you are looking for. If you are not <a href="http://www.wireshark.org/">a networking expert</a> or <a href="http://www.circlemud.org/jelson/software/tcpflow/">a hundred year old professor of computer science</a> you’re lost.</p>
+<blockquote>
+  <p><strong>gavel</strong> /ˈgævəl/ <em>noun</em>
+<strong>1</strong> A small mallet used by a presiding officer or an auctioneer to signal for attention or order or to mark the conclusion of a transaction.
+<strong>2</strong> A maul used by masons in fitting stones.</p>
+</blockquote>
 
-<p>What now? What is the most common and simplest HTTP client? It’s <a href="http://curl.haxx.se/docs/manpage.html"><code class="highlighter-rouge">curl</code></a>, of course. But cURL <code class="highlighter-rouge">--verbose</code> output does not contain <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html">HTTP Request</a> <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.3">message body</a>:</p>
+<p>The complexity of <a href="http://www.w3.org/Protocols/rfc2616/rfc2616.html">HTTP and its specification is incredible</a>, but there are lots of pragmatic conventions in the real world. Gavel is our attempt to <a href="https://www.relishapp.com/apiary/gavel/v/1-0/docs/about">invite you to the open discussion</a> about conventions in the real world of HTTP and ship it as Node.JS library to have a toy to play with right now.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -s -v -d "foo=bar" http://curltraceparser.apiary.io/shopping-cart
-&gt; POST /shopping-cart HTTP/1.1
-&gt; User-Agent: curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8x zlib/1.2.5
-&gt; Host: curltraceparser.apiary.io
-&gt; Accept: */*
-&gt; Content-Length: 7
-&gt; Content-Type: application/x-www-form-urlencoded
-&gt;
-* upload completely sent off: 7 out of 7 bytes
-&lt; HTTP/1.1 201 Created
-...
+<p>HTTP is platform and language independent by nature. So is Gavel. All of Gavel’s documentation is written in <a href="http://cukes.info/">Cucumber</a>, ready to be implemented in variety of languages supported by Cucumber or its derivates. Documentation is  hosted on <a href="https://www.relishapp.com/">Relish</a>, an awesome, documentation-oriented platform for managing Cucumber features. We love it because it enables the same iterative design process as Apiary and our <a href="http://www.apiblueprint.org">API Blueprint</a>.</p>
+
+<p><img src="https://raw.github.com/apiaryio/gavel/master/img/gavel.png" alt="Gavel logo" /></p>
+
+<h2 id="using-gavel">Using Gavel</h2>
+
+<p>Gavel comes with CLI interface so the first version is very minimalistic:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ npm install -g gavel curl-trace-parser
+$ curl --trace - http://httpbin.org/ip | curl-trace-parser  &gt; expected
+$ curl --trace - http://httpbin.org/ip | curl-trace-parser  &gt; real
+$ cat real | gavel expected
+$ echo $?
+0
 </code></pre>
 </div>
 
-<h2 id="the-solution">The solution</h2>
-<p>Did you know that <a href="http://curl.haxx.se/docs/manpage.html">cURL</a> can save whole raw HTTP communication to a trace file? Unfortunately the trace file format is not really human friendly.</p>
+<p>Let’s see what happens if CORS headers are missing in the response</p>
 
-<p>That why we have created and open-sourced our simple <a href="https://github.com/apiaryio/curl-trace-parser">parser for <code class="highlighter-rouge">curl --trace</code> option</a>. So from now on, anytime you want to see a raw and pristine HTTP message, this is the simplest way to do it:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>$ npm install -g curl-trace-praser
-$ curl --trace - -s -d "foo=bar" http://curltraceparser.apiary.io/shopping-cart | curl-trace-parser
-&gt; POST /shopping-cart HTTP/1.1
-&gt; ser-Agent: curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8x zlib/1.2.5
-&gt; Host: curltraceparser.apiary.io
-&gt; Accept: */*
-&gt; Content-Length: 7
-&gt; Content-Type: application/x-www-form-urlencoded
-&gt;
-&gt; foo=bar
-&gt;
-
-&lt; HTTP/1.1 201 Created
-&lt; Content-Type: application/json
-&lt; Date: Mon, 22 Jul 2013 13:24:33 GMT
-&lt; X-Apiary-Ratelimit-Limit: 120
-&lt; X-Apiary-Ratelimit-Remaining: 118
-&lt; Content-Length: 50
-&lt; Connection: keep-alive
-&lt;
-&lt; { "status": "created", "url": "/shopping-cart/2" }
+<div class="highlighter-rouge"><pre class="highlight"><code>$ cat real | grep -v 'Access-Control-Allow-Origin' &gt; real_without_cors
+$ cat real_without_cors | gavel expected
+$ echo $?
+1 
 </code></pre>
 </div>
 
-<p>There it is! Let’s introduce ourselves. <strong>This is the HTTP message</strong>.</p>
+<p>If you are a Node.js ninja, you can enjoy using the <a href="https://github.com/apiaryio/gavel.js">Gavel JS API</a></p>
+
+<p>Gavel’s first version is very thin. It comes only with a boolean interface which decides if a pair of HTTP Requests or Responses are valid against themselves or are not. We’d like to make this a starting point of a discussion about <a href="https://www.relishapp.com/apiary/gavel/v/1-0/docs/expectations/headers">headers validation</a> and output format for <a href="https://www.relishapp.com/apiary/gavel/v/1-0/docs/validation-errors">validation errors</a>. Feel free to submit an <a href="https://github.com/apiaryio/gavel/issues">GitHub issue</a> and tell us what you want. We’ll be even more excited if you contribute. </p>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="https://github.com/apiaryio/gavel.js">Gavel Node.JS library</a></li>
+  <li><a href="https://www.relishapp.com/apiary/gavel/docs">Gavel specification and documentation</a></li>
+  <li><a href="https://github.com/apiaryio/gavel">Gavel specification GitHub repo</a></li>
+</ul>
 
 
   <p><span class="blogShare afterArticle">
-<a href="https://twitter.com/share" class="twitter-share-button" data-text="Back to the roots. Meet HTTP." data-url="http://blog.apiary.io/2013/07/23/Back-to-the-roots" data-via="apiaryio"></a>
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Bam! This is Gavel." data-url="http://blog.apiary.io/2013/07/24/Bam-this-is-Gavel" data-via="apiaryio"></a>
 <span class="g-plusone" data-size="medium" data-count="true"></span>
-<span class="fb-share-button" data-send="false" data-href="http://blog.apiary.io/2013/07/23/Back-to-the-roots" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+<span class="fb-share-button" data-send="false" data-href="http://blog.apiary.io/2013/07/24/Bam-this-is-Gavel" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
 </span></p>
 
 
