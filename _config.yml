@@ -11,7 +11,7 @@ highlights: true
 highlighter: rouge
 gems:
   - jekyll-redirect-from
-exclude: [vendor]
+exclude: ['Gemfile*', 'vendor', 'README.md', 'Rakefile']
 
 # Site configuration
 url:          http://blog.apiary.io
