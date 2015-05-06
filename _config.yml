@@ -2,11 +2,13 @@
 root:
 permalink: /:year/:month/:day/:title
 lsi: false
-highlights: true
 markdown: kramdown
 kramdown:
   input: GFM
+  hard_wrap: false
   syntax_highlighter: rouge
+highlights: true
+highlighter: rouge
 gems:
   - jekyll-redirect-from
 
