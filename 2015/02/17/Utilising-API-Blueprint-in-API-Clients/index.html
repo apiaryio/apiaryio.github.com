@@ -1,0 +1,330 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+
+  <title>Utilising API Blueprint in API Clients&mdash;Apiary Blog</title>
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <meta name="author" content="Apiary">
+  <link rel="alternate" type="application/rss+xml" title="The Apiary Blog Feed" href="http://blog.apiary.io/feed.xml" />
+
+  <meta name="application-name" content="Apiary">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type"  content="article">
+  <meta name="twitter:site" content="@apiaryio">
+  <meta name="twitter:creator" content="@apiaryio">
+
+  <meta name="twitter:title" content="Utilising API Blueprint in API Clients&mdash;Apiary Blog">
+  <meta property="og:title" content="Utilising API Blueprint in API Clients&mdash;Apiary Blog">
+
+  
+    <meta property="og:url" content="http://blog.apiary.io/2015/02/17/Utilising-API-Blueprint-in-API-Clients">
+    <meta name="description" content="Imagine an API client that can use the already-defined information from an API Blueprint to build a request&mdash;Apiary Blog">
+    <meta name="twitter:description" content="Imagine an API client that can use the already-defined information from an API Blueprint to build a request&mdash;Apiary Blog">
+    <meta property="og:description" content="Imagine an API client that can use the already-defined information from an API Blueprint to build a request&mdash;Apiary Blog">
+  
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/fonts.css">
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/modules/footer/footer.css">
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/modules/website.css">
+  <link rel="stylesheet" href="/syntax.css">
+  <!-- /Styles -->
+
+  <script>
+ var _gaq = [['_setAccount', 'UA-18252923-1'], ['_trackPageview']];
+ (function(d, t) {
+  var g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+  g.async = true;
+  g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g, s);
+ })(document, 'script');
+</script>
+
+
+</head>
+<body class="website">
+
+<!-- website-header -->
+  <header id="websiteHeader"><div class="positioning">
+    <a class="headerLogotypeLink" href="http://apiary.io/"><h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1><div class="headerLogotype"></div></a>
+    <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
+  </div></header>
+<!-- /website-header -->
+
+<!-- website-navigation -->
+  <div id="navigation">
+    <nav class="websiteNav positioning">
+      <ul class="clearAfter websiteNavMenu">
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/how-it-works">How It Works</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/pricing">Pricing</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/products">Product</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="http://blog.apiary.io/">Blog</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/company">Company</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://login.apiary.io/login">Sign In</a></li>
+        
+      </ul>
+      <a class="websiteNavLink websiteNavLinkHighlighted" href="https://login.apiary.io/register" class="signIn">Sign Up</a>
+      <a class="websiteNavLink backToTop" href="#~"><span class="visuallyhidden">Back to top</span></a>
+    </nav>
+  </div>
+<!-- /website-navigation -->
+
+<div>
+  
+
+<div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Utilising API Blueprint in API Clients</h1>
+    
+      <p><span class="minority">By</span> <strong>Kyle</strong>
+        (<a href="https://twitter.com/@kylefuller">@kylefuller</a>, <a href="mailto:kyle@apiary.io">kyle@apiary.io</a>) <span class="minority">on</span>&nbsp;17&nbsp;Feb&nbsp;2015
+      </p>
+      <p><span class="blogShare">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Utilising API Blueprint in API Clients" data-url="http://blog.apiary.io/2015/02/17/Utilising-API-Blueprint-in-API-Clients" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="http://blog.apiary.io/2015/02/17/Utilising-API-Blueprint-in-API-Clients" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+    
+
+  <p>I’m excited to release a new way to interface to API Blueprints. A client-side framework in Swift that allows you to introspect and perform actions at run-time.</p>
+
+<p>Imagine an API client that can use the already-defined information from an API Blueprint to build a request rather than hardcoding that information. This allows you to start building smarter clients which can evolve at run-time based on the blueprint.</p>
+
+<p>The SDK is created using a framework we’ve built which implements the <a href="https://github.com/the-hypermedia-project/charter#representor-pattern">Representor Pattern</a>, a canonical representation of hypermedia messages across multiple media types and languages. One of the key constraints to Representational State Transfer (REST) is Hypermedia as the Engine of Application State (HATEOAS). This constraint requires the message from the server to contain information about how to transition to other states along with links to other resources, specifically through hypermedia.</p>
+
+<p>The Representor is an interface providing this functionality along with the ability to deserialise Hypermedia formats such as <a href="http://stateless.co/hal_specification.html">HAL</a> and <a href="https://github.com/kevinswiber/siren">Siren</a>. The Representer interface contains a couple of properties, one of them is it’s transitions to other states, along with how the current resource links to other resources.</p>
+
+<p>Since an API Blueprint is a document which specifies transitions (actions) in your API, we’ve built on-top of the Representor interface. We’ve created a <a href="https://github.com/the-hypermedia-project/representor-swift">Swift implementation</a> of the Representor which has the ability to deserialise an API Blueprint into a collection of transitions.</p>
+
+<p>This allows us to decouple an API client from the server-side implementation. We no longer have to know about the URIs to each resource and the HTTP methods in our code. We can negotiate these at run-time and follow links from an API Blueprint.</p>
+
+<h2 id="example">Example</h2>
+
+<p>Let’s walk though how to load an API Blueprint and perform transitions in Swift. First of all, we’re going to load our blueprint file that’s embedded in our application. You’re not limited to embedding it in your application. You could even retrieve it dynamically at run-time.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">let</span> <span class="nv">blueprint</span> <span class="o">=</span> <span class="kt">Blueprint</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="s">"blueprint.json"</span><span class="p">,</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Once you’ve loaded your blueprint, you can retrieve the different resource actions as <a href="https://github.com/the-hypermedia-project/charter/blob/master/reference/hypermedia-elements.md#transitions">transitions</a>.</p>
+
+<p>This example is going to make use of one of our example blueprints, “Polls API”. I’ve pulled out an excerpt of the example blueprint and it looks something like the following. Take a look at the <a href="http://docs.pollsapi.apiary.io/">full version</a> (<a href="https://github.com/apiaryio/api-blueprint/blob/be00b000e47561419f654374dd975a02083354e8/examples/Polls%20API.md">source</a>).</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gh"># Polls</span>
+Polls is a simple web service that allows consumers to view polls and vote in them.
+
+<span class="gu">## Group Question</span>
+Resource related to questions in the API.
+
+<span class="gu">## Question [/questions/{question_id}]</span>
+<span class="p">+</span> Parameters
+<span class="p">    +</span> question_id (number) ... ID of the Question in form of an integer
+
+<span class="gu">### View a question detail [GET]</span>
+
+<span class="gu">## Choice [/questions/{question_id}/choices/{choice_id}]</span>
+<span class="p">
++</span> Parameters
+<span class="p">    +</span> question_id (number) ... ID of the Question in form of an integer
+<span class="p">    +</span> choice_id (number) ... ID of the Choice in form of an integer
+
+<span class="gu">### Vote [PUT]</span>
+
+This action allows you to vote on a question's choice.
+
+<span class="gu">## Questions collection [/questions{?page}]</span>
+<span class="p">+</span> Parameters
+<span class="p">    +</span> page (optional, number) ... The page of questions to return
+
+<span class="gu">### List all questions [GET]</span>
+<span class="gu">### Create a new question [POST]</span>
+</code></pre>
+</div>
+
+<p>We can pull out any of the actions from our blueprint by the resource and action name in Swift:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">if</span> <span class="k">let</span> <span class="nv">transition</span> <span class="o">=</span> <span class="n">blueprint</span><span class="p">?</span><span class="o">.</span><span class="nf">transition</span><span class="p">(</span><span class="s">"Choice"</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="s">"Vote"</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Perform, or introspect your transition.
+</span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="c1">// Gracefully handle the absence of the transition.
+</span><span class="p">}</span>
+</code></pre>
+</div>
+
+<p>This transition allows us to introspect values at run-time, retrieving protocol information such as the HTTP method and URI along with all the URI parameters.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nf">println</span><span class="p">(</span><span class="n">transition</span><span class="o">.</span><span class="n">uri</span><span class="p">)</span>
+<span class="nf">println</span><span class="p">(</span><span class="n">transition</span><span class="o">.</span><span class="n">method</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">parameter</span><span class="p">)</span> <span class="k">in</span> <span class="n">transition</span><span class="o">.</span><span class="n">parameters</span> <span class="p">{</span>
+  <span class="nf">println</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+  <span class="nf">println</span><span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">parameter</span><span class="o">.</span><span class="n">value</span><span class="se">)</span><span class="s"> </span><span class="se">\(</span><span class="n">parameter</span><span class="o">.</span><span class="n">defaultValue</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>We can use the elegant Swift HTTP networking library <a href="https://github.com/Alamofire/Alamofire">Alamofire</a> along with some convenience methods we’ve built to perform HTTP requests from our transition directly.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">let</span> <span class="nv">baseURL</span> <span class="o">=</span> <span class="kt">NSURL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"http://polls.apiblueprint.org/"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">poll</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s">"title"</span><span class="p">:</span> <span class="s">"What's your favourite programming language?"</span>
+<span class="p">]</span>
+
+<span class="nf">request</span><span class="p">(</span><span class="n">baseURL</span><span class="p">,</span> <span class="n">transition</span><span class="p">,</span> <span class="nv">attributes</span><span class="p">:</span><span class="n">poll</span><span class="p">)</span><span class="o">.</span><span class="n">responseJSON</span> <span class="p">{</span> <span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="kt">JSON</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span> <span class="k">in</span>
+  <span class="nf">println</span><span class="p">(</span><span class="kt">JSON</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>For the other action, to vote on a question by it’s ID. We have a URI parameter
+<code class="highlighter-rouge">id</code> and <code class="highlighter-rouge">choice_id</code>. We can substitute this into the URI and make the request like so:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">let</span> <span class="nv">params</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="s">"choice_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="nf">request</span><span class="p">(</span><span class="n">baseURL</span><span class="p">,</span> <span class="n">transition</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span><span class="n">params</span><span class="p">)</span><span class="o">.</span><span class="n">responseJSON</span> <span class="p">{</span> <span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="kt">JSON</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span> <span class="k">in</span>
+  <span class="nf">println</span><span class="p">(</span><span class="kt">JSON</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>This will result in performing a PUT request to <code class="highlighter-rouge">/questions/1/choices/2</code>.</p>
+
+<p>If you’re interested in giving this a go, check out our <a href="https://github.com/the-hypermedia-project/representor-swift/wiki/API-Blueprint">installation guide</a> on using API Blueprint in Swift.</p>
+
+<p>Of course, we’ve integrated this into our existing code examples. So right from Apiary you can see how it looks to perform a transition in Swift.</p>
+
+<p><img src="/images/2015-02-17-Utilising-API-Blueprint-in-API-Clients/code-example.png" width="665" height="364" alt="API Blueprint Representor Code Examples" /></p>
+
+<p>We would love to hear your thoughts in the comments section below.</p>
+
+  <p><span class="blogShare afterArticle">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Utilising API Blueprint in API Clients" data-url="http://blog.apiary.io/2015/02/17/Utilising-API-Blueprint-in-API-Clients" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="http://blog.apiary.io/2015/02/17/Utilising-API-Blueprint-in-API-Clients" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+
+
+    <a name="comments" id="comments"></a><div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_title = 'Utilising API Blueprint in API Clients';
+      var disqus_url = 'http://blog.apiary.io/2015/02/17/Utilising-API-Blueprint-in-API-Clients';
+      var disqus_identifier = '/2015/02/17/Utilising-API-Blueprint-in-API-Clients';
+      var disqus_shortname = 'apiaryblog';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript><p>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></p></noscript>
+    <p><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></p>
+
+
+  </div>
+</div>
+
+<div id="fb-root"></div>
+
+<script>
+(function(doc, script) {
+  var js,
+      fjs = doc.getElementsByTagName(script)[0],
+      frag = doc.createDocumentFragment(),
+      add = function(url, id) {
+          if (doc.getElementById(id)) {return;}
+          js = doc.createElement(script);
+          js.src = url;
+          id && (js.id = id);
+          frag.appendChild( js );
+      };
+
+    // Google+ button
+    add('http://apis.google.com/js/plusone.js');
+    // Facebook SDK
+    add('//connect.facebook.net/en_US/all.js#xfbml=1', 'facebook-jssdk');
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+
+    fjs.parentNode.insertBefore(frag, fjs);
+}(document, 'script'));
+</script>
+
+</div>
+
+<!-- website-footer -->
+  <hr>
+
+<footer class="applicationFooter">
+
+  <div class="applicationFooterRow">
+    <div class="applicationFooterColumns">
+    <div class="applicationFooterColumn">
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Platform</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiary.io/how-it-works">How It Works</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/products">Product</a></li>
+        <li><a class="applicationFooterListLink" href="http://enterprise.apiary.io/">Enterprise</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/pricing">Pricing</a></li>
+        <li><a class="applicationFooterListLink" href="http://support.apiary.io ">Help</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Company</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://blog.apiary.io/">Blog</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#team">Team</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/jobs">Jobs</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#contact">Contact</a></li>
+        <li><a class="applicationFooterListLink" href="https://apiary.a.ssl.fastly.net/assets/files/apiary-press-kit.zip">Press Kit</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Open Source</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiblueprint.org">API Blueprint</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/snowcrash">Snowcrash</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
+        <li><a class="applicationFooterListLink" href="http://client.apiary.io">Apiary CLI</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Social</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
+        <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
+        <li><a class="applicationFooterListLink" href="https://facebook.com/apiary.io">Facebook</a></li>
+        <li><a class="applicationFooterListLink" href="https://plus.google.com/114367708466177247933/about">Google+</a></li>
+        <li><a class="applicationFooterListLink" href="http://dribbble.com/apiary">Dribbble</a></li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="applicationFooterRow">
+    <p class="applicationFooterCopyright">&copy; Apiary Ltd. All rights reserved. <span class="applicationFooterCopyrightLinks">• <a href="http://apiary.io/tos" class="applicationFooterCopyrightLink">Terms</a> • <a href="https://www.iubenda.com/privacy-policy/323220" class="applicationFooterCopyrightLink">Privacy</a></span></p>
+  </div>
+</footer>
+<!-- /website-footer -->
+
+<script src="https://apiary.a.ssl.fastly.net/assets/js/website-scroll.js"></script>
+<script>
+  websiteScroll();
+  document.documentElement.className += ' js';
+</script>
+
+</body>
+</html>

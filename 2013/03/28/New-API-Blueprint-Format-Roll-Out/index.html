@@ -1,0 +1,233 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+
+  <title>Blueprint Format Roll Out&mdash;Apiary Blog</title>
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <meta name="author" content="Apiary">
+  <link rel="alternate" type="application/rss+xml" title="The Apiary Blog Feed" href="http://blog.apiary.io/feed.xml" />
+
+  <meta name="application-name" content="Apiary">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type"  content="article">
+  <meta name="twitter:site" content="@apiaryio">
+  <meta name="twitter:creator" content="@apiaryio">
+
+  <meta name="twitter:title" content="Blueprint Format Roll Out&mdash;Apiary Blog">
+  <meta property="og:title" content="Blueprint Format Roll Out&mdash;Apiary Blog">
+
+  
+    <meta property="og:url" content="http://blog.apiary.io/2013/03/28/New-API-Blueprint-Format-Roll-Out">
+    <meta name="description" content="New API Blueprint Format specification has been closed as we are getting ready for its roll out.&mdash;Apiary Blog">
+    <meta name="twitter:description" content="New API Blueprint Format specification has been closed as we are getting ready for its roll out.&mdash;Apiary Blog">
+    <meta property="og:description" content="New API Blueprint Format specification has been closed as we are getting ready for its roll out.&mdash;Apiary Blog">
+  
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/fonts.css">
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/modules/footer/footer.css">
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/modules/website.css">
+  <link rel="stylesheet" href="/syntax.css">
+  <!-- /Styles -->
+
+  <script>
+ var _gaq = [['_setAccount', 'UA-18252923-1'], ['_trackPageview']];
+ (function(d, t) {
+  var g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+  g.async = true;
+  g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g, s);
+ })(document, 'script');
+</script>
+
+
+</head>
+<body class="website">
+
+<!-- website-header -->
+  <header id="websiteHeader"><div class="positioning">
+    <a class="headerLogotypeLink" href="http://apiary.io/"><h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1><div class="headerLogotype"></div></a>
+    <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
+  </div></header>
+<!-- /website-header -->
+
+<!-- website-navigation -->
+  <div id="navigation">
+    <nav class="websiteNav positioning">
+      <ul class="clearAfter websiteNavMenu">
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/how-it-works">How It Works</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/pricing">Pricing</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/products">Product</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="http://blog.apiary.io/">Blog</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/company">Company</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://login.apiary.io/login">Sign In</a></li>
+        
+      </ul>
+      <a class="websiteNavLink websiteNavLinkHighlighted" href="https://login.apiary.io/register" class="signIn">Sign Up</a>
+      <a class="websiteNavLink backToTop" href="#~"><span class="visuallyhidden">Back to top</span></a>
+    </nav>
+  </div>
+<!-- /website-navigation -->
+
+<div>
+  
+
+<div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Blueprint Format Roll Out</h1>
+    
+      <p><span class="minority">By</span> <strong>Z</strong>
+        (<a href="https://twitter.com/zdne">zdne</a>, <a href="mailto:z@apiary.io">z@apiary.io</a>) <span class="minority">on</span>&nbsp;28&nbsp;Mar&nbsp;2013
+      </p>
+      <p><span class="blogShare">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Blueprint Format Roll Out" data-url="http://blog.apiary.io/2013/03/28/New-API-Blueprint-Format-Roll-Out" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="http://blog.apiary.io/2013/03/28/New-API-Blueprint-Format-Roll-Out" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+    
+
+  <p>As you may know the <a href="http://blog.apiary.io/2013/02/20/New-API-Blueprint-Format-Basics/">New API Blueprint Format</a> will be rolling out soon and today I would like to discuss how it will be done. </p>
+
+<p>Before we get started please note the New Format is not live as of the date of writing this post. I will make an official announcement here on Apiary blog and inside Apiary application once the Format goes live.</p>
+
+<h2 id="a-format-specification">1A Format Specification</h2>
+<p>First I would like to thank our awesome users who contributed to the New Format in reaction to my previous <a href="http://blog.apiary.io/2013/02/20/New-API-Blueprint-Format-Basics/">post</a>. </p>
+
+<p>In the process we have made quite a few changes to the Format. For example, to improve both readability and the process of writing we have decided to leave the “header marks (#) forest” in favor of utilizing “much cleaner” Markdown lists, like so: </p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code># GET /message_of_the_day
+Retrieves message of the day.
+
++ Response 200 (application/json)
+		
+	{ "message" : "Hello World" }
+</code></pre>
+</div>
+
+<p>You can find the New Format’s <a href="https://github.com/apiaryio/api-blueprint/blob/master/API%20Blueprint%20Specification.md">specification</a> its <a href="https://github.com/apiaryio/api-blueprint">repository</a>. The specification is completely open-sourced and it is also accompanied by a <a href="https://github.com/apiaryio/api-blueprint/blob/master/examples/1.%20Simplest%20API.md">tutorial</a> and examples.</p>
+
+<p>Note that this first version is only a mere milestone on the <a href="http://blog.apiary.io/2013/01/27/New-API-Blueprint-Format/">Format evolution</a>. However we still keep the main thing the main thing: The <strong>API Blueprint must be the best way possible to both design and document your API</strong>.</p>
+
+<h2 id="roll-out-gradual-opt-in">Roll Out: Gradual Opt-In</h2>
+<p>The rollout will be on an opt-in basis - that is, we won’t “switch” everything to new format immediately. Instead the two (legacy and 1A) formats will live in parallel for some time. You will be able to opt-in for the New Format by specifying format version in your blueprint’s metadata.</p>
+
+<p>Also the transition from the legacy to the New Format will be automatic and lossless. No need to rewrite anything by hand. </p>
+
+<p>With that said, if you are familiar with the current format or don’t want to dive in right away, it is perfectly fine to start working on your API today without any fear that you will have to re-do it all once the New Format arrives.</p>
+
+<p>As always I would love to hear from you. You can reach me on <a href="z@apiary.io">my email</a>.</p>
+
+
+  <p><span class="blogShare afterArticle">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Blueprint Format Roll Out" data-url="http://blog.apiary.io/2013/03/28/New-API-Blueprint-Format-Roll-Out" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="http://blog.apiary.io/2013/03/28/New-API-Blueprint-Format-Roll-Out" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+
+
+
+  </div>
+</div>
+
+<div id="fb-root"></div>
+
+<script>
+(function(doc, script) {
+  var js,
+      fjs = doc.getElementsByTagName(script)[0],
+      frag = doc.createDocumentFragment(),
+      add = function(url, id) {
+          if (doc.getElementById(id)) {return;}
+          js = doc.createElement(script);
+          js.src = url;
+          id && (js.id = id);
+          frag.appendChild( js );
+      };
+
+    // Google+ button
+    add('http://apis.google.com/js/plusone.js');
+    // Facebook SDK
+    add('//connect.facebook.net/en_US/all.js#xfbml=1', 'facebook-jssdk');
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+
+    fjs.parentNode.insertBefore(frag, fjs);
+}(document, 'script'));
+</script>
+
+</div>
+
+<!-- website-footer -->
+  <hr>
+
+<footer class="applicationFooter">
+
+  <div class="applicationFooterRow">
+    <div class="applicationFooterColumns">
+    <div class="applicationFooterColumn">
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Platform</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiary.io/how-it-works">How It Works</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/products">Product</a></li>
+        <li><a class="applicationFooterListLink" href="http://enterprise.apiary.io/">Enterprise</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/pricing">Pricing</a></li>
+        <li><a class="applicationFooterListLink" href="http://support.apiary.io ">Help</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Company</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://blog.apiary.io/">Blog</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#team">Team</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/jobs">Jobs</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#contact">Contact</a></li>
+        <li><a class="applicationFooterListLink" href="https://apiary.a.ssl.fastly.net/assets/files/apiary-press-kit.zip">Press Kit</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Open Source</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiblueprint.org">API Blueprint</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/snowcrash">Snowcrash</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
+        <li><a class="applicationFooterListLink" href="http://client.apiary.io">Apiary CLI</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Social</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
+        <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
+        <li><a class="applicationFooterListLink" href="https://facebook.com/apiary.io">Facebook</a></li>
+        <li><a class="applicationFooterListLink" href="https://plus.google.com/114367708466177247933/about">Google+</a></li>
+        <li><a class="applicationFooterListLink" href="http://dribbble.com/apiary">Dribbble</a></li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="applicationFooterRow">
+    <p class="applicationFooterCopyright">&copy; Apiary Ltd. All rights reserved. <span class="applicationFooterCopyrightLinks">• <a href="http://apiary.io/tos" class="applicationFooterCopyrightLink">Terms</a> • <a href="https://www.iubenda.com/privacy-policy/323220" class="applicationFooterCopyrightLink">Privacy</a></span></p>
+  </div>
+</footer>
+<!-- /website-footer -->
+
+<script src="https://apiary.a.ssl.fastly.net/assets/js/website-scroll.js"></script>
+<script>
+  websiteScroll();
+  document.documentElement.className += ' js';
+</script>
+
+</body>
+</html>

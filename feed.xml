@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Apiary Blog</title>
+    <description>Updates on everyone's favourite REST API tools company</description>
+    <link>http://blog.apiary.io</link>
+    <atom:link href="http://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>New API Blueprint Tutorial</title>
+        <description>Learning API Blueprint has never been easier.</description>
+        <pubDate>Wed, 01 Apr 2015 17:00:00 +0100</pubDate>
+        <link>http://blog.apiary.io/2015/04/01/Polls-API-Blueprint-Tutorial-Examples</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2015/04/01/Polls-API-Blueprint-Tutorial-Examples</guid>
+      </item>
+    
+      <item>
+        <title>Sharing Is Caring - Socialize Your Public API Blueprints</title>
+        <description>Learn the art of API Blueprint through socialization and collaboration.</description>
+        <pubDate>Thu, 26 Mar 2015 23:00:00 +0000</pubDate>
+        <link>http://blog.apiary.io/2015/03/26/ApiBlueprint-button</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2015/03/26/ApiBlueprint-button</guid>
+      </item>
+    
+      <item>
+        <title>Utilising API Blueprint in API Clients</title>
+        <description>Imagine an API client that can use the already-defined information from an API Blueprint to build a request</description>
+        <pubDate>Tue, 17 Feb 2015 16:00:00 +0000</pubDate>
+        <link>http://blog.apiary.io/2015/02/17/Utilising-API-Blueprint-in-API-Clients</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2015/02/17/Utilising-API-Blueprint-in-API-Clients</guid>
+      </item>
+    
+      <item>
+        <title>Next Version of API Documentation</title>
+        <description>Starting today, we are setting the new documentation as the default documentation for all new APIs.</description>
+        <pubDate>Thu, 04 Dec 2014 18:00:00 +0000</pubDate>
+        <link>http://blog.apiary.io/2014/12/04/Next-Version-of-API-Documentation</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2014/12/04/Next-Version-of-API-Documentation</guid>
+      </item>
+    
+      <item>
+        <title>Paw Integration</title>
+        <description>Using Paw, a fully-featured HTTP API client for Mac with API Blueprint integration.</description>
+        <pubDate>Tue, 02 Dec 2014 17:00:00 +0000</pubDate>
+        <link>http://blog.apiary.io/2014/12/02/Paw-Integration</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2014/12/02/Paw-Integration</guid>
+      </item>
+    
+      <item>
+        <title>Meetup in Prague</title>
+        <description>Highlights from a full-house meetup in Prague by Apiary team</description>
+        <pubDate>Fri, 21 Nov 2014 08:50:00 +0000</pubDate>
+        <link>http://blog.apiary.io/2014/11/21/Meetup-In-Prague</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2014/11/21/Meetup-In-Prague</guid>
+      </item>
+    
+      <item>
+        <title>Interact with Apiary from the Command Line</title>
+        <description>Use our CLI tool to preview, fetch, and publish your API Blueprints</description>
+        <pubDate>Wed, 05 Nov 2014 06:00:00 +0000</pubDate>
+        <link>http://blog.apiary.io/2014/11/05/Interact-with-Apiary-from-the-Command-Line</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2014/11/05/Interact-with-Apiary-from-the-Command-Line</guid>
+      </item>
+    
+      <item>
+        <title>Make it so — Apiary enters the Enterprise</title>
+        <description>A game-changer for large, distributed API teams</description>
+        <pubDate>Wed, 22 Oct 2014 09:50:00 +0100</pubDate>
+        <link>http://blog.apiary.io/2014/10/22/Enterprise-Release</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2014/10/22/Enterprise-Release</guid>
+      </item>
+    
+      <item>
+        <title>New Code Samples for Go and Swift</title>
+        <description>Apiary now has code samples for both Go and Swift</description>
+        <pubDate>Thu, 16 Oct 2014 09:50:00 +0100</pubDate>
+        <link>http://blog.apiary.io/2014/10/16/New-Code-Samples-for-Go-and-Swift</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2014/10/16/New-Code-Samples-for-Go-and-Swift</guid>
+      </item>
+    
+      <item>
+        <title>Crafting MSON</title>
+        <description>The journey of data structure design-needs</description>
+        <pubDate>Fri, 10 Oct 2014 09:50:00 +0100</pubDate>
+        <link>http://blog.apiary.io/2014/10/10/Crafting-MSON</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2014/10/10/Crafting-MSON</guid>
+      </item>
+    
+  </channel>
+</rss>

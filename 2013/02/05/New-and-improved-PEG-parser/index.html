@@ -1,0 +1,271 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+
+  <title>New and improved PEG parser&mdash;Apiary Blog</title>
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <meta name="author" content="Apiary">
+  <link rel="alternate" type="application/rss+xml" title="The Apiary Blog Feed" href="http://blog.apiary.io/feed.xml" />
+
+  <meta name="application-name" content="Apiary">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type"  content="article">
+  <meta name="twitter:site" content="@apiaryio">
+  <meta name="twitter:creator" content="@apiaryio">
+
+  <meta name="twitter:title" content="New and improved PEG parser&mdash;Apiary Blog">
+  <meta property="og:title" content="New and improved PEG parser&mdash;Apiary Blog">
+
+  
+    <meta property="og:url" content="http://blog.apiary.io/2013/02/05/New-and-improved-PEG-parser">
+    <meta name="description" content="We are happy to announce that we have completed migration to a rewrite of our blueprint parser. The parser is now open-source and will serve as a base for further improvements of our format.&mdash;Apiary Blog">
+    <meta name="twitter:description" content="We are happy to announce that we have completed migration to a rewrite of our blueprint parser. The parser is now open-source and will serve as a base for further improvements of our format.&mdash;Apiary Blog">
+    <meta property="og:description" content="We are happy to announce that we have completed migration to a rewrite of our blueprint parser. The parser is now open-source and will serve as a base for further improvements of our format.&mdash;Apiary Blog">
+  
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/fonts.css">
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/modules/footer/footer.css">
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/modules/website.css">
+  <link rel="stylesheet" href="/syntax.css">
+  <!-- /Styles -->
+
+  <script>
+ var _gaq = [['_setAccount', 'UA-18252923-1'], ['_trackPageview']];
+ (function(d, t) {
+  var g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+  g.async = true;
+  g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g, s);
+ })(document, 'script');
+</script>
+
+
+</head>
+<body class="website">
+
+<!-- website-header -->
+  <header id="websiteHeader"><div class="positioning">
+    <a class="headerLogotypeLink" href="http://apiary.io/"><h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1><div class="headerLogotype"></div></a>
+    <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
+  </div></header>
+<!-- /website-header -->
+
+<!-- website-navigation -->
+  <div id="navigation">
+    <nav class="websiteNav positioning">
+      <ul class="clearAfter websiteNavMenu">
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/how-it-works">How It Works</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/pricing">Pricing</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/products">Product</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="http://blog.apiary.io/">Blog</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/company">Company</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://login.apiary.io/login">Sign In</a></li>
+        
+      </ul>
+      <a class="websiteNavLink websiteNavLinkHighlighted" href="https://login.apiary.io/register" class="signIn">Sign Up</a>
+      <a class="websiteNavLink backToTop" href="#~"><span class="visuallyhidden">Back to top</span></a>
+    </nav>
+  </div>
+<!-- /website-navigation -->
+
+<div>
+  
+
+<div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>New and improved PEG parser</h1>
+    
+      <p><span class="minority">By</span> <strong>Lukas Linhart</strong>
+        (<a href="https://twitter.com/almadcz">almadcz</a>, <a href="mailto:lukas@apiary.io">lukas@apiary.io</a>) <span class="minority">on</span>&nbsp;05&nbsp;Feb&nbsp;2013
+      </p>
+      <p><span class="blogShare">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="New and improved PEG parser" data-url="http://blog.apiary.io/2013/02/05/New-and-improved-PEG-parser" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="http://blog.apiary.io/2013/02/05/New-and-improved-PEG-parser" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+    
+
+  <p>I’m excited to to announce that I have finally completed migration
+to our new parser. It is more robust, more formal, totally open-source
+and will serve as a base for further improvements of our syntax.</p>
+
+<p>With that, Apiary Blueprint Format is now defined as a proper grammar.
+Both grammar and javascript parser (works both in browser and in
+<a href="http://nodejs.org/">node.js</a>) are open-source and
+<a href="https://github.com/apiaryio/blueprint-parser">available on github</a>.
+It is based on <a href="http://pegjs.majda.cz/">PEG.js</a>
+and I’d like to thank its author, <a href="http://majda.cz/">David Majda</a>,
+for writing it and also contributing enormously to Apiary blueprint grammar.</p>
+
+<h1 id="backward-compatibility">Backward compatibility</h1>
+
+<p>We have worked hard to maintain backward compatibility. However, there
+are some areas where the behavior of the old parser
+was undefined and while it is valid with new parser, it may lead to
+unexpected results. Therefore, we encourage you to take a look at your
+documentation, verify everything is OK and <a href="http://support.apiary.io/">let us know</a>
+if you need help.</p>
+
+<p>The main change comes with header and payload definition. In some places,
+the old parser incorrectly accepted empty newlines inside headers or
+payload. This is not allowed as empty line indicates “end of the
+resource”. If you need to have empty lines inside your payload, you
+may take advantage of our new “heredoc” syntax:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>POST /resource
+&gt; Content-Type: text/css
+&lt;&lt;&lt;EOT
+
+ body {color: purple}
+
+ .content {text: pink}
+
+EOT
+&lt; 200
+&lt; Content-Type: application/xml
+&lt;&lt;&lt;EOT
+&lt;result&gt;
+
+    &lt;ok/&gt;
+
+&lt;/result&gt;
+EOT
+</code></pre>
+</div>
+
+<p>EOT may any alphanumeric sequence of your choice.</p>
+
+<h1 id="brave-new-world">Brave new world</h1>
+
+<p>The new parser will allow us to be more agile in the <a href="/2013/01/27/New-API-Blueprint-Format/">evolution of our format</a>.
+<a href="https://github.com/apiaryio/blueprint-parser/blob/master/src/apiary-blueprint-parser.pegjs">The grammar</a>
+now also serves as a formal definition of our language.</p>
+
+<p>Many people from the open-source community asked us how they can integrate with our format, whether that is automatic generation of <a href="http://frisbyjs.com/">frisby.js</a> tests or scaffolding of Ruby apps. We love open-source, so we embrace this collaboration wholeheartly.
+Hopefully, the new parser should make this easier for us all.</p>
+
+<p>To be future-proof, you should use a <a href="http://en.wikipedia.org/wiki/Comparison_of_parser_generators#Parsing_expression_grammars.2C_deterministic_boolean_grammars">generator for your language</a>
+and use our grammar directly. Also, don’t forget to subscribe to our
+<a href="https://groups.google.com/forum/?fromgroups#!forum/apiary-blueprint-parser">mailing list</a>,
+where you can find information about new releases and important changes.</p>
+
+<h1 id="let-us-know">Let us know</h1>
+
+<p>Created something cool with apiary? Let us know! Mention <a href="http://twitter.com/apiaryio">us on twitter</a> or write me to <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#108;&#117;&#107;&#097;&#115;&#064;&#097;&#112;&#105;&#097;&#114;&#121;&#046;&#105;&#111;">&#108;&#117;&#107;&#097;&#115;&#064;&#097;&#112;&#105;&#097;&#114;&#121;&#046;&#105;&#111;</a>.</p>
+
+<p>We’ll be glad to hear from you!</p>
+
+  <p><span class="blogShare afterArticle">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="New and improved PEG parser" data-url="http://blog.apiary.io/2013/02/05/New-and-improved-PEG-parser" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="http://blog.apiary.io/2013/02/05/New-and-improved-PEG-parser" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+
+
+
+  </div>
+</div>
+
+<div id="fb-root"></div>
+
+<script>
+(function(doc, script) {
+  var js,
+      fjs = doc.getElementsByTagName(script)[0],
+      frag = doc.createDocumentFragment(),
+      add = function(url, id) {
+          if (doc.getElementById(id)) {return;}
+          js = doc.createElement(script);
+          js.src = url;
+          id && (js.id = id);
+          frag.appendChild( js );
+      };
+
+    // Google+ button
+    add('http://apis.google.com/js/plusone.js');
+    // Facebook SDK
+    add('//connect.facebook.net/en_US/all.js#xfbml=1', 'facebook-jssdk');
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+
+    fjs.parentNode.insertBefore(frag, fjs);
+}(document, 'script'));
+</script>
+
+</div>
+
+<!-- website-footer -->
+  <hr>
+
+<footer class="applicationFooter">
+
+  <div class="applicationFooterRow">
+    <div class="applicationFooterColumns">
+    <div class="applicationFooterColumn">
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Platform</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiary.io/how-it-works">How It Works</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/products">Product</a></li>
+        <li><a class="applicationFooterListLink" href="http://enterprise.apiary.io/">Enterprise</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/pricing">Pricing</a></li>
+        <li><a class="applicationFooterListLink" href="http://support.apiary.io ">Help</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Company</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://blog.apiary.io/">Blog</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#team">Team</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/jobs">Jobs</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#contact">Contact</a></li>
+        <li><a class="applicationFooterListLink" href="https://apiary.a.ssl.fastly.net/assets/files/apiary-press-kit.zip">Press Kit</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Open Source</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiblueprint.org">API Blueprint</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/snowcrash">Snowcrash</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
+        <li><a class="applicationFooterListLink" href="http://client.apiary.io">Apiary CLI</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Social</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
+        <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
+        <li><a class="applicationFooterListLink" href="https://facebook.com/apiary.io">Facebook</a></li>
+        <li><a class="applicationFooterListLink" href="https://plus.google.com/114367708466177247933/about">Google+</a></li>
+        <li><a class="applicationFooterListLink" href="http://dribbble.com/apiary">Dribbble</a></li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="applicationFooterRow">
+    <p class="applicationFooterCopyright">&copy; Apiary Ltd. All rights reserved. <span class="applicationFooterCopyrightLinks">• <a href="http://apiary.io/tos" class="applicationFooterCopyrightLink">Terms</a> • <a href="https://www.iubenda.com/privacy-policy/323220" class="applicationFooterCopyrightLink">Privacy</a></span></p>
+  </div>
+</footer>
+<!-- /website-footer -->
+
+<script src="https://apiary.a.ssl.fastly.net/assets/js/website-scroll.js"></script>
+<script>
+  websiteScroll();
+  document.documentElement.className += ' js';
+</script>
+
+</body>
+</html>
