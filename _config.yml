@@ -11,6 +11,7 @@ highlights: true
 highlighter: rouge
 gems:
   - jekyll-redirect-from
+exclude: [vendor]
 
 # Site configuration
 url:          http://blog.apiary.io
