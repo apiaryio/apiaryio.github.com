@@ -16,12 +16,14 @@ First I would like to thank our awesome users who contributed to the New Format 
 
 In the process we have made quite a few changes to the Format. For example, to improve both readability and the process of writing we have decided to leave the "header marks (#) forest" in favor of utilizing "much cleaner" Markdown lists, like so: 
 
-	# GET /message_of_the_day
-	Retrieves message of the day.
-	
-	+ Response 200 (application/json)
-			
-		{ "message" : "Hello World" }
+```apib
+# GET /message_of_the_day
+Retrieves message of the day.
+
++ Response 200 (application/json)
+
+        { "message" : "Hello World" }
+```
 
 You can find the New Format's [specification](https://github.com/apiaryio/api-blueprint/blob/master/API%20Blueprint%20Specification.md) its [repository](https://github.com/apiaryio/api-blueprint). The specification is completely open-sourced and it is also accompanied by a [tutorial](https://github.com/apiaryio/api-blueprint/blob/master/examples/1.%20Simplest%20API.md) and examples.
 
