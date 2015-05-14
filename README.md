@@ -1,6 +1,10 @@
 
 # Apiary Blog
 
+## What not to do
+
+* Do not rename the repo as apiaryio.github.io
+
 ## Steps to create a blog post
 
  - Clone the repo: https://github.com/apiaryio/apiaryio.github.com
