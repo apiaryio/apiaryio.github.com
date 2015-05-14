@@ -55,6 +55,6 @@ rake post['Hello World',:with_images]
 rake image_dir['Hello World']
 ```
 
-## Stylesheet Development
+## Stylesheet Development 
 
 The server directly references Apiary [website production stylesheet](https://github.com/apiaryio/apiary/blob/master/public/styles/modules/website.styl). In order to change this to `https://static.apiary.dev:9000` for development purposes, edit the `static` variable in `_config.yml`. Make sure not to commit this to Github. Also, make sure your CSS changes are deployed on Apiary before pushing blog changes to Github.
