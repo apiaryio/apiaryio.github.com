@@ -2,22 +2,260 @@
 layout: default
 ---
 
-<div class="home">
+<!doctype html>
+<body class="website homepage">
+  <hr>
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="promo" id="promo"><section class="positioning">
+      <article class="folioA">
+        <h1 class="sectionHeadline">API design is hard</h1>
+        <h2 class="sectionTagline">Build beautiful APIs</h2>
+        <p class="hpTagline">Collaborative design, instant API mock, generated documentation, integrated code samples, debugging and automated testing.</p>
+      </article>
+    </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <section class="bottomCallToAction"><div class="positioning">
+      <p><a class="sectionHeadline" href="/how-it-works"><span class="hex block"></span>See how Apiary works</a></p>
+      <div class="githubLoginButton">
+        <a class="githubLoginButtonLink" href="https://github.com/login/oauth/authorize?client_id=f739c33cbd5c32296a43&redirect_uri=https%3A%2F%2Flogin.apiary.io%2Fgithub%2Flogin"><span class="githubLoginButtonInside">Quick start with GitHub</span></a>
+        <p class="githubLoginButtonOrangeLink">No GitHub? <a href="https://login.apiary.io/register">Sign up with e-mail!</a></p>
+      </div>
+    </div></section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <span class="promoArrowDown"></span>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
 
-</div>
+  <hr>
+
+  <section class="featuredAPIs positioning">
+    <h1 class="sectionHeadline">Featured APIs</h1>
+    <p class="sectionTagline">We've selected some APIs our users have built to give you a sense of what can be done with Apiary.</p>
+    <ul class="featuredAPIsList">
+      <li class="featuredApiItem"><a class="featuredApiLink" href="https://developer.gooddata.com/api"><strong>GoodData</strong> Cloud Business Intelligence</a></li>
+      <li class="featuredApiItem"><a class="featuredApiLink" href="http://docs.volusion.apiary.io"><strong>Volusion Storefront</strong> Unique Storefront Experience</a></li>
+      <li class="featuredApiItem"><a class="featuredApiLink" href="http://docs.sentlyplus.apiary.io/"><strong>Sent.ly</strong> Business SMS Made Easy</a></li>
+      <li class="featuredApiItem"><a class="featuredApiLink" href="http://docs.themoviedb.apiary.io"><strong>The Movie Database</strong> Community Maintained Movie Database</a></li>
+      <li class="featuredApiItem"><a class="featuredApiLink" href="http://docs.timdorr.apiary.io"><strong>Tesla Model S</strong> Web API to the next-gen, all-electric car</a></li>
+      <li class="featuredApiItem"><a class="featuredApiLink" href="http://docs.opened.apiary.io"><strong>OpenEd</strong> World's largest educational resource catalog</a></li>
+    </ul>
+  </section>
+
+  <hr>
+
+
+  <hr>
+
+  <div class="whatPeopleSay">
+    <section>
+      <h1 class="positioning sectionHeadline">What People Say</h1>
+      <div class="tweetScrollPlace"><div class="tweetScroll">
+        <ul class="tweetList"><li class="tweetItem">
+          <p class="tweetText"><a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a> Because this is quite simply the best API toolkit I've come across so far. At first I was skeptical, now I'm in love &lt;3</p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/1503269690/162765_10150377562515381_695260380_16673832_3997729_n_normal.jpg" alt="@sleepycal" width="50" height="50"></span>
+                    <h2 class="tweetName">Cal Leeming</h2>
+          <a class="tweetHandle" href="http://twitter.com/sleepycal">@sleepycal</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText"><a title='Jan%20Moravec' href='http://twitter.com/janmoravec'>@janmoravec</a> Great work on the <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a> website and editor interface, this is really quite beautiful.</p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/1503269690/162765_10150377562515381_695260380_16673832_3997729_n_normal.jpg" alt="@sleepycal" width="50" height="50"></span>
+                    <h2 class="tweetName">Cal Leeming</h2>
+          <a class="tweetHandle" href="http://twitter.com/sleepycal">@sleepycal</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">Phenominal API discussion - From <a href='http://search.twitter.com/search?q=%23SOA'>#SOA</a> to <a href='http://search.twitter.com/search?q=%23Microservices'>#Microservices</a> - <a title='Cot%C3%A9' href='http://twitter.com/cote'>@cote</a> of <a title='Pivotal' href='http://twitter.com/pivotal'>@pivotal</a> chats w/ <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a> CEO, Jakub Nešetřil <a href='http://blog.pivotal.io/podcasts-pivotal/features/pivotal-conversations-so-isnt-microservices-just-soa-with-json' title='http%3A%2F%2Fblog.pivotal.io%2Fpodcasts-pivotal%2Ffeatures%2Fpivotal-conversations-so-isnt-microservices-just-soa-with-json' target='_blank'>blog.pivotal.io/podcasts-pivot…</a></p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/489449017231691777/4GpKCPPw_normal.jpeg" alt="@porterdeleon" width="50" height="50"></span>
+                    <h2 class="tweetName">Y. Porter de León</h2>
+          <a class="tweetHandle" href="http://twitter.com/porterdeleon">@porterdeleon</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">I really like my <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a> shirt <a href='http://twitter.com/camilin87/status/596060861078331394/photo/1' target='_blank'>pic.twitter.com/cMKPWStG3Y</a></p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/465319542940368896/Cn3mSIY__normal.jpeg" alt="@camilin87" width="50" height="50"></span>
+                    <h2 class="tweetName">Camilo Sanchez</h2>
+          <a class="tweetHandle" href="http://twitter.com/camilin87">@camilin87</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">I love <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a> bc building API's was never easy. Happy 2 meet them w/ <a title='TeskaLabs' href='http://twitter.com/TeskaLabs'>@TeskaLabs</a> today. can I still get t-shirt? :) <a title='Jakub%20Nesetril' href='http://twitter.com/jakubnesetril'>@jakubnesetril</a> <a href='http://search.twitter.com/search?q=%23API'>#API</a></p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/3222134771/c4916459eff5ced203064a2952112902_normal.jpeg" alt="@PavelEnderle" width="50" height="50"></span>
+                    <h2 class="tweetName">Pavel Enderle</h2>
+          <a class="tweetHandle" href="http://twitter.com/PavelEnderle">@PavelEnderle</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">API Blueprint seems like the pure awesome thing you need if you want to document an API. <a href='https://apiblueprint.org/' title='https%3A%2F%2Fapiblueprint.org%2F' target='_blank'>apiblueprint.org</a></p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/2677247204/041f97cef6ceaaeee75dc34decdf1be8_normal.png" alt="@cebe_cc" width="50" height="50"></span>
+                    <h2 class="tweetName">CeBe</h2>
+          <a class="tweetHandle" href="http://twitter.com/cebe_cc">@cebe_cc</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">Yes! My Power BI real-time dashboard update API demo works! Thanks to <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a> @mspowerbi <a href='http://search.twitter.com/search?q=%23powerbi'>#powerbi</a> <a href='http://search.twitter.com/search?q=%23bi'>#bi</a></p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/560822582404870145/gV_Nxzha_normal.jpeg" alt="@edgarwalther" width="50" height="50"></span>
+                    <h2 class="tweetName">Edgar Walther</h2>
+          <a class="tweetHandle" href="http://twitter.com/edgarwalther">@edgarwalther</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">Wow, this API documentation with examples is bloody brilliant! <a href='http://docs.themoviedb.apiary.io/#reference/people/personidcombinedcredits/get' title='http%3A%2F%2Fdocs.themoviedb.apiary.io%2F%23reference%2Fpeople%2Fpersonidcombinedcredits%2Fget' target='_blank'>docs.themoviedb.apiary.io/#reference/peo…</a> Bravo <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a></p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/2495128132/8khmuh23xtqv94cvq16k_normal.png" alt="@Valstorm" width="50" height="50"></span>
+                    <h2 class="tweetName">Valstorm</h2>
+          <a class="tweetHandle" href="http://twitter.com/Valstorm">@Valstorm</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">Enjoying using <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a> for the first time. Generating docs and mocks like this is a real joy.</p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/502897928449454080/Chb7BvOB_normal.png" alt="@shaunchurch" width="50" height="50"></span>
+                    <h2 class="tweetName">Shaun Church</h2>
+          <a class="tweetHandle" href="http://twitter.com/shaunchurch">@shaunchurch</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">I'm in love with <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a> the way of designing and testing your beautiful API! <a href='http://search.twitter.com/search?q=%23API'>#API</a> <a href='http://search.twitter.com/search?q=%23rest'>#rest</a> <a href='http://twitter.com/bubuslubu/status/591731187296636928/photo/1' target='_blank'>pic.twitter.com/ojXYt6V3HD</a></p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/551356209068916737/bR6VnmIl_normal.jpeg" alt="@bubuslubu" width="50" height="50"></span>
+                    <h2 class="tweetName">Bianca Mihai</h2>
+          <a class="tweetHandle" href="http://twitter.com/bubuslubu">@bubuslubu</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">Apiary Blueprint Manager - IntelliJ IDEA and Android Studio plugin - MSc. thesis for easier <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a> interaction. <a href='https://plugins.jetbrains.com/plugin/7713' title='https%3A%2F%2Fplugins.jetbrains.com%2Fplugin%2F7713' target='_blank'>plugins.jetbrains.com/plugin/7713</a></p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/495344482355642369/iXeOkRD5_normal.jpeg" alt="@adamherout" width="50" height="50"></span>
+                    <h2 class="tweetName">Adam Herout</h2>
+          <a class="tweetHandle" href="http://twitter.com/adamherout">@adamherout</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">Saw saw some really cool stuff coming for <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a>, I think I am becoming a believer :-)</p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/505169831214059520/VNhlnfMc_normal.jpeg" alt="@gblock" width="50" height="50"></span>
+                    <h2 class="tweetName">007</h2>
+          <a class="tweetHandle" href="http://twitter.com/gblock">@gblock</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">Just finished my first frontend app without real backend, only with <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a> Then we did switch to real server and...  it just worked ;-)</p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/2758009140/dd4e32530a683facac9e94f8c5a388f8_normal.jpeg" alt="@barneyalbert" width="50" height="50"></span>
+                    <h2 class="tweetName">Jirka Vrany</h2>
+          <a class="tweetHandle" href="http://twitter.com/barneyalbert">@barneyalbert</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">When having lunch or tasting cakes, remember all catering for our event is available thanks to @ysoft and <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a>, our wonderful sponsors!</p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/577936895943921664/ejKrLmd7_normal.png" alt="@djangogirlsprg" width="50" height="50"></span>
+                    <h2 class="tweetName">Django Girls Prague</h2>
+          <a class="tweetHandle" href="http://twitter.com/djangogirlsprg">@djangogirlsprg</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">Dinner with API giants <a title='Mike%20Amundsen' href='http://twitter.com/mamund'>@mamund</a> <a title='Z' href='http://twitter.com/zdne'>@zdne</a> <a title='Jakub%20Nesetril' href='http://twitter.com/jakubnesetril'>@jakubnesetril</a> <a title='Emmanuel%20Paraskakis' href='http://twitter.com/manp'>@manp</a> and <a title='Dave%20Goldberg' href='http://twitter.com/davidgoldberg'>@davidgoldberg</a>. Great convos! I am jealous of myself. <a href='http://twitter.com/gblock/status/591074251236462593/photo/1' target='_blank'>pic.twitter.com/t7vlGnOWXG</a></p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/505169831214059520/VNhlnfMc_normal.jpeg" alt="@gblock" width="50" height="50"></span>
+                    <h2 class="tweetName">007</h2>
+          <a class="tweetHandle" href="http://twitter.com/gblock">@gblock</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">Judge Dredd (<a title='Adam%20Kliment' href='http://twitter.com/ntmlk'>@ntmlk</a>) is in the house! <a href='http://search.twitter.com/search?q=%23APIJustice'>#APIJustice</a> from <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a> <a href='http://twitter.com/manp/status/588890770305757184/photo/1' target='_blank'>pic.twitter.com/5aqSdBs1cK</a></p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/378800000100936943/2e576a7b1ba8bd18f8d2101d98cb39d7_normal.jpeg" alt="@manp" width="50" height="50"></span>
+                    <h2 class="tweetName">Emmanuel Paraskakis</h2>
+          <a class="tweetHandle" href="http://twitter.com/manp">@manp</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">When in doubt, do less shit and do it better. Such an easy concept to run a business by yet often overlooked by startups &amp; big companies</p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/378800000051282927/759a0da13f69dcfacf90ab501cd6246f_normal.png" alt="@jsoltero" width="50" height="50"></span>
+                    <h2 class="tweetName">Javier Soltero</h2>
+          <a class="tweetHandle" href="http://twitter.com/jsoltero">@jsoltero</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">Also, thanks for all the positive feedback! <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a> is an awesome service and I'm glad that others see as much value in it as I do!</p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/3093733481/4560d0e6eb4f1e54d8bb13e1d8ca2592_normal.jpeg" alt="@Frankacy" width="50" height="50"></span>
+                    <h2 class="tweetName">Frank Courville</h2>
+          <a class="tweetHandle" href="http://twitter.com/Frankacy">@Frankacy</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">Mad props to the <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a> team for both their product and their support. I know they're working their asses off and still they reply!</p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/3472863764/dfb9ec737d9e4114785ced476b2db185_normal.png" alt="@mbernier" width="50" height="50"></span>
+                    <h2 class="tweetName">Matt Bernier</h2>
+          <a class="tweetHandle" href="http://twitter.com/mbernier">@mbernier</a>
+                  </li><li class="tweetItem">
+          <p class="tweetText">Playing around with <a title='Apiary' href='http://twitter.com/apiaryio'>@apiaryio</a> today mocking out an API with <a title='Lucas%20Eagleton' href='http://twitter.com/MuzzleFork'>@MuzzleFork</a> ... love it <a title='Jakub%20Nesetril' href='http://twitter.com/jakubnesetril'>@jakubnesetril</a> <a href='http://twitter.com/keranm/status/581643904514015234/photo/1' target='_blank'>pic.twitter.com/WY4qGBYnhG</a></p>
+          <span class="tweetAvatar"><img data-src="https://pbs.twimg.com/profile_images/550826565185978370/jIWHGjLg_normal.jpeg" alt="@keranm" width="50" height="50"></span>
+                    <h2 class="tweetName">Keran McKenzie</h2>
+          <a class="tweetHandle" href="http://twitter.com/keranm">@keranm</a>
+                  </li></ul>
+      </div></div>
+    </section>
+  </div>
+
+
+  <hr>
+
+<!-- website-navigation -->
+  <div id="navigation">
+    <nav class="websiteNav positioning">
+      <ul class="clearAfter websiteNavMenu">
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/how-it-works">How It Works</a></li>
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/pricing">Pricing</a></li>
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/products">Product</a></li>
+                <li class="websiteNavItem"><a class="websiteNavLink" href="http://blog.apiary.io/">Blog</a></li>
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/company">Company</a></li>
+              </ul>
+                      <div class="websiteNavLinkHighlighted accountLineWrap">
+          <a href="https://apiary.io/home" class="gravatarLine">
+                          <img  src="https://avatars.githubusercontent.com/u/11202494?s=90&amp;d=https%3A%2F%2Fapiary.a.ssl.fastly.net%2Fassets%2Fimages%2Fdefault_user_avatar-8f601fa59d98081b.png" height="45" width="45" />
+                      </a>
+          <a class="accountLineLink" href="https://apiary.io/home" title="Proceed to Blueprint editor">
+            Hi <strong>LilyDevelop</strong>, <span class="userLine">continue</span>
+          </a>
+          <form class="logoutForm" action="https://login.apiary.io/api/logout?redirect=https%3A%2F%2Fapiary.io%2F" method="POST"><button type="submit" class="mark">Sign Out</button></form>
+        </div>
+            <a class="websiteNavLink backToTop" href="#~"><span class="visuallyhidden">Back to top</span></a>
+    </nav>
+  </div>
+<!-- /website-navigation -->
+
+
+<script src="https://apiary.a.ssl.fastly.net/assets/js/website-scroll-6e32bb4bc74c10aa.js" async="async"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18252923-1', 'apiary.io');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+  /* <![CDATA[ */
+    var google_conversion_id = 977730005;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  /* ]]> */
+ (function(d, t) {
+  var g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+  g.async = true;
+  g.src = ('https:' == location.protocol ? 'https://' : 'http://') + 'www.googleadservices.com/pagead/conversion.js';
+  s.parentNode.insertBefore(g, s);
+ })(document, 'script');
+</script>
+<script id="IntercomSettingsScriptTag">
+  var intercomSettings = {"app_id":"8dy7eohb","user_id":"54ee72801fe0bb03006acdab","user_hash":"a1d10ddf5780500466584e5e1a70de8cf8766ad404ee4b341271975a67edc91c","email":"lily+develop@apiary.io","name":"LilyDevelop ","created_at":1424913025,"custom_data":{"github":"LilyDevelop","blueprint_size":5495,"subdomain":"breakfast, myapi1111","count_github_associated_apis":0},"widget":{"activator":"#IntercomDefaultWidget"}}
+  
+</script>
+<script>
+  (function(){
+    var w=window;
+    var ic=w.Intercom;
+    if(typeof ic==="function"){
+      ic('reattach_activator');
+      ic('update',intercomSettings);
+    }else{
+      var d=document;
+      var i=function(){i.c(arguments)};
+      i.q=[];
+      i.c=function(args){i.q.push(args)};
+      w.Intercom=i;
+      function l(){
+        var s=d.createElement('script');s.type='text/javascript';
+        s.async=true;
+        s.src='https://static.intercomcdn.com/intercom.v1.js';
+        var x=d.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s,x);
+      }
+      if(w.attachEvent){
+        w.attachEvent('onload',l);
+      }else{
+        w.addEventListener('load',l,false);
+      }
+    }
+  })()
+</script><script>
+(function () {
+  var loadCSS = function (href, before, media) {
+    var st = window.document.createElement( "link" ),
+    ref = before || window.document.getElementsByTagName("script")[0];
+    st.rel = "stylesheet";
+    st.href = href;
+    st.media = "only x";
+    ref.parentNode.insertBefore(st, ref);
+    setTimeout(function () {
+      st.media = media || "all";
+    });
+    return st;
+  };
+  loadCSS("https://apiary.a.ssl.fastly.net/assets/styles/modules/footer/footer-be9abd1ed8b1588d.css", document.getElementById('websitecss'));
+})();
+</script>
+</body>
+</html>
