@@ -7,13 +7,11 @@
     <atom:link href="http://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>The Role Of The Api Designer</title>
-        <description>&lt;p&gt;APIs are everywhere, and enterprises want in on the action. Senior executives at various medium-to-large companies, like Capital One where I work, have been sold on the value that great APIs can bring — both for internal and external uses — and have started setting up Enterprise API Programs to support these efforts. But despite the best intentions and true commitment that got these programs funded and started, many obstacles remain to instilling an API-first culture that supports a great developer experience.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 04 May 2015 00:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2015/05/04/The-Role-of-the-API-Designer</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2015/05/04/The-Role-of-the-API-Designer</guid>
+        <title>The Role of the API Designer</title>
+        <description>Our guest, Dave Goldberg, Director of API products for Capital One, on the importance of an API Designer and the significant impact the role has on business today.</description>
+        <pubDate>Sun, 03 May 2015 23:00:00 +0000</pubDate>
+        <link>http://blog.apiary.io/2015/05/03/The-Role-of-the-API-Designer</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2015/05/03/The-Role-of-the-API-Designer</guid>
       </item>
     
       <item>
