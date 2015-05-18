@@ -6,7 +6,7 @@ date: 2015-05-04 09:00:00 +1000
 author: dave
 ---
 
-APIs are everywhere, and enterprises want in on the action. Senior executives at various medium-to-large companies, like the one where I work, have been sold on the value that great APIs can bring - both for internal and external uses - and have started setting up Enterprise API Programs to support these efforts. But despite the best intentions and true commitment that got these programs funded and started, many obstacles remain to instilling an API-first culture that supports a great developer experience.
+APIs are everywhere, and enterprises want in on the action. Senior executives at various medium-to-large companies, like the one where I work, have been sold on the value that great APIs can bring — both for internal and external uses — and have started setting up Enterprise API Programs to support these efforts. But despite the best intentions and true commitment that got these programs funded and started, many obstacles remain to instilling an API-first culture that supports a great developer experience.
 
 One approach to prioritizing an API-first culture is the introduction of a new role in enterprises, that of the API Designer. But before we dive into a deeper definition of the API Designer’s role and place in the organization, we should first look at some of the challenges that exist today in enterprises trying to make this transition.
 
@@ -33,7 +33,7 @@ Once again, you can’t change this entirely, but you can actually use it to you
 Understanding and navigating the challenges of an enterprise is just the beginning. Once you’ve done that, you still need to find ways of making your API add business value. In finding ways to do this inside an enterprise, there are two key principles that you can use to figure out what to do next.
 
 ## APIs Must Reflect the Business Vision
-Despite almost everyone in an enterprise thinking they know what the business should be doing, or even thinking they know exactly what the business is about, but they probably don’t. Keep in mind, almost everyone in the company is working knee-deep in a silo of complexity. These silos might be focused on things that represent today’s business needs, not tomorrow’s business goals and opportunities.
+Despite almost everyone in an enterprise thinking they know what the business should be doing, or even thinking they know exactly what the business is about, they probably don’t. Keep in mind, almost everyone in the company is working knee-deep in a silo of complexity. These silos might be focused on things that represent today’s business needs, not tomorrow’s business goals and opportunities.
 
 Do not lose hope. There are people in the business who have a vision of where the business needs to be to succeed, and the key levers that make it run (if you are in a company where this is not the case, leave now!). They are Directors, VPs, and Program Managers. They are the folks who have the ear of the C-Level execs.
 
