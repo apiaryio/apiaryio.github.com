@@ -18,10 +18,10 @@ Specific implementations will, of course, vary wildly between organizations. But
 ## Legacy Culture
 Beyond just having a legacy infrastructure, unless there’s been 100% turnover of people in your company, there will be a legacy culture of getting things done the “old way”. It’s a rational response when faced with ongoing business concerns that are being met with current technology. Beyond being rational, it’s not actually something that you can (or should desire to) eliminate in one fell swoop. Rather, you can start replacing culture the same way you switch out a system or database by doing the following:
 
-1. Build new culture on the side, separate from existing one.
-2. Run both at the same time, but with the old culture still being the official one.
-3. Run both at the same time, but the new culture becomes the standard bearer.
-4. Wash, rinse and repeat until you reach a cultural tipping point.
+1. Build new culture on the side, separate from existing one
+2. Run both at the same time, but with the old culture still being the official one
+3. Run both at the same time, but the new culture becomes the standard bearer
+4. Wash, rinse and repeat until you reach a cultural tipping point
 
 It should get easier as you go and as the business executives start to notice some areas moving faster than others. It becomes easier to get buy-in for each incremental project.
 
@@ -48,12 +48,12 @@ How do you package this up and deliver great APIs? The challenges are significan
 
 The API Designer focuses on the following:
 
-- Best practices and patterns for modern API design and Developer Experience.
-- Understanding the business vision, value for a well-scoped business domain, and translating it to a great API Design.
-- Acting like a consumer and tightening the consumer feedback loop by facilitating feedback sessions with target API consumers as part of the API design process.
-- Introducing modern API tooling and design practices into the Enterprise.
-- Contributing to best-in-class documentation, tutorials, code libraries and sample code.
-- Working with API Developers to navigate and overcome the constraints of the legacy architecture.
+- Best practices and patterns for modern API design and Developer Experience
+- Understanding the business vision, value for a well-scoped business domain, and translating it to a great API Design
+- Acting like a consumer and tightening the consumer feedback loop by facilitating feedback sessions with target API consumers as part of the API design process
+- Introducing modern API tooling and design practices into the Enterprise
+- Contributing to best-in-class documentation, tutorials, code libraries and sample code
+- Working with API Developers to navigate and overcome the constraints of the legacy architecture
 
 If done right, you will be the standard bearer for APIs in your company. If you’re a believer in the power of APIs like I am, getting this right means you’ll have a significant impact on the business.
 
