@@ -85,8 +85,8 @@ authors:
     twitter: "@D3DVincent"
   dave:
     name: Dave Goldberg
-    display_name: Dave
-    email: "dave.goldberg@capitalone.com"
+    display_name: Dave Goldberg
+    email: ""
     twitter: "@davidgoldberg"
 
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
