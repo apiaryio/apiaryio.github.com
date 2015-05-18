@@ -1,6 +1,6 @@
 ---
 title: The Role of the API Designer
-excerpt: The importance of an API Designer and the significant impact the role has on business today.
+excerpt: Our guest, Dave Goldberg, Director of API products for Capital One, on the importance of an API Designer and the significant impact the role has on business today.
 layout: post
 date: 2015-05-04 09:00:00 +1000
 author: dave
