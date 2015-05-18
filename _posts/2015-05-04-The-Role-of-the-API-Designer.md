@@ -1,12 +1,16 @@
 ---
 title: The Role of the API Designer
+<<<<<<< HEAD
 excerpt: Our guest, Dave Goldberg, Director of API products for Capital One, on the importance of an API Designer and the significant impact the role has on business today.
+=======
+excerpt: Guest blog post from Dave Goldberg from Capital One on the importance of an API Designer and the significant impact the role has on business today.
+>>>>>>> origin/master
 layout: post
 date: 2015-05-04 09:00:00 +1000
 author: dave
 ---
 
-APIs are everywhere, and enterprises want in on the action. Senior executives at various medium-to-large companies, like the one where I work, have been sold on the value that great APIs can bring — both for internal and external uses — and have started setting up Enterprise API Programs to support these efforts. But despite the best intentions and true commitment that got these programs funded and started, many obstacles remain to instilling an API-first culture that supports a great developer experience.
+APIs are everywhere, and enterprises want in on the action. Senior executives at various medium-to-large companies, like Capital One where I work, have been sold on the value that great APIs can bring — both for internal and external uses — and have started setting up Enterprise API Programs to support these efforts. But despite the best intentions and true commitment that got these programs funded and started, many obstacles remain to instilling an API-first culture that supports a great developer experience.
 
 One approach to prioritizing an API-first culture is the introduction of a new role in enterprises, that of the API Designer. But before we dive into a deeper definition of the API Designer’s role and place in the organization, we should first look at some of the challenges that exist today in enterprises trying to make this transition.
 
@@ -58,4 +62,4 @@ The API Designer focuses on the following:
 If done right, you will be the standard bearer for APIs in your company. If you’re a believer in the power of APIs like I am, getting this right means you’ll have a significant impact on the business.
 
 
-If you’re doing this already and have a success story to tell, please [let me know](dave.golberg@capitalone.com)! Or if you want to do this and are looking for a place to start, [we’re hiring](http://www.google.com/url?q=http%3A%2F%2Fjobs.capitalone.com%2Fus%2Fwashington-dc%2Fdigital%2Fjobid7209212-api-designer%3Fapstr%3Dsrc%253DJB-10110&sa=D&sntz=1&usg=AFQjCNFCv6fgW5v7ZH0DK8ZCJk0BVkvYxg)! 
+If you’re doing this already and have a success story to tell, please [let me know](dave.golberg@capitalone.com)! Or if you want to do this and are looking for a place to start, [Capital One is hiring](http://www.google.com/url?q=http%3A%2F%2Fjobs.capitalone.com%2Fus%2Fwashington-dc%2Fdigital%2Fjobid7209212-api-designer%3Fapstr%3Dsrc%253DJB-10110&sa=D&sntz=1&usg=AFQjCNFCv6fgW5v7ZH0DK8ZCJk0BVkvYxg)! 
