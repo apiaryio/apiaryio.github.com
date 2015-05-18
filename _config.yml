@@ -83,6 +83,11 @@ authors:
     display_name: Vincenzo
     email: "vincenzo@apiary.io"
     twitter: "@D3DVincent"
+  dave:
+    name: Dave Goldberg
+    display_name: Dave
+    email: "dave.goldberg@capitalone.com"
+    twitter: "@davidgoldberg"
 
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
 author:       Apiary
