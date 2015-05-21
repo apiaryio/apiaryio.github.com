@@ -2,7 +2,7 @@
 title: Hyperdrive
 excerpt: A generic API Blueprint client in Swift
 layout: post
-date: 2015-05-07 16:00:00 +0100
+date: 2015-06-04 17:00:00 +0100
 author: kyle
 published: true
 comments: true
@@ -26,9 +26,9 @@ against making certain changes because it will often break a client and
 you'd rather stick to how it works. This problem is easily avoided if we
 don't duplicate how our implementation works many times in each client.
 
-We often design our APIs by exposing implementation details, we use IDs
-in our URIs and expect our clients to know how to construct these URIs
-by knowing about our internal database ID.
+We often design our APIs by exposing implementation details, for example
+we use IDs in our URIs and expect our clients to know how to construct
+these URIs by knowing about our internal database ID.
 
 ## API Evolvability
 
@@ -37,10 +37,14 @@ their design at deployment. Controls have to be learned on the fly to
 allow both the server and the client change independently over time.
 
 Imagine entering an API without knowing about any implementation details,
-but instead just understanding of the semantics behind the API. We can load
-these implementation details at run-time to allow us to change them at
+but instead just understanding the semantics of the API. We can get the
+implementation details of the API at run-time to allow us to change them at
 any point. Giving us the ability to control features of the API
 without breaking our clients.
+
+This means you don't have to redeploy your client to make changes to
+the implementation, and you don't have to leave your existing users in
+a broken state with a dated version of your application.
 
 ## Hyperdrive
 
@@ -197,7 +201,11 @@ if let vote = choice.transitions["vote"] {
 ---
 
 Hyperdrive is our new generic Hypermedia API Client in Swift. It's
-open-source and available today on [GitHub](http://github.com/apiaryio/Hyperdrive).
+open-source and available today on [GitHub](https://github.com/the-hypermedia-project/Hyperdrive).
 
 ![](/images/Hyperdrive.png)
+
+In comparison to traditional API clients, we can avoid duplicating logic
+from our API and embrace change by using Hyperdrive. We no longer have to
+redeploy our API clients to make small changes to the servers implementation.
 
