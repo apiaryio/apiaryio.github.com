@@ -1,0 +1,260 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+
+  <title>API Blueprint on GitHub&mdash;Apiary Blog</title>
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <meta name="author" content="Apiary">
+  <link rel="alternate" type="application/rss+xml" title="The Apiary Blog Feed" href="http://blog.apiary.io/feed.xml" />
+
+  <meta name="application-name" content="Apiary">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type"  content="article">
+  <meta name="twitter:site" content="@apiaryio">
+  <meta name="twitter:creator" content="@apiaryio">
+
+  <meta name="twitter:title" content="API Blueprint on GitHub&mdash;Apiary Blog">
+  <meta property="og:title" content="API Blueprint on GitHub&mdash;Apiary Blog">
+
+  
+    <meta property="og:url" content="http://blog.apiary.io/2015/05/28/API-Blueprint-GitHub">
+    <meta name="description" content="API Blueprint language as a first-class citizen on GitHub&mdash;Apiary Blog">
+    <meta name="twitter:description" content="API Blueprint language as a first-class citizen on GitHub&mdash;Apiary Blog">
+    <meta property="og:description" content="API Blueprint language as a first-class citizen on GitHub&mdash;Apiary Blog">
+  
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/fonts.css">
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/modules/footer/footer.css">
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/modules/website.css">
+  <link rel="stylesheet" href="/syntax.css">
+  <!-- /Styles -->
+
+  <script>
+ var _gaq = [['_setAccount', 'UA-18252923-1'], ['_trackPageview']];
+ (function(d, t) {
+  var g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+  g.async = true;
+  g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g, s);
+ })(document, 'script');
+</script>
+
+
+</head>
+<body class="website">
+
+<!-- website-header -->
+  <header id="websiteHeader"><div class="positioning">
+    <a class="headerLogotypeLink" href="http://apiary.io/"><h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1><div class="headerLogotype"></div></a>
+    <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
+  </div></header>
+<!-- /website-header -->
+
+<!-- website-navigation -->
+  <div id="navigation">
+    <nav class="websiteNav positioning">
+      <ul class="clearAfter websiteNavMenu">
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/how-it-works">How It Works</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/pricing">Pricing</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/products">Product</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="http://blog.apiary.io/">Blog</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/company">Company</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://login.apiary.io/login">Sign In</a></li>
+        
+      </ul>
+      <a class="websiteNavLink websiteNavLinkHighlighted" href="https://login.apiary.io/register" class="signIn">Sign Up</a>
+      <a class="websiteNavLink backToTop" href="#~"><span class="visuallyhidden">Back to top</span></a>
+    </nav>
+  </div>
+<!-- /website-navigation -->
+
+<div>
+  
+
+<div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>API Blueprint on GitHub</h1>
+    
+      <p><span class="minority">By</span> <strong>Z</strong>
+        (<a href="https://twitter.com/zdne">zdne</a>, <a href="mailto:z@apiary.io">z@apiary.io</a>) <span class="minority">on</span>&nbsp;28&nbsp;May&nbsp;2015
+      </p>
+      <p><span class="blogShare">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="API Blueprint on GitHub" data-url="http://blog.apiary.io/2015/05/28/API-Blueprint-GitHub" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="http://blog.apiary.io/2015/05/28/API-Blueprint-GitHub" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+    
+
+  <p>Collaboration and continuous integration are the heart of every good API design. This is why we care about integration with CI services and GitHub. I am happy to announce the major milestone for API Blueprint.</p>
+
+<p>API Blueprint is now recognized as a language on GitHub!</p>
+
+<p>All you need to do is to append the <code class="highlighter-rouge">.apib</code> extension to your blueprint file and push it to GitHub.</p>
+
+<h2 id="first-class-citizen">First-class citizen</h2>
+
+<p>The growth of API Blueprint over the two years of its existence was tremendous. Adapted by an incredible amount of API developers, consumers, architects and stake holders alike. Today, there are countless number of  blueprints is stored in GitHub. And now, you can search for and see them syntax highlighted!</p>
+
+<h3 id="repository-statistics">Repository statistics</h3>
+
+<p>The first place where you can see API Blueprint language is the repository dashboard. API Blueprint now figures in the repository’s language statistics:</p>
+
+<p><img width="640" src="/images/2015-05-28-API-Blueprint-GitHub/statistics.png" alt="Repo statistics" /></p>
+
+<h3 id="language-search">Language search</h3>
+
+<p>On GitHub every public blueprint gets indexed. This enables a search for indexed blueprints. Just add <code class="highlighter-rouge">language:API Blueprint</code> to your search query:</p>
+
+<p><img width="640" src="/images/2015-05-28-API-Blueprint-GitHub/search.png" alt="Search" /></p>
+
+<p>Note: GitHub seems to index only new pushes. Only recently updated blueprints get indexed. Unfortunately GitHub does not back fill indexes for blueprints created in the past.</p>
+
+<h3 id="syntax-highlighting">Syntax highlighting</h3>
+
+<p>Blueprints with <code class="highlighter-rouge">.apib</code> extension are now syntax highlighted on GitHub too:</p>
+
+<p><img width="640" src="/images/2015-05-28-API-Blueprint-GitHub/syntaxhighlighting.png" alt="Syntax highlighting" /></p>
+
+<h3 id="gfm-fenced-code-blocks">GFM Fenced Code Blocks</h3>
+
+<p>Finally, you can use the <code class="highlighter-rouge">apib</code> language identifier in GitHub Flavored Markdown code blocks:</p>
+
+<p><img width="640" src="/images/2015-05-28-API-Blueprint-GitHub/codeblocks.png" alt="GFM" /></p>
+
+<h2 id="better-api-design-through-collaboration">Better API Design through Collaboration</h2>
+
+<p>API Blueprint recognized by GitHub improves readability and accessibility of  API designs. Helping everybody to read, write, share and discuss API blueprints.</p>
+
+<p>And what is a better way to learn about API design but reading other blueprints?</p>
+
+<p>Let me know how this works for you!</p>
+
+  <p><span class="blogShare afterArticle">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="API Blueprint on GitHub" data-url="http://blog.apiary.io/2015/05/28/API-Blueprint-GitHub" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="http://blog.apiary.io/2015/05/28/API-Blueprint-GitHub" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+
+
+    <a name="comments" id="comments"></a><div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_title = 'API Blueprint on GitHub';
+      var disqus_url = 'http://blog.apiary.io/2015/05/28/API-Blueprint-GitHub';
+      var disqus_identifier = '/2015/05/28/API-Blueprint-GitHub';
+      var disqus_shortname = 'apiaryblog';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript><p>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></p></noscript>
+    <p><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></p>
+
+
+  </div>
+</div>
+
+<div id="fb-root"></div>
+
+<script>
+(function(doc, script) {
+  var js,
+      fjs = doc.getElementsByTagName(script)[0],
+      frag = doc.createDocumentFragment(),
+      add = function(url, id) {
+          if (doc.getElementById(id)) {return;}
+          js = doc.createElement(script);
+          js.src = url;
+          id && (js.id = id);
+          frag.appendChild( js );
+      };
+
+    // Google+ button
+    add('http://apis.google.com/js/plusone.js');
+    // Facebook SDK
+    add('//connect.facebook.net/en_US/all.js#xfbml=1', 'facebook-jssdk');
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+
+    fjs.parentNode.insertBefore(frag, fjs);
+}(document, 'script'));
+</script>
+
+</div>
+
+<!-- website-footer -->
+  <hr>
+
+<footer class="applicationFooter">
+
+  <div class="applicationFooterRow">
+    <div class="applicationFooterColumns">
+    <div class="applicationFooterColumn">
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Platform</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiary.io/how-it-works">How It Works</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/products">Product</a></li>
+        <li><a class="applicationFooterListLink" href="http://enterprise.apiary.io/">Enterprise</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/pricing">Pricing</a></li>
+        <li><a class="applicationFooterListLink" href="http://support.apiary.io ">Help</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Company</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://blog.apiary.io/">Blog</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#team">Team</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/jobs">Jobs</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#contact">Contact</a></li>
+        <li><a class="applicationFooterListLink" href="https://apiary.a.ssl.fastly.net/assets/files/apiary-press-kit.zip">Press Kit</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Open Source</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiblueprint.org">API Blueprint</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/snowcrash">Snowcrash</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
+        <li><a class="applicationFooterListLink" href="http://client.apiary.io">Apiary CLI</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Social</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
+        <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
+        <li><a class="applicationFooterListLink" href="https://facebook.com/apiary.io">Facebook</a></li>
+        <li><a class="applicationFooterListLink" href="https://plus.google.com/114367708466177247933/about">Google+</a></li>
+        <li><a class="applicationFooterListLink" href="http://dribbble.com/apiary">Dribbble</a></li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="applicationFooterRow">
+    <p class="applicationFooterCopyright">&copy; Apiary Ltd. All rights reserved. <span class="applicationFooterCopyrightLinks">• <a href="http://apiary.io/tos" class="applicationFooterCopyrightLink">Terms</a> • <a href="https://www.iubenda.com/privacy-policy/323220" class="applicationFooterCopyrightLink">Privacy</a></span></p>
+  </div>
+</footer>
+<!-- /website-footer -->
+
+<script src="https://apiary.a.ssl.fastly.net/assets/js/website-scroll.js"></script>
+<script>
+  websiteScroll();
+  document.documentElement.className += ' js';
+</script>
+
+</body>
+</html>

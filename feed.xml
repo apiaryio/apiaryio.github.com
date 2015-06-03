@@ -7,6 +7,14 @@
     <atom:link href="http://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>API Blueprint on GitHub</title>
+        <description>API Blueprint language as a first-class citizen on GitHub</description>
+        <pubDate>Thu, 28 May 2015 12:00:00 +0000</pubDate>
+        <link>http://blog.apiary.io/2015/05/28/API-Blueprint-GitHub</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2015/05/28/API-Blueprint-GitHub</guid>
+      </item>
+    
+      <item>
         <title>The Role of the API Designer</title>
         <description>Our guest, Dave Goldberg, Director of API products for Capital One, on the importance of an API Designer and the significant impact the role has on business today.</description>
         <pubDate>Sun, 03 May 2015 23:00:00 +0000</pubDate>
@@ -76,14 +84,6 @@
         <pubDate>Wed, 22 Oct 2014 08:50:00 +0000</pubDate>
         <link>http://blog.apiary.io/2014/10/22/Enterprise-Release</link>
         <guid isPermaLink="true">http://blog.apiary.io/2014/10/22/Enterprise-Release</guid>
-      </item>
-    
-      <item>
-        <title>New Code Samples for Go and Swift</title>
-        <description>Apiary now has code samples for both Go and Swift</description>
-        <pubDate>Thu, 16 Oct 2014 08:50:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2014/10/16/New-Code-Samples-for-Go-and-Swift</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2014/10/16/New-Code-Samples-for-Go-and-Swift</guid>
       </item>
     
   </channel>
