@@ -3,7 +3,7 @@ title: API Blueprint on GitHub
 author: zdenek
 excerpt: "API Blueprint language as a first-class citizen on GitHub"
 layout: post
-date: 2015-05-28 12:00:00
+date: 2015-06-03 09:10:00
 published: true
 comments: true
 ---
