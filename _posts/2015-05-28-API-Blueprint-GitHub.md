@@ -1,43 +1,42 @@
 ---
-title: API Blueprint on GitHub
+title: It's offical! API Blueprint and GitHub
 author: zdenek
-excerpt: "API Blueprint language as a first-class citizen on GitHub"
+excerpt: "API Blueprint recognized as a first-class citizen on GitHub"
 layout: post
-date: 2015-05-28 12:00:00
+date: 2015-06-03 12:00:00
 published: true
 comments: true
 ---
 
-Collaboration and continuous integration are the heart of every good API design. This is why we care about integration with CI services and GitHub. I am happy to announce the major milestone for API Blueprint.
+Collaboration and continuous integration are the heart of every good API design. This is why we care about integration with CI services and GitHub. 
 
-API Blueprint is now recognized as a language on GitHub!
+Today, I am proud to announce a major milestone for API Blueprint - it's now an official language on GitHub.
 
-All you need to do is to append the `.apib` extension to your blueprint file and push it to GitHub.
+To see the true beauty of API Blueprint on GitHib, you'll need to add `.apib` as the extension to your blueprint file and push to GitHub. 
 
-## First-class citizen
+## First-class Citizen
 
-The growth of API Blueprint over the two years of its existence was tremendous. Adapted by an incredible amount of API developers, consumers, architects and stake holders alike. Today, there are countless number of  blueprints is stored in GitHub. And now, you can search for and see them syntax highlighted!
+The growth of API Blueprint over the last two years has been tremendous. Since its existence an incredible amount of API developers, consumers, architects and stake holders as adopted API Blueprint. Currently, there are a countless number of blueprints stored in GitHub. And now, you have the ability to search for them and view the beautiful syntax highlighting.
 
-### Repository statistics
+### Repository Statistics
 
-The first place where you can see API Blueprint language is the repository dashboard. API Blueprint now figures in the repository's language statistics:
+The repository dashboard is one of the places where you're able to view the repository's language statistics for API Blueprint.
 
 <img width="640" src="/images/2015-05-28-API-Blueprint-GitHub/statistics.png" alt="Repo statistics" />
 
-### Language search
+### Language Search
 
-On GitHub every public blueprint gets indexed. This enables a search for indexed blueprints. Just add `language:API Blueprint` to your search query:
+On GitHub every public blueprint gets indexed and is searchable. Simply add `language:API Blueprint` to your search query:
 
 <img width="640" src="/images/2015-05-28-API-Blueprint-GitHub/search.png" alt="Search" />
 
-Note: GitHub seems to index only new pushes. Only recently updated blueprints get indexed. Unfortunately GitHub does not back fill indexes for blueprints created in the past.
+Note: Unfortunately, it appears that GitHub will only index recently updated blueprints and not automatically index blueprints created in the past.
 
-### Syntax highlighting
+### Syntax Highlighting
 
-Blueprints with `.apib` extension are now syntax highlighted on GitHub too:
+In addition to being searchable, any blueprint file with an `.apib` extension will be displayed with syntax highlighting.
 
 <img width="640" src="/images/2015-05-28-API-Blueprint-GitHub/syntaxhighlighting.png" alt="Syntax highlighting" />
-
 
 ### GFM Fenced Code Blocks
 
@@ -45,10 +44,10 @@ Finally, you can use the `apib` language identifier in GitHub Flavored Markdown 
 
 <img width="640" src="/images/2015-05-28-API-Blueprint-GitHub/codeblocks.png" alt="GFM" />
 
-## Better API Design through Collaboration
+## Better API Design Through Collaboration
 
-API Blueprint recognized by GitHub improves readability and accessibility of  API designs. Helping everybody to read, write, share and discuss API blueprints.
+Now that API Blueprint is recognized by GitHub, this vastly improves the accessibility and readability of other public blueprints. Helping everybody to read, write, share and discuss API design.
 
-And what is a better way to learn about API design but reading other blueprints?
+Plus, what’s a better way to learn about API design than to read other blueprints?
 
-Let me know how this works for you!
+Isolated API design is hard. So, get out there and start sharing and collaborating with one another to design APIs that last.
