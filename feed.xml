@@ -7,6 +7,14 @@
     <atom:link href="http://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Hyperdrive</title>
+        <description>A generic API Blueprint client in Swift</description>
+        <pubDate>Thu, 04 Jun 2015 16:00:00 +0000</pubDate>
+        <link>http://blog.apiary.io/2015/06/04/Hyperdrive</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2015/06/04/Hyperdrive</guid>
+      </item>
+    
+      <item>
         <title>API Blueprint on GitHub</title>
         <description>API Blueprint language as a first-class citizen on GitHub</description>
         <pubDate>Wed, 03 Jun 2015 09:10:00 +0000</pubDate>
@@ -76,14 +84,6 @@
         <pubDate>Wed, 05 Nov 2014 06:00:00 +0000</pubDate>
         <link>http://blog.apiary.io/2014/11/05/Interact-with-Apiary-from-the-Command-Line</link>
         <guid isPermaLink="true">http://blog.apiary.io/2014/11/05/Interact-with-Apiary-from-the-Command-Line</guid>
-      </item>
-    
-      <item>
-        <title>Make it so — Apiary enters the Enterprise</title>
-        <description>A game-changer for large, distributed API teams</description>
-        <pubDate>Wed, 22 Oct 2014 08:50:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2014/10/22/Enterprise-Release</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2014/10/22/Enterprise-Release</guid>
       </item>
     
   </channel>
