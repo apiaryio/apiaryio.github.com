@@ -33,7 +33,7 @@ Consider this example. Say I want to design an API for turning a light on and of
 
 Now consider the common design approach. We usually start with saying there is light and define the URLs used to access the light resource. All lights can be found at `/lights` and an individual light can be found using the URI template `/lights/{id}`. You can update the light using a `PUT` request . We usually then go to describing how you change the state of the light when using JSON.
 
-Of course there are design thoughts that follow each of these examples, but notice where they start, and notice which one offers the most freedom to explore, think, and do innovative things. Also notice which design is tied to its implementation, and which design allows blank canvas for how it is carried out.
+Of course there are thoughts that follow each of these examples, but notice where they start, and notice which one offers the most freedom to explore, think, and do innovative things. Also notice which design is tied to its implementation, and which design provides a blank canvas for how it is carried out.
 
 ## A Better Way to Think About and Design APIs
 
