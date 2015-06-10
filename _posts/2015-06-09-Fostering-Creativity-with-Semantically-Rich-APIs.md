@@ -7,11 +7,11 @@ author: stephen
 published: true
 ---
 
-In our recent blog post, Kyle Fuller [wrote about](http://blog.apiary.io/2015/06/04/Hyperdrive/) the benefits of decoupling semantics from implementation details for building better API clients. I'd like to explore how this decoupled approach also benefits the API design process—it's quite nice to decouple your mind from implementation details as well.
+In our recent blog post, Kyle Fuller [wrote about](http://blog.apiary.io/2015/06/04/Hyperdrive/) the benefits of decoupling semantics from implementation details for building better API clients.
 
 ## The Difficulty with Common Approaches
 
-Many modern approaches in designing and building APIs couple not only clients and servers to implementation details, but also couple thought, creativity, and shared understanding to that implementation. Coupling servers and clients is a problem that is easily seen, and in theory no one wants a coupled approach. Kyle Fuller wrote in his post:
+Most modern approaches in designing and building APIs couple not only clients and servers to implementation details, but also couple thought, creativity, and shared understanding to that implementation. Coupling servers and clients is a problem that is easily seen, and in theory no one wants a coupled approach. Kyle wrote in his post:
 
 > Imagine entering an API without knowing about any implementation details, but instead just understanding the semantics of the API. We can get the implementation details of the API at run-time to allow us to change them at any point.
 
@@ -21,19 +21,25 @@ Coupling on the other hand hinders this API evolvability—among other things—
 
 ## Chewing the CRUD
 
-If you survey the modern API space, you'll see this coupled design pattern is the norm, albeit it's a limited one. The first design step in this pattern is usually to carefully craft a URL that conveys to the users the meaning of the content. The next step is to pick the HTTP method the users will use in interacting with that URL. The thought, design, and creativity is directly coupled with the HTTP implementation in this process, and pushes the question "What does my API do?" to later steps in the design process.
+If you survey the modern API space, you'll see this coupled design pattern is the norm, albeit it's a limited one. The first design step in this pattern is usually to carefully craft a URL that conveys to the users the meaning of the content. The next step is to pick the HTTP method the users will use in interacting with that URL. Our thought, design, and creativity are all directly coupled with the HTTP implementation in this process, and pushes the question "What does my API do?" to later steps in the design process.
 
-This approach maps directly into the concept of CRUD, which is frequently used to describe this kind of interface design. The term CRUD is from the area of database and encompasses the actions you take on persistent data. It stands for "Create, Read, Update, and Delete," which are common operations associated with interacting with persisted data. In the API world, these general semantics are matched up with HTTP methods, such as POST/PUT, GET, PUT/PATCH, and DELETE respectively. Using CRUD with HTTP APIs, a user performs these actions on a resource's URL.
+And what we haven't seen is this—we believe that thinking about URLs and HTTP methods *is* answering the question "What does my API do?" We define our resources, their CRUD actions, and place the burden on the user to glean the meaning and use of our API.
 
-The problem is, your API will do more than store and give access to data, and communicating what your API does along with providing data is a high-value concept in design and consumption. In using CRUD alone, the burden is placed on the users to figure it out on their own. They have to dig through different URLs and HTTP methods and piece them together to get the full picture your API is trying to paint.
+## What is Coupling?
 
-For example, CRUD alone doesn't convey how a client might change the state of a resource, how one resource is related to another, or what other actions might be taken that don't fit nicely into the CRUD acronym. We should free ourselves to think of semantics beyond these, not just for the sake of the API consumers, but for the sake of the design process of our API.
+Before continuing, it's important to define what I mean when I refer to the term "coupling." It is used in many contexts and many industries to refer to the concept of two things being united or joined together. When I use coupling in the context of API design, I am speaking of joining together design with the technology used to implement that design, and doing so in a way that makes the two hard to separate. 
+
+Consider this example. Say I want to design an API for turning a light on and off. The first design thought may be, "If there is a light, and the light is turned on, I can turn the light off. If it's off, I should be able to turn it on." The simplicity is almost laughable because it gives no mention of how I implement the API. It is semantically rich in that it gives rich meaning to what my API will do.
+
+Now consider the common design approach. We usually start with saying there is light and define the URLs used to access the light resource. All lights can be found at `/lights` and an individual light can be found using the URI template `/lights/{id}`. You can update the light using a `PUT` request . We usually then go to describing how you change the state of the light when using JSON.
+
+Of course there are design thoughts that follow each of these examples, but notice where they start, and notice which one offers the most freedom to explore, think, and do innovative things. Also notice which design is tied to its implementation, and which design allows blank canvas for how it is carried out.
 
 ## A Better Way to Think About and Design APIs
 
-This aforementioned approach to design, though popular, is quite cumbersome and restrictive. If you are of the non-technical type, it can also be a barrier to entry in the API design space. Forcing API designers to think primarily in URLs and HTTP methods should be a sign that something is amiss.
+The modern approach to design, though popular, is quite cumbersome and restrictive as shown. If you are of the non-technical type, it can also be a barrier to entry in the API design space. Forcing API designers to think primarily in URLs and HTTP methods should be a sign that something is amiss.
 
-Instead of thinking about URLs and HTTP methods first, it is better to think about semantics apart from implementation. What are the actions that can be taken in your API? How will you name and describe resources, attributes, links, and forms in your API? Who are the users of the API and what will they want to do with your API? The goal is to move shared understanding away from the source code to API description documents, profiles, and media types. This is what allows for decoupling from implementation.
+Instead of thinking about URLs and HTTP methods first, it is better to think about semantics apart from implementation. What are the actions that can be taken in your API? How will you name and describe these actions? Who are the users of the API and what will they want to do with your API? The goal is to move shared understanding away from the source code to API description documents, profiles, and media types. This is what allows for decoupling from implementation.
 
 To put this differently, we need to think less like machines and make machines think more like humans. We need approaches that allow us to think freely about a problem space and make the technology take the shape of thought, rather than making thought take the shape of technology.
 
