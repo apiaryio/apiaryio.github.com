@@ -7,37 +7,37 @@ author: stephen
 published: true
 ---
 
-In a recent post on our blog, Kyle Fuller [wrote about](http://blog.apiary.io/2015/06/04/Hyperdrive/) the benefits of decoupling semantics from implementation for building better API clients. This post aims to explore how this decoupled approach also benefits the API design process, specifically around freeing the produces and consumers to be more creative with semantically rich APIs.
+In our recent blog post, Kyle Fuller [wrote about](http://blog.apiary.io/2015/06/04/Hyperdrive/) the benefits of decoupling semantics from implementation details for building better API clients. I'd like to explore how this decoupled approach also benefits the API design process—it's quite nice to decouple your mind from implementation details as well.
 
 ## The Difficulty with Common Approaches
 
-Many modern approaches in designing and building APIs couple not only clients and servers to implementation details, but we also couple thought, creativity, and shared understanding to that implementation. Coupling servers and clients is a problem that is easily seen, and in theory no one wants a coupled approach. Kyle Fuller wrote in his post:
+Many modern approaches in designing and building APIs couple not only clients and servers to implementation details, but also couple thought, creativity, and shared understanding to that implementation. Coupling servers and clients is a problem that is easily seen, and in theory no one wants a coupled approach. Kyle Fuller wrote in his post:
 
 > Imagine entering an API without knowing about any implementation details, but instead just understanding the semantics of the API. We can get the implementation details of the API at run-time to allow us to change them at any point.
 
-In waiting until runtime to get these implementation details, Hyperdrive allows for building clients that are highly evolvable and don't break when things are changed on the server.
+In waiting until runtime to get these specific details, Hyperdrive allows for building clients that are highly evolvable and don't break when things are changed on the server.
 
-Coupling hinders API evolvability—among other things—but it also hinders API design and creativity for designers and consumers. It is a subtle impedance we overlook because of the distance we've made it in HTTP APIs and because the spectrum of frameworks, libraries, and tools promote this coupled thinking.
+Coupling hinders API evolvability—among other things—but it also hinders API design and creativity for designers and consumers. I think this is something we miss. We're all happy to have won the battle over technologies like SOAP and WSDL, but we fail to see our tools and methodologies are leading us right back to where we were.
 
 ## Chewing the CRUD
 
-A survey across the modern API space will reveal a coupled pattern for design that is the norm, albeit a limited one. The first design step in this pattern is usually to carefully craft a URL that can convey to the user the meaning of the content. The next step is to pick the HTTP method the users will use in interacting with that URL. The thought, design, and creativity is coupled to the HTTP implementation in this process, and pushes the question "What does my API do?" to subsequent steps in the design process.
+If you survey the modern API space, you'll see this coupled design pattern is the norm, albeit it's a limited one. The first design step in this pattern is usually to carefully craft a URL that can convey to the users the meaning of the content. The next step is to pick the HTTP method the users will use in interacting with that URL. The thought, design, and creativity is directly coupled with the HTTP implementation in this process, and pushes the question "What does my API do?" to later steps in the design process.
 
-This approach maps directly into the concept of CRUD, which is frequently used to describe this kind of interface design. The term CRUD is from the area of database and encompasses the actions you take on persistent data. It stands for "Create, retrieve, update, and delete," which are common operations associated with interacting with persisted data. In the API world, these general semantics are matched up with HTTP methods, such as POST/PUT, GET, PUT/PATCH, and DELETE respectively. Using CRUD with HTTP APIs, a user performs these actions on a resource's URL.
+This approach maps directly into the concept of CRUD, which is frequently used to describe this kind of interface design. The term CRUD is from the area of database and encompasses the actions you take on persistent data. It stands for "**C**reate, **R**etrieve, **U**pdate, and **D**elete," which are common operations associated with interacting with persisted data. In the API world, these general semantics are matched up with HTTP methods, such as POST/PUT, GET, PUT/PATCH, and DELETE respectively. Using CRUD with HTTP APIs, a user performs these actions on a resource's URL.
 
-The problem with this is your API will do more than store and give access to data, and communicating what your API does along with providing data is a high-value concept in design and consumption. Using only what CRUD provides leave the users of an API to figure out what can be done with the API through understanding these concepts around URLs and HTTP methods.
+The problem is, your API will do more than store and give access to data, and communicating what your API does along with providing data is a high-value concept in design and consumption. Using only what CRUD provides places the burden on the users to figure it out. They have to dig through different URLs and HTTP methods to get the full picture your API is trying to paint.
 
-For example, the aspects of CRUD alone do not convey how a client may change the state of a resource, how one resource is related to another, or what actions can be taken that don't fit into these four principles. We should free ourselves to think of semantics beyond these, not just for the sake of the API consumers, but for the sake of the design process of our API.
+For example, CRUD alone doesn't convey how a client might change the state of a resource, how one resource is related to another, or what other actions might be taken that don't fit nicely into the CRUD acronym. We should free ourselves to think of semantics beyond these, not just for the sake of the API consumers, but for the sake of the design process of our API.
 
 ## A Better Way to Think About and Design APIs
 
-This aforementioned approach to design, though popular, is quite cumbersome and restrictive. If you are of the non-technical type, it can also be a barrier to enter the API design space. Forcing API designers to think primarily in URLs and HTTP methods should be a sign that something is amiss.
+This aforementioned approach to design, though popular, is quite cumbersome and restrictive. If you are of the non-technical type, it can also be a barrier to entry in the API design space. Forcing API designers to think primarily in URLs and HTTP methods should be a sign that something is amiss.
 
-Instead of thinking about URLs and HTTP methods first, it is better to think about semantics apart from implementation. What will users do with your API? The goal should be to move as much shared understanding as possible away from the server and client source code to API description documents, profiles, and media types that may be used at build time and runtime.
+Instead of thinking about URLs and HTTP methods first, it is better to think about semantics apart from implementation. What are the actions that can be taken in your API? How will you name and describe resources, attributes, links, and forms in your API? Who are the users of the API and what will they want to do with your API? The goal is to move shared understanding away from the source code to API description documents, profiles, and media types. This is what allows for decoupling from implementation.
 
 To put this differently, we need to think less like machines and make machines think more like humans. We need approaches that allow us to think freely about a problem space and make the technology take the shape of thought, rather than making thought take the shape of technology.
 
-There is a current trend to advance this initiative through the Semantic Web and also through Hypermedia APIs. Technologies around the Semantic Web include linked data formats like [JSON-LD](http://json-ld.org/) and shared vocabularies like [Schema.org](http://schema.org/). Tools in the Hypermedia API realm includes formats like [ALPS](http://alps.io/) for communicating semantics apart from implementation details and a growing number of hypermedia media types. We are just on the cusp on what could be accomplished in this area.
+There is a current trend to advance this initiative through the Semantic Web and also through Hypermedia APIs. Technologies around the Semantic Web include linked data formats like [JSON-LD](http://json-ld.org/) and shared vocabularies like [Schema.org](http://schema.org/). Tools in the Hypermedia API realm includes formats like [ALPS](http://alps.io/) for communicating semantics apart from implementation details and a growing number of hypermedia media types. 
 
 ## A Better Way to Consume APIs
 
@@ -47,13 +47,13 @@ In the presentation [REST, Hypermedia, and the Semantic Gap: Why "RMM Level-3 RE
 
 > The value of a well designed object is when it has such a rich set of affordances, that the people who use it can do things with it that the designer never imagined.
 
-The idea is that by communicating the semantics of a more richly-defined system, you empower your users to be innovative and intrinsically provide value to them. Inversely, the less you communicate about what users may do with your API, the less value you provide and the less innovative your users can be.
+The idea is that by communicating the semantics of a more richly-defined system, you empower your users to be innovative and intrinsically provide better value to them. Inversely, the less you communicate about what users may do with your API, the less value you provide and the less innovative your users can be.
 
 ## Example: Thinking Through a Simple Design
 
-It may be beneficial to look at an example of thinking this way. We'll use API Blueprint for designing a simple API for a todo list service. API Blueprint allows for writing simple documents that can be converted into machine readable formats. Additionally, API Blueprint can be written iteratively as we'll see.
+It may be beneficial to look at an example of thinking this way. We'll use API Blueprint to quickly design and describe todo list API. The benefits here are that I get to use API Blueprint to write in human-readable text yet convert to a machine readable format, so I am not tied to implementation. Additionally, we can write our document iteratively by waiting to add implementation details until later.
 
-Below is the first step in designing this API, with a a few assumptions on what that API should do. It's a Todo List
+Below is the first step to designing our todo list API, with a a few assumptions on what that API should do.
 
 ```markdown
 FORMAT: 1A
@@ -75,15 +75,15 @@ A Todo is a task that can be completed, marked incomplete again, or marked as hi
 
 > **Note**: I've left out a lot of things that could be written here for the sake of brevity. CRUD semantics have also been included to show they are not inherently bad to use, but do not dictate how they must be used.
 
-In this example I have defined what the Todo List application will do without including any implementation details. I've given no thought to URLs or HTTP methods, and am free to explore how those would be implemented.
+In this example I have defined what the todo list API will do without including any implementation details. I've given no thought to URLs or HTTP methods, and I'm free to explore the details later.
 
-Below is a small step further in adding some implementation details about the Todo List application. You are not required to add these details at this point in the process, and you may also include a lot more information than provided here.
+Below is a small step further in adding some implementation details about our API. There is a lot more we could add, but we are sticking with the minimum at this point.
 
 ```markdown
 FORMAT: 1A
 
 # Todo List API
-A Todo List application for keeping track of todo tasks.
+A Todo List API for keeping track of todo tasks.
 
 ## Todo [/todos/{id}]
 A Todo is a task that can be completed, marked incomplete again, or marked as hidden
