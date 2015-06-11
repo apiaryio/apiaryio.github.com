@@ -7,7 +7,7 @@ author: stephen
 published: true
 ---
 
-I recently watched a presentation called [The Humane Representation of Thought](https://vimeo.com/115154289) by Brett Victor in which he starts out his talk with this quote from "Genius: The Life and Science of Richard Feynman."
+I recently watched a presentation called [The Humane Representation of Thought](https://vimeo.com/115154289) by Brett Victor in which he starts out his talk with this quote from *Genius: The Life and Science of Richard Feynman*.
 
 > Feynman said to Dyson, and Dyson agreed, that Einstein's great work had sprung from physical intuition and that when Einstein stopped creating it was because "he stopped thinking in concrete physical images and became a manipulator of equations."
 
@@ -19,7 +19,7 @@ It struck me that we're doing the same things in the world of API design. We're 
 
 If you survey the modern API space, you'll see this coupled design pattern is the norm. The first step in this pattern for designing an API is usually to carefully craft a URL that conveys to the users the meaning of the content. The next step is to pick the HTTP method the users will use in interacting with that URL. Our thought, design, and creativity are all directly coupled with the HTTP implementation in this process, and it pushes the question "What does my API do?" to later design steps.
 
-And what we haven't seen is this—we believe that thinking about URLs and HTTP methods *is* answering the question "What does my API do?" We define our resources, their CRUD actions, and place the burden on the user to glean the meaning and use of our API. Instead of giving users a universe to explore, we've giving them equations to manipulate.
+And this is what we've missed: we believe that thinking about URLs and HTTP methods *is* answering the question "What does my API do?" We define our resources, their CRUD actions, and place the burden on the user to glean the meaning and use of our API. Instead of giving users a universe to explore, we've giving them equations to manipulate.
 
 ## What is Coupling?
 
