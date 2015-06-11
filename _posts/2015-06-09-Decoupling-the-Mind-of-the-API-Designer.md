@@ -58,9 +58,3 @@ We'll end by giving a nod to Einstein who prompted this whole thing. His quote h
 > We cannot solve our problems with the same thinking we used when we created them.
 
 The important idea is, we have to become aware of how our current situation is taking us backwards. We have to reform and always be reforming how we interact with the world around us. We have to rework processes that force us down rigid paths of thought and be constantly thinking of better ways to foster creative design in the API space. 
-
-
-
-
-
-
