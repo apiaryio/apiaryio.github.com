@@ -7,6 +7,14 @@
     <atom:link href="http://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Decoupling the Mind of the API Designer</title>
+        <description>Fostering creativity by changing how we think about APIs</description>
+        <pubDate>Tue, 09 Jun 2015 22:00:00 +0000</pubDate>
+        <link>http://blog.apiary.io/2015/06/09/Decoupling-the-Mind-of-the-API-Designer</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2015/06/09/Decoupling-the-Mind-of-the-API-Designer</guid>
+      </item>
+    
+      <item>
         <title>Hyperdrive</title>
         <description>A generic API Blueprint client in Swift</description>
         <pubDate>Thu, 04 Jun 2015 16:00:00 +0000</pubDate>
@@ -76,14 +84,6 @@
         <pubDate>Fri, 21 Nov 2014 08:50:00 +0000</pubDate>
         <link>http://blog.apiary.io/2014/11/21/Meetup-In-Prague</link>
         <guid isPermaLink="true">http://blog.apiary.io/2014/11/21/Meetup-In-Prague</guid>
-      </item>
-    
-      <item>
-        <title>Interact with Apiary from the Command Line</title>
-        <description>Use our CLI tool to preview, fetch, and publish your API Blueprints</description>
-        <pubDate>Wed, 05 Nov 2014 06:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2014/11/05/Interact-with-Apiary-from-the-Command-Line</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2014/11/05/Interact-with-Apiary-from-the-Command-Line</guid>
       </item>
     
   </channel>
