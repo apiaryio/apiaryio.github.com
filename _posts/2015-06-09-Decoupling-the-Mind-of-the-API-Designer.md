@@ -25,7 +25,7 @@ And what we haven't seen is this—we believe that thinking about URLs and HTTP 
 
 Before continuing, it's important to define what I mean when I refer to the term "coupling." It's used in many contexts and many industries to refer to the concept of two things being united or joined together. When I use coupling in the context of API design, I am speaking of joining together the design and the technology used to implement that design in such a way that it makes it difficult to separate the two.
 
-Consider this example. Say I want to design an API for turning a light on and off. The first design thought may be, "If there is a light, and it's turned on, I can turn it off. If it's off, I should be able to turn it on." The simplicity is almost laughable because it gives no mention of how I will implement the API. It is semantically rich, in that it gives rich meaning to what the API will do.
+Consider this example. Say we want to design an API for turning a light on and off. The first design thought may be, "If there is a light, and it's turned on, I can turn it off. If it's off, I should be able to turn it on." The simplicity is almost laughable because it gives no mention of how I will implement the API. It is semantically rich, in that it gives rich meaning to what the API will do.
 
 Now consider the most common design approach of our day. We usually start with saying there is a light and then define the URLs used to access the light resource. All lights can be found at `/lights` and an individual light can be found using the URI template `/lights/{id}`. A user can update the light using a `PUT` request and some JSON. We would then move to defining the structure of that JSON for our users to use.
 
