@@ -1,6 +1,6 @@
 ---
 title: Decoupling the Mind of the API Designer
-excerpt: Fostering Creativity with Semantically Rich APIs
+excerpt: Fostering creativity by changing how we think about APIs
 layout: post
 date: 2015-06-10 00:00:00 +0200
 author: stephen
@@ -17,7 +17,7 @@ It struck me that we're doing the same things in the world of API design. We're 
 
 ## Chewing the CRUD
 
-If you survey the modern API space, you'll see this coupled design pattern is the norm. The first step in this pattern is usually to carefully craft a URL that conveys to the users the meaning of the content. The next step is to pick the HTTP method the users will use in interacting with that URL. Our thought, design, and creativity are all directly coupled with the HTTP implementation in this process, and it pushes the question "What does my API do?" to later design steps.
+If you survey the modern API space, you'll see this coupled design pattern is the norm. The first step in this pattern for designing an API is usually to carefully craft a URL that conveys to the users the meaning of the content. The next step is to pick the HTTP method the users will use in interacting with that URL. Our thought, design, and creativity are all directly coupled with the HTTP implementation in this process, and it pushes the question "What does my API do?" to later design steps.
 
 And what we haven't seen is this—we believe that thinking about URLs and HTTP methods *is* answering the question "What does my API do?" We define our resources, their CRUD actions, and place the burden on the user to glean the meaning and use of our API. Instead of giving users a universe to explore, we've giving them equations to manipulate.
 
@@ -27,7 +27,7 @@ Before continuing, it's important to define what I mean when I refer to the term
 
 Consider this example. Say I want to design an API for turning a light on and off. The first design thought may be, "If there is a light, and it's turned on, I can turn it off. If it's off, I should be able to turn it on." The simplicity is almost laughable because it gives no mention of how I will implement the API. It is semantically rich, in that it gives rich meaning to what the API will do.
 
-Now consider the most common design approach of our day. We usually start with saying there is a light and then define the URLs used to access the light resource. All lights can be found at `/lights` and an individual light can be found using the URI template `/lights/{id}`. You can update the light using a `PUT` request and some JSON. We would then move to defining the structure of that JSON for our users to use.
+Now consider the most common design approach of our day. We usually start with saying there is a light and then define the URLs used to access the light resource. All lights can be found at `/lights` and an individual light can be found using the URI template `/lights/{id}`. A user can update the light using a `PUT` request and some JSON. We would then move to defining the structure of that JSON for our users to use.
 
 Of course there are thoughts that follow each of these examples, but notice where they start, and notice which one offers the most freedom to explore, think, and do innovative things. Notice which design is tied to its implementation, and which design provides a blank canvas for how it is carried out. And most importantly, notice which one clearly communicates the purpose of the API.
 
@@ -35,7 +35,7 @@ Of course there are thoughts that follow each of these examples, but notice wher
 
 The modern, coupled approach to design, though popular, is quite cumbersome and restrictive as shown. If you are of the non-technical type, it can also be a barrier to entry in the API design space. Forcing API designers to think primarily in URLs and HTTP methods should be a sign that something is amiss.
 
-Instead of thinking about URLs and HTTP methods first, we should think about semantics apart from implementation. What are the actions that will be taken in your API? How will you name and describe these actions? Who are the users of the API and why will they want to interact with your API? The goal is to move all of this shared understanding away from the source code into API description documents, profiles, and media types. This is what allow us to decouple from implementation.
+Instead of thinking about URLs and HTTP methods first, we should think about semantics apart from implementation. What are the actions that will be taken in our API? How will we name and describe these actions? Who are the users of the API and why will they want to interact with the API? The goal is to move all of this shared understanding away from the source code into API description documents, profiles, and media types. This is what allow us to decouple from implementation.
 
 To put this differently, we need to think less like machines and make machines think more like humans. We need approaches that allow us to think freely about a problem space and make the technology take the shape of thought, rather than making thought take the shape of technology.
 
@@ -43,17 +43,23 @@ To put this differently, we need to think less like machines and make machines t
 
 A common reaction is that this too narrowly defines how an API may be used, and therefore confines the ways in which a user may interact with the application. The inverse of this is actually true—shared understanding frees the users of an API to be creative by providing better visibility into the design and purpose of the API.
 
-In the presentation [REST, Hypermedia, and the Semantic Gap: Why "RMM Level-3 REST" is not enough](https://www.youtube.com/watch?v=UkAt9XSOfaE), Mike Admundsen describes the benefits of richly defined APIs with a quote from a [Donald Norman video on affordances](https://www.youtube.com/watch?v=NK1Zb_5VxuM).
+In a [presentation by Mike Amundsen](https://www.youtube.com/watch?v=UkAt9XSOfaE), he speaks about the need for better shared understanding and quotes a [Donald Norman video](https://www.youtube.com/watch?v=NK1Zb_5VxuM) where Norman says:
 
 > The value of a well designed object is when it has such a rich set of affordances, the people who use it can do things with it that the designer never imagined.
 
-The idea is that by communicating the semantics of a more richly-defined system, you empower your users to be innovative and intrinsically provide better value to them. Inversely, the less you communicate about what users may do with your API, the less value you provide and the less innovative your users can be.
+The idea is that by communicating what we can do with an API—the affordances in other words—we empower our users to be innovative and intrinsically provide better value to them. Inversely, the less we communicate about what users may do with an API, the less value we've provided and the less innovative the users can be.
 
-## Where to Now?
+## We Don't Have to Wait
 
-Thankfully, there is a lot of great work being done on this front. The Semantic Web is an ever-growing topic with technologies like [JSON-LD](http://json-ld.org/) and shared vocabularies like [Schema.org](http://schema.org/). Hypermedia APIs are receiving a lot of attention with lots of great media types along with profile formats like [ALPS](http://alps.io/) for communicating semantics apart from implementation. It's evident that people see the need to go beyond our modern approaches.
+While I've argued here that we need to think better about our tools, technologies, and methodologies, we don't have to wait to put these ideas into practice. There is already a lot of great work being done on this front, and in blog posts to come, we'll be looking at topics around the Semantic Web, Hypermedia APIs, and other related subjects that can help us think creatively. 
 
-The most important thing in all of this is, we have to become aware of how our current situation is taking us backwards. We have to reform and always be reforming how we interact with technology. We have to rework processes that force us down rigid paths and be constantly thinking of better ways to foster creative design in the API space by decoupling thought from implementation.
+We'll end by giving a nod to Einstein who prompted this whole thing. His quote hits on how we need to move forward.
+
+> We cannot solve our problems with the same thinking we used when we created them.
+
+The important idea is, we have to become aware of how our current situation is taking us backwards. We have to reform and always be reforming how we interact with the world around us. We have to rework processes that force us down rigid paths of thought and be constantly thinking of better ways to foster creative design in the API space. 
+
+
 
 
 
