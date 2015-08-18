@@ -19,6 +19,8 @@
 
 ## Installing Dependencies
 
+_(if you don't have bundler yet, start by running `sudo gem install bundler`)_
+
 ```bash
 $ bundle install
 ```
