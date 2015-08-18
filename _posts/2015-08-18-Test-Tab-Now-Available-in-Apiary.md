@@ -1,7 +1,7 @@
 ---
 title: Integrating API Design with Continuous Integration
 author: davita
-excerpt: "Apiary now the only API design platform with toosl for every stage of the API lifecycle"
+excerpt: "Apiary now the only API design platform with tools for every stage of the API lifecycle"
 layout: post
 date: 2015-08-18 06:00:00
 published: yes
