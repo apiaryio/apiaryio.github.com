@@ -15,6 +15,14 @@
       </item>
     
       <item>
+        <title>Integrating API Design with Continuous Integration</title>
+        <description>Apiary now the only API design platform with tools for every stage of the API lifecycle</description>
+        <pubDate>Tue, 18 Aug 2015 06:00:00 +0000</pubDate>
+        <link>http://blog.apiary.io/2015/08/18/Test-Tab-Now-Available-in-Apiary</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2015/08/18/Test-Tab-Now-Available-in-Apiary</guid>
+      </item>
+    
+      <item>
         <title>Decoupling the Mind of the API Designer</title>
         <description>Fostering creativity by changing how we think about APIs</description>
         <pubDate>Tue, 09 Jun 2015 22:00:00 +0000</pubDate>
@@ -76,14 +84,6 @@
         <pubDate>Thu, 04 Dec 2014 18:00:00 +0000</pubDate>
         <link>http://blog.apiary.io/2014/12/04/Next-Version-of-API-Documentation</link>
         <guid isPermaLink="true">http://blog.apiary.io/2014/12/04/Next-Version-of-API-Documentation</guid>
-      </item>
-    
-      <item>
-        <title>Paw Integration</title>
-        <description>Using Paw, a fully-featured HTTP API client for Mac with API Blueprint integration.</description>
-        <pubDate>Tue, 02 Dec 2014 17:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2014/12/02/Paw-Integration</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2014/12/02/Paw-Integration</guid>
       </item>
     
   </channel>
