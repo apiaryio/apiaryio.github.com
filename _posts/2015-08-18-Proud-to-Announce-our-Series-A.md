@@ -14,6 +14,8 @@ You might be wondering what we want to use the money for. In short, we plan on c
 
 Since our last funding announcement Apiary has grown substantially&mdash;from 25,000 APIs to over 160,000 APIs; and from 7 employees in one room in Prague to over 30 people in Prague, San Francisco and other places around the world. Today, my thanks go out to [this team][Team], for their hard work and passion, and to you&mdash;our user community, all 130,000 of you, that have supported us and cheered on us every step of the way. Thank you! Děkujeme!
 
+Jakub Nešetřil, Apiary CEO
+
 [Flybridge]: http://www.flybridge.com
 [Dredd article]: http://blog.apiary.io/
 [Enterprise]: http://enterprise.apiary.io/
