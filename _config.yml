@@ -88,6 +88,12 @@ authors:
     display_name: Dave Goldberg
     email: ""
     twitter: "@davidgoldberg"
+  davita:
+    name: Davita Strong
+    display_name: Davita Strong
+    email: "davita@apiary.io"
+    twitter: "@amaladolcevita"
+
 
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
 author:       Apiary
