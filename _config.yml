@@ -99,7 +99,7 @@ menu:
   - ['https://apiary.io/how-it-works', 'How It Works']
   - ['https://apiary.io/pricing', 'Pricing']
   - ['https://apiary.io/products', 'Product']
-  - ['http://blog.apiary.io/', 'Blog']
+  - ['https://docs.apiary.io/', 'Docs']
   - ['https://apiary.io/company', 'Company']
   - ['https://login.apiary.io/login', 'Sign In']
 tracking: >
