@@ -7,6 +7,14 @@
     <atom:link href="http://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Think Before you Code</title>
+        <description>Quick look at the core principles of a good API design.</description>
+        <pubDate>Tue, 20 Oct 2015 22:00:00 +0000</pubDate>
+        <link>http://blog.apiary.io/2015/10/20/Think-Before-you-Code</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2015/10/20/Think-Before-you-Code</guid>
+      </item>
+    
+      <item>
         <title>Announcing our $6.8M Series A</title>
         <description>Double-down on the awesome.</description>
         <pubDate>Tue, 18 Aug 2015 18:00:00 +0000</pubDate>
@@ -76,14 +84,6 @@
         <pubDate>Tue, 17 Feb 2015 16:00:00 +0000</pubDate>
         <link>http://blog.apiary.io/2015/02/17/Utilising-API-Blueprint-in-API-Clients</link>
         <guid isPermaLink="true">http://blog.apiary.io/2015/02/17/Utilising-API-Blueprint-in-API-Clients</guid>
-      </item>
-    
-      <item>
-        <title>Next Version of API Documentation</title>
-        <description>Starting today, we are setting the new documentation as the default documentation for all new APIs.</description>
-        <pubDate>Thu, 04 Dec 2014 18:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2014/12/04/Next-Version-of-API-Documentation</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2014/12/04/Next-Version-of-API-Documentation</guid>
       </item>
     
   </channel>
