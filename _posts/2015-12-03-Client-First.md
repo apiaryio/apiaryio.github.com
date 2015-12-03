@@ -3,7 +3,7 @@ title: Client First
 excerpt: Think about your clients—both humans and machines—before starting to design your constraints
 layout: post
 date: 2015-12-03 08:00:00 -0700
-author: almad
+author: lukas
 published: true
 comments: true
 ---
