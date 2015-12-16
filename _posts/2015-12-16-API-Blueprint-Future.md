@@ -8,27 +8,27 @@ published: true
 comments: true
 ---
 
-What would be API Blueprint like if it started today? Different vocabulary, features or grammar concepts?
+What would API Blueprint be like if it started today? Different vocabulary, features or grammar concepts?
 
-The truth is, in past three years, API Blueprint was putting its flag in the sand. Carving out its concepts and defining the emerging API design space.
+The truth is – in the past three years – API Blueprint was putting its flag in the sand. It was carving out its concepts and defining the emerging API design space.
 
-From its beginnings API Blueprint stood out for its simplicity and collaborative nature. The aim has always been to create a simple, concise yet powerful language. A language in which everybody can think about the design of an API.
+From its beginnings, API Blueprint stood out for its simplicity and collaborative nature. The aim has always been to create a simple, concise yet powerful language. To provide a medium for everybody to think about a design of an API.
 
-I am still shocked how much these core values resonated with the community. It was the bet we took. To ask programmers and architects to write in plain text instead of JSON or XML. To not generate the API description from code but instead to take the effort and scope out an API definition before coding.
+I am still shocked how much these core values resonated with the community. To ask programmers to write in plain text instead of JSON or XML was the bet we took. And the bet wasn't only about writing in freeform text. We have also asked to not generate the API description from code but instead to take the effort and scope out an API definition before coding.
 
-After the three years I can say our bet was well worth taking. API Blueprint is now growing faster then ever. It has way over 3000 star gazers on [GitHub][1] and almost 200 000 blueprints just in Apiary itself. It's now used everywhere from IoT devices to banks.
+After three years I can say our bet was well worth taking. API Blueprint is now growing faster then ever. It has way over 3000 star gazers on [GitHub][1] and almost 200,000 blueprints in Apiary itself. It's now used everywhere from IoT devices to banks.
 
 ### The most important feature
 
-So where is API Blueprint going next? Before looking into the future let's start with the presence.
+So where is API Blueprint going next? Before looking into the future let's start with the present.
 
-In 2015, we have spent most of the year building only one feature — the description of body parameters. Also know as the [MSON syntax][2].
+In 2015, we have spent most of the year building only one feature—the description of body parameters. Also know as the [MSON syntax][2].
 
-Only one feature?!? Why?
+Only one feature? Why?
 
-Because it brings the single most important concept in understanding an API. The description of the application data model domain and its semantics.
+Because it brings the single most important concept in understanding an API. It introduces the description of the application data model domain and its semantics.
 
-When encountering a new system I first need to understand its semantics. What is the data in it and what I can do with it. Only then I can start asking how to interact with it. This may sound trivial but it isn't. If my customers do not know what my is API offering why should they bother interacting with?
+When encountering a new system, I first need to understand its semantics. What is the data in it, and what I can do with it? Only then I can start asking how to interact with the system. This may sound trivial but it isn't. If my customers do not know what my API is offering, why should they bother interacting with?
 
 I am already hinting here where the API Blueprint is heading.
 
