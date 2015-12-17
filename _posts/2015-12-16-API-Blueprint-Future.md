@@ -2,7 +2,7 @@
 title: This Is Going to Be Awesome
 excerpt: On the future of API Blueprint
 layout: post
-date: 2015-12-16 00:00:00 +0100
+date: 2015-12-17 01:00:00 +0100
 author: zdenek
 published: true
 comments: true
