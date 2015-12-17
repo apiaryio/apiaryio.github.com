@@ -1,5 +1,5 @@
 ---
-title: This is going to be Awesome
+title: This Is Going to Be Awesome
 excerpt: On the future of API Blueprint
 layout: post
 date: 2015-12-16 00:00:00 +0100
@@ -38,7 +38,7 @@ At the pinnacle of every API design is the semantics of its application domain. 
 
 While I am pondering about the **what** of an API, I don't want to worry about JSONs, URLs, protocols or other details. These decisions can wait after I define what the API is actually about.
 
-Abstraction plays a key role in any good software design. It makes design of complex systems possible. It is encapsulating behavior, decoupling elements and enabling modularity.
+Abstraction plays a key role in any good software design. It makes design of complex systems possible. It encapsulates behavior, decouples elements and enables modularity.
 
 Let's look at the levels of abstraction when designing an API and its implementation.
 
@@ -75,13 +75,13 @@ It takes more than developing the core values to have a great language. We are g
 
 ### Transparent and Open
 
-For the first time, we have prepared the public [API Blueprint roadmap][11]. The roadmap is capturing all the core values and usability features in one concise form. The items on roadmap are in priority order.
+For the first time, we have prepared the public [API Blueprint roadmap][11]. The roadmap is capturing all the core values and usability features in one concise form. The items on the roadmap are in priority order.
 
-We have also revised the API Blueprint GitHub issues and the systems of [labels][12]. Starting today you can—for the first time—track [[link][13]] the status of all these features.
+We have also revised the API Blueprint GitHub issues and the systems of [labels][12]. Starting today you can, for the first time track [[link][13]] the status of all these features.
 
 There is now a [Slack channel][14] so you can discuss the API Blueprint and API design in general.
 
-While we have all these ideas about the API Blueprint future, it is now too big to be one man—or company—show! The API Blueprint is open. Please [join us][15] and make the difference in the world of API design!
+While we have all these ideas about the API Blueprint future, it is now too big to be a one man—or company—show! The API Blueprint is open. Please [join us][15] and make the difference in the world of API design!
 
 [1]: https://github.com/apiaryio/api-blueprint
 [2]: https://github.com/apiaryio/mson
