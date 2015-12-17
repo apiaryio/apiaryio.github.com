@@ -14,7 +14,7 @@ The truth is, in the past three years API Blueprint was putting its flag in the 
 
 From its beginnings, API Blueprint stood out for its simplicity and collaborative nature. The aim has always been to create a simple, concise yet powerful language. We wanted to provide a medium for everybody to think about a design of an API.
 
-I am still shocked how much these core values resonated with the community. To ask programmers to write in plain text instead of JSON or XML was the bet we took. And the bet wasn't only about writing in freeform text. We also asked to not generate the API description from code but instead to take the effort and scope out an API definition before coding.
+I am still shocked how much these core values resonated with the community. To ask programmers to write in plain text instead of JSON or XML was the bet we took. And the bet wasn't only about writing in freeform text. We also asked to not generate the API description from code. Instead we suggested it si better to take the effort and scope out an API definition before coding.
 
 After three years I can say our bet was well worth taking. API Blueprint is now growing faster then ever. It has way over 3,000 star gazers on [GitHub][1] and almost 200,000 blueprints in Apiary. It's now used everywhere from IoT devices to banks.
 
@@ -56,7 +56,7 @@ To finish the data description, both URI parameters and HTTP headers are going t
 
 Next, API Blueprint resources will start affording other resource's actions. This interlinking of resources will help the design of hypermedia systems. [[link][6]]
 
-The description of a resource and its action will be untied from the protocol layer. Separating the two will enable abstraction and open the support for other protocols. [[link][7]]
+We will decouple the description of a resource and its action from the protocol layer. Separating the two will enable abstraction and open the support for other protocols. [[link][7]]
 
 Finally, API Blueprint will be able to provide the modeling of application automaton. Hypermedia clients should not use any information about the implementation. Yet, having the automaton description will help the design and enable unparalleled tools. [[link][8]]
 
@@ -75,7 +75,7 @@ It takes more than developing the core values to have a great language. We are g
 
 ### Transparent and Open
 
-For the first time, we have prepared the public [API Blueprint roadmap][11]. The items on roadmap are prioritized and capturing all the core values and usability features in one concise form.
+For the first time, we have prepared the public [API Blueprint roadmap][11]. The roadmap is capturing all the core values and usability features in one concise form. The items on roadmap are in priority order.
 
 We have also revised the API Blueprint GitHub issues and the systems of [labels][12]. Starting today you can—for the first time—track [[link][13]] the status of all these features.
 
