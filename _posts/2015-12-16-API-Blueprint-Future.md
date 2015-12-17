@@ -10,9 +10,9 @@ comments: true
 
 What would API Blueprint be like if it started today? Different vocabulary, features or grammar concepts?
 
-The truth is, in the past three years API Blueprint was putting its flag in the sand. It was carving out its concepts and defining the emerging API design space.
+The truth is, in the past three years API Blueprint has been putting its flag in the sand. It was carving out its concepts and defining the emerging API design space.
 
-From its beginnings, API Blueprint stood out for its simplicity and collaborative nature. The aim has always been to create a simple, concise yet powerful language. We wanted to provide a medium for everybody to think about a design of an API.
+From its beginnings, API Blueprint has stood out for its simplicity and collaborative nature. The aim has always been to create a simple, concise yet powerful language. We wanted to provide a medium for everybody to think about a design of an API.
 
 I am still shocked how much these core values resonated with the community. To ask programmers to write in plain text instead of JSON or XML was the bet we took. And the bet wasn't only about writing in freeform text. We also asked to not generate the API description from code. Instead we suggested it is better to take the effort and scope out an API definition before coding.
 
@@ -38,7 +38,7 @@ At the pinnacle of every API design is the semantics of its application domain. 
 
 While I am pondering about the **what** of an API, I don't want to worry about JSONs, URLs, protocols or other details. These decisions can wait after I define what the API is actually about.
 
-Abstraction plays the key role in any good software design. It makes design of complex systems possible. It is encapsulating behavior, decoupling elements and enabling modularity.
+Abstraction plays a key role in any good software design. It makes design of complex systems possible. It is encapsulating behavior, decoupling elements and enabling modularity.
 
 Let's look at the levels of abstraction when designing an API and its implementation.
 
