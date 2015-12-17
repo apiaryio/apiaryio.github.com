@@ -7,6 +7,14 @@
     <atom:link href="http://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>This Is Going to Be Awesome</title>
+        <description>On the future of API Blueprint</description>
+        <pubDate>Thu, 17 Dec 2015 00:00:00 +0000</pubDate>
+        <link>http://blog.apiary.io/2015/12/17/API-Blueprint-Future</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2015/12/17/API-Blueprint-Future</guid>
+      </item>
+    
+      <item>
         <title>Client First</title>
         <description>Think about your clients—both humans and machines—before starting to design your constraints</description>
         <pubDate>Thu, 03 Dec 2015 15:00:00 +0000</pubDate>
@@ -76,14 +84,6 @@
         <pubDate>Wed, 01 Apr 2015 16:00:00 +0000</pubDate>
         <link>http://blog.apiary.io/2015/04/01/Polls-API-Blueprint-Tutorial-Examples</link>
         <guid isPermaLink="true">http://blog.apiary.io/2015/04/01/Polls-API-Blueprint-Tutorial-Examples</guid>
-      </item>
-    
-      <item>
-        <title>Sharing Is Caring - Socialize Your Public API Blueprints</title>
-        <description>Learn the art of API Blueprint through socialization and collaboration.</description>
-        <pubDate>Thu, 26 Mar 2015 23:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2015/03/26/ApiBlueprint-button</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2015/03/26/ApiBlueprint-button</guid>
       </item>
     
   </channel>
