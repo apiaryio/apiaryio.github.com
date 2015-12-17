@@ -14,7 +14,7 @@ The truth is, in the past three years API Blueprint was putting its flag in the 
 
 From its beginnings, API Blueprint stood out for its simplicity and collaborative nature. The aim has always been to create a simple, concise yet powerful language. We wanted to provide a medium for everybody to think about a design of an API.
 
-I am still shocked how much these core values resonated with the community. To ask programmers to write in plain text instead of JSON or XML was the bet we took. And the bet wasn't only about writing in freeform text. We also asked to not generate the API description from code. Instead we suggested it si better to take the effort and scope out an API definition before coding.
+I am still shocked how much these core values resonated with the community. To ask programmers to write in plain text instead of JSON or XML was the bet we took. And the bet wasn't only about writing in freeform text. We also asked to not generate the API description from code. Instead we suggested it is better to take the effort and scope out an API definition before coding.
 
 After three years I can say our bet was well worth taking. API Blueprint is now growing faster then ever. It has way over 3,000 star gazers on [GitHub][1] and almost 200,000 blueprints in Apiary. It's now used everywhere from IoT devices to banks.
 
@@ -26,7 +26,7 @@ In 2015, we have spent most of the year building only one feature—the descript
 
 Only one feature? Why?
 
-Because it brings the single most important concept in understanding an API. It introduces the description of the application data model domain and its semantics.
+Because this feature brings the single most important concept in understanding an API. It introduces the description of the application data model domain and its semantics.
 
 When encountering a new system, I first need to understand its semantics. What is the data in it, and what I can do with it? Only then I can start asking how to interact with the system. This may sound trivial, but it isn't. If my customers do not know what my API is offering, why should they bother using it?
 
