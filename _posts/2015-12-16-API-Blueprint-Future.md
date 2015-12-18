@@ -16,7 +16,7 @@ From its beginnings, API Blueprint has stood out for its simplicity and collabor
 
 I am still shocked how much these core values resonated with the community. To ask programmers to write in plain text instead of JSON or XML was the bet we took. And the bet wasn't only about writing in freeform text. We also asked to not generate the API description from code. Instead we suggested it is better to take the effort and scope out an API definition before coding.
 
-After three years I can say our bet was well worth taking. API Blueprint is now growing faster then ever. It has way over 3,000 star gazers on [GitHub][1] and almost 200,000 blueprints in Apiary. It's now used everywhere from IoT devices to banks.
+After three years I can say our bet was well worth taking. API Blueprint is now growing faster than ever. It has way over 3,000 star gazers on [GitHub][1] and almost 200,000 blueprints in Apiary. It's now used everywhere from IoT devices to banks.
 
 ### The most important feature
 
@@ -52,13 +52,13 @@ But make no mistake—MSON isn't another syntax for JSON. MSON is agnostic to se
 
 Here are the upcoming steps for API Blueprint.
 
-To finish the data description, both URI parameters and HTTP headers are going to use the MSON syntax. The same syntax of parameters, headers and attributes allows the reuse of data models. It will also enable more powerful tools thanks to the data connection. [[link][5]]
+To finish the data description, both URI parameters and HTTP headers are going to use the MSON syntax. The same syntax of parameters, headers and attributes allows the reuse of data models. It will also enable more powerful tools thanks to the data connection. [[MSON Parameters and Headers][5]]
 
-Next, API Blueprint resources will start affording other resource's actions. This interlinking of resources will help the design of hypermedia systems. [[link][6]]
+Next, API Blueprint resources will start affording other resource's actions. This interlinking of resources will help the design of hypermedia systems. [[Affording Actions][6]]
 
-We will decouple the description of a resource and its action from the protocol layer. Separating the two will enable abstraction and open the support for other protocols. [[link][7]]
+We will decouple the description of a resource and its action from the protocol layer. Separating the two will enable abstraction and open the support for other protocols. [[Abstract protocol layer][7]]
 
-Finally, API Blueprint will be able to provide the modeling of application automaton. Hypermedia clients should not use any information about the implementation. Yet, having the automaton description will help the design and enable unparalleled tools. [[link][8]]
+Finally, API Blueprint will be able to provide the modeling of application automaton. Hypermedia clients should not use any information about the implementation. Yet, having the automaton description will help the design and enable unparalleled tools. [[State machine description][8]]
 
 ### Values
 
@@ -71,13 +71,13 @@ To summarize, here are the values API Blueprint thrives for:
 * Architectural style agnostic
 * Protocol agnostic
 
-It takes more than developing the core values to have a great language. We are going to continue work on improvements to the user experience. This includes better parsers warnings, external assets [[link][9]] and splitting a blueprint into many files [[link][10]].
+It takes more than developing the core values to have a great language. We are going to continue work on improvements to the user experience. This includes better parsers warnings, [external assets][9] and [splitting a blueprint into many files][10].
 
 ### Transparent and Open
 
 For the first time, we have prepared the public [API Blueprint roadmap][11]. The roadmap is capturing all the core values and usability features in one concise form. The items on the roadmap are in priority order.
 
-We have also revised the API Blueprint GitHub issues and the systems of [labels][12]. Starting today you can, for the first time track [[link][13]] the status of all these features.
+We have also revised the API Blueprint GitHub issues and the systems of [labels][12]. Starting today you can, for the first time [track [13] the status of all these features.
 
 There is now a [Slack channel][14] so you can discuss the API Blueprint and API design in general.
 
