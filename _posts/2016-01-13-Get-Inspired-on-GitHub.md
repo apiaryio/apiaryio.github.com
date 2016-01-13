@@ -8,35 +8,35 @@ published: true
 comments: true
 ---
 
-Last June API Blueprint became recognized as a language on GitHub.
+Last June, API Blueprint became recognized as a language on GitHub.
 This brought the syntax highlighting and repository statistics for API
 Blueprint. More importantly, it has also enabled the search for API design
 patterns.
 
-Let’s take a quick look on how we can search and perhaps learn from the API
+Let’s take a quick look at how we can search and perhaps learn from the API
 designs done by others.
 
 # Search
 
-To search for API Blueprint on GitHub simply go to
+To search for API Blueprint on GitHub simply go to,
 
 [https://github.com/search](https://github.com/search)
 
 <img width="640" src="/images/2016-01-13-Get-Inspired-on-GitHub/search.png" alt="search" />
 
-And enter the `language:"API Blueprint"` as the query. Hitting the search will
-list all the GitHub repositories that contains at least one API Blueprint
+Enter the `language:"API Blueprint"` as the query. Hitting the search will
+list all of the GitHub repositories that contain at least one API Blueprint
 (.apib) file.
 
 <img width="640" src="/images/2016-01-13-Get-Inspired-on-GitHub/statistics.png" alt="statistics" />
 
-Seeing every blueprint on GitHub could be fun but what is more fun is to search
+Seeing every blueprint on GitHub could be fun, but what is more fun is to search
 for a particular keyword in blueprints. Here are all the blueprints that
 contain the infamous "Hello World":
 
 <img width="640" src="/images/2016-01-13-Get-Inspired-on-GitHub/hello.png" alt="hello" />
 
-Note: When you are searching for query like "Hello World" make sure to switch to
+Note: When you are searching for a query like `Hello World`, make sure to switch to
  the "Code" results in the left hand pane.
 
 # Patterns
@@ -46,17 +46,17 @@ patterns.
 
 ## Pagination
 
-Is your resource a collection of elements or other resources, such as a result
-of search? Maybe it is a good idea to split the response into chunks—pages.
+Is your resource a collection of elements or other resources, such as a search
+ result? Maybe it is a good idea to split the response into pages.
 
 Searching blueprints for the `page` word seems like to be a good start to see
-how others dealt with this task:
+how others dealt with this task.
 
 [API pagination on GitHub](https://github.com/search?q=page+language%3A%22API+Blueprint%22&ref=searchresults&type=Code&utf8=%E2%9C%93)
 
 ## Authentication
 
-Doing authentication properly is no easy task. Let’s see how is `OAuth2` used in
+Doing authentication properly is no easy task. Let’s see how `OAuth2` is used in
 APIs:
 
 [OAuth2 in APIs on GitHub](https://github.com/search?utf8=%E2%9C%93&q=oauth2+language%3A%22API+Blueprint%22&type=Code&ref=searchresults)
@@ -70,14 +70,14 @@ fellow developers:
 
 ## Hypermedia
 
-If you are building a true REST API or just curious what has been built so far
+If you are building a true REST API or just curious what has been built so far,
 you can search for blueprints using one of the many hypermedia types.
-Fore example `HAL+JSON`:
+Fore example, `HAL+JSON`:
 
 [HAL+JSON APIs on GitHub](https://github.com/search?utf8=%E2%9C%93&q=%22hal%2Bjson%22+language%3A%22API+Blueprint%22&type=Code&ref=searchresults)
 
-These were just few examples of queries you use while looking for API design
+These were just a few examples of queries you use while looking for API design
 patterns.
 
-Let us know if you will find (or create) something interesting.
+Let us know if you find (or create) something interesting.
 Let’s learn from each other how to build better APIs for tomorrow!
