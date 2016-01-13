@@ -7,6 +7,14 @@
     <atom:link href="http://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Get Inspired on GitHub</title>
+        <description>Learn how to search for API design patterns on GitHub.</description>
+        <pubDate>Tue, 12 Jan 2016 23:00:00 +0000</pubDate>
+        <link>http://blog.apiary.io/2016/01/12/Get-Inspired-on-GitHub</link>
+        <guid isPermaLink="true">http://blog.apiary.io/2016/01/12/Get-Inspired-on-GitHub</guid>
+      </item>
+    
+      <item>
         <title>This Is Going to Be Awesome</title>
         <description>On the future of API Blueprint</description>
         <pubDate>Thu, 17 Dec 2015 00:00:00 +0000</pubDate>
@@ -76,14 +84,6 @@
         <pubDate>Sun, 03 May 2015 23:00:00 +0000</pubDate>
         <link>http://blog.apiary.io/2015/05/03/The-Role-of-the-API-Designer</link>
         <guid isPermaLink="true">http://blog.apiary.io/2015/05/03/The-Role-of-the-API-Designer</guid>
-      </item>
-    
-      <item>
-        <title>New API Blueprint Tutorial</title>
-        <description>Learning API Blueprint has never been easier.</description>
-        <pubDate>Wed, 01 Apr 2015 16:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2015/04/01/Polls-API-Blueprint-Tutorial-Examples</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2015/04/01/Polls-API-Blueprint-Tutorial-Examples</guid>
       </item>
     
   </channel>
