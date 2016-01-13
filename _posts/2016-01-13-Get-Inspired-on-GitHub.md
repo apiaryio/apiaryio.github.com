@@ -1,5 +1,5 @@
 ---
-title: Get Inspired on GitHub
+title: API Design Inspiration on GitHub
 excerpt: Learn how to search for API design patterns on GitHub.
 layout: post
 date: 2016-01-13 00:00:00 +0100
