@@ -52,21 +52,24 @@ Is your resource a collection of elements or other resources, such as a search
 Searching blueprints for the `page` word seems like to be a good start to see
 how others dealt with this task.
 
-[API pagination on GitHub](https://github.com/search?q=page+language%3A%22API+Blueprint%22&ref=searchresults&type=Code&utf8=%E2%9C%93)
+[API pagination on GitHub](https://github.com/search?q=page+language%3A%22API+Blueprint%22&ref=searchresults&type=Code&utf8=%E2%9C%93):
+`page language:"API Blueprint"`
 
 ## Authentication
 
 Doing authentication properly is no easy task. Let’s see how `OAuth2` is used in
 APIs:
 
-[OAuth2 in APIs on GitHub](https://github.com/search?utf8=%E2%9C%93&q=oauth2+language%3A%22API+Blueprint%22&type=Code&ref=searchresults)
+[OAuth2 in APIs on GitHub](https://github.com/search?utf8=%E2%9C%93&q=oauth2+language%3A%22API+Blueprint%22&type=Code&ref=searchresults):
+`oauth2 language:"API Blueprint"`
 
 ## Rate limiting
 
 Need to throttle the number of requests clients do to your API? So do many
 fellow developers:
 
-[API rate limiting on GitHub](https://github.com/search?utf8=%E2%9C%93&q=rate+limit+language%3A%22API+Blueprint%22&type=Code&ref=searchresults)
+[API rate limiting on GitHub](https://github.com/search?utf8=%E2%9C%93&q=rate+limit+language%3A%22API+Blueprint%22&type=Code&ref=searchresults):
+`rate limit language:"API Blueprint"`
 
 ## Hypermedia
 
@@ -74,7 +77,8 @@ If you are building a true REST API or just curious what has been built so far,
 you can search for blueprints using one of the many hypermedia types.
 Fore example, `HAL+JSON`:
 
-[HAL+JSON APIs on GitHub](https://github.com/search?utf8=%E2%9C%93&q=%22hal%2Bjson%22+language%3A%22API+Blueprint%22&type=Code&ref=searchresults)
+[HAL+JSON APIs on GitHub](https://github.com/search?utf8=%E2%9C%93&q=%22hal%2Bjson%22+language%3A%22API+Blueprint%22&type=Code&ref=searchresults):
+`"hal+json" language:"API Blueprint"`
 
 These were just a few examples of queries you use while looking for API design
 patterns.
