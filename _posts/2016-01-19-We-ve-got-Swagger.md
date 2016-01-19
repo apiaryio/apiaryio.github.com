@@ -16,7 +16,8 @@ Apiary has always been about being the best platform for your API lifecycle. We
 have pushed the industry to take a design-first approach while making
 documentation one of the most important components of delivering a great API. If
 you are a passionate Swagger user, you can now join the community of 150,000 API
- heroes and design the best API regardless of your preferred language.
+ heroes and heroines and design the best API regardless of your preferred
+language.
 
 Just as developers choose a programming language for their use-case, we believe
 you should be able to pick the API description language that best suits your
