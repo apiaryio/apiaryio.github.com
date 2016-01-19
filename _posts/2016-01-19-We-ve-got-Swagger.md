@@ -12,6 +12,8 @@ We love APIs. We always have and always will. We built Apiary to be the hub for
 your API lifecycle. Until today, this place has spoken just one language:
 API Blueprint. As of today, Apiary is bilingual... We’ve got Swagger!
 
+<img width="640" src="/images/2016-01-19-We-ve-got-Swagger/bannerlight@2x.png" alt="search" />
+
 Apiary has always been about being the best platform for your API lifecycle. We
 have pushed the industry to take a design-first approach while making
 documentation one of the most important components of delivering a great API. If
