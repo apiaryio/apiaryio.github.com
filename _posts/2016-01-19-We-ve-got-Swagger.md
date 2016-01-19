@@ -42,14 +42,14 @@ working towards joining OpenAPI Initiative as a member and technical
 contributor. OpenAPI is based on Swagger 2.0 specification, and currently Apiary
  supports Swagger 2.0 out of the gate.
 
-Questions? Ask away! We will be hosting a webinar on February 2nd to give a live
- demo of the Swagger features. It will be followed it up with a Q&A from our CEO
- and Founder. Hope to see you there!
+Questions? Ask away! We will be hosting a [webinar on February 2nd][webinar] to
+give a live demo of the Swagger features. It will be followed it up with a Q&A
+from our CEO and Founder. Hope to see you there!
 
 [**Get Started with Swagger in Apiary.**][start]
-
 
 [roadmap]: https://github.com/apiaryio/api-blueprint/wiki/Roadmap
 [mson]: https://github.com/apiaryio/mson
 [start]: https://docs.apiary.io/swagger/
 [features]: https://docs.apiary.io/api_101/swagger/#supported-apiary-functionality-for-swagger-projects
+[webinar]: https://plus.google.com/events/ca861m5eqljso89vq7sp2vfnit0
