@@ -37,11 +37,11 @@ validation will roll out later this year. We are also exploring ways for people
 to move easily between the languages. Whichever description language you choose,
 use Apiary as the design platform.
 
-Swagger has been moved to OpenAPI Initiative, a neutral industry effort to find
-interoperability between API tools. We welcome and support this goal and are
-working towards joining OpenAPI Initiative as a member and technical
-contributor. OpenAPI is based on Swagger 2.0 specification, and currently Apiary
- supports Swagger 2.0 out of the gate.
+The Swagger specification recently moved to the OpenAPI Initiative, an open,
+industry-wide effort to find interoperability between API tools. We welcome and
+support this goal and are working towards joining OpenAPI Initiative as a member
+ and technical contributor. OpenAPI is based on Swagger 2.0 specification, and
+currently Apiary supports Swagger 2.0 out of the gate.
 
 Questions? Ask away! We will be hosting a [webinar on February 2nd][webinar] to
 give a live demo of the Swagger features. It will be followed it up with a Q&A
