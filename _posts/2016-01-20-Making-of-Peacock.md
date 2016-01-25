@@ -19,7 +19,7 @@ Description format.
 
 <img width="640" src="/images/2016-01-20-Making-of-Peacock/shinzu.jpg" alt="shinzu" />
 
-_/Shinzu, responsible for documentation/_
+_/Shenzi, responsible for documentation/_
 
 <img width="640" src="/images/2016-01-20-Making-of-Peacock/coffee.jpg" alt="coffee" />
 
