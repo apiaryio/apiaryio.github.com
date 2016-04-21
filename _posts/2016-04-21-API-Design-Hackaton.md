@@ -1,6 +1,6 @@
 ---
 title: World’s First API Design Hackathon
-excerpt: We were at the World's ffirs
+excerpt: We were at the World's first API Design Hackathon.
 layout: post
 date: 2016-04-21 00:00:00 -0700
 author: zdenek
