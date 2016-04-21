@@ -8,4 +8,5 @@ deployment:
       - rake deploy
 test:
   override:
+    - bundle install --path vendor/bundle
     - bundle exec jekyll doctor
