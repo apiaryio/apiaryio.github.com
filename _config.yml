@@ -1,6 +1,6 @@
 ---
 root:
-permalink: /:year/:month/:day/:title
+permalink: /:year/:month/:day/:title/
 lsi: false
 markdown: kramdown
 kramdown:
