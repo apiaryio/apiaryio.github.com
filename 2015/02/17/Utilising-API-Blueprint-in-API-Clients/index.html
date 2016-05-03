@@ -123,36 +123,35 @@
 
 <p>This example is going to make use of one of our example blueprints, “Polls API”. I’ve pulled out an excerpt of the example blueprint and it looks something like the following. Take a look at the <a href="http://docs.pollsapi.apiary.io/">full version</a> (<a href="https://github.com/apiaryio/api-blueprint/blob/be00b000e47561419f654374dd975a02083354e8/examples/Polls%20API.md">source</a>).</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="gh"># Polls</span><span class="err">
-</span>Polls is a simple web service that allows consumers to view polls and vote in them.<span class="err">
+<pre><code class="language-apib"># Polls
+Polls is a simple web service that allows consumers to view polls and vote in them.
 
-</span><span class="p">##</span><span class="k"> Group </span><span class="gh">Question</span><span class="err">
-</span>Resource related to questions in the API.<span class="err">
+## Group Question
+Resource related to questions in the API.
 
-</span><span class="p">##</span><span class="gh"> Question </span><span class="s">[/questions/{question_id}]</span><span class="err">
-</span><span class="p">+</span> Parameters<span class="err">
-</span><span class="p">    +</span> question_id (number) ... ID of the Question in form of an integer<span class="err">
+## Question [/questions/{question_id}]
++ Parameters
+    + question_id (number) ... ID of the Question in form of an integer
 
-</span><span class="p">###</span><span class="gh"> View a question detail </span><span class="s">[GET]</span><span class="err">
+### View a question detail [GET]
 
-</span><span class="p">##</span><span class="gh"> Choice </span><span class="s">[/questions/{question_id}/choices/{choice_id}]</span><span class="err">
-</span><span class="p">
-+ </span><span class="k">Parameters</span><span class="err">
-</span><span class="p">    +</span> question_id (number) ... ID of the Question in form of an integer<span class="err">
-</span><span class="p">    +</span> choice_id (number) ... ID of the Choice in form of an integer<span class="err">
+## Choice [/questions/{question_id}/choices/{choice_id}]
 
-</span><span class="p">###</span><span class="gh"> Vote </span><span class="s">[PUT]</span><span class="err">
++ Parameters
+    + question_id (number) ... ID of the Question in form of an integer
+    + choice_id (number) ... ID of the Choice in form of an integer
 
-</span>This action allows you to vote on a question's choice.<span class="err">
+### Vote [PUT]
 
-</span><span class="p">##</span><span class="gh"> Questions collection </span><span class="s">[/questions{?page}]</span><span class="err">
-</span><span class="p">+</span> Parameters<span class="err">
-</span><span class="p">    +</span> page (optional, number) ... The page of questions to return<span class="err">
+This action allows you to vote on a question's choice.
 
-</span><span class="p">###</span><span class="gh"> List all questions </span><span class="s">[GET]</span><span class="err">
-</span><span class="p">###</span><span class="gh"> Create a new question </span><span class="s">[POST]</span><span class="err">
-</span></code></pre>
-</div>
+## Questions collection [/questions{?page}]
++ Parameters
+    + page (optional, number) ... The page of questions to return
+
+### List all questions [GET]
+### Create a new question [POST]
+</code></pre>
 
 <p>We can pull out any of the actions from our blueprint by the resource and action name in Swift:</p>
 
