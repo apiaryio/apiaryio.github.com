@@ -11,6 +11,7 @@ highlights: true
 highlighter: rouge
 gems:
   - jekyll-redirect-from
+  - jekyll-sitemap
 exclude: ['Gemfile*', 'vendor', 'README.md', 'Rakefile']
 
 # Site configuration
