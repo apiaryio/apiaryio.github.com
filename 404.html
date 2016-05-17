@@ -1,0 +1,28 @@
+---
+title: Page not found
+layout: default
+permalink: /404.html
+---
+
+<div class="blog">
+
+  <div class="blogArticles">
+    <h1>Page not found</h1>
+    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+
+    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+
+    {% for post in site.posts | limit: 3 %}
+        <div class="blogPost{% if post.featured %} featured{% endif %}"><a href="{{ post.url }}">
+          <h1>{{ post.title }}</h1>
+          <p>{{ post.excerpt }}</p>
+          <p class="authorDate inline">{{ site.authors[post.author].name }} — {{ post.date | date_to_string }}</p>
+        </a>
+          {% if post.comments %}
+            <p class="commentsCount"><a href="{{ post.url }}/#comments" class="commentsLink" data-disqus-identifier="{{ post.url }}"></a></p>
+            {% assign useComments = true %}
+          {% endif %}
+        </div>
+    {% endfor %}
+  </div>
+</div>
