@@ -81,4 +81,4 @@ If you would like to see a slightly more complex example that demonstrates the a
 ## Coming up next
 In the next post I will be discussing intermediate features of New API Blueprint Format such as Blueprint Modules, References, User-specific tokens, Multimedia and Authentication.
 
-Until then, I would love to hear from you. Please do not hesitate to share with us your thoughts and comments. You can contact me directly at [my email](z@apiary.io) or comment on [New API Blueprint Format](http://support.apiary.io/forums/120125-general/suggestions/2970802-new-api-blueprint-format).
+Until then, I would love to hear from you. Please do not hesitate to share with us your thoughts and comments. You can contact me directly at [my email](mailto:z@apiary.io) or comment on [New API Blueprint Format](http://support.apiary.io/forums/120125-general/suggestions/2970802-new-api-blueprint-format).

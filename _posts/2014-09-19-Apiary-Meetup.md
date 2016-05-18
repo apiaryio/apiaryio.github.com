@@ -31,7 +31,7 @@ Keep an eye on our [Twitter][] account and we hope you can make it next time.
 
 [Heavybit Industries]: http://www.heavybit.com/
 [Kris Chant]: https://twitter.com/sprshrp
-[neha@apiary.io]: neha@apiary.io
+[neha@apiary.io]: mailto:neha@apiary.io
 [Twitter]: https://twitter.com/apiaryio
 [Facebook]: https://www.facebook.com/media/set/?set=a.693817970710044.1073741827.121823441242836&type=3
 

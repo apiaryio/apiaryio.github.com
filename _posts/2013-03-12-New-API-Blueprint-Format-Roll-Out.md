@@ -36,6 +36,6 @@ Also the transition from the legacy to the New Format will be automatic and loss
 
 With that said, if you are familiar with the current format or don't want to dive in right away, it is perfectly fine to start working on your API today without any fear that you will have to re-do it all once the New Format arrives.
 
-As always I would love to hear from you. You can reach me on [my email](z@apiary.io).
+As always I would love to hear from you. You can reach me on [my email](mailto:z@apiary.io).
 
 
