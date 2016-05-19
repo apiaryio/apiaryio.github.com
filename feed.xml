@@ -3,87 +3,87 @@
   <channel>
     <title>The Apiary Blog</title>
     <description>Updates on everyone's favourite REST API tools company</description>
-    <link>http://blog.apiary.io</link>
-    <atom:link href="http://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://blog.apiary.io</link>
+    <atom:link href="https://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>World’s First API Design Hackathon</title>
         <description>We were at the World's first API Design Hackathon.</description>
         <pubDate>Thu, 21 Apr 2016 07:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2016/04/21/API-Design-Hackaton</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2016/04/21/API-Design-Hackaton</guid>
+        <link>https://blog.apiary.io/2016/04/21/API-Design-Hackaton</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2016/04/21/API-Design-Hackaton</guid>
       </item>
     
       <item>
         <title>Making of Peacock</title>
         <description>Behind the scenes of adding Swagger support.</description>
         <pubDate>Sun, 24 Jan 2016 23:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2016/01/24/Making-of-Peacock</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2016/01/24/Making-of-Peacock</guid>
+        <link>https://blog.apiary.io/2016/01/24/Making-of-Peacock</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2016/01/24/Making-of-Peacock</guid>
       </item>
     
       <item>
         <title>We’ve got Swagger</title>
         <description>Introducing the support for Swagger in Apiary</description>
         <pubDate>Mon, 18 Jan 2016 23:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2016/01/18/We-ve-got-Swagger</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2016/01/18/We-ve-got-Swagger</guid>
+        <link>https://blog.apiary.io/2016/01/18/We-ve-got-Swagger</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2016/01/18/We-ve-got-Swagger</guid>
       </item>
     
       <item>
         <title>API Design Inspiration on GitHub</title>
         <description>Learn how to search for API design patterns on GitHub.</description>
         <pubDate>Tue, 12 Jan 2016 23:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2016/01/12/Get-Inspired-on-GitHub</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2016/01/12/Get-Inspired-on-GitHub</guid>
+        <link>https://blog.apiary.io/2016/01/12/Get-Inspired-on-GitHub</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2016/01/12/Get-Inspired-on-GitHub</guid>
       </item>
     
       <item>
         <title>This Is Going to Be Awesome</title>
         <description>On the future of API Blueprint</description>
         <pubDate>Thu, 17 Dec 2015 00:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2015/12/17/API-Blueprint-Future</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2015/12/17/API-Blueprint-Future</guid>
+        <link>https://blog.apiary.io/2015/12/17/API-Blueprint-Future</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2015/12/17/API-Blueprint-Future</guid>
       </item>
     
       <item>
         <title>Client First</title>
         <description>Think about your clients—both humans and machines—before starting to design your constraints</description>
         <pubDate>Thu, 03 Dec 2015 15:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2015/12/03/Client-First</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2015/12/03/Client-First</guid>
+        <link>https://blog.apiary.io/2015/12/03/Client-First</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2015/12/03/Client-First</guid>
       </item>
     
       <item>
         <title>Think Before you Code</title>
         <description>Quick look at the core principles of a good API design.</description>
         <pubDate>Tue, 20 Oct 2015 22:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2015/10/20/Think-Before-you-Code</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2015/10/20/Think-Before-you-Code</guid>
+        <link>https://blog.apiary.io/2015/10/20/Think-Before-you-Code</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2015/10/20/Think-Before-you-Code</guid>
       </item>
     
       <item>
         <title>Announcing our $6.8M Series A</title>
         <description>Double-down on the awesome.</description>
         <pubDate>Tue, 18 Aug 2015 18:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2015/08/18/Proud-to-Announce-our-Series-A</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2015/08/18/Proud-to-Announce-our-Series-A</guid>
+        <link>https://blog.apiary.io/2015/08/18/Proud-to-Announce-our-Series-A</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2015/08/18/Proud-to-Announce-our-Series-A</guid>
       </item>
     
       <item>
         <title>Continuously Integrate Your API Design</title>
         <description>Apiary is now the only API design platform with tools for every stage of the API lifecycle</description>
         <pubDate>Tue, 18 Aug 2015 06:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2015/08/18/Test-Tab-Now-Available-in-Apiary</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2015/08/18/Test-Tab-Now-Available-in-Apiary</guid>
+        <link>https://blog.apiary.io/2015/08/18/Test-Tab-Now-Available-in-Apiary</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2015/08/18/Test-Tab-Now-Available-in-Apiary</guid>
       </item>
     
       <item>
         <title>Decoupling the Mind of the API Designer</title>
         <description>Fostering creativity by changing how we think about APIs</description>
         <pubDate>Tue, 09 Jun 2015 22:00:00 +0000</pubDate>
-        <link>http://blog.apiary.io/2015/06/09/Decoupling-the-Mind-of-the-API-Designer</link>
-        <guid isPermaLink="true">http://blog.apiary.io/2015/06/09/Decoupling-the-Mind-of-the-API-Designer</guid>
+        <link>https://blog.apiary.io/2015/06/09/Decoupling-the-Mind-of-the-API-Designer</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2015/06/09/Decoupling-the-Mind-of-the-API-Designer</guid>
       </item>
     
   </channel>
