@@ -11,10 +11,11 @@ highlights: true
 highlighter: rouge
 gems:
   - jekyll-redirect-from
+  - jekyll-sitemap
 exclude: ['Gemfile*', 'vendor', 'README.md', 'Rakefile']
 
 # Site configuration
-url:          http://blog.apiary.io
+url:          https://blog.apiary.io
 title:        The Apiary Blog
 description:  Updates on everyone's favourite REST API tools company
 authors:
@@ -105,7 +106,7 @@ menu:
   - ['https://apiary.io/how-it-works', 'How It Works']
   - ['https://apiary.io/pricing', 'Pricing']
   - ['https://apiary.io/products', 'Product']
-  - ['https://docs.apiary.io/', 'Docs']
+  - ['https://help.apiary.io/', 'Help']
   - ['https://apiary.io/company', 'Company']
   - ['https://login.apiary.io/login', 'Sign In']
 tracking: >
