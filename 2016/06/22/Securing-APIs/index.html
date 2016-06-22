@@ -1,0 +1,225 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+
+  <title>Securing APIs&mdash;Apiary Blog</title>
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <meta name="author" content="Apiary">
+  <link rel="alternate" type="application/rss+xml" title="The Apiary Blog Feed" href="https://blog.apiary.io/feed.xml" />
+
+  <meta name="application-name" content="Apiary">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type"  content="article">
+  <meta name="twitter:site" content="@apiaryio">
+  <meta name="twitter:creator" content="@apiaryio">
+
+  <meta name="twitter:title" content="Securing APIs&mdash;Apiary Blog">
+  <meta property="og:title" content="Securing APIs&mdash;Apiary Blog">
+
+  
+    <meta property="og:url" content="https://blog.apiary.io/2016/06/22/Securing-APIs">
+    <meta name="description" content="It’s a Big, Scary World out There.&mdash;Apiary Blog">
+    <meta name="twitter:description" content="It’s a Big, Scary World out There.&mdash;Apiary Blog">
+    <meta property="og:description" content="It’s a Big, Scary World out There.&mdash;Apiary Blog">
+  
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="canonical" href="https://blog.apiary.io/2016/06/22/Securing-APIs">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/fonts.css">
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/modules/footer/footer.css">
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/modules/website.css">
+  <link rel="stylesheet" href="/syntax.css">
+  <!-- /Styles -->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18252923-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</head>
+<body class="website">
+
+<!-- website-header -->
+  <header id="websiteHeader"><div class="positioning">
+    <a class="headerLogotypeLink" href="http://apiary.io/"><h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1><div class="headerLogotype"></div></a>
+    <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
+  </div></header>
+<!-- /website-header -->
+
+<!-- website-navigation -->
+  <div id="navigation">
+    <nav class="websiteNav positioning">
+      <ul class="clearAfter websiteNavMenu">
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/how-it-works">How It Works</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/pricing">Pricing</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/products">Product</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://help.apiary.io/">Help</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/company">Company</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://login.apiary.io/login">Sign In</a></li>
+        
+      </ul>
+      <a class="websiteNavLink websiteNavLinkHighlighted" href="https://login.apiary.io/register" class="signIn">Sign Up</a>
+      <a class="websiteNavLink backToTop" href="javascript:;"><span class="visuallyhidden">Back to top</span></a>
+    </nav>
+  </div>
+<!-- /website-navigation -->
+
+<div>
+  
+
+<div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Securing APIs</h1>
+    
+      <p><span class="minority">By</span> <strong>Corvax</strong>
+        (<a href="https://twitter.com/@jedenbod">@jedenbod</a>, <a href="mailto:corvax@apiary.io">corvax@apiary.io</a>) <span class="minority">on</span>&nbsp;22&nbsp;Jun&nbsp;2016
+      </p>
+      <p><span class="blogShare">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Securing APIs" data-url="https://blog.apiary.io/2016/06/22/Securing-APIs" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2016/06/22/Securing-APIs" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+    
+
+  <p>In the past few years, we’ve seen stories breaking around people hacking Internet of Things (IoT) devices such as <a href="http://www.wired.com/2015/07/hackers-remotely-kill-jeep-highway/">cars</a>, <a href="http://www.wired.com/2015/07/hackers-can-disable-sniper-rifleor-change-target/">guns</a> or a <a href="http://www.pcworld.com/article/3012220/security/internet-connected-hello-barbie-doll-can-be-hacked.html">Barbie doll</a>. We’ve seen vulnerable protocols and implementations happening again and again coming even from big vendors where we’d expect a higher level of security assessment. It was a whole spectrum of small and big attacks. Not always as sophisticated as they <em>should</em> be. Quite often exploiting weak API security. APIs without TLS. APIs using a single token for all devices. Weak default credentials and many more pitfalls. We were laughing at an idea of installing a firewall to our fridge. Is current API security that weak or that hard?</p>
+
+<p>Good news is that we <em>almost</em> figured out securing server communication with the browser. TLS is becoming a standard even for small or personal projects. We have new security policies and APIs in all major browsers. We can enforce and control security features with just adding HTTP headers to server responses. And many more small and large improvements. These altogether add some serious security to the web. Can we say the same about API landscape? Above examples shows that we can’t.</p>
+
+<p>One thing is for sure: it’s <strong>really hard</strong> to fully understand implications of choosing one protocol or scheme over another. Although core ideas and principles are usually well documented, frameworks and libraries rarely help with this task. A look at a <a href="http://security.stackexchange.com">security site</a> can demonstrate how hard it is to understand these concepts. For instance, what’s the top answer on Google for a cURL certificate mismatch? Few lines of code to disable this security check.</p>
+
+<p>History and experience show us that crypto and security can be described as <em>exciting</em> by only a fraction of people, and if it isn’t interesting and/or easy, people won’t care about it. We can keep inventing more intricate schemas and <a href="https://en.wikipedia.org/wiki/Double_ratchet">security protocols</a> and yes, we’ll always need them. Yet, we won’t make crypto <em>inviting</em> for everybody. Sadly, it just isn’t meant to be.</p>
+
+<p>We can improve developer experience of using security features in their stacks. We can do a great amount of work on explaining shortcomings of disabling such features to a developer trying to turn them off. We can develop libraries that will <strong>require</strong> only the highest security standards.</p>
+
+<blockquote>
+  <ul>
+    <li>uses <code class="highlighter-rouge">--insecure</code> flag</li>
+    <li>I’m sorry, Dave, I’m afraid I can’t do that.</li>
+  </ul>
+</blockquote>
+
+<p>It takes educated and dedicated people with enough time and resources to do security <em>well enough</em>. The rest will ignore warnings and prompts that your tool produces if it slows them down or annoys them. Security and crypto always need to be on the move. The problem is that it’s not going to get easier, and it’s not aiming to get easier. With IoT in the mix of the API landscape, it’s only more inviting for attackers to try to break your API security. You must make sure you are doing security well.</p>
+
+<p>One possibility I can imagine is: outsourcing to somebody who is good at crypto. Security of my API will be just another feature of my provider. If this allows people dedicated to security to do their jobs and allows me as an API developer and consumer to be able to trust any API I’m interacting with, then it’s a win-win. But it shouldn’t be something I pay for extra. It must be a default option. Security must be part of this contract and API contract in general.</p>
+
+<p>I wish for a future where I can look at any API and check if their implementation of SAML, OAuth, Hawk or anything else is secure. This calls to embedding your API security schema right into your API description as a first class citizen. Then designing your API around these security concepts comes just as natural.</p>
+
+<p><em>This article has been originally published at <a href="http://www.heavybit.com/library/blog/securing-apis-a-look-ahead/">Securing APIs: A Look Ahead</a>.</em></p>
+
+  <p><span class="blogShare afterArticle">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Securing APIs" data-url="https://blog.apiary.io/2016/06/22/Securing-APIs" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2016/06/22/Securing-APIs" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+
+
+
+  </div>
+</div>
+
+<div id="fb-root"></div>
+
+<script>
+(function(doc, script) {
+  var js,
+      fjs = doc.getElementsByTagName(script)[0],
+      frag = doc.createDocumentFragment(),
+      add = function(url, id) {
+          if (doc.getElementById(id)) {return;}
+          js = doc.createElement(script);
+          js.src = url;
+          id && (js.id = id);
+          frag.appendChild( js );
+      };
+
+    // Google+ button
+    add('http://apis.google.com/js/plusone.js');
+    // Facebook SDK
+    add('//connect.facebook.net/en_US/all.js#xfbml=1', 'facebook-jssdk');
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+
+    fjs.parentNode.insertBefore(frag, fjs);
+}(document, 'script'));
+</script>
+
+</div>
+
+<!-- website-footer -->
+  <hr>
+
+<footer class="applicationFooter">
+
+  <div class="applicationFooterRow">
+    <div class="applicationFooterColumns">
+    <div class="applicationFooterColumn">
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Platform</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiary.io/how-it-works">How It Works</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/products">Product</a></li>
+        <li><a class="applicationFooterListLink" href="http://enterprise.apiary.io/">Enterprise</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/pricing">Pricing</a></li>
+        <li><a class="applicationFooterListLink" href="https://help.apiary.io">Help</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Company</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://blog.apiary.io/">Blog</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#team">Team</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/jobs">Jobs</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#contact">Contact</a></li>
+        <li><a class="applicationFooterListLink" href="https://apiary.a.ssl.fastly.net/assets/files/apiary-press-kit.zip">Press Kit</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Open Source</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiblueprint.org">API Blueprint</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/snowcrash">Snowcrash</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
+        <li><a class="applicationFooterListLink" href="http://client.apiary.io">Apiary CLI</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Social</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
+        <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
+        <li><a class="applicationFooterListLink" href="https://facebook.com/apiary.io">Facebook</a></li>
+        <li><a class="applicationFooterListLink" href="http://dribbble.com/apiary">Dribbble</a></li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="applicationFooterRow">
+    <p class="applicationFooterCopyright">&copy; Apiary Ltd. All rights reserved. <span class="applicationFooterCopyrightLinks">• <a href="http://apiary.io/tos" class="applicationFooterCopyrightLink">Terms</a> • <a href="https://www.iubenda.com/privacy-policy/323220" class="applicationFooterCopyrightLink">Privacy</a></span></p>
+  </div>
+</footer>
+<!-- /website-footer -->
+
+<script src="https://apiary.a.ssl.fastly.net/assets/js/website-scroll.js"></script>
+<script>
+  websiteScroll();
+  document.documentElement.className += ' js';
+</script>
+
+</body>
+</html>

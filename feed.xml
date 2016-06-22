@@ -7,6 +7,14 @@
     <atom:link href="https://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Securing APIs</title>
+        <description>It’s a Big, Scary World out There.</description>
+        <pubDate>Wed, 22 Jun 2016 22:00:00 +0000</pubDate>
+        <link>https://blog.apiary.io/2016/06/22/Securing-APIs</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2016/06/22/Securing-APIs</guid>
+      </item>
+    
+      <item>
         <title>World’s First API Design Hackathon</title>
         <description>We were at the World's first API Design Hackathon.</description>
         <pubDate>Thu, 21 Apr 2016 07:00:00 +0000</pubDate>
@@ -76,14 +84,6 @@
         <pubDate>Tue, 18 Aug 2015 06:00:00 +0000</pubDate>
         <link>https://blog.apiary.io/2015/08/18/Test-Tab-Now-Available-in-Apiary</link>
         <guid isPermaLink="true">https://blog.apiary.io/2015/08/18/Test-Tab-Now-Available-in-Apiary</guid>
-      </item>
-    
-      <item>
-        <title>Decoupling the Mind of the API Designer</title>
-        <description>Fostering creativity by changing how we think about APIs</description>
-        <pubDate>Tue, 09 Jun 2015 22:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2015/06/09/Decoupling-the-Mind-of-the-API-Designer</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2015/06/09/Decoupling-the-Mind-of-the-API-Designer</guid>
       </item>
     
   </channel>
