@@ -2,7 +2,7 @@
 title: Securing APIs
 excerpt: It’s a Big, Scary World out There.
 layout: post
-date: 2016-06-23 00:00:00 +0200
+date: 2016-06-22 00:00:00 +0200
 author: corvax
 published: true
 ---
