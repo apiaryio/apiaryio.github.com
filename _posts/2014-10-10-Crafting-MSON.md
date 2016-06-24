@@ -53,5 +53,5 @@ Thank you!
 [MSON]: http://github.com/apiaryio/mson
 [MSON syntax]: https://github.com/apiaryio/mson/blob/master/MSON%20Specification.md
 [MSON AST]: https://github.com/apiaryio/mson-ast
-[API Blueprint]: http://apiblueprint.org
+[API Blueprint]: https://apiblueprint.org
 [description]: https://github.com/apiaryio/api-blueprint/issues/25

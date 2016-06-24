@@ -56,7 +56,7 @@ Next: [Howto test REST API with API Blueprint and Dredd][howto]
 [issues]: https://github.com/apiaryio/dredd-example/issues
 [support]: mailto:support@apiary.io
 [Dredd]: https://github.com/apiaryio/dredd
-[API Blueprint]: http://apiblueprint.org/
+[API Blueprint]: https://apiblueprint.org/
 [Travis-CI]: https://travis-ci.org/
 [Codeship]: https://www.codeship.io/
 [Teamcity]: http://www.jetbrains.com/teamcity/

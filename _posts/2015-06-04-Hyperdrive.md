@@ -203,7 +203,7 @@ if let vote = choice.transitions["vote"] {
 Hyperdrive is our new generic Hypermedia API Client in Swift. It's
 open-source and available today on [GitHub](https://github.com/the-hypermedia-project/Hyperdrive).
 
-![](/images/Hyperdrive.png)
+![Hyperdrive](/images/Hyperdrive.png)
 
 In comparison to traditional API clients, we can avoid duplicating logic
 from our API and embrace change by using Hyperdrive. We no longer have to

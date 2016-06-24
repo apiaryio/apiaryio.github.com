@@ -42,10 +42,10 @@ Long story short: we've since recommended Apiary to several other teams at
 Microsoft and look forward to continuing our partnership as we strive to give
 developers the thoughtfully designed APIs and documentation that they deserve.
 
-[dondc]: http://dev.onenote.com/
+[dondc]: https://dev.onenote.com/
 [stripe]: http://stripe.com
 [twilio]: http://twilio.com
-[akamai-apiary]: http://dev.akamai.com
+[akamai-apiary]: https://developer.akamai.com
 [apiary-gh]: https://github.com/apiaryio
 [apib-prs]: https://github.com/apiaryio/api-blueprint/pulls?q=is%3Apr+is%3Aclosed
 [launched]: http://blogs.msdn.com/b/onenotedev/archive/2014/09/17/announcing-the-new-onenote-dev-center-with-interactive-docs.aspx

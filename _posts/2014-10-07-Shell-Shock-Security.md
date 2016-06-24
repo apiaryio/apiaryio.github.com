@@ -20,4 +20,4 @@ You can [Read more][] about this bug.
 
 [CVE-2014-6271]: https://bugzilla.redhat.com/show_bug.cgi?id=1141597
 [CVE-2014-7169]: https://securityblog.redhat.com/2014/09/24/bash-specially-crafted-environment-variables-code-injection-attack/
-[Read more]: http://www.troyhunt.com/2014/09/everything-you-need-to-know-about.html
+[Read more]: https://www.troyhunt.com/2014/09/everything-you-need-to-know-about.html

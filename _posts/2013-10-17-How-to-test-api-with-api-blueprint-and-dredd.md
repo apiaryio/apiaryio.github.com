@@ -66,7 +66,7 @@ Start thinking about your API, create an Apiary project with a sample blueprint 
   
 ### 5. Make it Green
 
-- Write the [code][] of the backend application
+- Write the code of the backend application
 - Run the test again and see it pass
 
         $ ./scripts/test
@@ -113,7 +113,6 @@ Dredd works with several Continuous Integration Services. I've tested it with [T
 [Apiary]: http://apiary.io
 [my previous blogpost]: http://blog.apiary.io/2013/10/10/No-more-outdated-API-documentation/
 [Readme]: https://github.com/apiaryio/dredd-example/blob/master/README.md
-[code]: https://github.com/apiaryio/dredd-example/blob/master/app.coffee
 [blueprint]: https://gist.github.com/netmilk/6885268
 [documentation]: http://docs.dreddexample.apiary.io/
 [mock]: http://docs.dreddexample.apiary.io/traffic
@@ -122,7 +121,7 @@ Dredd works with several Continuous Integration Services. I've tested it with [T
 [issues]: https://github.com/apiaryio/dredd-example/issues
 [support]: mailto:support@apiary.io
 [Dredd]: https://github.com/apiaryio/dredd
-[API Blueprint]: http://apiblueprint.org/
+[API Blueprint]: https://apiblueprint.org/
 [Travis-CI]: https://travis-ci.org/
 [Codeship]: https://www.codeship.io/
 [Teamcity]: http://www.jetbrains.com/teamcity/

@@ -26,17 +26,9 @@ Bellow you can find a short list of selected blueprints alongside with notes on 
 
 	*error codes, URI parameters*
 	
-- [**Peepol.tv API**](https://github.com/peepoltv/peepoltv-api/blob/master/apiary.apib) – [*view in Apiary*](https://app.apiary.io/download/editor?from=https://raw.githubusercontent.com/peepoltv/peepoltv-api/master/apiary.apib)
-
-	*error codes, URI parameters, resource description, resource model*
-
 - [**Open Ed**](https://github.com/openedinc/openedapi/blob/master/apiary.apib) – [*view in Apiary*](https://app.apiary.io/download/editor?from=https://raw.githubusercontent.com/openedinc/openedapi/master/apiary.apib)
 
 	*authentication, error codes, URI parameters*
-
-- [**Hyperaudio v0**](https://github.com/hyperaudio-dev/ha-api/blob/master/apiary.apib)  – [*view in Apiary*](https://app.apiary.io/download/editor?from=https://raw.githubusercontent.com/hyperaudio-dev/ha-api/master/apiary.apib)
-
-	*application/x-www-form-urlencoded, authentication, exemplar collection and item resource design, nested resources, URI parameters*
 
 - [**Appliance API**](https://github.com/t0mpr1c3/homenet-apib/blob/master/apiary.apib) – [*view in Apiary*](https://app.apiary.io/download/editor?from=https://raw.githubusercontent.com/t0mpr1c3/homenet-rest/master/apiary.apib)
 
@@ -49,10 +41,6 @@ Bellow you can find a short list of selected blueprints alongside with notes on 
 - [**Notificare Push API**](https://github.com/Notificare/apiblueprint/blob/master/apiary.apib) – [*view in Apiary*](https://app.apiary.io/download/editor?from=https://raw.githubusercontent.com/Notificare/apiblueprint/master/apiary.apib)
 
 	*exemplar collection and item resource design, nested resources, URI parameters*
-
-- [**Accounts API**](https://github.com/Saltbox/waxapi/blob/master/apiary.apib)  – [*view in Apiary*](https://app.apiary.io/download/editor?from=https://raw.githubusercontent.com/Saltbox/waxapi/master/apiary.apib)
-
-	*authentication, error codes, URI parameters*
 
 - [**Tesla Model S REST API**](https://github.com/timdorr/model-s-api/blob/master/apiary.apib) – [*view in Apiary*](https://app.apiary.io/download/editor?from=https://raw.githubusercontent.com/timdorr/model-s-api/master/apiary.apib)
 

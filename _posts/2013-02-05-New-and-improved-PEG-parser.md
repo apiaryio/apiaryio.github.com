@@ -56,7 +56,7 @@ EOT may any alphanumeric sequence of your choice.
 
 # Brave new world
 
-The new parser will allow us to be more agile in the [evolution of our format](/2013/01/27/New-API-Blueprint-Format/).
+The new parser will allow us to be more agile in the [evolution of our format](https://blog.apiary.io/2013/01/27/New-API-Blueprint-Format).
 [The grammar](https://github.com/apiaryio/blueprint-parser/blob/master/src/apiary-blueprint-parser.pegjs)
 now also serves as a formal definition of our language.
 
