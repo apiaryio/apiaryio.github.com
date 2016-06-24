@@ -9,6 +9,7 @@ kramdown:
   syntax_highlighter: rouge
 highlights: true
 highlighter: rouge
+timezone: UTC # To match it with Circle CI default settings
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
