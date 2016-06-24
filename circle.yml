@@ -3,6 +3,7 @@ machine:
     version: 2.3.1
 test:
   override:
+    - sudo apt-get install libcurl3-dev
     - bundle exec rake test
 deployment:
   production:
