@@ -17,7 +17,7 @@ Over the past few months we have heard a lot of your requests and added tons of 
 I hope you will appreciate the live preview of the new documentation next to the Apiary web editor; preview is updated in real-time as you type.
 
 <a href="/images/2014-12-04-Next-Version-of-API-Documentation/live-preview.png" style="text-decoration: none; border-bottom: 0px;">
-  <img src="/images/2014-12-04-Next-Version-of-API-Documentation/live-preview.png" style="width: 100%; height: auto; padding-top: 20px; padding-bottom: 20px;">
+  <img alt="Apiry Live Preview" src="/images/2014-12-04-Next-Version-of-API-Documentation/live-preview.png" style="width: 100%; height: auto; padding-top: 20px; padding-bottom: 20px;">
 </a>
 
 Live preview allows you to see how your API documentation will look before you save the API blueprint. You can resize the preview window by simply grabbing the window separator.
@@ -25,7 +25,7 @@ Live preview allows you to see how your API documentation will look before you s
 ## Permalinks
 
 <a href="/images/2014-12-04-Next-Version-of-API-Documentation/permalinks.png" style="text-decoration: none; border-bottom: 0px;">
-  <img src="/images/2014-12-04-Next-Version-of-API-Documentation/permalinks.png" style="width: 100%; height: auto; padding-top: 0px; padding-bottom: 0px;">
+  <img alt="Apiry Live Preview" src="/images/2014-12-04-Next-Version-of-API-Documentation/permalinks.png" style="width: 100%; height: auto; padding-top: 0px; padding-bottom: 0px;">
 </a>
 
 Now you can link to a specific resource group, resource, or action. Just right click and copy the link, or grab the permalink from the address bar.
@@ -35,7 +35,7 @@ Now you can link to a specific resource group, resource, or action. Just right c
 We have redesigned the third column, aka the “Machine Column.”
 
 <a href="/images/2014-12-04-Next-Version-of-API-Documentation/new-machine-column.png" style="text-decoration: none; border-bottom: 0px;">
-  <img src="/images/2014-12-04-Next-Version-of-API-Documentation/new-machine-column.png" style="width: 100%; height: auto; padding-top: 20px; padding-bottom: 20px;">
+  <img alt="Apiary Machine Column" src="/images/2014-12-04-Next-Version-of-API-Documentation/new-machine-column.png" style="width: 100%; height: auto; padding-top: 20px; padding-bottom: 20px;">
 </a>
 
 The production URL (`HOST` in your API blueprint) is displayed by default. You can also specify language and host (both used for code example) right where the request is shown. There's a new “Try” button serving as an invitation to the Console. The “Call Resource” button in Console has been extended with `HOST` part.
@@ -45,7 +45,7 @@ The production URL (`HOST` in your API blueprint) is displayed by default. You c
 What's more—the new documentation highlights URI templates in the third column and in code examples.
 
 <a href="/images/2014-12-04-Next-Version-of-API-Documentation/uri-templates.png" style="text-decoration: none; border-bottom: 0px;">
-  <img src="/images/2014-12-04-Next-Version-of-API-Documentation/uri-templates.png" style="width: 100%; height: auto; padding-top: 20px; padding-bottom: 20px;">
+  <img alt="Apiary URI Templates" src="/images/2014-12-04-Next-Version-of-API-Documentation/uri-templates.png" style="width: 100%; height: auto; padding-top: 20px; padding-bottom: 20px;">
 </a>
 
 ---

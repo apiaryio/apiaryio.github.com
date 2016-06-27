@@ -68,7 +68,7 @@ There it is! Let's introduce ourselves. **This is the HTTP message**.
 [chromehowto]: http://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome
 [railshowto]: http://stackoverflow.com/questions/11267540/how-to-log-specific-request-details-to-rails-server-logs
 [message]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html
-[apiconfs]: http://api500.com/post/52003926392/the-next-conferences-on-apis-to-attend-in-2013
+[apiconfs]: http://web.archive.org/web/20131006112904/http://api500.com/post/52003926392/the-next-conferences-on-apis-to-attend-in-2013
 [curl]: http://curl.haxx.se/docs/manpage.html
 [parser]: https://github.com/apiaryio/curl-trace-parser
 [arduinohttp]: http://arduino.cc/en/Tutorial/WebServer

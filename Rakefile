@@ -1,4 +1,5 @@
 require 'date'
+require 'html-proofer'
 
 def slugify(title)
   "#{Time.now.strftime('%Y-%m-%d')}-#{title.gsub(/[^\w]+/, '-')}"
@@ -102,3 +103,19 @@ task :deploy do
   end
 end
 
+desc 'Test build'
+task :test do
+  sh "bundle exec jekyll doctor"
+  sh "bundle exec jekyll build --config _config.yml,_config_test.yml"
+  HTMLProofer.check_directory('./_site', {
+    :url_ignore => [
+      /relishapp.com/, # blacklisted?
+      /nike.com/, # blacklisted?
+    ],
+    :typhoeus => {
+      :headers => {
+        "User-Agent" => "ApiaryBlogBot/1.0"
+      }
+    }
+  }).run
+end

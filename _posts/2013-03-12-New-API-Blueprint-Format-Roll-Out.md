@@ -25,7 +25,7 @@ Retrieves message of the day.
         { "message" : "Hello World" }
 ```
 
-You can find the New Format's [specification](https://github.com/apiaryio/api-blueprint/blob/master/API%20Blueprint%20Specification.md) its [repository](https://github.com/apiaryio/api-blueprint). The specification is completely open-sourced and it is also accompanied by a [tutorial](https://github.com/apiaryio/api-blueprint/blob/master/examples/1.%20Simplest%20API.md) and examples.
+You can find the New Format's [specification](https://github.com/apiaryio/api-blueprint/blob/master/API%20Blueprint%20Specification.md) its [repository](https://github.com/apiaryio/api-blueprint). The specification is completely open-sourced and it is also accompanied by a [tutorial](https://help.apiary.io/api_101/api_blueprint_tutorial/) and examples.
 
 Note that this first version is only a mere milestone on the [Format evolution](http://blog.apiary.io/2013/01/27/New-API-Blueprint-Format/). However we still keep the main thing the main thing: The **API Blueprint must be the best way possible to both design and document your API**.
 

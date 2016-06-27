@@ -155,7 +155,7 @@ The original GTD Todo API mind map and the GTD Todo API idea is courtesy of [Elm
 [SendGrid]: http://sendgrid.com
 [affordances]: http://en.wikipedia.org/wiki/Affordance
 [REST]: http://smizell.com/weblog/2013/restful-static-site
-[API Blueprint]: http://apiblueprint.org
+[API Blueprint]: https://apiblueprint.org
 [media-types]: https://blog.apigee.com/detail/api_design_harnessing_hypermedia_types
 [HAL]: http://stateless.co/hal_specification.html
 [API Blueprint tutorial]: http://apiary.io/blueprint

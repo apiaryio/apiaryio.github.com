@@ -1,3 +1,10 @@
+machine:
+  ruby:
+    version: 2.3.1
+test:
+  override:
+    - sudo apt-get install libcurl3-dev
+    - bundle exec rake test
 deployment:
   production:
     branch: master
@@ -6,7 +13,3 @@ deployment:
       - git config --global user.email "support@apiary.io"
       - git remote set-url origin "https://${GH_TOKEN}@github.com/apiaryio/apiaryio.github.com"
       - rake deploy
-test:
-  override:
-    - bundle install --path vendor/bundle
-    - bundle exec jekyll doctor

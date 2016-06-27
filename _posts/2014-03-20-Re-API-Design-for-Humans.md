@@ -23,7 +23,7 @@ The lowest common denominator for all APIs is the documentation, that's where ev
 
 However a good documentation is **far beyond a simple HTML page** nowadays, and if you want to keep up with the best, you'll end up spending a considerable time on development.
 
-What if everything can be done without building own interactive documentation, setup, hosting and maintenance? And written in something cleaner than HTML—[an enriched Markdown](http://apiblueprint.org)? Open-sourced and free? Something StackOverflow [has answers](http://stackoverflow.com/questions/tagged/apiblueprint) to? With [additional tools](http://apiblueprint.org/#tooling) built by growing community every day?
+What if everything can be done without building own interactive documentation, setup, hosting and maintenance? And written in something cleaner than HTML—[an enriched Markdown](https://apiblueprint.org)? Open-sourced and free? Something StackOverflow [has answers](http://stackoverflow.com/questions/tagged/apiblueprint) to? With [additional tools](https://apiblueprint.org/#tooling) built by growing community every day?
 
 <style>
 

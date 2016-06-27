@@ -42,7 +42,7 @@ Abstraction plays a key role in any good software design. It makes design of com
 
 Let's look at the levels of abstraction when designing an API and its implementation.
 
-![][3]
+![Abstraction][3]
 
 With MSON, API Blueprint took a major step towards modeling application data.
 

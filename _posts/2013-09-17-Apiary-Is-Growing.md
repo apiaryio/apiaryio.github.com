@@ -15,7 +15,7 @@ As part of our beta, we've offered [our platform tools] for free. Naturally, we'
 
 ## Free as in Free Speech
 
-I believe that good service to developers is a **form of partnership**, where it's important to provide parts of our service in open source to promote trust and interoperability. In turn you help us build a thriving community. I was surprised how many investors avoid opensource, notwithstanding [great](http://redhat.com/) [examples] of successful opensource companies. That's why I'm especially excited to be working with [David] and [Steve], because they really **get developers** and what it takes to do things right. As a result, **opensource has never been stronger** at Apiary and will continue that way. Whether it's our brand new [API Blueprint] v2, the C parser [Snowcrash], HTTP diff library [Gavel], API testing library [Dredd], our crowdsourced [language example templates] and [many others]. And we couldn't be more thankful for the community [helping us](http://apiblueprint.org/#tooling) in return.
+I believe that good service to developers is a **form of partnership**, where it's important to provide parts of our service in open source to promote trust and interoperability. In turn you help us build a thriving community. I was surprised how many investors avoid opensource, notwithstanding [great](http://redhat.com/) [examples] of successful opensource companies. That's why I'm especially excited to be working with [David] and [Steve], because they really **get developers** and what it takes to do things right. As a result, **opensource has never been stronger** at Apiary and will continue that way. Whether it's our brand new [API Blueprint] v2, the C parser [Snowcrash], HTTP diff library [Gavel], API testing library [Dredd], our crowdsourced [language example templates] and [many others]. And we couldn't be more thankful for the community [helping us](https://apiblueprint.org/#tooling) in return.
 
 ## Joining Heavybit Program
 
@@ -25,7 +25,7 @@ We're also super-excited to be joining the [amazing lineup] of developer-focused
 
 Over the last 12 months, you've created over **25,000 APIs in Apiary**, making it the **largest hub of APIs**, unmatched in scope, run by you. We couldn't be more thankful! But both we and web APIs are really just getting started. We have some big ideas on how to simplify the lifecycle of designing, developing and supporting APIs—and now we  have the resources to make them happen.
 
-[our platform tools]: http://apiblueprint.org/#tooling
+[our platform tools]: https://apiblueprint.org/#tooling
 [examples]: http://mysql.com/
 [David]: http://www.flybridge.com/team/David-Aronoff
 [Steve]: http://baselinev.com/founder/

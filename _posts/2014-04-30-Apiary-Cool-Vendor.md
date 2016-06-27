@@ -18,14 +18,14 @@ Over the last couple months, Apiary has been used in companies like [Akamai][], 
 
 There's a bright future for Apiary helping companies small and large be savvy with their API design, development and product management. At the same time, we'll always stay true to building products for individual developers.
 
-[API Blueprint]: http://apiblueprint.org/
+[API Blueprint]: https://apiblueprint.org/
 [premium plans]: http://apiary.io/#plans
 
 [Rackspace]: http://www.rackspace.com
 [Akamai]: http://www.akamai.com/
 [ExactTarget]: http://www.exacttarget.com/
 [Target]: http://www.target.com/
-[Nike]: http://www.nike.com/
+[Nike]: https://www.nike.com/
 [GoDaddy]: http://www.godaddy.com/
 [BrightCove]: http://www.brightcove.com/
 [Dell]: http://www.dell.com/
