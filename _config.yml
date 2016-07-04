@@ -100,6 +100,11 @@ authors:
     display_name: Davita Strong
     email: "davita@apiary.io"
     twitter: "@amaladolcevita"
+  honza:
+    name: Honza Javorek
+    display_name: Honza Javorek
+    email: "honza@apiary.io"
+    twitter: "@honzajavorek"
 
 
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
