@@ -111,6 +111,7 @@ task :test do
     :url_ignore => [
       /relishapp.com/, # blacklisted?
       /nike.com/, # blacklisted?
+      /https:\/\/blog.apiary.io\/20/, # Prevent checking for unpublished articles
     ],
     :typhoeus => {
       :headers => {
