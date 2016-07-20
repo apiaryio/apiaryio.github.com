@@ -9,6 +9,8 @@ published: true
 
 These days, software development is faster paced than ever before, and it’s laser focused on rapid iteration, continuous delivery pipelines, and automating away the boring parts.
 
+<img width="640" src="/images/2016-07-11-Scaling-Your-API-Design-Workflow/flow.png" alt="flow" />
+
 One increasingly popular strategy is to keep your code small, light, and independent from itself. This migration from monolithic architecture to microservices is going through a renaissance these days, or perhaps a second renaissance if you consider the early 2000’s service-oriented architecture movement as its first era.
 
 When you combine microservices with increasingly rapid development processes, it’s easy to find yourself buried under a complete mess of APIs, each different from the next. At Apiary we’ve observed that as the number of internal APIs increases, even the most seasoned architects can easily become overwhelmed by the complexity they present.
