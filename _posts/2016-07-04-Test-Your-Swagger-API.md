@@ -14,15 +14,15 @@ It's quite common knowledge that in Apiary we're proponents of design-first appr
 
 It's a [long time][original-dredd-article] since we announced [Dredd][dredd], an Open Source framework for testing HTTP-based APIs. Over the years it grown into a fully-featured, mature, and very popular tool. The main flaw remaining was the fact that Dredd was able to read only [API Blueprint][api-blueprint] format.
 
-Now that's not true anymore! With 1.1.0 release, all Dredd's features are now available also for users of the [Swagger][swagger] API description format. It's an experimental support, but that's mainly because it's an initial implementation and it isn't battle-tested yet. We would like to invite everyone interested to try it out and help us to put down the "experimental" label as soon as possible.
+Now that's not true anymore! With 1.1.0 release, all Dredd's features are now available also for users of the [Swagger][swagger] API description format. Since version 1.5.0 the Swagger support is considered production-ready. Here we would like to thank to all the adventurous minds who helped us to improve the initial implementation. Only thanks to you we could remove the "experimental" label so soon!
 
-Please follow the [Quickstart][quickstart] tutorial to see how easy is to employ Dredd in your API's life cycle. Also, there's an [example application][dredd-example] you can use as a starting point
+Please follow the [Quickstart][quickstart] tutorial to see how easy is to employ Dredd in your API's life cycle. Also, there's an [example application][dredd-example] you can use as a starting point.
 
 ## Write Dredd Hooks in Your Favorite Language
 
 Expressive power of API description formats has its limits and testing can easily get rather complex when it meets real-world situations. One of the coolest features of Dredd is its extensivity by so-called [hooks][]. Hooks are pieces of arbitrary code you can get executed before or after every test case.
 
-Originally Dredd was able to execute only hooks written in JavaScript, but in recent months it got first-class support for many other languages, namely Perl, PHP, Python, Ruby, and Go (experimental). Since there's a [tutorial][hooks-new-language] how to implement new hook handler, every now and then contributors come with support for their favorite language.
+Originally Dredd was able to execute only hooks written in JavaScript, but in recent months it got first-class support for many other languages, namely [Perl][], [PHP][], [Python][], [Ruby][], and [Go][]. Since there's a [tutorial][hooks-new-language] on how to implement new hook handler, every now and then contributors come with support for their favorite language.
 
 Here we would like to thank especially to [Dom Del Nano][ddelnano], who did tremendous job with his PHP hooks and with Go support.
 
@@ -45,3 +45,9 @@ Finally, I can't even express here how awesome it is to work on a project like D
 [dredd-example]: https://github.com/apiaryio/dredd-example/
 [how-to-guides]: http://dredd.readthedocs.io/en/latest/how-to-guides/
 [contributing-guidelines]: https://github.com/apiaryio/dredd/blob/master/CONTRIBUTING.md
+
+[Perl]: http://dredd.readthedocs.io/en/latest/hooks-perl/
+[PHP]: http://dredd.readthedocs.io/en/latest/hooks-php/
+[Python]: http://dredd.readthedocs.io/en/latest/hooks-python/
+[Ruby]: http://dredd.readthedocs.io/en/latest/hooks-ruby/
+[Go]: http://dredd.readthedocs.io/en/latest/hooks-go/
