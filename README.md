@@ -17,6 +17,15 @@
  - After reviewing, oncall person will merge the pull request
 
 
+## Running server using Docker
+
+If you don't want to set up Ruby ecosystem, you can preview all posts using Docker
+
+```bash
+$ docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll \
+  -it -p 127.0.0.1:4000:4000 jekyll/jekyll:pages
+```
+
 ## Installing Dependencies
 
 _(if you don't have bundler yet, start by running `sudo gem install bundler`)_
