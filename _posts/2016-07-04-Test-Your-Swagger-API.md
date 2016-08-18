@@ -8,13 +8,13 @@ published: false
 comments: true
 ---
 
-It's quite common knowledge that in Apiary we're proponents of design-first approach when it comes to building APIs. However, it's hard to do design-first and have your "single source of truth" in the API description document, if you can't easily test your API implementation against it.
+At Apiary we're proponents of design-first approach when it comes to building APIs. However, it's hard to do design-first and have your "single source of truth" in the API description document, if you can't easily test your API implementation against it.
 
 ## Support for Swagger in Dredd
 
-It's a [long time][original-dredd-article] since we announced [Dredd][dredd], an Open Source framework for testing HTTP-based APIs. Over the years it grown into a fully-featured, mature, and very popular tool. The main flaw remaining was the fact that Dredd was able to read only [API Blueprint][api-blueprint] format.
+It's a [long time][original-dredd-article] since we announced [Dredd][dredd], an Open Source framework for testing HTTP-based APIs. Over the years it grown into a fully-featured, mature, and very popular tool. Until now it supported only [API Blueprint][api-blueprint], but we want to empower everybody to test their API, regardless of the chosen description format.
 
-Now that's not true anymore! With 1.1.0 release, all Dredd's features are now available also for users of the [Swagger][swagger] API description format. Since version 1.5.0 the Swagger support is considered production-ready. Here we would like to thank to all the adventurous minds who helped us to improve the initial implementation. Only thanks to you we could remove the "experimental" label so soon!
+Good news everyone! With [1.1.0][] release, all Dredd's features are now available also for users of the [Swagger][swagger] API description format. Since version [1.5.0][] the Swagger support is considered production-ready. Here we would like to thank to all the adventurous minds who helped us to improve the initial implementation. Only thanks to you we could remove the "experimental" label so soon!
 
 Please follow the [Quickstart][quickstart] tutorial to see how easy is to employ Dredd in your API's life cycle. Also, there's an [example application][dredd-example] you can use as a starting point.
 
@@ -35,7 +35,7 @@ Finally, I can't even express here how awesome it is to work on a project like D
 
 [dredd]: http://dredd.readthedocs.io/
 [original-dredd-article]: https://blog.apiary.io/2013/10/10/No-more-outdated-API-documentation
-[api-blueprint]: https://apiblueprint.org/
+[api-blueprint]: http://apiblueprint.org/
 [swagger]: http://swagger.io/
 [apiary-reporter]: http://dredd.readthedocs.io/en/latest/how-to-guides/#using-apiary-reporter-and-apiary-tests
 [quickstart]: http://dredd.readthedocs.io/en/latest/quickstart/
@@ -51,3 +51,6 @@ Finally, I can't even express here how awesome it is to work on a project like D
 [Python]: http://dredd.readthedocs.io/en/latest/hooks-python/
 [Ruby]: http://dredd.readthedocs.io/en/latest/hooks-ruby/
 [Go]: http://dredd.readthedocs.io/en/latest/hooks-go/
+
+[1.1.0]: https://github.com/apiaryio/dredd/releases/tag/v1.1.0
+[1.5.0]: https://github.com/apiaryio/dredd/releases/tag/v1.5.0
