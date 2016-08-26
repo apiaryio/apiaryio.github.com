@@ -2,13 +2,15 @@
 title: Test Your Swagger API
 excerpt: Introducing support for Swagger in Dredd and more.
 layout: post
-date: 2016-07-04 00:00:00 +0100
+date: 2016-08-26 00:00:00 +0100
 author: honza
-published: false
+published: true
 comments: true
 ---
 
 At Apiary we're proponents of design-first approach when it comes to building APIs. However, it's hard to do design-first and have your "single source of truth" in the API description document, if you can't easily test your API implementation against it.
+
+<img width="640" src="/images/2016-08-26-Test-Your-Swagger-API/dredd-swagger.png" alt="dredd-swagger" />
 
 ## Support for Swagger in Dredd
 
