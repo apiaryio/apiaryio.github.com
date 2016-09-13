@@ -58,7 +58,7 @@ Next: [Howto test REST API with API Blueprint and Dredd][howto]
 [Dredd]: https://github.com/apiaryio/dredd
 [API Blueprint]: https://apiblueprint.org/
 [Travis-CI]: https://travis-ci.org/
-[Codeship]: https://www.codeship.io/
+[Codeship]: https://www.codeship.com/
 [Teamcity]: http://www.jetbrains.com/teamcity/
 [Circle-CI]: https://circleci.com/
 [Jenkins]: http://jenkins-ci.org/
