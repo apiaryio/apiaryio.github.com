@@ -16,13 +16,6 @@ This changed two years ago [with the introduction](https://blog.codinghorror.com
 
 However, as the host of more than a quarter million API Documentation Projects, we cannot take this change lightly. While CommonMark is largely compatible with Sundown, there are subtle details that can produce different outputs that can confuse our users.
 
-Hence:
-
-* We have changed the rendered for all new API Projects on TODO/TBD
-* We have identified all API Projects that produce different HTML output with CommonMark. If your project is among them, we'll send you an email during the next week
-* We've build (a dedicated page)[TODO: Link] where you can see the visual differences in how your API Documentation is rendered, together with documentation on common pitfalls. We strongly recommend going through them and adjusting your API Blueprint so the output matches your expectations
-* On TODO date, we are going to enable the new CommonMark renderer for you, however your documentation will continue to be served from our cache and no change will be done until you make any edits to your document
-* Once you edit your API Blueprint, your documentation is going to be rendered using CommonMark
-* On TODO date, we are going to purge all caches and generate all Apiary Interactive API Documentations using Common Mark
+Fortunately we've been able to identify all documentations which are affected by the change. Unless you've received an email from us, there are no transition steps necessary for you. If your documentation is affected, you will receive an email from us detailing easy tools we've built to help you upgrade your Markdown.
 
 While changes like this are never easy, we believe you and your API consumers will benefit from CommonMark. 
