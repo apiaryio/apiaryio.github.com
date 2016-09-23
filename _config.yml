@@ -115,7 +115,7 @@ static: "https://apiary.a.ssl.fastly.net/assets"
 version: 1338364425
 menu:
   - ['https://apiary.io/how-it-works', 'How It Works']
-  - ['https://apiary.io/pricing', 'Pricing']
+  - ['https://apiary.io/plans', 'Plans']
   - ['https://apiary.io/products', 'Product']
   - ['https://help.apiary.io/', 'Help']
   - ['https://apiary.io/company', 'Company']
