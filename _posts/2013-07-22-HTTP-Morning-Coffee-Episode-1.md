@@ -22,7 +22,7 @@ _This post is part of our new series Morning Coffee where people behind Apiary b
 + It is good to have a nice and tidy URI space but one shouldn't design his or her API around it
 
 ## Steps to reproduce
-+ 35g of NDIMAINI AA, [Square Mile Coffee Roasters](http://squaremilecoffee.com)
++ 35g of NDIMAINI AA, [Square Mile Coffee Roasters](http://www.squaremileblog.com)
 + Chemex
 + 500g water at 90°C
 + 30sec pre-infusion 
