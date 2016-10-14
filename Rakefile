@@ -1,3 +1,5 @@
+require 'bundler'
+Bundler.setup(:default)
 require 'date'
 require 'html-proofer'
 
