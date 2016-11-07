@@ -46,7 +46,7 @@ Finally, I can't even express here how awesome it is to work on a project like D
 [hooks]: http://dredd.readthedocs.io/en/latest/hooks/
 [dredd-example]: https://github.com/apiaryio/dredd-example/
 [how-to-guides]: http://dredd.readthedocs.io/en/latest/how-to-guides/
-[contributing-guidelines]: https://github.com/apiaryio/dredd/blob/master/CONTRIBUTING.md
+[contributing-guidelines]: https://dredd.readthedocs.io/en/latest/contributing/
 
 [Perl]: http://dredd.readthedocs.io/en/latest/hooks-perl/
 [PHP]: http://dredd.readthedocs.io/en/latest/hooks-php/
