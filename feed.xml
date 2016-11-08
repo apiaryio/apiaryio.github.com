@@ -7,6 +7,32 @@
     <atom:link href="https://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>The next chapter for Markdown</title>
+        <description>Apiary is embracing the CommonMark Markdown syntax for API description.</description>
+        <pubDate>Wed, 28 Sep 2016 08:00:00 +0000</pubDate>
+        <link>https://blog.apiary.io/2016/09/28/markdown</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2016/09/28/markdown</guid>
+      </item>
+    
+      <item>
+        <title>Test Your Swagger API</title>
+        <description>Introducing support for Swagger in Dredd and more.</description>
+        <pubDate>Thu, 25 Aug 2016 23:00:00 +0000</pubDate>
+        <link>https://blog.apiary.io/2016/08/25/Test-Your-Swagger-API</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2016/08/25/Test-Your-Swagger-API</guid>
+      </item>
+    
+      <item>
+        <title>Scaling Your API Design Workflow</title>
+        <description>&lt;p&gt;These days, software development is faster paced than ever before, and it’s laser focused on rapid iteration, continuous delivery pipelines, and automating away the boring parts.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 10 Jul 2016 22:00:00 +0000</pubDate>
+        <link>https://blog.apiary.io/2016/07/10/Scaling-Your-API-Design-Workflow</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2016/07/10/Scaling-Your-API-Design-Workflow</guid>
+      </item>
+    
+      <item>
         <title>Securing APIs</title>
         <description>It’s a Big, Scary World out There.</description>
         <pubDate>Tue, 21 Jun 2016 22:00:00 +0000</pubDate>
@@ -16,7 +42,7 @@
     
       <item>
         <title>World’s First API Design Hackathon</title>
-        <description>We were at the World's first API Design Hackathon.</description>
+        <description>We were at the World&#39;s first API Design Hackathon.</description>
         <pubDate>Thu, 21 Apr 2016 07:00:00 +0000</pubDate>
         <link>https://blog.apiary.io/2016/04/21/API-Design-Hackaton</link>
         <guid isPermaLink="true">https://blog.apiary.io/2016/04/21/API-Design-Hackaton</guid>
@@ -60,30 +86,6 @@
         <pubDate>Thu, 03 Dec 2015 15:00:00 +0000</pubDate>
         <link>https://blog.apiary.io/2015/12/03/Client-First</link>
         <guid isPermaLink="true">https://blog.apiary.io/2015/12/03/Client-First</guid>
-      </item>
-    
-      <item>
-        <title>Think Before you Code</title>
-        <description>Quick look at the core principles of a good API design.</description>
-        <pubDate>Tue, 20 Oct 2015 22:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2015/10/20/Think-Before-you-Code</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2015/10/20/Think-Before-you-Code</guid>
-      </item>
-    
-      <item>
-        <title>Announcing our $6.8M Series A</title>
-        <description>Double-down on the awesome.</description>
-        <pubDate>Tue, 18 Aug 2015 18:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2015/08/18/Proud-to-Announce-our-Series-A</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2015/08/18/Proud-to-Announce-our-Series-A</guid>
-      </item>
-    
-      <item>
-        <title>Continuously Integrate Your API Design</title>
-        <description>Apiary is now the only API design platform with tools for every stage of the API lifecycle</description>
-        <pubDate>Tue, 18 Aug 2015 06:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2015/08/18/Test-Tab-Now-Available-in-Apiary</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2015/08/18/Test-Tab-Now-Available-in-Apiary</guid>
       </item>
     
   </channel>

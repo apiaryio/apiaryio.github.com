@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found&mdash;Apiary Blog</title>
+  <title>Bam! This is Gavel.&mdash;Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,20 +15,18 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found&mdash;Apiary Blog">
-  <meta property="og:title" content="Page not found&mdash;Apiary Blog">
+  <meta name="twitter:title" content="Bam! This is Gavel.&mdash;Apiary Blog">
+  <meta property="og:title" content="Bam! This is Gavel.&mdash;Apiary Blog">
 
   
-    <meta name="twitter:image" content="https://apiary.a.ssl.fastly.net/assets/images/apiary-logotype-3D-only.png">
-    <meta property="og:image"  content="https://apiary.a.ssl.fastly.net/assets/images/apiary-logotype-3D-only.png">
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/2013/07/24/Bam-this-is-Gavel">
+    <meta name="description" content="We are introducing our brand new HTTP validation package.&mdash;Apiary Blog">
+    <meta name="twitter:description" content="We are introducing our brand new HTTP validation package.&mdash;Apiary Blog">
+    <meta property="og:description" content="We are introducing our brand new HTTP validation package.&mdash;Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/2013/07/24/Bam-this-is-Gavel">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/fonts.css">
@@ -83,46 +81,109 @@
 <!-- /website-navigation -->
 
 <div>
-  <div class="blog">
+  
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+<div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Bam! This is Gavel.</h1>
+    
+      <p><span class="minority">By</span> <strong>netmilk</strong>
+        (<a href="https://twitter.com/ntmlk">ntmlk</a>, <a href="mailto:adam@apiary.io">adam@apiary.io</a>) <span class="minority">on</span>&nbsp;24&nbsp;Jul&nbsp;2013
+      </p>
+      <p><span class="blogShare">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Bam! This is Gavel." data-url="https://blog.apiary.io/2013/07/24/Bam-this-is-Gavel" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2013/07/24/Bam-this-is-Gavel" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+    
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+  <p>I’m very proud to introduce Gavel—our first contribution to the Testing Culture we are so passionate about. We have isolated HTTP validation behavior from our interactive console, created platform independent specification and are shipping it as implementation in Node.JS</p>
 
-    
-        <div class="blogPost"><a href="/2016/09/28/markdown">
-          <h1>The next chapter for Markdown</h1>
-          <p>Apiary is embracing the CommonMark Markdown syntax for API description.</p>
-          <p class="authorDate inline">Zdenek Nemec — 28 Sep 2016</p>
-        </a>
-          
-        </div>
-    
-        <div class="blogPost"><a href="/2016/08/25/Test-Your-Swagger-API">
-          <h1>Test Your Swagger API</h1>
-          <p>Introducing support for Swagger in Dredd and more.</p>
-          <p class="authorDate inline">Honza Javorek — 25 Aug 2016</p>
-        </a>
-          
-            <p class="commentsCount"><a href="/2016/08/25/Test-Your-Swagger-API/#comments" class="commentsLink" data-disqus-identifier="/2016/08/25/Test-Your-Swagger-API"></a></p>
-            
-          
-        </div>
-    
-        <div class="blogPost"><a href="/2016/07/10/Scaling-Your-API-Design-Workflow">
-          <h1>Scaling Your API Design Workflow</h1>
-          <p><p>These days, software development is faster paced than ever before, and it’s laser focused on rapid iteration, continuous delivery pipelines, and automating away the boring parts.</p>
+<blockquote>
+  <p><strong>gavel</strong> /ˈgævəl/ <em>noun</em>
+<strong>1</strong> A small mallet used by a presiding officer or an auctioneer to signal for attention or order or to mark the conclusion of a transaction.
+<strong>2</strong> A maul used by masons in fitting stones.</p>
+</blockquote>
 
-</p>
-          <p class="authorDate inline">Jakub Nesetril — 10 Jul 2016</p>
-        </a>
-          
-        </div>
-    
+<p>The complexity of <a href="http://www.w3.org/Protocols/rfc2616/rfc2616.html">HTTP and its specification is incredible</a>, but there are lots of pragmatic conventions in the real world. Gavel is our attempt to invite you to the open discussion about conventions in the real world of HTTP and ship it as Node.JS library to have a toy to play with right now.</p>
+
+<p>HTTP is platform and language independent by nature. So is Gavel. All of Gavel’s documentation is written in <a href="http://cukes.info/">Cucumber</a>, ready to be implemented in variety of languages supported by Cucumber or its derivates. Documentation is  hosted on <a href="https://www.relishapp.com/">Relish</a>, an awesome, documentation-oriented platform for managing Cucumber features. We love it because it enables the same iterative design process as Apiary and our <a href="https://apiblueprint.org">API Blueprint</a>.</p>
+
+<p><img src="https://raw.github.com/apiaryio/gavel/master/img/gavel.png" alt="Gavel logo" /></p>
+
+<h2 id="using-gavel">Using Gavel</h2>
+
+<p>Gavel comes with CLI interface so the first version is very minimalistic:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ npm install -g gavel curl-trace-parser
+$ curl --trace - http://httpbin.org/ip | curl-trace-parser  &gt; expected
+$ curl --trace - http://httpbin.org/ip | curl-trace-parser  &gt; real
+$ cat real | gavel expected
+$ echo $?
+0
+</code></pre>
+</div>
+
+<p>Let’s see what happens if CORS headers are missing in the response</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ cat real | grep -v 'Access-Control-Allow-Origin' &gt; real_without_cors
+$ cat real_without_cors | gavel expected
+$ echo $?
+1 
+</code></pre>
+</div>
+
+<p>If you are a Node.js ninja, you can enjoy using the <a href="https://github.com/apiaryio/gavel.js">Gavel JS API</a></p>
+
+<p>Gavel’s first version is very thin. It comes only with a boolean interface which decides if a pair of HTTP Requests or Responses are valid against themselves or are not. We’d like to make this a starting point of a discussion about headers validation and output format for validation errors. Feel free to submit an <a href="https://github.com/apiaryio/gavel/issues">GitHub issue</a> and tell us what you want. We’ll be even more excited if you contribute.</p>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="https://github.com/apiaryio/gavel.js">Gavel Node.JS library</a></li>
+  <li><a href="https://www.relishapp.com/apiary/gavel/docs">Gavel specification and documentation</a></li>
+  <li><a href="https://github.com/apiaryio/gavel">Gavel specification GitHub repo</a></li>
+</ul>
+
+
+  <p><span class="blogShare afterArticle">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Bam! This is Gavel." data-url="https://blog.apiary.io/2013/07/24/Bam-this-is-Gavel" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2013/07/24/Bam-this-is-Gavel" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+
+
+
   </div>
 </div>
+
+<div id="fb-root"></div>
+
+<script>
+(function(doc, script) {
+  var js,
+      fjs = doc.getElementsByTagName(script)[0],
+      frag = doc.createDocumentFragment(),
+      add = function(url, id) {
+          if (doc.getElementById(id)) {return;}
+          js = doc.createElement(script);
+          js.src = url;
+          id && (js.id = id);
+          frag.appendChild( js );
+      };
+
+    // Google+ button
+    add('http://apis.google.com/js/plusone.js');
+    // Facebook SDK
+    add('//connect.facebook.net/en_US/all.js#xfbml=1', 'facebook-jssdk');
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+
+    fjs.parentNode.insertBefore(frag, fjs);
+}(document, 'script'));
+</script>
 
 </div>
 

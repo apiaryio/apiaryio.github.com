@@ -1,0 +1,238 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+
+  <title>Evolving the API Blueprint Format&mdash;Apiary Blog</title>
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <meta name="author" content="Apiary">
+  <link rel="alternate" type="application/rss+xml" title="The Apiary Blog Feed" href="https://blog.apiary.io/feed.xml" />
+
+  <meta name="application-name" content="Apiary">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type"  content="article">
+  <meta name="twitter:site" content="@apiaryio">
+  <meta name="twitter:creator" content="@apiaryio">
+
+  <meta name="twitter:title" content="Evolving the API Blueprint Format&mdash;Apiary Blog">
+  <meta property="og:title" content="Evolving the API Blueprint Format&mdash;Apiary Blog">
+
+  
+    <meta property="og:url" content="https://blog.apiary.io/2013/01/27/New-API-Blueprint-Format">
+    <meta name="description" content="As we are growing so are our users needs. To reflect this, address arising needs as well as simplifying the process of designing your API we are improving Apiary.io API Blueprint Format.&mdash;Apiary Blog">
+    <meta name="twitter:description" content="As we are growing so are our users needs. To reflect this, address arising needs as well as simplifying the process of designing your API we are improving Apiary.io API Blueprint Format.&mdash;Apiary Blog">
+    <meta property="og:description" content="As we are growing so are our users needs. To reflect this, address arising needs as well as simplifying the process of designing your API we are improving Apiary.io API Blueprint Format.&mdash;Apiary Blog">
+  
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="canonical" href="https://blog.apiary.io/2013/01/27/New-API-Blueprint-Format">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/fonts.css">
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/modules/footer/footer.css">
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/modules/website.css">
+  <link rel="stylesheet" href="/syntax.css">
+  <!-- /Styles -->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18252923-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</head>
+<body class="website">
+
+<!-- website-header -->
+  <header id="websiteHeader"><div class="positioning">
+    <a class="headerLogotypeLink" href="http://apiary.io/"><h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1><div class="headerLogotype"></div></a>
+    <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
+  </div></header>
+<!-- /website-header -->
+
+<!-- website-navigation -->
+  <div id="navigation">
+    <nav class="websiteNav positioning">
+      <ul class="clearAfter websiteNavMenu">
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/how-it-works">How It Works</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/plans">Plans</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/products">Product</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://help.apiary.io/">Help</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/company">Company</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://login.apiary.io/login">Sign In</a></li>
+        
+      </ul>
+      <a class="websiteNavLink websiteNavLinkHighlighted" href="https://login.apiary.io/register" class="signIn">Sign Up</a>
+      <a class="websiteNavLink backToTop" href="javascript:;"><span class="visuallyhidden">Back to top</span></a>
+    </nav>
+  </div>
+<!-- /website-navigation -->
+
+<div>
+  
+
+<div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Evolving the API Blueprint Format</h1>
+    
+      <p><span class="minority">By</span> <strong>Z</strong>
+        (<a href="https://twitter.com/zdne">zdne</a>, <a href="mailto:z@apiary.io">z@apiary.io</a>) <span class="minority">on</span>&nbsp;27&nbsp;Jan&nbsp;2013
+      </p>
+      <p><span class="blogShare">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Evolving the API Blueprint Format" data-url="https://blog.apiary.io/2013/01/27/New-API-Blueprint-Format" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2013/01/27/New-API-Blueprint-Format" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+    
+
+  <p>Apiary.io is growing and so are our users’ needs. We want to fuel the endless possibilities of where your API can go. We want to give you the best tools to design and maintain any REST-based API without boundaries or limits. Yet we must also guide newcomers who are just tapping the API World.</p>
+
+<p>We are constantly improving our API Blueprint Format and I would like to share with you our thoughts on how it will evolve in the weeks to come.</p>
+
+<h2 id="it-is-markdown">It is Markdown</h2>
+<p>We have decided to fully embrace Markdown for documenting your API. With the New API Blueprint Format your API documentation will be completely in pure Markdown excluding few extra <a href="http://fletcherpenney.net/multimarkdown/">MultiMarkdown</a> features.</p>
+
+<p>After all we are writing API documentation, not programming a backend in <em>yet another domain specific language</em>.</p>
+
+<p>Markdown is supported by virtually every language or IDE in existence. There will be no need for additional syntax-highlighting plug-in to your favorite text editor. Also rendering will suddenly be ubiquitous from your Markdown aware text editor to <a href="http://github.github.com/github-flavored-markdown/">GitHub GFM</a> repositories.</p>
+
+<h2 id="easier-onboarding">Easier onboarding</h2>
+<p>With the New API Blueprint Format getting on board will be even easier. All in proper structural order, Markdown header specifying your endpoint followed by its discussion.</p>
+
+<h2 id="huge-deal-for-big-apis">HUGE deal for big APIs</h2>
+<p>No more bloated API blueprints with lots repetition packed into one document. We will keep things DRY and introduce (more) modularity. Here is what is new in API Blueprint Format to deal with large, complex APIs:</p>
+
+<ul>
+  <li>Data Dictionaries</li>
+  <li>Cross-References</li>
+  <li>Dedicated Modules for Testing, Authentication, Tutorials and Storyboards.</li>
+  <li>Arbitrary User Modules (units)</li>
+  <li>Inheritance</li>
+</ul>
+
+<h2 id="attributes">Attributes</h2>
+<p>New format will introduce support for discussing attributes including its type, default value and requirements.</p>
+
+<h2 id="hypermedia-is-good">Hypermedia is good</h2>
+<p>While I understand and have nothing but utmost respect for “pragmatic REST” I want to encourage considering RESTful approach from the early beginnings. If Apiary would give you the right seamless tool to make real RESTful API with little extra effort would you opt to do so?</p>
+
+<h2 id="to-the-future-and-beyond">To the future and beyond</h2>
+<p>We will also deliver (or improve existing) support for <strong>multimedia</strong>, <strong>multiple</strong> <strong>request</strong> and <strong>response</strong> with improved schema support. This should be followed later by support for <strong>authentication</strong> an <strong>pagination</strong>.</p>
+
+<p>As you can see there are big changes ahead. We will make sure to make things smooth for you and all our existing users.</p>
+
+<p>In the next weeks I will be posting more details about the upcoming format changes including examples. In the mean time, if you’re excited what will the new format bring or just curious about the direction API Blueprint is heading, please head over to <a href="http://support.apiary.io/forums/120125-general/suggestions/2970802-new-api-blueprint-format">New API Blueprint Format</a>. There you can vote for the new format and add your comments and wishes. Additionally you can contact me directly at <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#122;&#064;&#097;&#112;&#105;&#097;&#114;&#121;&#046;&#105;&#111;">&#122;&#064;&#097;&#112;&#105;&#097;&#114;&#121;&#046;&#105;&#111;</a>. I would love to hear from you.</p>
+
+  <p><span class="blogShare afterArticle">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Evolving the API Blueprint Format" data-url="https://blog.apiary.io/2013/01/27/New-API-Blueprint-Format" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2013/01/27/New-API-Blueprint-Format" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+
+
+
+  </div>
+</div>
+
+<div id="fb-root"></div>
+
+<script>
+(function(doc, script) {
+  var js,
+      fjs = doc.getElementsByTagName(script)[0],
+      frag = doc.createDocumentFragment(),
+      add = function(url, id) {
+          if (doc.getElementById(id)) {return;}
+          js = doc.createElement(script);
+          js.src = url;
+          id && (js.id = id);
+          frag.appendChild( js );
+      };
+
+    // Google+ button
+    add('http://apis.google.com/js/plusone.js');
+    // Facebook SDK
+    add('//connect.facebook.net/en_US/all.js#xfbml=1', 'facebook-jssdk');
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+
+    fjs.parentNode.insertBefore(frag, fjs);
+}(document, 'script'));
+</script>
+
+</div>
+
+<!-- website-footer -->
+  <hr>
+
+<footer class="applicationFooter">
+
+  <div class="applicationFooterRow">
+    <div class="applicationFooterColumns">
+    <div class="applicationFooterColumn">
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Platform</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiary.io/how-it-works">How It Works</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/products">Product</a></li>
+        <li><a class="applicationFooterListLink" href="http://enterprise.apiary.io/">Enterprise</a></li>
+	<li><a class="applicationFooterListLink" href="http://apiary.io/plans">Plans</a></li>
+        <li><a class="applicationFooterListLink" href="https://help.apiary.io">Help</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Company</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://blog.apiary.io/">Blog</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#team">Team</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/jobs">Jobs</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#contact">Contact</a></li>
+        <li><a class="applicationFooterListLink" href="https://apiary.a.ssl.fastly.net/assets/files/apiary-press-kit.zip">Press Kit</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Open Source</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiblueprint.org">API Blueprint</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/snowcrash">Snowcrash</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
+        <li><a class="applicationFooterListLink" href="http://client.apiary.io">Apiary CLI</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Social</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
+        <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
+        <li><a class="applicationFooterListLink" href="https://facebook.com/apiary.io">Facebook</a></li>
+        <li><a class="applicationFooterListLink" href="http://dribbble.com/apiary">Dribbble</a></li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="applicationFooterRow">
+    <p class="applicationFooterCopyright">&copy; Apiary Ltd. All rights reserved. <span class="applicationFooterCopyrightLinks">• <a href="http://apiary.io/tos" class="applicationFooterCopyrightLink">Terms</a> • <a href="https://www.iubenda.com/privacy-policy/323220" class="applicationFooterCopyrightLink">Privacy</a></span></p>
+  </div>
+</footer>
+<!-- /website-footer -->
+
+<script src="https://apiary.a.ssl.fastly.net/assets/js/website-scroll.js"></script>
+<script>
+  websiteScroll();
+  document.documentElement.className += ' js';
+</script>
+
+</body>
+</html>

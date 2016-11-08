@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found&mdash;Apiary Blog</title>
+  <title>Making of Peacock&mdash;Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,20 +15,18 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found&mdash;Apiary Blog">
-  <meta property="og:title" content="Page not found&mdash;Apiary Blog">
+  <meta name="twitter:title" content="Making of Peacock&mdash;Apiary Blog">
+  <meta property="og:title" content="Making of Peacock&mdash;Apiary Blog">
 
   
-    <meta name="twitter:image" content="https://apiary.a.ssl.fastly.net/assets/images/apiary-logotype-3D-only.png">
-    <meta property="og:image"  content="https://apiary.a.ssl.fastly.net/assets/images/apiary-logotype-3D-only.png">
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/2016/01/24/Making-of-Peacock">
+    <meta name="description" content="Behind the scenes of adding Swagger support.&mdash;Apiary Blog">
+    <meta name="twitter:description" content="Behind the scenes of adding Swagger support.&mdash;Apiary Blog">
+    <meta property="og:description" content="Behind the scenes of adding Swagger support.&mdash;Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/2016/01/24/Making-of-Peacock">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/fonts.css">
@@ -83,46 +81,105 @@
 <!-- /website-navigation -->
 
 <div>
-  <div class="blog">
+  
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+<div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Making of Peacock</h1>
+    
+      <p><span class="minority">By</span> <strong>Z</strong>
+        (<a href="https://twitter.com/zdne">zdne</a>, <a href="mailto:z@apiary.io">z@apiary.io</a>) <span class="minority">on</span>&nbsp;24&nbsp;Jan&nbsp;2016
+      </p>
+      <p><span class="blogShare">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Making of Peacock" data-url="https://blog.apiary.io/2016/01/24/Making-of-Peacock" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2016/01/24/Making-of-Peacock" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+    
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+  <p>Recently, we have launched the biggest feature in the history of Apiary: <a href="http://blog.apiary.io/2016/01/18/We-ve-got-Swagger">Swagger Support</a>. This project was nicknamed “Project Peacock”.</p>
 
-    
-        <div class="blogPost"><a href="/2016/09/28/markdown">
-          <h1>The next chapter for Markdown</h1>
-          <p>Apiary is embracing the CommonMark Markdown syntax for API description.</p>
-          <p class="authorDate inline">Zdenek Nemec — 28 Sep 2016</p>
-        </a>
-          
-        </div>
-    
-        <div class="blogPost"><a href="/2016/08/25/Test-Your-Swagger-API">
-          <h1>Test Your Swagger API</h1>
-          <p>Introducing support for Swagger in Dredd and more.</p>
-          <p class="authorDate inline">Honza Javorek — 25 Aug 2016</p>
-        </a>
-          
-            <p class="commentsCount"><a href="/2016/08/25/Test-Your-Swagger-API/#comments" class="commentsLink" data-disqus-identifier="/2016/08/25/Test-Your-Swagger-API"></a></p>
-            
-          
-        </div>
-    
-        <div class="blogPost"><a href="/2016/07/10/Scaling-Your-API-Design-Workflow">
-          <h1>Scaling Your API Design Workflow</h1>
-          <p><p>These days, software development is faster paced than ever before, and it’s laser focused on rapid iteration, continuous delivery pipelines, and automating away the boring parts.</p>
+<p>It took us almost three months to implement it and prepare for the launch.
+Before that we have spent months researching common API description elements and
+ patterns to even make the consumption of multiple formats possible.</p>
 
-</p>
-          <p class="authorDate inline">Jakub Nesetril — 10 Jul 2016</p>
-        </a>
-          
-        </div>
-    
+<p>I would like to share with you few moments of the brave dogs, men and women
+working at Apiary to bring you the best tools regardless of preferred API
+Description format.</p>
+
+<p><img width="640" src="/images/2016-01-20-Making-of-Peacock/shinzu.jpg" alt="shinzu" /></p>
+
+<p><em>/Shenzi, responsible for documentation/</em></p>
+
+<p><img width="640" src="/images/2016-01-20-Making-of-Peacock/coffee.jpg" alt="coffee" /></p>
+
+<p><em>/Daily ritual/</em></p>
+
+<p><img width="640" src="/images/2016-01-20-Making-of-Peacock/demo.jpg" alt="demo" /></p>
+
+<p><em>/Early demo/</em></p>
+
+<p><img width="640" src="/images/2016-01-20-Making-of-Peacock/christmas.jpg" alt="christmas" /></p>
+
+<p><em>/Christmas all hands, filled with the anticipation/</em></p>
+
+<p><img width="640" src="/images/2016-01-20-Making-of-Peacock/sync.jpg" alt="sync" /></p>
+
+<p><em>/Syncs, demos and ready checks, we have done them all/</em></p>
+
+<p><img width="640" src="/images/2016-01-20-Making-of-Peacock/plan.jpg" alt="plan" /></p>
+
+<p><em>/Final launch time table/</em></p>
+
+<p><img width="640" src="/images/2016-01-20-Making-of-Peacock/jakub.jpg" alt="jakub" /></p>
+
+<p><em>/Jakub on the call with OpenAPI Initiative/</em></p>
+
+<p><img width="640" src="/images/2016-01-20-Making-of-Peacock/launch.jpg" alt="launch" /></p>
+
+<p><em>/T+1/</em></p>
+
+<p>We had a blast doing Project Peacock, and we hope you will enjoy the support for
+swagger in Apiary!</p>
+
+  <p><span class="blogShare afterArticle">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Making of Peacock" data-url="https://blog.apiary.io/2016/01/24/Making-of-Peacock" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2016/01/24/Making-of-Peacock" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+
+
+
   </div>
 </div>
+
+<div id="fb-root"></div>
+
+<script>
+(function(doc, script) {
+  var js,
+      fjs = doc.getElementsByTagName(script)[0],
+      frag = doc.createDocumentFragment(),
+      add = function(url, id) {
+          if (doc.getElementById(id)) {return;}
+          js = doc.createElement(script);
+          js.src = url;
+          id && (js.id = id);
+          frag.appendChild( js );
+      };
+
+    // Google+ button
+    add('http://apis.google.com/js/plusone.js');
+    // Facebook SDK
+    add('//connect.facebook.net/en_US/all.js#xfbml=1', 'facebook-jssdk');
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+
+    fjs.parentNode.insertBefore(frag, fjs);
+}(document, 'script'));
+</script>
 
 </div>
 

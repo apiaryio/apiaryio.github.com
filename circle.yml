@@ -1,12 +1,30 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  cache_directories:
+    - "~/docker"
+
+  override:
+    - docker info; mkdir -p ~/docker
+    - if [[ -e ~/docker/image.tar ]]; then docker load -i ~/docker/image.tar; fi
+    - ./docker/build.sh
+    - docker save apiaryio/blog > ~/docker/image.tar
+
 deployment:
   production:
     branch: master
     commands:
       - git config --global user.name "Apiary Bot"
       - git config --global user.email "support@apiary.io"
-      - git remote set-url origin "https://${GH_TOKEN}@github.com/apiaryio/apiaryio.github.com"
-      - rake deploy
+      - git remote set-url origin "https://${GH_TOKEN}@github.com/apiaryio/blog"
+      - docker run -e GH_TOKEN=$GH_TOKEN --volume=$(pwd):/srv/jekyll apiaryio/blog bash /srv/jekyll/deploy.sh
 test:
   override:
-    - bundle install --path vendor/bundle
-    - bundle exec jekyll doctor
+    - ./docker/run-tests.sh
+
+general:
+  branches:
+    ignore:
+      - gh-pages

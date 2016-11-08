@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found&mdash;Apiary Blog</title>
+  <title>Shellshock Bash Security&mdash;Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,20 +15,18 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found&mdash;Apiary Blog">
-  <meta property="og:title" content="Page not found&mdash;Apiary Blog">
+  <meta name="twitter:title" content="Shellshock Bash Security&mdash;Apiary Blog">
+  <meta property="og:title" content="Shellshock Bash Security&mdash;Apiary Blog">
 
   
-    <meta name="twitter:image" content="https://apiary.a.ssl.fastly.net/assets/images/apiary-logotype-3D-only.png">
-    <meta property="og:image"  content="https://apiary.a.ssl.fastly.net/assets/images/apiary-logotype-3D-only.png">
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/2014/10/07/Shell-Shock-Security">
+    <meta name="description" content="Securing customer data at Apiary&mdash;Apiary Blog">
+    <meta name="twitter:description" content="Securing customer data at Apiary&mdash;Apiary Blog">
+    <meta property="og:description" content="Securing customer data at Apiary&mdash;Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/2014/10/07/Shell-Shock-Security">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/fonts.css">
@@ -83,46 +81,86 @@
 <!-- /website-navigation -->
 
 <div>
-  <div class="blog">
+  
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+<div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Shellshock Bash Security</h1>
+    
+      <p><span class="minority">By</span> <strong>Neha Sondhi</strong>
+        (<a href="https://twitter.com/NSondhi5">NSondhi5</a>, <a href="mailto:neha@apiary.io">neha@apiary.io</a>) <span class="minority">on</span>&nbsp;07&nbsp;Oct&nbsp;2014
+      </p>
+      <p><span class="blogShare">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Shellshock Bash Security" data-url="https://blog.apiary.io/2014/10/07/Shell-Shock-Security" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2014/10/07/Shell-Shock-Security" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+    
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+  <p>The recent announcement of the Shellshock bug <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1141597">CVE-2014-6271</a>, followed by <a href="https://securityblog.redhat.com/2014/09/24/bash-specially-crafted-environment-variables-code-injection-attack/">CVE-2014-7169</a> had raised concerns about security of customer data.</p>
 
-    
-        <div class="blogPost"><a href="/2016/09/28/markdown">
-          <h1>The next chapter for Markdown</h1>
-          <p>Apiary is embracing the CommonMark Markdown syntax for API description.</p>
-          <p class="authorDate inline">Zdenek Nemec — 28 Sep 2016</p>
-        </a>
-          
-        </div>
-    
-        <div class="blogPost"><a href="/2016/08/25/Test-Your-Swagger-API">
-          <h1>Test Your Swagger API</h1>
-          <p>Introducing support for Swagger in Dredd and more.</p>
-          <p class="authorDate inline">Honza Javorek — 25 Aug 2016</p>
-        </a>
-          
-            <p class="commentsCount"><a href="/2016/08/25/Test-Your-Swagger-API/#comments" class="commentsLink" data-disqus-identifier="/2016/08/25/Test-Your-Swagger-API"></a></p>
-            
-          
-        </div>
-    
-        <div class="blogPost"><a href="/2016/07/10/Scaling-Your-API-Design-Workflow">
-          <h1>Scaling Your API Design Workflow</h1>
-          <p><p>These days, software development is faster paced than ever before, and it’s laser focused on rapid iteration, continuous delivery pipelines, and automating away the boring parts.</p>
+<p>At Apiary, we are pleased to announce that we do not have any GNU Bash-run service. We have also checked all our service providers who have anything to do with customer data and have confirmed that neither of them run any service by GNU Bash. Therefore, we are sure that there is no security flaw to be exploited in our system.</p>
 
-</p>
-          <p class="authorDate inline">Jakub Nesetril — 10 Jul 2016</p>
-        </a>
-          
-        </div>
-    
+<p>Apart from that, we have also updated all local <code class="highlighter-rouge">/bin/bash</code> binaries found on our systems and checked with our service providers that they did the same.</p>
+
+<p>Security is important to us and we have taken all necessary steps to make sure there are no flaws.</p>
+
+<p>You can <a href="https://www.troyhunt.com/2014/09/everything-you-need-to-know-about.html">Read more</a> about this bug.</p>
+
+
+  <p><span class="blogShare afterArticle">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Shellshock Bash Security" data-url="https://blog.apiary.io/2014/10/07/Shell-Shock-Security" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2014/10/07/Shell-Shock-Security" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+
+
+    <a name="comments" id="comments"></a><div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_title = 'Shellshock Bash Security';
+      var disqus_url = 'https://blog.apiary.io/2014/10/07/Shell-Shock-Security';
+      var disqus_identifier = '/2014/10/07/Shell-Shock-Security';
+      var disqus_shortname = 'apiaryblog';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript><p>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></p></noscript>
+    <p><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></p>
+
+
   </div>
 </div>
+
+<div id="fb-root"></div>
+
+<script>
+(function(doc, script) {
+  var js,
+      fjs = doc.getElementsByTagName(script)[0],
+      frag = doc.createDocumentFragment(),
+      add = function(url, id) {
+          if (doc.getElementById(id)) {return;}
+          js = doc.createElement(script);
+          js.src = url;
+          id && (js.id = id);
+          frag.appendChild( js );
+      };
+
+    // Google+ button
+    add('http://apis.google.com/js/plusone.js');
+    // Facebook SDK
+    add('//connect.facebook.net/en_US/all.js#xfbml=1', 'facebook-jssdk');
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+
+    fjs.parentNode.insertBefore(frag, fjs);
+}(document, 'script'));
+</script>
 
 </div>
 

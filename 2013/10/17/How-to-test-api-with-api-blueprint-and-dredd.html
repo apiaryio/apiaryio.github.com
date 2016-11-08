@@ -1,0 +1,335 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+
+  <title>How To Test REST API with API Blueprint and Dredd&mdash;Apiary Blog</title>
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <meta name="author" content="Apiary">
+  <link rel="alternate" type="application/rss+xml" title="The Apiary Blog Feed" href="https://blog.apiary.io/feed.xml" />
+
+  <meta name="application-name" content="Apiary">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type"  content="article">
+  <meta name="twitter:site" content="@apiaryio">
+  <meta name="twitter:creator" content="@apiaryio">
+
+  <meta name="twitter:title" content="How To Test REST API with API Blueprint and Dredd&mdash;Apiary Blog">
+  <meta property="og:title" content="How To Test REST API with API Blueprint and Dredd&mdash;Apiary Blog">
+
+  
+    <meta property="og:url" content="https://blog.apiary.io/2013/10/17/How-to-test-api-with-api-blueprint-and-dredd">
+    <meta name="description" content="Glue together your API Documentation and the backend&mdash;Apiary Blog">
+    <meta name="twitter:description" content="Glue together your API Documentation and the backend&mdash;Apiary Blog">
+    <meta property="og:description" content="Glue together your API Documentation and the backend&mdash;Apiary Blog">
+  
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="canonical" href="https://blog.apiary.io/2013/10/17/How-to-test-api-with-api-blueprint-and-dredd">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/fonts.css">
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/modules/footer/footer.css">
+  <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/modules/website.css">
+  <link rel="stylesheet" href="/syntax.css">
+  <!-- /Styles -->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18252923-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</head>
+<body class="website">
+
+<!-- website-header -->
+  <header id="websiteHeader"><div class="positioning">
+    <a class="headerLogotypeLink" href="http://apiary.io/"><h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1><div class="headerLogotype"></div></a>
+    <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
+  </div></header>
+<!-- /website-header -->
+
+<!-- website-navigation -->
+  <div id="navigation">
+    <nav class="websiteNav positioning">
+      <ul class="clearAfter websiteNavMenu">
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/how-it-works">How It Works</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/plans">Plans</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/products">Product</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://help.apiary.io/">Help</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/company">Company</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://login.apiary.io/login">Sign In</a></li>
+        
+      </ul>
+      <a class="websiteNavLink websiteNavLinkHighlighted" href="https://login.apiary.io/register" class="signIn">Sign Up</a>
+      <a class="websiteNavLink backToTop" href="javascript:;"><span class="visuallyhidden">Back to top</span></a>
+    </nav>
+  </div>
+<!-- /website-navigation -->
+
+<div>
+  
+
+<div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>How To Test REST API with API Blueprint and Dredd</h1>
+    
+      <p><span class="minority">By</span> <strong>netmilk</strong>
+        (<a href="https://twitter.com/ntmlk">ntmlk</a>, <a href="mailto:adam@apiary.io">adam@apiary.io</a>) <span class="minority">on</span>&nbsp;17&nbsp;Oct&nbsp;2013
+      </p>
+      <p><span class="blogShare">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="How To Test REST API with API Blueprint and Dredd" data-url="https://blog.apiary.io/2013/10/17/How-to-test-api-with-api-blueprint-and-dredd" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2013/10/17/How-to-test-api-with-api-blueprint-and-dredd" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+    
+
+  <p>As a follow up for <a href="http://blog.apiary.io/2013/10/10/No-more-outdated-API-documentation/">my previous blogpost</a> which is introducing <a href="https://github.com/apiaryio/dredd">Dredd</a>—the tool for testing APIs from API Blueprint, I’ve prepared a simple <a href="http://github.com/apiaryio/dredd-example">example application</a> in <a href="http://expressjs.com/">Express.js</a> to demonstrate how to write a blueprint, a backend, test it and let it be tested forever in the CI.</p>
+
+<p>Note I’m using Express.js for the backend but Dredd, API Blueprint and Apiary do not depend on any specific programming language. Dredd interacts with the backend app only through the HTTP layer. That means the process as described below can be applied on any backend platform and framework in any language.</p>
+
+<p>Let’s move on – it’s super-easy!</p>
+
+<h3 id="write-a-blueprint">1. Write a blueprint</h3>
+
+<p>Start thinking about your API, create an Apiary project with a sample blueprint and save it. You can use <a href="https://gist.github.com/netmilk/6885268">my example blueprint</a>. Do not forget to invite others to join the discussion. Enjoy generated <a href="http://docs.dreddexample.apiary.io/">documentation</a> and play with the <a href="http://docs.dreddexample.apiary.io/traffic">mock</a>.</p>
+
+<h3 id="link-with-github">2. Link with GitHub</h3>
+
+<ul>
+  <li>Create the GitHub project</li>
+  <li>Connect Apiary with GitHub on the setting tab</li>
+  <li>Clone the repo locally</li>
+</ul>
+
+<h3 id="prepare-the-backend-application">3. Prepare the Backend Application</h3>
+
+<ul>
+  <li>Swich to your local repo directory</li>
+  <li>Install <a href="http://nodejs.org/">Node.js</a></li>
+  <li>
+    <p>Bootstrap application environment</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  npm install express coffee-script mongous
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Create empty Express application in file <code class="highlighter-rouge">app.coffee</code></p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  express = require 'express'
+  app = express()
+  app.listen 3000
+  console.log('Listening on port 3000');
+</code></pre>
+    </div>
+  </li>
+</ul>
+
+<h3 id="make-it-red">4. Make it Red</h3>
+
+<ul>
+  <li>
+    <p>Add a test script to <code class="highlighter-rouge">scripts/test</code></p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  <span class="c">#!/bin/sh</span>
+  ./node_modules/coffee-script/bin/coffee app.coffee &amp;
+  sleep 5
+  <span class="nv">PID</span><span class="o">=</span><span class="nv">$!</span>
+  dredd apiary.apib http://localhost:3000/
+  <span class="nv">RESULT</span><span class="o">=</span><span class="nv">$?</span>
+  <span class="nb">kill</span> -9 <span class="nv">$PID</span>
+  <span class="nb">exit</span> <span class="nv">$RESULT</span>
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Install Dredd globally</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  npm install -g dredd
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>See the test fail</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  $ ./scripts/test
+  $ echo $?
+  1
+</code></pre>
+    </div>
+  </li>
+</ul>
+
+<h3 id="make-it-green">5. Make it Green</h3>
+
+<ul>
+  <li>Write the code of the backend application</li>
+  <li>
+    <p>Run the test again and see it pass</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  $ ./scripts/test
+  $ echo $?
+  0
+</code></pre>
+    </div>
+  </li>
+</ul>
+
+<h3 id="make-it-eternal">6. Make it Eternal</h3>
+
+<p>And finally – the holy grail! When you plug it into a Continuous Integration system any change of the API Blueprint in your GitHub repository will update the API documentation generated by Apiary and run the test harness. At this point you have always up-to-date API documentation. And what is even better – it is absolutely free of charge!</p>
+
+<ul>
+  <li>Sign in to <a href="https://travis-ci.org/">Travis-CI</a> Continuous integration service</li>
+  <li>Find your project in the list of your GitHub repositories and enable it</li>
+  <li>
+    <p>Add a Travis dotfile to <code class="highlighter-rouge">.travis.yml</code> with:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  language: node_js
+  node_js:
+  - 0.8
+  - 0.10
+  before_install:
+  - npm install -g dredd
+  script: ./scripts/test
+  services:
+  - mongodb
+  before_script:
+  - mongo mydb_test --eval 'db.addUser("test", "test");'
+</code></pre>
+    </div>
+  </li>
+  <li>Commit and push your work to GitHub</li>
+  <li>Wait for the build and proudly place the status badge ( <img src="https://travis-ci.org/apiaryio/dredd-example.png?branch=master" alt="Build Status" /> ) to the <a href="https://github.com/apiaryio/dredd-example/blob/master/README.md">Readme</a> of your project and to the API <a href="http://docs.dreddexample.apiary.io/">documentation</a></li>
+</ul>
+
+<p>We strongly appreciate any feedback in Dredd’s GitHub <a href="https://github.com/apiaryio/dredd-example/issues">issues</a> or directly through our <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#097;&#112;&#105;&#097;&#114;&#121;&#046;&#105;&#111;">support</a>.</p>
+
+<h2 id="supported-continuous-integration-services">Supported Continuous Integration Services</h2>
+
+<p>Dredd works with several Continuous Integration Services. I’ve tested it with <a href="https://travis-ci.org/">Travis-CI</a>, <a href="https://circleci.com/">Circle-CI</a>, <a href="https://www.codeship.com/">Codeship</a>, <a href="https://semaphoreapp.com/">Semaphore</a>, <a href="http://www.jetbrains.com/teamcity/">Teamcity</a>, <a href="http://jenkins-ci.org/">Jenkins</a>, <a href="https://www.atlassian.com/software/bamboo">Atlassian Bamboo</a> and probably many others.</p>
+
+<p><img src="http://blog.apiary.io/images/ci-systems/travis.gif?2" alt="Travis-CI" />
+<img src="http://blog.apiary.io/images/ci-systems/circle.gif?2" alt="Circle-CI" />
+<img src="http://blog.apiary.io/images/ci-systems/codeship.gif?2" alt="Codeship" />
+<img src="http://blog.apiary.io/images/ci-systems/semaphore1.gif?2" alt="Semaphore" />
+<img src="http://blog.apiary.io/images/ci-systems/teamcity.gif?2" alt="Team city" />
+<img src="http://blog.apiary.io/images/ci-systems/jenkins.gif?2" alt="Jenkins" />
+<img src="http://blog.apiary.io/images/ci-systems/bamboo.gif?2" alt="Atlassian Bamboo" /></p>
+
+
+  <p><span class="blogShare afterArticle">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="How To Test REST API with API Blueprint and Dredd" data-url="https://blog.apiary.io/2013/10/17/How-to-test-api-with-api-blueprint-and-dredd" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2013/10/17/How-to-test-api-with-api-blueprint-and-dredd" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+
+
+
+  </div>
+</div>
+
+<div id="fb-root"></div>
+
+<script>
+(function(doc, script) {
+  var js,
+      fjs = doc.getElementsByTagName(script)[0],
+      frag = doc.createDocumentFragment(),
+      add = function(url, id) {
+          if (doc.getElementById(id)) {return;}
+          js = doc.createElement(script);
+          js.src = url;
+          id && (js.id = id);
+          frag.appendChild( js );
+      };
+
+    // Google+ button
+    add('http://apis.google.com/js/plusone.js');
+    // Facebook SDK
+    add('//connect.facebook.net/en_US/all.js#xfbml=1', 'facebook-jssdk');
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+
+    fjs.parentNode.insertBefore(frag, fjs);
+}(document, 'script'));
+</script>
+
+</div>
+
+<!-- website-footer -->
+  <hr>
+
+<footer class="applicationFooter">
+
+  <div class="applicationFooterRow">
+    <div class="applicationFooterColumns">
+    <div class="applicationFooterColumn">
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Platform</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiary.io/how-it-works">How It Works</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/products">Product</a></li>
+        <li><a class="applicationFooterListLink" href="http://enterprise.apiary.io/">Enterprise</a></li>
+	<li><a class="applicationFooterListLink" href="http://apiary.io/plans">Plans</a></li>
+        <li><a class="applicationFooterListLink" href="https://help.apiary.io">Help</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Company</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://blog.apiary.io/">Blog</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#team">Team</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/jobs">Jobs</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#contact">Contact</a></li>
+        <li><a class="applicationFooterListLink" href="https://apiary.a.ssl.fastly.net/assets/files/apiary-press-kit.zip">Press Kit</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Open Source</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiblueprint.org">API Blueprint</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/snowcrash">Snowcrash</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
+        <li><a class="applicationFooterListLink" href="http://client.apiary.io">Apiary CLI</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Social</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
+        <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
+        <li><a class="applicationFooterListLink" href="https://facebook.com/apiary.io">Facebook</a></li>
+        <li><a class="applicationFooterListLink" href="http://dribbble.com/apiary">Dribbble</a></li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="applicationFooterRow">
+    <p class="applicationFooterCopyright">&copy; Apiary Ltd. All rights reserved. <span class="applicationFooterCopyrightLinks">• <a href="http://apiary.io/tos" class="applicationFooterCopyrightLink">Terms</a> • <a href="https://www.iubenda.com/privacy-policy/323220" class="applicationFooterCopyrightLink">Privacy</a></span></p>
+  </div>
+</footer>
+<!-- /website-footer -->
+
+<script src="https://apiary.a.ssl.fastly.net/assets/js/website-scroll.js"></script>
+<script>
+  websiteScroll();
+  document.documentElement.className += ' js';
+</script>
+
+</body>
+</html>

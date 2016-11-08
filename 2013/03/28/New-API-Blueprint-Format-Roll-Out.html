@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found&mdash;Apiary Blog</title>
+  <title>Blueprint Format Roll Out&mdash;Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,20 +15,18 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found&mdash;Apiary Blog">
-  <meta property="og:title" content="Page not found&mdash;Apiary Blog">
+  <meta name="twitter:title" content="Blueprint Format Roll Out&mdash;Apiary Blog">
+  <meta property="og:title" content="Blueprint Format Roll Out&mdash;Apiary Blog">
 
   
-    <meta name="twitter:image" content="https://apiary.a.ssl.fastly.net/assets/images/apiary-logotype-3D-only.png">
-    <meta property="og:image"  content="https://apiary.a.ssl.fastly.net/assets/images/apiary-logotype-3D-only.png">
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/2013/03/28/New-API-Blueprint-Format-Roll-Out">
+    <meta name="description" content="New API Blueprint Format specification has been closed as we are getting ready for its roll out.&mdash;Apiary Blog">
+    <meta name="twitter:description" content="New API Blueprint Format specification has been closed as we are getting ready for its roll out.&mdash;Apiary Blog">
+    <meta property="og:description" content="New API Blueprint Format specification has been closed as we are getting ready for its roll out.&mdash;Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/2013/03/28/New-API-Blueprint-Format-Roll-Out">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/fonts.css">
@@ -83,46 +81,92 @@
 <!-- /website-navigation -->
 
 <div>
-  <div class="blog">
+  
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+<div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Blueprint Format Roll Out</h1>
+    
+      <p><span class="minority">By</span> <strong>Z</strong>
+        (<a href="https://twitter.com/zdne">zdne</a>, <a href="mailto:z@apiary.io">z@apiary.io</a>) <span class="minority">on</span>&nbsp;28&nbsp;Mar&nbsp;2013
+      </p>
+      <p><span class="blogShare">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Blueprint Format Roll Out" data-url="https://blog.apiary.io/2013/03/28/New-API-Blueprint-Format-Roll-Out" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2013/03/28/New-API-Blueprint-Format-Roll-Out" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+    
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+  <p>As you may know the <a href="http://blog.apiary.io/2013/02/20/New-API-Blueprint-Format-Basics/">New API Blueprint Format</a> will be rolling out soon and today I would like to discuss how it will be done.</p>
 
-    
-        <div class="blogPost"><a href="/2016/09/28/markdown">
-          <h1>The next chapter for Markdown</h1>
-          <p>Apiary is embracing the CommonMark Markdown syntax for API description.</p>
-          <p class="authorDate inline">Zdenek Nemec — 28 Sep 2016</p>
-        </a>
-          
-        </div>
-    
-        <div class="blogPost"><a href="/2016/08/25/Test-Your-Swagger-API">
-          <h1>Test Your Swagger API</h1>
-          <p>Introducing support for Swagger in Dredd and more.</p>
-          <p class="authorDate inline">Honza Javorek — 25 Aug 2016</p>
-        </a>
-          
-            <p class="commentsCount"><a href="/2016/08/25/Test-Your-Swagger-API/#comments" class="commentsLink" data-disqus-identifier="/2016/08/25/Test-Your-Swagger-API"></a></p>
-            
-          
-        </div>
-    
-        <div class="blogPost"><a href="/2016/07/10/Scaling-Your-API-Design-Workflow">
-          <h1>Scaling Your API Design Workflow</h1>
-          <p><p>These days, software development is faster paced than ever before, and it’s laser focused on rapid iteration, continuous delivery pipelines, and automating away the boring parts.</p>
+<p>Before we get started please note the New Format is not live as of the date of writing this post. I will make an official announcement here on Apiary blog and inside Apiary application once the Format goes live.</p>
 
-</p>
-          <p class="authorDate inline">Jakub Nesetril — 10 Jul 2016</p>
-        </a>
-          
-        </div>
-    
+<h2 id="a-format-specification">1A Format Specification</h2>
+<p>First I would like to thank our awesome users who contributed to the New Format in reaction to my previous <a href="http://blog.apiary.io/2013/02/20/New-API-Blueprint-Format-Basics/">post</a>.</p>
+
+<p>In the process we have made quite a few changes to the Format. For example, to improve both readability and the process of writing we have decided to leave the “header marks (#) forest” in favor of utilizing “much cleaner” Markdown lists, like so:</p>
+
+<div class="language-apib highlighter-rouge"><pre class="highlight"><code><span class="gh"># GET /message_of_the_day</span>
+Retrieves message of the day.
+<span class="p">
++</span> Response 200 (application/json)<span class="sb">
+
+        { "message" : "Hello World" }
+</span></code></pre>
+</div>
+
+<p>You can find the New Format’s <a href="https://github.com/apiaryio/api-blueprint/blob/master/API%20Blueprint%20Specification.md">specification</a> its <a href="https://github.com/apiaryio/api-blueprint">repository</a>. The specification is completely open-sourced and it is also accompanied by a <a href="https://help.apiary.io/api_101/api_blueprint_tutorial/">tutorial</a> and examples.</p>
+
+<p>Note that this first version is only a mere milestone on the <a href="http://blog.apiary.io/2013/01/27/New-API-Blueprint-Format/">Format evolution</a>. However we still keep the main thing the main thing: The <strong>API Blueprint must be the best way possible to both design and document your API</strong>.</p>
+
+<h2 id="roll-out-gradual-opt-in">Roll Out: Gradual Opt-In</h2>
+<p>The rollout will be on an opt-in basis - that is, we won’t “switch” everything to new format immediately. Instead the two (legacy and 1A) formats will live in parallel for some time. You will be able to opt-in for the New Format by specifying format version in your blueprint’s metadata.</p>
+
+<p>Also the transition from the legacy to the New Format will be automatic and lossless. No need to rewrite anything by hand.</p>
+
+<p>With that said, if you are familiar with the current format or don’t want to dive in right away, it is perfectly fine to start working on your API today without any fear that you will have to re-do it all once the New Format arrives.</p>
+
+<p>As always I would love to hear from you. You can reach me on <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#122;&#064;&#097;&#112;&#105;&#097;&#114;&#121;&#046;&#105;&#111;">my email</a>.</p>
+
+
+  <p><span class="blogShare afterArticle">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Blueprint Format Roll Out" data-url="https://blog.apiary.io/2013/03/28/New-API-Blueprint-Format-Roll-Out" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2013/03/28/New-API-Blueprint-Format-Roll-Out" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+
+
+
   </div>
 </div>
+
+<div id="fb-root"></div>
+
+<script>
+(function(doc, script) {
+  var js,
+      fjs = doc.getElementsByTagName(script)[0],
+      frag = doc.createDocumentFragment(),
+      add = function(url, id) {
+          if (doc.getElementById(id)) {return;}
+          js = doc.createElement(script);
+          js.src = url;
+          id && (js.id = id);
+          frag.appendChild( js );
+      };
+
+    // Google+ button
+    add('http://apis.google.com/js/plusone.js');
+    // Facebook SDK
+    add('//connect.facebook.net/en_US/all.js#xfbml=1', 'facebook-jssdk');
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+
+    fjs.parentNode.insertBefore(frag, fjs);
+}(document, 'script'));
+</script>
 
 </div>
 

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://blog.apiary.io/2016/09/28/markdown</loc>
+<lastmod>2016-09-28T08:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://blog.apiary.io/2016/08/25/Test-Your-Swagger-API</loc>
+<lastmod>2016-08-25T23:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://blog.apiary.io/2016/07/10/Scaling-Your-API-Design-Workflow</loc>
+<lastmod>2016-07-10T22:00:00+00:00</lastmod>
+</url>
+<url>
 <loc>https://blog.apiary.io/2016/06/21/Securing-APIs</loc>
 <lastmod>2016-06-21T22:00:00+00:00</lastmod>
 </url>
@@ -197,8 +209,5 @@
 </url>
 <url>
 <loc>https://blog.apiary.io/</loc>
-</url>
-<url>
-<loc>https://blog.apiary.io/2014/10/21/Enterprise-Release/</loc>
 </url>
 </urlset>

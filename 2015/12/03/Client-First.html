@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found&mdash;Apiary Blog</title>
+  <title>Client First&mdash;Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,20 +15,18 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found&mdash;Apiary Blog">
-  <meta property="og:title" content="Page not found&mdash;Apiary Blog">
+  <meta name="twitter:title" content="Client First&mdash;Apiary Blog">
+  <meta property="og:title" content="Client First&mdash;Apiary Blog">
 
   
-    <meta name="twitter:image" content="https://apiary.a.ssl.fastly.net/assets/images/apiary-logotype-3D-only.png">
-    <meta property="og:image"  content="https://apiary.a.ssl.fastly.net/assets/images/apiary-logotype-3D-only.png">
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/2015/12/03/Client-First">
+    <meta name="description" content="Think about your clients—both humans and machines—before starting to design your constraints&mdash;Apiary Blog">
+    <meta name="twitter:description" content="Think about your clients—both humans and machines—before starting to design your constraints&mdash;Apiary Blog">
+    <meta property="og:description" content="Think about your clients—both humans and machines—before starting to design your constraints&mdash;Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/2015/12/03/Client-First">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://apiary.a.ssl.fastly.net/assets/styles/fonts.css">
@@ -83,46 +81,93 @@
 <!-- /website-navigation -->
 
 <div>
-  <div class="blog">
+  
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+<div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Client First</h1>
+    
+      <p><span class="minority">By</span> <strong>Lukas Linhart</strong>
+        (<a href="https://twitter.com/almadcz">almadcz</a>, <a href="mailto:lukas@apiary.io">lukas@apiary.io</a>) <span class="minority">on</span>&nbsp;03&nbsp;Dec&nbsp;2015
+      </p>
+      <p><span class="blogShare">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Client First" data-url="https://blog.apiary.io/2015/12/03/Client-First" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2015/12/03/Client-First" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+    
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+  <p>If there is a key in your payload but no client to use it, does it really exist?</p>
 
-    
-        <div class="blogPost"><a href="/2016/09/28/markdown">
-          <h1>The next chapter for Markdown</h1>
-          <p>Apiary is embracing the CommonMark Markdown syntax for API description.</p>
-          <p class="authorDate inline">Zdenek Nemec — 28 Sep 2016</p>
-        </a>
-          
-        </div>
-    
-        <div class="blogPost"><a href="/2016/08/25/Test-Your-Swagger-API">
-          <h1>Test Your Swagger API</h1>
-          <p>Introducing support for Swagger in Dredd and more.</p>
-          <p class="authorDate inline">Honza Javorek — 25 Aug 2016</p>
-        </a>
-          
-            <p class="commentsCount"><a href="/2016/08/25/Test-Your-Swagger-API/#comments" class="commentsLink" data-disqus-identifier="/2016/08/25/Test-Your-Swagger-API"></a></p>
-            
-          
-        </div>
-    
-        <div class="blogPost"><a href="/2016/07/10/Scaling-Your-API-Design-Workflow">
-          <h1>Scaling Your API Design Workflow</h1>
-          <p><p>These days, software development is faster paced than ever before, and it’s laser focused on rapid iteration, continuous delivery pipelines, and automating away the boring parts.</p>
+<p>Every architecture starts with constraints, and every constraint is introduced to achieve desirable results. In order to get your API goals right, you inevitably need to think about how your API is going to be consumed.</p>
 
-</p>
-          <p class="authorDate inline">Jakub Nesetril — 10 Jul 2016</p>
-        </a>
-          
-        </div>
-    
+<p>Writing things down into an API Description is a great start, but it’s only the beginning. Without actually talking and prototyping with the other side, chances are that you are going to put emphasis on the needs of the server and ignore the needs of the client.</p>
+
+<p>One of the big dangers involved is imagining API usage <em>for</em> the clients. If you don’t have actual constraints in your API that force them to actually behave the way you’ve designed, your design will most probably stay in form of proposal.</p>
+
+<p>Want client developers to handle failures gracefully? Return failure responses more often. Want them to treat your API as state machine and navigate through links? Obfuscate URLs and change them often. Confident in our API change coping strategy? Do (breaking) changes daily.</p>
+
+<p>Engineering is a hard game of trade-offs; intents above may not be for you. But unless you actually fulfill your intents—maybe to their extreme—you can’t rely on them.</p>
+
+<p>All new approaches in APIs are chicken-and-egg problems where agreement must be reached, and I argue that clients are the more powerful force here.</p>
+
+<p>Without clients sending <code class="highlighter-rouge">ETag</code> back, you don’t have caching, you have larger headers. Without API clients actually following HAL links, you don’t have a hypermedia API, you have inflated payloads. Without a terrific and safe execution environment, you don’t have Code On Demand, you have injected garbage.</p>
+
+<p>If you feel usage starts on server, start sending LISP to your web browsers today and wait for them to catch up.</p>
+
+  <p><span class="blogShare afterArticle">
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Client First" data-url="https://blog.apiary.io/2015/12/03/Client-First" data-via="apiaryio"></a>
+<span class="g-plusone" data-size="medium" data-count="true"></span>
+<span class="fb-share-button" data-send="false" data-href="https://blog.apiary.io/2015/12/03/Client-First" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
+</span></p>
+
+
+    <a name="comments" id="comments"></a><div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_title = 'Client First';
+      var disqus_url = 'https://blog.apiary.io/2015/12/03/Client-First';
+      var disqus_identifier = '/2015/12/03/Client-First';
+      var disqus_shortname = 'apiaryblog';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript><p>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></p></noscript>
+    <p><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></p>
+
+
   </div>
 </div>
+
+<div id="fb-root"></div>
+
+<script>
+(function(doc, script) {
+  var js,
+      fjs = doc.getElementsByTagName(script)[0],
+      frag = doc.createDocumentFragment(),
+      add = function(url, id) {
+          if (doc.getElementById(id)) {return;}
+          js = doc.createElement(script);
+          js.src = url;
+          id && (js.id = id);
+          frag.appendChild( js );
+      };
+
+    // Google+ button
+    add('http://apis.google.com/js/plusone.js');
+    // Facebook SDK
+    add('//connect.facebook.net/en_US/all.js#xfbml=1', 'facebook-jssdk');
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+
+    fjs.parentNode.insertBefore(frag, fjs);
+}(document, 'script'));
+</script>
 
 </div>
 
