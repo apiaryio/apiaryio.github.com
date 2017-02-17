@@ -13,7 +13,7 @@ timezone: UTC # To match it with Circle CI default settings
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
-exclude: ['Gemfile*', 'vendor', 'README.md', 'Rakefile']
+exclude: ['Gemfile*', 'vendor', 'README.md', 'Rakefile', 'docker']
 
 # Site configuration
 url:          https://blog.apiary.io
@@ -110,8 +110,7 @@ authors:
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
 author:       Apiary
 email:        jakub@apiary.io
-static: "https://apiary.a.ssl.fastly.net/assets"
-# static: "https://static.apiary.dev:9000"
+static: "https://static.apiary.io/assets"
 version: 1338364425
 menu:
   - ['https://apiary.io/how-it-works', 'How It Works']

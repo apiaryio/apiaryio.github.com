@@ -42,7 +42,7 @@ What if everything can be done without building own interactive documentation, s
 
 </style>
 
-<img src="https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/spin.gif" class="centered" alt="Introducing Apiary Documentation">
+<img src="https://static.apiary.io/assets/blog/images/new-documentation/spin.gif" class="centered" alt="Introducing Apiary Documentation">
 
 ## Perspectives
 
@@ -89,8 +89,8 @@ First comes the discovery phase; finding out what an API can do, what the author
 </style>
 
 <p style="margin-bottom: 0px;">
-  <img id="iPhoneAnimation" src="https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/iphone.gif" class="centered" alt="Animated GIF with touch events demo—iPhone">
-  <img id="iPadAnimation" src="https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/ipad.gif" class="centered hidden" alt="Animated GIF with touch events demo—iPad">
+  <img id="iPhoneAnimation" src="https://static.apiary.io/assets/blog/images/new-documentation/iphone.gif" class="centered" alt="Animated GIF with touch events demo—iPhone">
+  <img id="iPadAnimation" src="https://static.apiary.io/assets/blog/images/new-documentation/ipad.gif" class="centered hidden" alt="Animated GIF with touch events demo—iPad">
 </p>
 
 <p class="switcher">
@@ -133,7 +133,7 @@ iPadSwitchElement.addEventListener('click', showPad, false);
 
 The second phase is coding. You've decided which action you want to hack and the “machine part” will show you a code sample in the language of your choice, expected results, detailed descriptions of parameters and even lets you make an API call with customized variables directly from within your browser.
 
-<img src="https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/console.gif" class="centered" alt="Animated GIF with usage of Machine Column">
+<img src="https://static.apiary.io/assets/blog/images/new-documentation/console.gif" class="centered" alt="Animated GIF with usage of Machine Column">
 
 
 ## One Step Further
@@ -162,7 +162,7 @@ Let me show you a couple of examples:
 
 ## Getting Started
 
-All editors & administrators of Apiary-powered APIs can [opt-in](https://apiary.a.ssl.fastly.net/assets/blog/images/new-documentation/switch.gif) *(Settings > Beta Area > New Documentation)* for the new documentation as of now.
+All editors & administrators of Apiary-powered APIs can [opt-in](https://static.apiary.io/assets/blog/images/new-documentation/switch.gif) *(Settings > Beta Area > New Documentation)* for the new documentation as of now.
 
 Before general release, there are still a few things which need to be fixed and added *(like permalinks, polishing code samples, etc.)*, but it's only matter of weeks.
 
