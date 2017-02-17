@@ -13,7 +13,7 @@ timezone: UTC # To match it with Circle CI default settings
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
-exclude: ['Gemfile*', 'vendor', 'README.md', 'Rakefile']
+exclude: ['Gemfile*', 'vendor', 'README.md', 'Rakefile', 'docker']
 
 # Site configuration
 url:          https://blog.apiary.io
