@@ -7,6 +7,14 @@
     <atom:link href="https://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Creating reusable features in React + Redux</title>
+        <description>How to create standard and reusable features in React + Redux</description>
+        <pubDate>Mon, 12 Feb 2018 06:00:00 +0000</pubDate>
+        <link>https://blog.apiary.io/2018/02/12/Reusable-features-in-React-Redux</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2018/02/12/Reusable-features-in-React-Redux</guid>
+      </item>
+    
+      <item>
         <title>The next chapter for Markdown</title>
         <description>Apiary is embracing the CommonMark Markdown syntax for API description.</description>
         <pubDate>Wed, 28 Sep 2016 08:00:00 +0000</pubDate>
@@ -78,14 +86,6 @@
         <pubDate>Thu, 17 Dec 2015 00:00:00 +0000</pubDate>
         <link>https://blog.apiary.io/2015/12/17/API-Blueprint-Future</link>
         <guid isPermaLink="true">https://blog.apiary.io/2015/12/17/API-Blueprint-Future</guid>
-      </item>
-    
-      <item>
-        <title>Client First</title>
-        <description>Think about your clients—both humans and machines—before starting to design your constraints</description>
-        <pubDate>Thu, 03 Dec 2015 15:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2015/12/03/Client-First</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2015/12/03/Client-First</guid>
       </item>
     
   </channel>
