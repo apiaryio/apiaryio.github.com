@@ -27,8 +27,8 @@ instances which can be mounted on different locations in the state. I call these
 ## Standard features
 
 You can imagine a standard feature as a directory that lives in your codebase. 
-I will try to demonstrate what standard feature is on Todo List usecase. 
-The standard feature directory has prescribed structure and usually looks like this:
+I will try to demonstrate what a standard feature is in an example Todo List. 
+The standard feature directory has a prescribed structure that usually looks like this:
 
 ```
 src/
@@ -117,7 +117,7 @@ src/
 
 
 It is always good to break features into smaller sub-features with encapsulated logic to reduce the complexity.
-Try to think of it as applying Single Responsibility Principle. One feature does only one thing and
+Try to think of it as applying The Single Responsibility Principle. One feature does only one thing and
 it’s entire logic is isolated in it’s directory. As you applications grows and you add more and more features, 
 it really pays of to structure your code using these rules. Somebody that will come to work on a project after
 you will really thank you ;]
@@ -125,15 +125,15 @@ you will really thank you ;]
 The standard feature has unfortunately one disadvantage. It is statically mounted on specific place in a state. 
 Imagine a situation when you want to display two Todo Lists on the same page.
 If you do that, it will work and the Todo Lists will display. The problem arises when you try to interact with them. 
-Changes done in one list (checking the item as done, reorder...) will be reproduced also on the second one.
+Changing state in one, for example marking an item as done, or re-ordering the items, will cause the items in the second list to be updated.
 The cause of this effect is the fact that they are both focused on the same place in the Redux state and 
-act accordingly on Redux state changes. You may never intercept this situation, it really depends
-on the type of the application you are building and the use-cases. But if you do, there is a solution.
+act accordingly based on Redux state changes. You may never experience this situation, it really depends
+on the type of the application you are building and the use cases. If you do, there is a solution.
 Enter the realm of **reusable features**.
 
 ## Reusable features
 
-[Some people](https://kickstarter.engineering/namespacing-actions-for-redux-d9b55a88b1b1) has already dealt with this problem. My solution is a little bit different but
+[Some people](https://kickstarter.engineering/namespacing-actions-for-redux-d9b55a88b1b1) have already dealt with this problem. My solution is a little bit different but
 at the end we’re trying to solve the same thing. So what is the **reusable feature** ?
 It’s basically a standard feature but instead of things defined statically, everything (except components)
 is defined inside **factory functions**. Factory functions allows us to create things in lazy configurable manner.
