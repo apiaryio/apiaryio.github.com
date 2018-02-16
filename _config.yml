@@ -109,6 +109,11 @@ authors:
     display_name: Honza Javorek
     email: "honza@apiary.io"
     twitter: "@honzajavorek"
+  daria:git log
+    name: Daria Grudzien
+    display_name: Daria Grudzien
+    email: "daria.grudzien@oracle.com"
+    twitter: "@dariagrudzien"
 
 
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
