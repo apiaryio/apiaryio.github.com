@@ -20,14 +20,14 @@ over and over so that every part of the codebase looks the same regardless wheth
 it was written by *Developer1* or *Developer2*.
 
 For the purpose of this article, I’ve implemented all the patterns that we will be talking about in this [repository](https://github.com/char0n/react-reusable-features). 
-Feel free to clone it and run it by **npm run start**. I will start by explaining how I approach creation
-of **standard react features** and later we’ll get into topic of creating features that are able to create
-instances which can be mounted on different locations in the state. I call these features **reusable features**.
+Feel free to clone it and then run it using **npm run start**. I will start by explaining how I approach 
+implementing **standard react features**. Later we’ll cover creating reusable feature instances which 
+can be mounted with different state at different locations. I call these features **reusable features**.
 
 ## Standard features
 
 You can imagine a standard feature as a directory that lives in your codebase. 
-I will try to demonstrate what a standard feature is in an example Todo List. 
+I will demonstrate what a standard feature is in an example Todo List. 
 The standard feature directory has a prescribed structure that usually looks like this:
 
 ```
@@ -71,9 +71,9 @@ This is also a place where you compose the reducers of your possible sub-feature
 #### selectors.js
 
 The file where you define your selectors. Selectors are pure functions that compose and know how
-to retrieve data from your state. If you’re now familiar with the concept I highly recommend looking 
-at [reselect](https://github.com/reactjs/reselect) library. I strongly recommend dividing the selectors into two categories. 
-Input-selectors that only retrieve data from the state and combined-selectors that can combine
+to retrieve data from your state. If you’re not familiar with the concept, I highly recommend looking 
+at the [reselect](https://github.com/reactjs/reselect) library. I strongly recommend dividing the selectors into two categories. 
+*Input selectors* that only retrieve data from the state and *combined selectors* that can combine
 multiple input-selectors and add some business logic or do some transformations.
 
 
@@ -83,15 +83,15 @@ Everything related to your feature that doesn’t belong anywhere else. Usually 
 
 #### middleware.js
 
-This is where our feature handles it’s side effects, e.g. catching some Redux actions and dispatching new ones,
+This is where our feature handles its side effects, such as catching some Redux actions and dispatching new ones,
 synchronize the API calls, etc...
 
 You can check the [reference repository](https://github.com/char0n/react-reusable-features/tree/master/src/app/standard-feature) to see how this looks in a real project. 
-It depends on your use-case what the standard feature directory contains. 
-There are situations that you may need reducers but don’t need actions and so on...
-But regardless, the full representation of the standard feature should look like that. 
-If the number of the components in the standard feature becomes too big, you break the standard
-feature into more sub-features which also adheres to the same rules as it’s parent feature.     
+What the standard feature directory contains will depend on your use case.
+There are situations that you may need reducers but don’t need actions and so on.
+Regardless, the full representation of the standard feature should look like the one described below this paragraph. 
+If the number of components in the standard feature becomes too big, you should break the feature into separate sub-features. 
+These sub-features should adhere to the same rules as its parent feature.
 
 
 ```
@@ -117,12 +117,13 @@ src/
 
 
 It is always good to break features into smaller sub-features with encapsulated logic to reduce the complexity.
-Try to think of it as applying The Single Responsibility Principle. One feature does only one thing and
-it’s entire logic is isolated in it’s directory. As you applications grows and you add more and more features, 
+Try to think of it as applying The Single Responsibility Principle. 
+Each feature only does one thing, and it is isolated in its own directory.
+As you applications grows and you add more and more features, 
 it really pays of to structure your code using these rules. Somebody that will come to work on a project after
 you will really thank you ;]
 
-The standard feature has unfortunately one disadvantage. It is statically mounted on specific place in a state. 
+The standard feature has unfortunately one disadvantage. It is statically mounted at a specific place in a state. 
 Imagine a situation when you want to display two Todo Lists on the same page.
 If you do that, it will work and the Todo Lists will display. The problem arises when you try to interact with them. 
 Changing state in one, for example marking an item as done, or re-ordering the items, will cause the items in the second list to be updated.
@@ -134,10 +135,10 @@ Enter the realm of **reusable features**.
 ## Reusable features
 
 [Some people](https://kickstarter.engineering/namespacing-actions-for-redux-d9b55a88b1b1) have already dealt with this problem. My solution is a little bit different but
-at the end we’re trying to solve the same thing. So what is the **reusable feature** ?
+at the end we’re trying to solve the same thing. So what is a **reusable feature** ?
 It’s basically a standard feature but instead of things defined statically, everything (except components)
-is defined inside **factory functions**. Factory functions allows us to create things in lazy configurable manner.
-Observe e.g. the difference between standard feature actions and reusable one.
+are defined inside **factory functions**. Factory functions allow us to create things in a lazy configurable manner.
+Observe, for example, the difference between standard feature actions and reusable one.
 
 
 #### Standard feature actions.js
@@ -166,10 +167,10 @@ export default function createActions(namespace, selectors) {
 }
 ```
 
-Yeah, and that’s it. You define everything through the factory functions. 
+And that’s it. You define everything inside these factory functions. 
 At this stage the reusable feature acts as a mere template. Check how the full
-implementation of [reusable feature looks](https://github.com/char0n/react-reusable-features/tree/master/src/app/reusable-feature) in our [reference repository](https://github.com/char0n/react-reusable-features).
-Feature like this cannot be used and mounted to your React application.
+implementation of a [reusable feature looks](https://github.com/char0n/react-reusable-features/tree/master/src/app/reusable-feature) in our [reference repository](https://github.com/char0n/react-reusable-features).
+Features like these cannot be used and mounted to your React application.
 You have to create an **instance** from it.
 
 Creating an instance is as easy as calling the factory functions defined in the reusable feature template.
