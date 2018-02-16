@@ -50,7 +50,7 @@ What's more—the new documentation highlights URI templates in the third column
 
 ---
 
-I encourage you to switch to the new documentation and try these new features; you can refer to our [recent article](http://blog.apiary.io/2014/03/21/Re-API-Design-for-Humans/) to learn how to do so.
+I encourage you to switch to the new documentation and try these new features; you can refer to our [recent article](https://blog.apiary.io/2014/03/21/Re-API-Design-for-Humans/) to learn how to do so.
 
 Please note, we will soon be switching all the existing API documentations to this new layout.
 

@@ -7,7 +7,7 @@ author: zdenek
 published: true
 ---
 
-Recently, we have launched the biggest feature in the history of Apiary: [Swagger Support](http://blog.apiary.io/2016/01/18/We-ve-got-Swagger). This project was nicknamed "Project Peacock".
+Recently, we have launched the biggest feature in the history of Apiary: [Swagger Support](https://blog.apiary.io/2016/01/18/We-ve-got-Swagger). This project was nicknamed "Project Peacock".
 
 It took us almost three months to implement it and prepare for the launch.
 Before that we have spent months researching common API description elements and
