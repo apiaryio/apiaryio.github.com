@@ -31,8 +31,6 @@ Here is the example how the Z’s team (Jesse, Gerald, Joshua, Craig and Kingsle
 
 <img width="640" src="/images/2016-04-21-API-Design-Hackaton/team.jpg" alt="team" />
 
-You can [view their the final design on Apiary](http://docs.gistapi1.apiary.io/#reference).
-
 At 3:30pm, the teams got together in the auditorium and presented their [findings](https://github.com/apicraftsf/hackathon2016).
 
 > [Craig Oda](https://twitter.com/craigoda1): “This was so awesome! I hope you are extending API Blueprint right now to enable it to produce dynamic API state diagrams for collaborative brainstorm. As the name implies, "Blueprint," already has good branding to make it into a definition language and toolset to be used like a CAD blueprint that house architects create for construction people to use to build houses. Thanks for your help!”
