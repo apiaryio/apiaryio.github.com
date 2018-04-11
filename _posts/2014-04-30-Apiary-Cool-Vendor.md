@@ -26,6 +26,6 @@ There's a bright future for Apiary helping companies small and large be savvy wi
 [ExactTarget]: http://www.exacttarget.com/
 [Target]: http://www.target.com/
 [Nike]: https://www.nike.com/
-[GoDaddy]: http://www.godaddy.com/
+[GoDaddy]: https://www.godaddy.com/
 [BrightCove]: http://www.brightcove.com/
-[Dell]: http://www.dell.com/
+[Dell]: https://www.dell.com/
