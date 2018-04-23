@@ -94,8 +94,7 @@ You can now pace multiple Embed elements in a single HTML page.
 
 ### Event Hooks
 
-Embed instances provide event hooks. Event hooks have a direct relationship with 
-Embed lifecycle. It is now possible for example to implement a loading indicator that will
+Embed instances provide event hooks. It is now possible for example to implement a loading indicator that will
 show a spinning wheel while the documentation is loading.
 
 
