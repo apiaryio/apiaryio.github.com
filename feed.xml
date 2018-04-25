@@ -15,6 +15,14 @@
       </item>
     
       <item>
+        <title>Evolving Embed</title>
+        <description>What&#39;s new with our Embed feature</description>
+        <pubDate>Mon, 12 Feb 2018 06:00:00 +0000</pubDate>
+        <link>https://blog.apiary.io/2018/02/12/Evolving-Embed</link>
+        <guid isPermaLink="true">https://blog.apiary.io/2018/02/12/Evolving-Embed</guid>
+      </item>
+    
+      <item>
         <title>Creating reusable features in React + Redux</title>
         <description>How to create standard and reusable features in React + Redux</description>
         <pubDate>Mon, 12 Feb 2018 06:00:00 +0000</pubDate>
@@ -78,14 +86,6 @@
         <pubDate>Mon, 18 Jan 2016 23:00:00 +0000</pubDate>
         <link>https://blog.apiary.io/2016/01/18/We-ve-got-Swagger</link>
         <guid isPermaLink="true">https://blog.apiary.io/2016/01/18/We-ve-got-Swagger</guid>
-      </item>
-    
-      <item>
-        <title>API Design Inspiration on GitHub</title>
-        <description>Learn how to search for API design patterns on GitHub.</description>
-        <pubDate>Tue, 12 Jan 2016 23:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2016/01/12/Get-Inspired-on-GitHub</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2016/01/12/Get-Inspired-on-GitHub</guid>
       </item>
     
   </channel>
