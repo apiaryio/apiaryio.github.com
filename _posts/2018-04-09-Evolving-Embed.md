@@ -2,7 +2,7 @@
 title: Evolving Embed
 excerpt: What's new with our Embed feature
 layout: post
-date: 2018-02-12 08:00:00 +0200
+date: 2018-04-25 08:00:00 +0200
 author: char0n
 published: true
 comments: true
