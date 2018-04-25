@@ -147,7 +147,7 @@ With only a few clicks, any consumer of your API gets debugging proxy base URL t
 
 What if documentation runs out of date? We're still working on seamless and unobtrusive way how the documentation can test itself and alert you when it goes out of sync during continuous integration process. But [first steps](http://blog.apiary.io/2013/10/17/How-to-test-api-with-api-blueprint-and-dredd/) has already been made with [Dredd](https://github.com/apiaryio/dredd). We're also working hard on better support in areas like authentication and body parameters. We're taking our time, but we want to get it right.
 
-We've also started offering customized, branded API documentations, embedded into your website (for examples, see [Akamai](https://developer.akamai.com/api) or [GoodData](https://developer.gooddata.com/api)). We're still figuring out how to integrate this next-generation of our API documentation into these contexts, but it's coming later this year.
+We've also started offering customized, branded API documentations, embedded into your website (for examples, see [Akamai](https://developer.akamai.com/api) or [GoodData](https://help.gooddata.com/display/doc/API+Reference)). We're still figuring out how to integrate this next-generation of our API documentation into these contexts, but it's coming later this year.
 
 
 ## Actions Speak Louder Than Words

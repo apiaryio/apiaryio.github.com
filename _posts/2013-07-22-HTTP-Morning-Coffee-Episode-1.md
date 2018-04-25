@@ -10,7 +10,6 @@ published: YES
 _This post is part of our new series Morning Coffee where people behind Apiary briefly discuss their thoughts on everything API. This time, it is [@ntmlk](https://twitter.com/ntmlk) and [@zdne](https://twitter.com/zdne), high on a morning coffee:_
 
 ## Discussion
-+ Discussing **NodeUp** podcast [episode forty four](http://nodeup.com/fortyfour)
 + Rails-ism and how Rails shaped the world of Web APIs
 + [@dhh](https://twitter.com/dhh) (and Rails) have done an incredible great service for the API community 
 + Unfortunately they have also committed a **major crime**
