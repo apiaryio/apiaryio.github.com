@@ -2,12 +2,6 @@
 layout: default
 ---
 
-{% capture shareLine %}
-<a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.title | escape }}" data-url="{{ site.url}}{{ page.url }}" data-via="apiaryio"></a>
-<span class="g-plusone" data-size="medium" data-count="true"></span>
-<span class="fb-share-button" data-send="false" data-href="{{ site.url }}{{ page.url }}" data-type="button_count" data-width="1" data-height="20" data-show-faces="false" data-action="share"></span>
-{% endcapture %}
-
 <div class="blog">
   {% assign author = site.authors[page.author] %}
   <div class="blogArticle">
@@ -17,7 +11,6 @@ layout: default
       <p><span class="minority">By</span> <strong>{{ author.display_name }}</strong>
         ({% if author.email %}<a href="https://twitter.com/{{author.twitter}}">{{ author.twitter }}</a>, {% endif %}{% if author.email %}<a href="mailto:{{ author.email }}">{{ author.email }}</a>{% endif %}) <span class="minority">on</span>&nbsp;{{ page.date | date_to_string | replace:' ','&nbsp;' }}
       </p>
-      <p><span class="blogShare">{{ shareLine }}</span></p>
     {% endif %}
 
   {{ content }}
@@ -25,28 +18,3 @@ layout: default
   </div>
 </div>
 
-<div id="fb-root"></div>
-
-<script>
-(function(doc, script) {
-  var js,
-      fjs = doc.getElementsByTagName(script)[0],
-      frag = doc.createDocumentFragment(),
-      add = function(url, id) {
-          if (doc.getElementById(id)) {return;}
-          js = doc.createElement(script);
-          js.src = url;
-          id && (js.id = id);
-          frag.appendChild( js );
-      };
-
-    // Google+ button
-    add('http://apis.google.com/js/plusone.js');
-    // Facebook SDK
-    add('//connect.facebook.net/en_US/all.js#xfbml=1', 'facebook-jssdk');
-    // Twitter SDK
-    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
-
-    fjs.parentNode.insertBefore(frag, fjs);
-}(document, 'script'));
-</script>
