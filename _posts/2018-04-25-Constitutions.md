@@ -11,12 +11,12 @@ We’ve been a long time proponents of practices like [design-first](https://api
 
 [Apiary Style Guides](https://help.apiary.io/tools/style-guide/) are a tool for checking consistency of your API Designs. They are integrated into the [Apiary Editor](https://help.apiary.io/tools/apiary-editor/), but writing your own rules used to be a laborious task. We wanted to simplify the experience.
 
-![](/images/2018-04-25-Constitutions/constitutions-test.png)
+![Constitutions test runner](/images/2018-04-25-Constitutions/constitutions-test.png)
 
 ## Meet Constitutions
 > [Apiary Constitutions](https://github.com/apiaryio/constitutions) is a tool for writing, testing and managing Style Guide rules. Rules are written in JavaScript and works for both API Blueprint and OpenAPI Specification definitions, thanks to our [API Elements](http://apielements.org/) tooling.
 
-[![](/images/2018-04-25-Constitutions/constitutions-repo.png)](https://github.com/apiaryio/constitutions)
+[![Apiary Constitutions repository](/images/2018-04-25-Constitutions/constitutions-repo.png)](https://github.com/apiaryio/constitutions)
 
 It’s a repository prepared for the rules development. Comes with a default set of rules you have enabled when you start using Style Guide in Apiary. You can easily reuse them or make them your starting point for custom rules. Our goal was to supply you with a way to have a simple `build` and `test` commands.
 
@@ -27,7 +27,7 @@ To stay true to the example driven development, Constitutions will require of yo
 
 We then use [Webpack](https://webpack.js.org) to build a single file with all your rules, which is then run through our rules engine. We recommend to fork the Constitutions repo if you wish to have your own API Style Guides in git.
 
-![](/images/2018-04-25-Constitutions/apiary-style-guide.png)
+![Apiary Style Guide](/images/2018-04-25-Constitutions/apiary-style-guide.png)
 
 ## Updates to the Apiary CLI
 Constitutions will simplify writing the rules and to allow you better integration of these rules into your API Design flow, we also added [`styleguide`](https://help.apiary.io/tools/apiary-cli/#using-apiary-style-guide) option to the [Apiary CLI](https://github.com/apiaryio/apiary-client). With it, you can fetch and test your Apiary Style Guides against a local document. 
