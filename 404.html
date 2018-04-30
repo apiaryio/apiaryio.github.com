@@ -17,12 +17,7 @@ permalink: /404.html
           <h1>{{ post.title }}</h1>
           <p>{{ post.excerpt }}</p>
           <p class="authorDate inline">{{ site.authors[post.author].name }} — {{ post.date | date_to_string }}</p>
-        </a>
-          {% if post.comments %}
-            <p class="commentsCount"><a href="{{ post.url }}/#comments" class="commentsLink" data-disqus-identifier="{{ post.url }}"></a></p>
-            {% assign useComments = true %}
-          {% endif %}
-        </div>
+        </a></div>
     {% endfor %}
   </div>
 </div>
