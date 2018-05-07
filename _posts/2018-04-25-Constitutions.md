@@ -1,12 +1,12 @@
 ---
 title: Announcing Apiary Constitutions
-excerpt: Introducing a new tool for writing API Style Guides
+excerpt: How to write API Style Guide rules collaboratively
 layout: post
 date: 2018-04-25 08:00:00 +0200
 author: corvax
 published: true
 ---
- 
+
 We’ve been a long time proponents of practices like [design-first](https://apiary.io/how-to-build-api) and contract-driven development. For a while, part of our Apiary Pro offerings are also [Style Guides](https://help.apiary.io/tools/style-guide/). It’s a way to programatically define and check your company API Style Guides. For most of the world, API Style Guides are these long, static PDFs written by architects, without any tools to apply them to the API design phase or check how well implemented they are.
 
 [Apiary Style Guides](https://help.apiary.io/tools/style-guide/) are a tool for checking consistency of your API Designs. They are integrated into the [Apiary Editor](https://help.apiary.io/tools/apiary-editor/), but writing your own rules used to be a laborious task. We wanted to simplify the experience.
