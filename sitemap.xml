@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://blog.apiary.io/2018/04/25/Constitutions</loc>
+<lastmod>2018-04-25T06:00:00+00:00</lastmod>
+</url>
+<url>
 <loc>https://blog.apiary.io/2018/04/25/Evolving-Embed</loc>
 <lastmod>2018-04-25T06:00:00+00:00</lastmod>
 </url>
@@ -224,6 +228,6 @@
 </url>
 <url>
 <loc>https://blog.apiary.io/akamai/sureroute-test-object.html</loc>
-<lastmod>2018-05-02T09:51:47+00:00</lastmod>
+<lastmod>2018-05-07T15:10:35+00:00</lastmod>
 </url>
 </urlset>
