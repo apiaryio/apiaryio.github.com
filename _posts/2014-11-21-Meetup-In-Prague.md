@@ -21,7 +21,7 @@ In the end, Adam, lead developer of [**Dredd**](https://github.com/apiaryio/dred
 
 For those of you who could not attend, we have video of their presentations. 
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/qjadM_6ZN8s" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/qjadM_6ZN8s" frameborder="0" allowfullscreen></iframe>
 
 We thank everyone who came to this meetup and made it such a great success! Apiary team had a great time meeting you all. 
 
