@@ -50,15 +50,15 @@ end
 namespace :serve do
   desc 'Runs a local server *with* draft posts and watches for changes'
   task :drafts do
-    puts 'Starting the server locally on http://localhost:4000'
-    sh 'open http://localhost:4000'
+    puts 'Starting the server locally on http://127.0.0.1:4000'
+    sh 'open http://127.0.0.1:4000'
     sh 'bundle exec jekyll serve --watch --drafts --port 4000'
   end
 
   desc 'Runs a local server *without* draft posts and watches for changes'
   task :published do
-    puts 'Starting the server locally on http://localhost:4000'
-    sh 'open http://localhost:4000'
+    puts 'Starting the server locally on http://127.0.0.1:4000'
+    sh 'open http://127.0.0.1:4000'
     sh 'bundle exec jekyll serve --watch --port 4000'
   end
 end
@@ -107,8 +107,9 @@ end
 
 desc 'Test build'
 task :test do
-  sh "bundle exec jekyll doctor"
-  sh "bundle exec jekyll build --config _config.yml,_config_test.yml"
+  sh 'bundle exec jekyll doctor'
+  sh 'bundle exec jekyll build --config _config.yml,_config_test.yml'
+
   HTMLProofer.check_directory('./_site', {
     :url_ignore => [
       /relishapp.com/, # blacklisted?
