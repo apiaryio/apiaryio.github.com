@@ -16,7 +16,7 @@ One of my favourites is dynamic values. This feature allows you to populate gene
 
 We offer two extensions for Paw. The first one allows you to import your API Blueprints into Paw. This allows you to perform the requests in your API Blueprint and introspect the responses directly from a GUI application on your Mac.
 
-<iframe width="420" height="315" src="//www.youtube-nocookie.com/embed/NZQXpDyqfGI" frameborder="0" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=NZQXpDyqfGI" target="_blank"><img width="560" height="315" src="/images/2014-12-02-Paw-Integration/video.png" alt="API Blueprint in Paw" /></a>
 
 Our second extension allows you to export your requests in Paw as an API Blueprint so you can copy the request and response into your blueprint.
 
