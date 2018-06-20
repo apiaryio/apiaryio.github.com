@@ -16,16 +16,19 @@
   <meta name="twitter:creator" content="@apiaryio">
 
   <meta name="twitter:title" content="{{ page.title }}&mdash;Apiary Blog">
-  <meta property="og:title" content="{{ page.title }}&mdash;Apiary Blog">
+  <meta name="twitter:image" content="{{ site.url | append: '/images/apiary-logotype-3D-only.png' }}">
 
+  <meta property="og:title" content="{{ page.title }}&mdash;Apiary Blog">
+  <meta property="og:image" content="{{ site.url | append: '/images/apiary-logotype-3D-only.png' }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  
   {% if page.excerpt %}
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta name="description" content="{{ page.excerpt | escape }}&mdash;Apiary Blog">
     <meta name="twitter:description" content="{{ page.excerpt | escape }}&mdash;Apiary Blog">
     <meta property="og:description" content="{{ page.excerpt | escape }}&mdash;Apiary Blog">
   {% else %}
-    <meta name="twitter:image" content="{{ site.static }}/images/apiary-logotype-3D-only.png">
-    <meta property="og:image"  content="{{ site.static }}/images/apiary-logotype-3D-only.png">
     <meta property="og:url" content="{{ site.url }}">
     <meta name="description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
     <meta name="twitter:description" content="The Apiary Blog&mdash;Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
