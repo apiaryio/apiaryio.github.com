@@ -26,7 +26,7 @@ We're also super-excited to be joining the [amazing lineup] of developer-focused
 Over the last 12 months, you've created over **25,000 APIs in Apiary**, making it the **largest hub of APIs**, unmatched in scope, run by you. We couldn't be more thankful! But both we and web APIs are really just getting started. We have some big ideas on how to simplify the lifecycle of designing, developing and supporting APIs—and now we  have the resources to make them happen.
 
 [our platform tools]: https://apiblueprint.org/#tooling
-[examples]: http://mysql.com/
+[examples]: https://www.mysql.com/
 [David]: http://www.flybridge.com/team/David-Aronoff
 [Steve]: http://baselinev.com/founder/
 [API Blueprint]: https://github.com/apiaryio/api-blueprint

@@ -58,16 +58,14 @@ $ curl https://polls.apiblueprint.org/questions/1
 
 We've deployed an instance of this API and it's accessible for anyone to experiment with: `https://polls.apiblueprint.org/`. You can also deploy your own instance of the Polls API to Heroku with a single click:
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/apiaryio/polls-api)
+<a href="https://heroku.com/deploy?template=https://github.com/apiaryio/polls-api"><img src="/images/2015-03-03-Polls-API-Blueprint-Tutorial-Examples/deploy-to-heroku.png" alt="Deploy to Heroku" /></a>
 
 ## Tested
 At Apiary we care about the whole **API lifecycle**. This is why we have created a testing tool for your blueprints and APIs – [Dredd](https://blog.apiary.io/2013/10/10/No-more-outdated-API-documentation).
 
 The Polls API implementation demonstrates the use of Dredd and as such it's tested in a continuous integration as described in the [How To Test REST API with API Blueprint and Dredd](http://blog.apiary.io/2013/10/17/How-to-test-api-with-api-blueprint-and-dredd/) article.
 
-And yes, the badge below is live – just click on it to find out!
-
-[![Circle CI](https://circleci.com/gh/apiaryio/polls-api.svg?style=svg)](https://circleci.com/gh/apiaryio/polls-api)
+<a href="https://circleci.com/gh/apiaryio/polls-api"><img src="/images/2015-03-03-Polls-API-Blueprint-Tutorial-Examples/polls-api.svg" alt="Circle CI" /></a>
 
 ## Apiary Integration
 Last but not least, we've changed the _default blueprint_ used when you create a new API in Apiary to the simple version of Polls API.
