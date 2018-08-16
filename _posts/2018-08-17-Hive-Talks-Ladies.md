@@ -13,14 +13,14 @@ What to consider when transitioning into a career in tech? What types of roles a
 
 Those will be some of the questions we'll try to answer together on this special edition of Hive Talks - the first Ladies' Edition meetup.
 
-![GitHub Repos Association](/images/2018-02-19-Hive-Talks-Security/2018-02-19-Hive-Talks-Logo.png)
+![Hive Talks](/images/2018-02-19-Hive-Talks-Security/2018-02-19-Hive-Talks-Logo.png)
 
 Agenda:
 
 19.00-19.30: Warm up and introductions with refreshments  
 19.30-20.15: Our ways into technology - panel discussion  
 20.15-20.30: Break  
-20.30-21.30: Brainstorm sessions in groups to share experiences and design strategies for making a career change  
+20.30-21.30: Brainstorm sessions in groups
 
 Panelists:
 
