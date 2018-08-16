@@ -158,7 +158,6 @@ Let me show you a couple of examples:
 * [Gist Fox API](http://docs.gistfoxapi.apiary.io/?3ColumnDocumentation=1)
 * [Indonesian Elections 2014](http://docs.candidateapi.apiary.io/?3ColumnDocumentation=1)
 * [Wink](http://docs.wink.apiary.io/?3ColumnDocumentation=1)
-* [SendOutCards](http://docs.socapi.apiary.io/?3ColumnDocumentation=1)
 
 ## Getting Started
 
