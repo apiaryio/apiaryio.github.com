@@ -2,14 +2,16 @@ version: 2
 jobs:
   test:
     docker:
-      - image: circleci/ruby
+      - image: jekyll/jekyll
+    working_directory: /srv/jekyll
     steps:
       - checkout
       - run: bundle
       - run: bundle exec rake test
   deploy:
     docker:
-      - image: circleci/ruby
+      - image: jekyll/jekyll
+    working_directory: /srv/jekyll
     steps:
       - checkout
       - run: bundle
