@@ -44,17 +44,6 @@ Note: When you are searching for a query like `Hello World`, make sure to switch
 Ok, it is the time to look how others are solving some popular API design
 patterns.
 
-## Pagination
-
-Is your resource a collection of elements or other resources, such as a search
- result? Maybe it is a good idea to split the response into pages.
-
-Searching blueprints for the `page` word seems like to be a good start to see
-how others dealt with this task.
-
-[API pagination on GitHub](https://github.com/search?q=page+language%3A%22API+Blueprint%22&ref=searchresults&type=Code&utf8=%E2%9C%93):
-`page language:"API Blueprint"`
-
 ## Authentication
 
 Doing authentication properly is no easy task. Let’s see how `OAuth2` is used in

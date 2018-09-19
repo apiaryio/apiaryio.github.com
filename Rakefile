@@ -115,6 +115,7 @@ task :test do
       /relishapp.com/, # blacklisted?
       /nike.com/, # blacklisted?
       /https:\/\/blog.apiary.io\/20/, # Prevent checking for unpublished articles
+      /https:\/\/github\.com\/search/, # Prevent 429 limiting
     ],
     :typhoeus => {
       :headers => {
