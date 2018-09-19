@@ -7,12 +7,12 @@ author: zdenek
 published: YES
 ---
 
-As you may know the [New API Blueprint Format](/New-API-Blueprint-Format-Basics/) will be rolling out soon and today I would like to discuss how it will be done.
+As you may know the [New API Blueprint Format](https://blog.apiary.io/New-API-Blueprint-Format-Basics/) will be rolling out soon and today I would like to discuss how it will be done.
 
 Before we get started please note the New Format is not live as of the date of writing this post. I will make an official announcement here on Apiary blog and inside Apiary application once the Format goes live.
 
 ## 1A Format Specification
-First I would like to thank our awesome users who contributed to the New Format in reaction to my previous [post](/New-API-Blueprint-Format-Basics/).
+First I would like to thank our awesome users who contributed to the New Format in reaction to my previous [post](https://blog.apiary.io/New-API-Blueprint-Format-Basics/).
 
 In the process we have made quite a few changes to the Format. For example, to improve both readability and the process of writing we have decided to leave the "header marks (#) forest" in favor of utilizing "much cleaner" Markdown lists, like so:
 

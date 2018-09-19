@@ -19,6 +19,6 @@ Since our last funding announcement Apiary has grown substantially&mdash;from 25
 Jakub Nešetřil, Apiary CEO
 
 [Flybridge]: http://www.flybridge.com
-[Dredd article]: /Test-Tab-Now-Available-in-Apiary/
+[Dredd article]: https://blog.apiary.io/Test-Tab-Now-Available-in-Apiary/
 [Enterprise]: https://enterprise.apiary.io/
 [Team]: https://apiary.io/team
