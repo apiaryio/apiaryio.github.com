@@ -8,4 +8,5 @@ git remote set-url origin "https://${GH_TOKEN}@github.com/apiaryio/apiaryio.gith
 
 echo "Run rake deploy"
 git config --global -l
+git config --local -l
 bundle exec rake deploy
