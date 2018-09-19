@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>Shellshock Bash Security &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="Shellshock Bash Security &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="Shellshock Bash Security &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/Shell-Shock-Security">
+    <meta name="description" content="Securing customer data at Apiary &mdash; Apiary Blog">
+    <meta name="twitter:description" content="Securing customer data at Apiary &mdash; Apiary Blog">
+    <meta property="og:description" content="Securing customer data at Apiary &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/Shell-Shock-Security">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,31 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Shellshock Bash Security</h1>
+    
+      <p><span class="minority">By</span> <strong>Neha Sondhi</strong>
+        (<a href="https://twitter.com/NSondhi5">NSondhi5</a>, <a href="mailto:neha@apiary.io">neha@apiary.io</a>) <span class="minority">on</span>&nbsp;07&nbsp;Oct&nbsp;2014
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>The recent announcement of the Shellshock bug <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1141597">CVE-2014-6271</a>, followed by <a href="https://securityblog.redhat.com/2014/09/24/bash-specially-crafted-environment-variables-code-injection-attack/">CVE-2014-7169</a> had raised concerns about security of customer data.</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<p>At Apiary, we are pleased to announce that we do not have any GNU Bash-run service. We have also checked all our service providers who have anything to do with customer data and have confirmed that neither of them run any service by GNU Bash. Therefore, we are sure that there is no security flaw to be exploited in our system.</p>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<p>Apart from that, we have also updated all local <code class="highlighter-rouge">/bin/bash</code> binaries found on our systems and checked with our service providers that they did the same.</p>
+
+<p>Security is important to us and we have taken all necessary steps to make sure there are no flaws.</p>
+
+<p>You can <a href="https://www.troyhunt.com/2014/09/everything-you-need-to-know-about.html">Read more</a> about this bug.</p>
+
+
+
   </div>
 </div>
+
 
 </div>
 

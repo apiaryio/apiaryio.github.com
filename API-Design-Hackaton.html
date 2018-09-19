@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>World’s First API Design Hackathon &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="World’s First API Design Hackathon &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="World’s First API Design Hackathon &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/API-Design-Hackaton">
+    <meta name="description" content="We were at the World&#39;s first API Design Hackathon. &mdash; Apiary Blog">
+    <meta name="twitter:description" content="We were at the World&#39;s first API Design Hackathon. &mdash; Apiary Blog">
+    <meta property="og:description" content="We were at the World&#39;s first API Design Hackathon. &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/API-Design-Hackaton">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,74 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>World’s First API Design Hackathon</h1>
+    
+      <p><span class="minority">By</span> <strong>Z</strong>
+        (<a href="https://twitter.com/zdne">zdne</a>, <a href="mailto:z@apiary.io">z@apiary.io</a>) <span class="minority">on</span>&nbsp;21&nbsp;Apr&nbsp;2016
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>On the 16th of April, Emmanuel, Jakub and Z from Apiary took part in the world’s first API Design Hackathon at GitHub HQ. The hackathon was organized by the San Francisco API Craft group and sponsored by Apiary, Mulesoft and GitHub.</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<p>It was a sunny Saturday in San Francisco when group of about 30 API Crafters met to take on improving the <a href="https://developer.github.com/v3/gists/">GitHub Gist API</a>. There were no other guidelines how to improve the design, be it adding a new feature, changing the existing behavior or architectural style.</p>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<p>We started at 10AM in the GitHub offices and after a quick breakfast, we split into 3 teams.</p>
+
+<p><img width="640" src="/images/2016-04-21-API-Design-Hackaton/breakfast.jpg" alt="breakfast" /></p>
+
+<p>Each team used a different toolset and API description language: Apiary (API Blueprint &amp; Swagger), Apigee (Swagger) and Mulesoft (RAML).</p>
+
+<h2 id="the-api-design-session">The API Design Session</h2>
+
+<p>The teams spent the morning and part of afternoon tinkering with the API Design and the tools. What was the outcome of all the day-long discussions and coworking?</p>
+
+<p>Here is the example how the Z’s team (Jesse, Gerald, Joshua, Craig and Kingsley) worked:</p>
+
+<blockquote>
+  <p><a href="https://twitter.com/zdne">Z</a>: “My team decided to use hypermedia architectural style, the <a href="https://github.com/kevinswiber/siren">Siren hypermedia media type</a> and to add the feature of collaborators to the Gist API. We first went through the semantics of Gists and picked a portion of the existing API we wanted to redesign – namely gist, list of gists, user, list of users and the API root resource.</p>
+</blockquote>
+
+<blockquote>
+  <p>We then drew a state machine diagram on a whiteboard and with the help of <a href="https://twitter.com/kevinswiber">Kevin Swiber</a>, author of Siren, described the API in API Blueprint.</p>
+</blockquote>
+
+<blockquote>
+  <p>It was a great day for all of us to learn about API Design, Apiary and its tooling, and the Siren media type.”</p>
+</blockquote>
+
+<p><img width="640" src="/images/2016-04-21-API-Design-Hackaton/team.jpg" alt="team" /></p>
+
+<p>At 3:30pm, the teams got together in the auditorium and presented their <a href="https://github.com/apicraftsf/hackathon2016">findings</a>.</p>
+
+<blockquote>
+  <p><a href="https://twitter.com/craigoda1">Craig Oda</a>: “This was so awesome! I hope you are extending API Blueprint right now to enable it to produce dynamic API state diagrams for collaborative brainstorm. As the name implies, “Blueprint,” already has good branding to make it into a definition language and toolset to be used like a CAD blueprint that house architects create for construction people to use to build houses. Thanks for your help!”</p>
+</blockquote>
+
+<h2 id="what-is-api-craft">What is API Craft?</h2>
+
+<p><img width="640" src="/images/2016-04-21-API-Design-Hackaton/emmanuel.jpg" alt="boss" /></p>
+
+<blockquote>
+  <p>From <a href="http://www.apicraft.org">apicraft.org</a>: We are a collection of people from all over the world who care about the art of building, maintaining and consuming APIs.</p>
+</blockquote>
+
+<blockquote>
+  <p>We got started in 2013, when a small group of API fanatics gathered for an Open Space conference in Detroit. Since then, local API Craft groups have sprouted up all over the world and we have come together as a global group every year to continue the conversation.</p>
+</blockquote>
+
+<blockquote>
+  <p>If you care about the craft of building great APIs, we hope you will join the conversation in any way you can – local gatherings, our annual conference, or <a href="https://groups.google.com/forum/#!forum/api-craft">online</a>.</p>
+</blockquote>
+
+<p>To get updates on upcoming events in San Francisco, please join the API Craft SF <a href="http://www.meetup.com/API-Craft-San-Francisco/">meetup group</a>.</p>
+
+
   </div>
 </div>
+
 
 </div>
 

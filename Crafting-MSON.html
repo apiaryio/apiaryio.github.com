@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>Crafting MSON &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="Crafting MSON &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="Crafting MSON &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/Crafting-MSON">
+    <meta name="description" content="The journey of data structure design-needs &mdash; Apiary Blog">
+    <meta name="twitter:description" content="The journey of data structure design-needs &mdash; Apiary Blog">
+    <meta property="og:description" content="The journey of data structure design-needs &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/Crafting-MSON">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,65 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Crafting MSON</h1>
+    
+      <p><span class="minority">By</span> <strong>Z</strong>
+        (<a href="https://twitter.com/zdne">zdne</a>, <a href="mailto:z@apiary.io">z@apiary.io</a>) <span class="minority">on</span>&nbsp;10&nbsp;Oct&nbsp;2014
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>I do need to describe data, give them a (semantic) meaning and explain what you might (or might not) get.</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<p>Being a software engineer for so many years I have seen lots and lots of schemas, tables and arbitrary documents trying to capture what the data means.</p>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<p>Schemas are powerful, but if you have ever tried to write one you probably felt it is more pain than it needs to be. And not just for writing. Reading a schema is no fun either. Frankly, there are people who can’t read schema but still might care about your data.</p>
+
+<p>Have you ever seen a document on GitHub trying to describe a JSON blob? There are so many of them. And every single one with has its own formatting and rules its author had to come up with. Now, there is nothing wrong with the diversity, but what if we can unite these as (or in) plain text, human readable documents? What if we can  not only make them human readable but also a machine readable, so a program can verify whether an actual data matches what is written in this document?</p>
+
+<p>Let’s not stop dreaming! What if you can get various format serializations (representations) from such a document?</p>
+
+<p>Describe your data once.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code># Contact
+- name: John Appleseed
+- email: john@apple.com (required)
+</code></pre>
+</div>
+
+<p>This is MSON – the plain text syntax for describing arbitrary data structures.</p>
+
+<h2 id="status">Status</h2>
+<p>I am running late with the delivery.</p>
+
+<p>The initial proposal was released back in April 2014. At first glance, the format has changed very little since that. Actually, the example above is identical to what it would be back in April. So where did those five months go?</p>
+
+<p>Details. Details for some, but to me those months were spent on consistency between all the constructs, clarity of the language and most importantly, simplicity.</p>
+
+<p>Exhausted but happy, I can proudly present you <strong>mature (but still young) syntax</strong> for describing data structures in plain text – <a href="http://github.com/apiaryio/mson">MSON</a>.</p>
+
+<p>After five months of refining and polishing every detail, we have arrived at the point where I can say we have THE right syntax. Powerful, yet elegant, and unobtrusive, to capture most data structure design-needs. DRY enough to help you condense your ideas in a really contained space should you need to. Flexible and verbose enough to allow you put it as much details, drawings or tables as you want. Compact, consistent and tidy. All this in a human readable form machines can understand too.</p>
+
+<p>At the moment MSON does not include all the powerful features JSON Schema has. This wasn’t in our story (at least for now). Still, the way MSON is designed, it can be easily extended on-demand later.</p>
+
+<p>You can <strong>start using the <a href="https://github.com/apiaryio/mson/blob/master/MSON%20Specification.md">MSON syntax</a> today</strong> for describing your data in plain text. But there is so much more to come.</p>
+
+<h2 id="future-steps">Future Steps</h2>
+<p>We are currently working on the MSON parser that will allow other applications to manipulate MSON documents through the <a href="https://github.com/apiaryio/mson-ast">MSON AST</a> (which is, no surprise, described in MSON).</p>
+
+<p>On such application, currently being developed, is a “representation producer” – a tool that will take MSON and will create a serialization of it in requested media type. Another example is the upcoming integration with <a href="https://apiblueprint.org">API Blueprint</a> to facilitate the <a href="https://github.com/apiaryio/api-blueprint/issues/25">description</a> of HTTP message-bodies and API resources in general.</p>
+
+<p>If we share at least a part of the journey together, please, give MSON a try next time you will be designing a data structure and let me know. I would love to hear your thoughts.</p>
+
+<p>Thank you!</p>
+
+
+
   </div>
 </div>
+
 
 </div>
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>Client First &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="Client First &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="Client First &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/Client-First">
+    <meta name="description" content="Think about your clients—both humans and machines—before starting to design your constraints &mdash; Apiary Blog">
+    <meta name="twitter:description" content="Think about your clients—both humans and machines—before starting to design your constraints &mdash; Apiary Blog">
+    <meta property="og:description" content="Think about your clients—both humans and machines—before starting to design your constraints &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/Client-First">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,38 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Client First</h1>
+    
+      <p><span class="minority">By</span> <strong>Lukas Linhart</strong>
+        (<a href="https://twitter.com/almadcz">almadcz</a>, <a href="mailto:lukas@apiary.io">lukas@apiary.io</a>) <span class="minority">on</span>&nbsp;03&nbsp;Dec&nbsp;2015
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>If there is a key in your payload but no client to use it, does it really exist?</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<p>Every architecture starts with constraints, and every constraint is introduced to achieve desirable results. In order to get your API goals right, you inevitably need to think about how your API is going to be consumed.</p>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<p>Writing things down into an API Description is a great start, but it’s only the beginning. Without actually talking and prototyping with the other side, chances are that you are going to put emphasis on the needs of the server and ignore the needs of the client.</p>
+
+<p>One of the big dangers involved is imagining API usage <em>for</em> the clients. If you don’t have actual constraints in your API that force them to actually behave the way you’ve designed, your design will most probably stay in form of proposal.</p>
+
+<p>Want client developers to handle failures gracefully? Return failure responses more often. Want them to treat your API as state machine and navigate through links? Obfuscate URLs and change them often. Confident in our API change coping strategy? Do (breaking) changes daily.</p>
+
+<p>Engineering is a hard game of trade-offs; intents above may not be for you. But unless you actually fulfill your intents—maybe to their extreme—you can’t rely on them.</p>
+
+<p>All new approaches in APIs are chicken-and-egg problems where agreement must be reached, and I argue that clients are the more powerful force here.</p>
+
+<p>Without clients sending <code class="highlighter-rouge">ETag</code> back, you don’t have caching, you have larger headers. Without API clients actually following HAL links, you don’t have a hypermedia API, you have inflated payloads. Without a terrific and safe execution environment, you don’t have Code On Demand, you have injected garbage.</p>
+
+<p>If you feel usage starts on server, start sending LISP to your web browsers today and wait for them to catch up.</p>
+
+
   </div>
 </div>
+
 
 </div>
 

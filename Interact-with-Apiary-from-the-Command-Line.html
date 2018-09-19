@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>Interact with Apiary from the Command Line &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="Interact with Apiary from the Command Line &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="Interact with Apiary from the Command Line &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/Interact-with-Apiary-from-the-Command-Line">
+    <meta name="description" content="Use our CLI tool to preview, fetch, and publish your API Blueprints &mdash; Apiary Blog">
+    <meta name="twitter:description" content="Use our CLI tool to preview, fetch, and publish your API Blueprints &mdash; Apiary Blog">
+    <meta property="og:description" content="Use our CLI tool to preview, fetch, and publish your API Blueprints &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/Interact-with-Apiary-from-the-Command-Line">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,58 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Interact with Apiary from the Command Line</h1>
+    
+      <p><span class="minority">By</span> <strong>Stephen Mizell</strong>
+        (<a href="https://twitter.com/Stephen_Mizell">Stephen_Mizell</a>, <a href="mailto:stephen@apiary.io">stephen@apiary.io</a>) <span class="minority">on</span>&nbsp;05&nbsp;Nov&nbsp;2014
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>We thought we’d put together a blog post to highlight another way for you to work with Apiary, and that is through using our <a href="http://client.apiary.io/">Apiary CLI tool</a>. Everyone has their own workflow, and sometimes that workflow involves their favorite editor and the command line. This Apiary CLI tool can allow you to stay in that workflow while interacting directly with Apiary through our <a href="http://docs.apiary.apiary.io/">API</a>.</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<h2 id="previewing-locally">Previewing Locally</h2>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<p>With the Apiary CLI tool, you can <a href="http://client.apiary.io/#preview">preview</a> what your API Blueprint would look like on Apiary while working in your favorite editor.</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code>apiary preview --server
+</code></pre>
+</div>
+
+<p>By default, this is going to be looking in the current directory for an API Blueprint file named <code class="highlighter-rouge">apiary.apib</code>, which can be changed with the <code class="highlighter-rouge">--path</code> flag. Every refresh of the page will send your API Blueprint to Apiary to be rendered and sent back to you.</p>
+
+<p>This is great for allowing Apiary to be part of your current workflow without requiring you to use our editor, and since you see exactly what we generate, you know your changes will be right when you publish them.</p>
+
+<h2 id="fetching-from-apiary">Fetching from Apiary</h2>
+
+<p>To make this work even better with your workflow, you can also <a href="http://client.apiary.io/#fetch">fetch</a> and <a href="http://client.apiary.io/#publish">publish</a> your API Blueprints. If you have existing documentation at Apiary, you can easily grab that document for developing and previewing locally.</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code>apiary fetch --api-name<span class="o">=</span>API_NAME
+</code></pre>
+</div>
+
+<p>This command grabs the published documentation and saves it as <code class="highlighter-rouge">apiary.apib</code>.</p>
+
+<h2 id="publishing-to-apiary">Publishing to Apiary</h2>
+
+<p>Once you’ve made your changes and previewed how they look locally, you can publish those changes directly to Apiary with another simple command.</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code>apiary publish --api-name<span class="o">=</span>API_NAME
+</code></pre>
+</div>
+
+<p>No need to copy and paste to Apiary–just publish your changes and keep working.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The goal with this is to make your life easier by providing tools that can fit directly into your workflow. The Apiary CLI tool is <a href="https://github.com/apiaryio/apiary-client">open source</a>, and we are always interested in pull requests. Additionally, if you have any thoughts on ways to make this tool even better, please let us know!</p>
+
+
   </div>
 </div>
+
 
 </div>
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>Working with Apiary &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="Working with Apiary &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="Working with Apiary &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/OneNote-Guest-Blog">
+    <meta name="description" content="Our first guest blog from Nick Barnwell working at Microsoft OneNote team. Read about their experience with Apiary &mdash; Apiary Blog">
+    <meta name="twitter:description" content="Our first guest blog from Nick Barnwell working at Microsoft OneNote team. Read about their experience with Apiary &mdash; Apiary Blog">
+    <meta property="og:description" content="Our first guest blog from Nick Barnwell working at Microsoft OneNote team. Read about their experience with Apiary &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/OneNote-Guest-Blog">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,56 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Working with Apiary</h1>
+    
+      <p><span class="minority">By</span> <strong>Nick Barnwell</strong>
+        (<a href="https://twitter.com/"></a>, <a href="mailto:nib@microsoft.com">nib@microsoft.com</a>) <span class="minority">on</span>&nbsp;09&nbsp;Oct&nbsp;2014
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>From its inception the <a href="https://dev.onenote.com/">OneNote API</a> team has been committed to
+delivering developers a modern, first-class developer experience. Ardent
+admirers of <a href="http://stripe.com">Stripe</a>, <a href="http://twilio.com">Twilio</a>, and <a href="https://developer.akamai.com">Akamai’s</a>
+intuitive APIs and documentation, we were keen to provide a similar experience
+when we launched our <a href="https://dev.onenote.com/">completely redesigned developer portal</a>.</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<p><img src="/images/2014-10-08-OneNote-Guest-Blog/OneNote.png" alt="OneNote" /></p>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<p>Thus, began our search for an API design and documentation solution that:</p>
+
+<ul>
+  <li>Offered developers fantastic documentation and an interactive console</li>
+  <li>Worked with tools we already know and use daily, like <a href="http://johnmacfarlane.net/pandoc/">pandoc</a> and <a href="http://git-scm.com/">git</a></li>
+  <li>Was extensible, open, and standards-based, should we need to suggest
+enhancements or build out features specific to our requirements.</li>
+</ul>
+
+<p>In the course of our investigation we tried just about every solution on the
+market before coming across Apiary. The quality of the generated
+documentation, the flexibility of the API Blueprint format, and the small touches
+like the Traffic Inspector and GitHub syncing got us interested. The bevy of
+<a href="https://github.com/apiaryio">tools they offer to developers</a> and their willingness to accept
+<a href="https://github.com/apiaryio/api-blueprint/pulls?q=is%3Apr+is%3Aclosed">pull requests</a> sealed the deal.</p>
+
+<p>With a decision made, adopting Apiary was a breeze. We were able to setup our
+team on GitHub and use a standard code review process to audit changes and
+ensure all of our reference materials were correct as we ported from our former
+documentation host. Our new developer portal, which prominently features the new
+reference documentation, <a href="http://blogs.msdn.com/b/onenotedev/archive/2014/09/17/announcing-the-new-onenote-dev-center-with-interactive-docs.aspx">launched</a> on the 15th September and has been a huge
+success with our customers, in no small part due to Apiary.</p>
+
+<p>Long story short: we’ve since recommended Apiary to several other teams at
+Microsoft and look forward to continuing our partnership as we strive to give
+developers the thoughtfully designed APIs and documentation that they deserve.</p>
+
+
+
   </div>
 </div>
+
 
 </div>
 

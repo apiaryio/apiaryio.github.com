@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>No more outdated API documentation! &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="No more outdated API documentation! &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="No more outdated API documentation! &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/No-more-outdated-API-documentation">
+    <meta name="description" content="Write blueprints and let Dredd do his job &mdash; Apiary Blog">
+    <meta name="twitter:description" content="Write blueprints and let Dredd do his job &mdash; Apiary Blog">
+    <meta property="og:description" content="Write blueprints and let Dredd do his job &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/No-more-outdated-API-documentation">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,59 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>No more outdated API documentation!</h1>
+    
+      <p><span class="minority">By</span> <strong>netmilk</strong>
+        (<a href="https://twitter.com/ntmlk">ntmlk</a>, <a href="mailto:adam@apiary.io">adam@apiary.io</a>) <span class="minority">on</span>&nbsp;10&nbsp;Oct&nbsp;2013
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>Your API is only as good as its documentation. API Documentation is a must for any public API and a need for you private APIs. To have always valid documentation is a holy grail for any API owner. That is why I’m very excited to announce the release of the <strong><a href="https://github.com/apiaryio/dredd">Dredd</a> command-line test runner for <a href="https://apiblueprint.org/">API Blueprint</a></strong>.</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<p><img src="http://blog.apiary.io/images/Dredd.png?1" alt="Dredd" /></p>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<h2 id="write-blueprints">Write blueprints!</h2>
+
+<p>OK, we want the always up-to-date documentation. What would be the first thought? Why not generate an API documentation from the code? <strong>Naughty, naughty! Bad idea!</strong></p>
+
+<p>Write a blueprint! When you generate docs from the code you are creating ad-hoc rules inferred from code, without actually getting any valuable feedback. Don’t be arrogant when you can be generous.</p>
+
+<p>API Blueprint is a contract with the consumers of your API. You can publicize or even open-source your API Blueprint and boldly invite anybody to the design process of your API. That backend guy, your frontend coder, mobile developers and your customers in the first place. They don’t need and often don’t want to know what’s under the hood. API Blueprint is a language agnostic, human readable format to discuss things about web APIs.</p>
+
+<p>You don’t need to know anything about programming to contribute to the discussion. Don’t hesitate to invite even your UI designer to the table. He or she will surely feel comfortable at the table, and believe me, you will definitely get some spot-on comments. Simply because this approach is natural in the non-development environments.</p>
+
+<p>Writing API Blueprint is like making wireframes. Wireframes are often called mocks, aren’t they? Don’t be surprised, <a href="http://apiary.io">Apiary</a> will generate a working mock server from your API blueprint. It means <strong>you can start hacking against your future API</strong> immediately.</p>
+
+<p>Can you imagine this open discussion with your <code class="highlighter-rouge">/app/controllers</code> folder on the table?!? Do you feel how open the philosophy of API Blueprint and Apiary is? The iterative collaboration around API Blueprint ensures the best possible feedback and API design. It lets you create beautiful APIs which are truly consumable and competitive.</p>
+
+<h2 id="let-dredd-test-your-documentation">Let Dredd test your documentation</h2>
+
+<p>I have promised always up-to-date API documentation. You might think that to not generate documentation from the code and thus decoupling the API documentation from the implementation is unnecessary overhead. But it is not. Here comes <a href="https://github.com/apiaryio/dredd">Dredd</a>.</p>
+
+<p>Dredd is a command-line test runner for testing of your backend API application on the HTTP layer. <strong>Dredd enables documentation-driven development and test-driven development of your APIs.</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ npm install -g dredd
+$ dredd ./apiary.apib http://localhost:3000
+Machines &gt; Machines collection &gt; Create a Machine &gt; :
+  POST /machines "{\n  \"type\": \"b...
+  PASS
+$ echo $?
+0
+</code></pre>
+</div>
+
+<p>Testing API Blueprint amplifies the contract benefits. When you negotiate a change in the contract tests will fail until your implementation is in accordance with the documentation. Similarly, should you rename a key in an HTTP response JSON you have to discuss it with the contract to make the tests pass.</p>
+
+<p>Next: <a href="http://blog.apiary.io/2013/10/17/How-to-test-api-with-api-blueprint-and-dredd/">Howto test REST API with API Blueprint and Dredd</a></p>
+
+
+
   </div>
 </div>
+
 
 </div>
 

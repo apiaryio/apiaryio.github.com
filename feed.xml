@@ -7,51 +7,59 @@
     <atom:link href="https://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Hive Talks - Ladies' Edition</title>
+        <description>Join the meetup we&#39;re organizing at Apiary&#39;s Prague office on 20th of August</description>
+        <pubDate>Thu, 16 Aug 2018 08:00:00 +0000</pubDate>
+        <link>https://blog.apiary.io/Hive-Talks-Ladies</link>
+        <guid isPermaLink="true">https://blog.apiary.io/Hive-Talks-Ladies</guid>
+      </item>
+    
+      <item>
         <title>Announcing Apiary Constitutions</title>
         <description>How to write API Style Guide rules collaboratively</description>
         <pubDate>Wed, 25 Apr 2018 06:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2018/04/25/Constitutions</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2018/04/25/Constitutions</guid>
+        <link>https://blog.apiary.io/Constitutions</link>
+        <guid isPermaLink="true">https://blog.apiary.io/Constitutions</guid>
       </item>
     
       <item>
         <title>Evolving Embed</title>
         <description>What&#39;s new with our Embed feature</description>
         <pubDate>Wed, 25 Apr 2018 06:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2018/04/25/Evolving-Embed</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2018/04/25/Evolving-Embed</guid>
+        <link>https://blog.apiary.io/Evolving-Embed</link>
+        <guid isPermaLink="true">https://blog.apiary.io/Evolving-Embed</guid>
       </item>
     
       <item>
         <title>Hive Talks - Security</title>
         <description>Join the meetup we&#39;re organizing at Apiary&#39;s Prague office on 6th of March</description>
         <pubDate>Mon, 19 Feb 2018 08:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2018/02/19/Hive-Talks-Security</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2018/02/19/Hive-Talks-Security</guid>
+        <link>https://blog.apiary.io/Hive-Talks-Security</link>
+        <guid isPermaLink="true">https://blog.apiary.io/Hive-Talks-Security</guid>
       </item>
     
       <item>
         <title>Creating reusable features in React + Redux</title>
         <description>How to create standard and reusable features in React + Redux</description>
         <pubDate>Mon, 12 Feb 2018 06:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2018/02/12/Reusable-features-in-React-Redux</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2018/02/12/Reusable-features-in-React-Redux</guid>
+        <link>https://blog.apiary.io/Reusable-features-in-React-Redux</link>
+        <guid isPermaLink="true">https://blog.apiary.io/Reusable-features-in-React-Redux</guid>
       </item>
     
       <item>
         <title>The next chapter for Markdown</title>
         <description>Apiary is embracing the CommonMark Markdown syntax for API description.</description>
         <pubDate>Wed, 28 Sep 2016 08:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2016/09/28/markdown</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2016/09/28/markdown</guid>
+        <link>https://blog.apiary.io/markdown</link>
+        <guid isPermaLink="true">https://blog.apiary.io/markdown</guid>
       </item>
     
       <item>
         <title>Test Your Swagger API</title>
         <description>Introducing support for Swagger in Dredd and more.</description>
         <pubDate>Thu, 25 Aug 2016 23:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2016/08/25/Test-Your-Swagger-API</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2016/08/25/Test-Your-Swagger-API</guid>
+        <link>https://blog.apiary.io/Test-Your-Swagger-API</link>
+        <guid isPermaLink="true">https://blog.apiary.io/Test-Your-Swagger-API</guid>
       </item>
     
       <item>
@@ -60,32 +68,24 @@
 
 </description>
         <pubDate>Sun, 10 Jul 2016 22:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2016/07/10/Scaling-Your-API-Design-Workflow</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2016/07/10/Scaling-Your-API-Design-Workflow</guid>
+        <link>https://blog.apiary.io/Scaling-Your-API-Design-Workflow</link>
+        <guid isPermaLink="true">https://blog.apiary.io/Scaling-Your-API-Design-Workflow</guid>
       </item>
     
       <item>
         <title>Securing APIs</title>
         <description>It’s a Big, Scary World out There.</description>
         <pubDate>Tue, 21 Jun 2016 22:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2016/06/21/Securing-APIs</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2016/06/21/Securing-APIs</guid>
+        <link>https://blog.apiary.io/Securing-APIs</link>
+        <guid isPermaLink="true">https://blog.apiary.io/Securing-APIs</guid>
       </item>
     
       <item>
         <title>World’s First API Design Hackathon</title>
         <description>We were at the World&#39;s first API Design Hackathon.</description>
         <pubDate>Thu, 21 Apr 2016 07:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2016/04/21/API-Design-Hackaton</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2016/04/21/API-Design-Hackaton</guid>
-      </item>
-    
-      <item>
-        <title>Making of Peacock</title>
-        <description>Behind the scenes of adding Swagger support.</description>
-        <pubDate>Sun, 24 Jan 2016 23:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/2016/01/24/Making-of-Peacock</link>
-        <guid isPermaLink="true">https://blog.apiary.io/2016/01/24/Making-of-Peacock</guid>
+        <link>https://blog.apiary.io/API-Design-Hackaton</link>
+        <guid isPermaLink="true">https://blog.apiary.io/API-Design-Hackaton</guid>
       </item>
     
   </channel>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>Continuously Integrate Your API Design &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="Continuously Integrate Your API Design &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="Continuously Integrate Your API Design &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/Test-Tab-Now-Available-in-Apiary">
+    <meta name="description" content="Apiary is now the only API design platform with tools for every stage of the API lifecycle &mdash; Apiary Blog">
+    <meta name="twitter:description" content="Apiary is now the only API design platform with tools for every stage of the API lifecycle &mdash; Apiary Blog">
+    <meta property="og:description" content="Apiary is now the only API design platform with tools for every stage of the API lifecycle &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/Test-Tab-Now-Available-in-Apiary">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,37 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Continuously Integrate Your API Design</h1>
+    
+      <p><span class="minority">By</span> <strong>Davita Strong</strong>
+        (<a href="https://twitter.com/"></a>, <a href="mailto:davita@apiary.io">davita@apiary.io</a>) <span class="minority">on</span>&nbsp;18&nbsp;Aug&nbsp;2015
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>Everyone knows manual testing is a huge drag and incredibly time consuming. This is why test automation has been become such the norm. At Apiary, we’ve have made it our duty to streamline such exhausting tasks, especially when it comes to designing and developing APIs. Sure, we made it easy for you to quickly design, prototype and document your APIs, but we were missing one pretty important piece to completing our platform of tools for the API design lifecycle — the ability to test API specification and documentation against its backend implementation. So, well over a year ago, one of our brave engineers set out on an adventurous task to solve this problem by inventing <a href="https://github.com/apiaryio/dredd">Dredd</a>, an open source HTTP API testing framework.</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<p><img width="640" src="/images/2015-08-18-Test-Tab-Now-Available-in-Apiary/screenshot1.png" alt="Apiary Testing Tab" /></p>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<h2 id="local-test-driven-development">Local Test Driven Development</h2>
+
+<p>Our open source project <a href="https://github.com/apiaryio/dredd">Dredd</a> has been such a huge hit within our community that we decided to take it one step further with Continuous integration and integrate the two into our API development platform. Giving developers the ability to use the all their favorite API tools they love within one application. With our new testing service, we didn’t just make it simple to test local development against backend implementation, but we also made it dead simple to read and understand test history and reports by including recent test history, test data from continuous integration and basic Git revision and build information for each test.</p>
+
+<h2 id="no-more-outdated-api-documentation">No More Outdated API Documentation</h2>
+
+<p>You’re probably wondering what this means for your API documentation. Well, any local changes will be tested against the current implementation to ensure that your specification and documentation are always in sync. With APIs being such a dominating factor to the success of any software these days, we decided to eliminate one more vulnerability when iterating on code changes to avoid rolling out a bad API. Our buddy Dredd always has your back, and so do we.</p>
+
+<h2 id="closing-the-loop-on-the-api-lifecycle">Closing the Loop on the API Lifecycle</h2>
+
+<p>As the API economy continues to flourish, we’ll continue to innovate ways to master the development workflow. Integrating our favorite Judge into our platform is just the start. As our community continues to grow and provide product feedback, we’ll continue to listen and create the tools needed to succeed. By integrating API Design with Continuous Integration we’ve successfully glued together API specification, documentation and implementation keeping the value of your design decisions eternal. “Any questions?”</p>
+
+
+
   </div>
 </div>
+
 
 </div>
 

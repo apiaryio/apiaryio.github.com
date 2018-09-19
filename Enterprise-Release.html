@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>Make it so — Apiary enters the Enterprise &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="Make it so — Apiary enters the Enterprise &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="Make it so — Apiary enters the Enterprise &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/Enterprise-Release">
+    <meta name="description" content="A game-changer for large, distributed API teams &mdash; Apiary Blog">
+    <meta name="twitter:description" content="A game-changer for large, distributed API teams &mdash; Apiary Blog">
+    <meta property="og:description" content="A game-changer for large, distributed API teams &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/Enterprise-Release">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,64 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Make it so — Apiary enters the Enterprise</h1>
+    
+      <p><span class="minority">By</span> <strong>Andrew Brown</strong>
+        (<a href="https://twitter.com/@uberdru">@uberdru</a>, <a href="mailto:andrew@apiary.io">andrew@apiary.io</a>) <span class="minority">on</span>&nbsp;22&nbsp;Oct&nbsp;2014
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>It has been an exciting summer at Apiary. I joined at the beginning in June to lead Apiary’s enterprise project. This week, we’ve crossed 100,000 APIs described in Apiary. And today, we announce the result of a lot of discussion with customers — <a href="http://enterprise.apiary.io"><strong>Apiary for Enterprise</strong></a>. As APIs are becoming mainstream, large teams around the world are solving the same problems: making sure that their APIs adhere to the same, shared design principles. Apiary for Enterprise is designed to solve that problem once and for all.</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<h2 id="api-style-guide">API Style Guide</h2>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<p>Again and again, we heard the same story from developers working on larger API projects. The story involves what some call an <strong>“API style guide”</strong>, but it goes by many names. Some projects refer to it as “contract authoring guidelines”. No matter what the name, it reflects a need to ensure consistency in the APIs being developed by multiple teams.</p>
+
+<p>Throughout the API lifecycle, there are a million decisions that need to be made, some minor some significant. Some of the big ones:</p>
+
+<ul>
+  <li>What media types will we support and to what extent should we use hypermedia?</li>
+  <li>What authentication and authorization schemes should we use?</li>
+  <li>Which methods should be private, and which public?</li>
+  <li>How do we do error handling?</li>
+</ul>
+
+<p>Then there are the seemingly insignificant decisions:</p>
+
+<ul>
+  <li>Should we support just <code class="highlighter-rouge">POST</code> and <code class="highlighter-rouge">PUT</code> or also support <code class="highlighter-rouge">PATCH</code>?</li>
+  <li>Should we use camel case?</li>
+  <li>Should a DELETE return a response payload or not?</li>
+  <li>What HTTP status codes should be supported for each method?</li>
+  <li>What time format should we use?</li>
+</ul>
+
+<p>If you are an API architect or an API product manager, you may have spent a significant amount of time developing an API style guide. Or, more likely, you’ve been thinking about creating one.</p>
+
+<p>The style guide encodes all of the best practices, random coin tosses, and also resolves theological debates about contentious topics like REST and hypermedia. However, the style guide is only as good as your ability to socialize it. Manual reviews of API designs might help to some extent. But as APIs are implemented, deployed, and versioned, how can you be sure whether interfaces that form the contract between your organization and the developer have not changed?</p>
+
+<p>Once organizations finally settle on a set of guidelines, there’s a new challenge: how to ensure that APIs adhere to the guidelines, without imposing an undue burden on developers? The design guide needs to work from the bottom up, or else it risks being resisted, or worse, ignored. Constantly consulting a document just adds another level of ‘bureaucracy’, slowing down the deployment of APIs.</p>
+
+<h2 id="api-design-assertion-language">API Design Assertion Language</h2>
+
+<p>To address this need, Apiary is introducing a programmable layer on top of API Blueprint. This layer can be be used to codify the basic design rules that are established in an organization’s API style guide.</p>
+
+<p><img src="/images/2014-10-21-Enterprise-Release.png" alt="enterprise plan" /></p>
+
+<p>With <a href="http://www.prnewswire.com/news-releases/api-design-pioneer-announces-apiary-for-enterprise-329275395.html">this release</a>, Apiary introduces a simple way to express design decisions in the form of an <strong>API design assertion language</strong>, a simple JavaScript-based language that can be used to evaluate API designs against a style guide. The great thing is that it evaluates APIs as they are being created in the Apiary’s API Blueprint editor.</p>
+
+<p>In keeping with the Apiary’s developer-friendly ethos, we have kept <a href="http://enterprise.apiary.io">Apiary for Enterprise</a> lightweight, elegant, and usable. Our goal is to make all developers lives easier, whether they are implementing or consuming APIs. By providing real-time feedback on API designs, we hope to ensure that developers spend less time refactoring inconsistent APIs, and more time building new ones. We also hope that developers who consume APIs will have an easier time as APIs become more predictable and consistent.</p>
+
+<p>To know more about this plan and its features, you can contact me at <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#097;&#110;&#100;&#114;&#101;&#119;&#064;&#097;&#112;&#105;&#097;&#114;&#121;&#046;&#105;&#111;">&#097;&#110;&#100;&#114;&#101;&#119;&#064;&#097;&#112;&#105;&#097;&#114;&#121;&#046;&#105;&#111;</a>.</p>
+
+
+
   </div>
 </div>
+
 
 </div>
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>Improving Security of Mock and Proxy Servers and Deprecating Old Subdomains &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="Improving Security of Mock and Proxy Servers and Deprecating Old Subdomains &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="Improving Security of Mock and Proxy Servers and Deprecating Old Subdomains &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/Improving-Security">
+    <meta name="description" content="Apiary has delivered important new features to increase the security of recorded traffic from Mock and Proxy Servers. We’re deprecating the unsafe Public Traffic option and making some backward-breaking changes, while leaving your API documentation more accessible than ever. &mdash; Apiary Blog">
+    <meta name="twitter:description" content="Apiary has delivered important new features to increase the security of recorded traffic from Mock and Proxy Servers. We’re deprecating the unsafe Public Traffic option and making some backward-breaking changes, while leaving your API documentation more accessible than ever. &mdash; Apiary Blog">
+    <meta property="og:description" content="Apiary has delivered important new features to increase the security of recorded traffic from Mock and Proxy Servers. We’re deprecating the unsafe Public Traffic option and making some backward-breaking changes, while leaving your API documentation more accessible than ever. &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/Improving-Security">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,42 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Improving Security of Mock and Proxy Servers and Deprecating Old Subdomains</h1>
+    
+      <p><span class="minority">By</span> <strong>Lukas Linhart</strong>
+        (<a href="https://twitter.com/almadcz">almadcz</a>, <a href="mailto:lukas@apiary.io">lukas@apiary.io</a>) <span class="minority">on</span>&nbsp;16&nbsp;Sep&nbsp;2014
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>Apiary’s <strong>Mock and Proxy Servers</strong>, in connection with <strong>Traffic Inspector</strong>, are valuable tools in identifying problems with API usage. Up until now, to offer those as part of your API documentation, you had two options – ask your users to create an Apiary account or switch off the <strong>Private Traffic</strong> setting, where no authentication was required for the mock and proxy server URL space.</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<h2 id="ease-of-use-vs-security">Ease of Use vs Security</h2>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<p>This was a trade-off: an API would gain greater discoverability, but the details of debugged API calls were left publicly available. If a user’s production token was accidentally used in testing the API, production data could potentially be exposed to anyone viewing the Traffic Inspector.</p>
+
+<h2 id="changes-to-improve-security">Changes to Improve Security</h2>
+
+<p>Earlier this year, we made Private Traffic on by default. However, room was left for human error if a user switched off Private Traffic by accident or without fully understanding it’s working and the ramifications of doing so.</p>
+
+<p>We find risk to production API tokens <strong>unacceptable</strong>. As a result, we have worked hard to rectify this behavior and last week finally removed the need for an Apiary account in order to use Private Traffic. Any Apiary mock/proxy user—<strong>logged in or anonymous</strong>—gets assigned a unique, personal URL when they visit our documentation for the first time.</p>
+
+<p>With such a feature in place, we are now <strong>deprecating the “Public Traffic” option</strong> completely to remove this potential security risk. You are now encouraged to switch to “Private Traffic” immediately in your API settings. Otherwise, we are going to migrate all accounts permanently to “Private Traffic” starting October 1st.</p>
+
+<h2 id="important-url-changes">Important URL changes</h2>
+
+<p>As part of generating unique URLs for each documentation viewer, we’ve had to redesign the related URL space for these. Your documentation users have been receiving the new-style URLs for a while now. However, if your application is relying on/proxying through the <strong>&lt;apiname&gt;.apiary.io</strong> address space, you need to update it now (or preferably remove the dependency altogether) to use our new address space at apiary-mock.com and apiary-proxy.com.</p>
+
+<p>Starting October 1st, the <strong>&lt;apiname&gt;.apiary.io</strong> URL space will be returning a 301 MOVED PERMANENTLY HTTP response.</p>
+
+<p>If you have any questions, you are – as always – welcome to ask them at support@apiary.io.</p>
+
+
   </div>
 </div>
+
 
 </div>
 

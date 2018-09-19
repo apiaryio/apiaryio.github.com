@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>To Our Wonderful Beta-Testers &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="To Our Wonderful Beta-Testers &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="To Our Wonderful Beta-Testers &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/to-our-wonderful-beta-testers">
+    <meta name="description" content="We&#39;ve made it this far thanks to you. Here&#39;s a quick round-up of what we&#39;ve changed based on your feedback. &mdash; Apiary Blog">
+    <meta name="twitter:description" content="We&#39;ve made it this far thanks to you. Here&#39;s a quick round-up of what we&#39;ve changed based on your feedback. &mdash; Apiary Blog">
+    <meta property="og:description" content="We&#39;ve made it this far thanks to you. Here&#39;s a quick round-up of what we&#39;ve changed based on your feedback. &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/to-our-wonderful-beta-testers">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,47 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>To Our Wonderful Beta-Testers</h1>
+    
+      <p><span class="minority">By</span> <strong>Jakub Nesetril</strong>
+        (<a href="https://twitter.com/jakubnesetril">jakubnesetril</a>, <a href="mailto:jakub@apiary.io">jakub@apiary.io</a>) <span class="minority">on</span>&nbsp;21&nbsp;May&nbsp;2012
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>We've been working very hard for the last few months to bring you the best tools for your REST APIs out there. And we couldn't have done it without our amazing beta testers. We'll be releasing Apiary publicly soon, but before that happens, I wanted to <strong>thank you</strong> all for being such a great help to us. And since we've added so much to the original product based on your feedback, I wanted to take a minute to bring you up to speed with everything that's new in Apiary.</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<h1>What's New</h1>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<ul>
+  <li>
+    <p><strong>Proxy + Pass-Through</strong>—In addition to providing a mock server based on your API documentation, we've added a transparent HTTP proxy. Your API users can now access your real API server through Apiary and get all the benefits of visualising their API usage and comparing it to the provided documentation. Most recently we've started proxying all traffic to your API, even those resources that are not documented yet. This can be a great help in identifying and fixing gaps in your documentation. You can switch the proxy on your <a href="http://apiary.io/settings">Settings page</a>.</p>
+  </li>
+  <li>
+    <p><strong>JSON Schema support</strong>—Sometimes comparing the data that your customers are sending to the documentation in a simple text diff is simply not sufficient to help your users debug the problem. We've added support for describing your data structures using JSON Schema. Your documentation can now have tightly integrated data validation! We're currently testing this, <a href="http://apiary.io/team">talk to us</a> if your interested.</p>
+  </li>
+  <li>
+    <p><strong>Partial Query-String support</strong>—If you're passing parameters to your API via <a href="http://en.wikipedia.org/wiki/Query_string">querystring</a> then these would not match existing API resources. That is, until we started ignoring querystring part of the URL for comparison purposes. We still plan on better URL parametrisation using <a href="http://www.mnot.net/javascript/url_template/">URL</a> <a href="http://tools.ietf.org/html/rfc6570">Templates</a> in the future.</p>
+  </li>
+  <li>
+    <p><strong>Github Integration</strong>—Your API documentation should be versioned in the same way as your API code. Ideally even in the same repository—so that all your branching/versioning applies to both parts at once. We've added Github integration so that Apiary can update your documentation each time you push changes to it. Generic Git repository support still coming, <a href="http://apiary.io/team">let us know</a> if you need it.</p>
+  </li>
+  <li>
+    <p><strong>Private Traffic</strong>—Sometimes, the data you can be sending through the debugging proxy isn't exactly public matter. We've added support for randomized URLs for each user—thus you can send data to your own, private mock/proxy server, and view it only if you know the right URL.</p>
+  </li>
+  <li>
+    <p><strong>Syntax Highlights + Code Samples</strong>—Our documentation now features code examples in different languages. Best of all—if you're missing your favorite language, feel free to <a href="https://github.com/apiaryio/language-templates">write the language template</a> and we'll include it promptly.</p>
+  </li>
+  <li>
+    <p><strong>Many more</strong>—we've improved the traffic viewer greatly, we've added support for <a href="http://enable-cors.org/">Cross-Origin Resource Sharing</a> if you need that for your mock server, we've added support for HTTPS across the board—and many more. However, if there's something you're still missing, please do <a href="http://apiary.io/team">let us know</a>.</p>
+  </li>
+</ul>
+
   </div>
 </div>
+
 
 </div>
 

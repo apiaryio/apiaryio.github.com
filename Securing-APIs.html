@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>Securing APIs &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="Securing APIs &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="Securing APIs &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/Securing-APIs">
+    <meta name="description" content="It’s a Big, Scary World out There. &mdash; Apiary Blog">
+    <meta name="twitter:description" content="It’s a Big, Scary World out There. &mdash; Apiary Blog">
+    <meta property="og:description" content="It’s a Big, Scary World out There. &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/Securing-APIs">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,47 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Securing APIs</h1>
+    
+      <p><span class="minority">By</span> <strong>Corvax</strong>
+        (<a href="https://twitter.com/@jedenbod">@jedenbod</a>, <a href="mailto:corvax@apiary.io">corvax@apiary.io</a>) <span class="minority">on</span>&nbsp;21&nbsp;Jun&nbsp;2016
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>In the past few years, we’ve seen stories breaking around people hacking Internet of Things (IoT) devices such as <a href="http://www.wired.com/2015/07/hackers-remotely-kill-jeep-highway/">cars</a>, <a href="http://www.wired.com/2015/07/hackers-can-disable-sniper-rifleor-change-target/">guns</a> or a <a href="http://www.pcworld.com/article/3012220/security/internet-connected-hello-barbie-doll-can-be-hacked.html">Barbie doll</a>. We’ve seen vulnerable protocols and implementations happening again and again coming even from big vendors where we’d expect a higher level of security assessment. It was a whole spectrum of small and big attacks. Not always as sophisticated as they <em>should</em> be. Quite often exploiting weak API security. APIs without TLS. APIs using a single token for all devices. Weak default credentials and many more pitfalls. We were laughing at an idea of installing a firewall to our fridge. Is current API security that weak or that hard?</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<p><img width="640" src="/images/2016-06-22-Securing-APIs/securingapis1200x627.png" alt="securingapi" /></p>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<p>Good news is that we <em>almost</em> figured out securing server communication with the browser. TLS is becoming a standard even for small or personal projects. We have new security policies and APIs in all major browsers. We can enforce and control security features with just adding HTTP headers to server responses. And many more small and large improvements. These altogether add some serious security to the web. Can we say the same about API landscape? Above examples shows that we can’t.</p>
+
+<p>One thing is for sure: it’s <strong>really hard</strong> to fully understand implications of choosing one protocol or scheme over another. Although core ideas and principles are usually well documented, frameworks and libraries rarely help with this task. A look at a <a href="http://security.stackexchange.com">security site</a> can demonstrate how hard it is to understand these concepts. For instance, what’s the top answer on Google for a cURL certificate mismatch? Few lines of code to disable this security check.</p>
+
+<p>History and experience show us that crypto and security can be described as <em>exciting</em> by only a fraction of people, and if it isn’t interesting and/or easy, people won’t care about it. We can keep inventing more intricate schemas and <a href="https://en.wikipedia.org/wiki/Double_ratchet">security protocols</a> and yes, we’ll always need them. Yet, we won’t make crypto <em>inviting</em> for everybody. Sadly, it just isn’t meant to be.</p>
+
+<p>We can improve developer experience of using security features in their stacks. We can do a great amount of work on explaining shortcomings of disabling such features to a developer trying to turn them off. We can develop libraries that will <strong>require</strong> only the highest security standards.</p>
+
+<blockquote>
+  <ul>
+    <li>uses <code class="highlighter-rouge">--insecure</code> flag</li>
+    <li>I’m sorry, Dave, I’m afraid I can’t do that.</li>
+  </ul>
+</blockquote>
+
+<p>It takes educated and dedicated people with enough time and resources to do security <em>well enough</em>. The rest will ignore warnings and prompts that your tool produces if it slows them down or annoys them. Security and crypto always need to be on the move. The problem is that it’s not going to get easier, and it’s not aiming to get easier. With IoT in the mix of the API landscape, it’s only more inviting for attackers to try to break your API security. You must make sure you are doing security well.</p>
+
+<p>One possibility I can imagine is: outsourcing to somebody who is good at crypto. Security of my API will be just another feature of my provider. If this allows people dedicated to security to do their jobs and allows me as an API developer and consumer to be able to trust any API I’m interacting with, then it’s a win-win. But it shouldn’t be something I pay for extra. It must be a default option. Security must be part of this contract and API contract in general.</p>
+
+<p>I wish for a future where I can look at any API and check if their implementation of SAML, OAuth, Hawk or anything else is secure. This calls to embedding your API security schema right into your API description as a first class citizen. Then designing your API around these security concepts comes just as natural.</p>
+
+<p><em>This article has been originally published at <a href="http://www.heavybit.com/library/blog/securing-apis-a-look-ahead/">Securing APIs: A Look Ahead</a>.</em></p>
+
+
   </div>
 </div>
+
 
 </div>
 

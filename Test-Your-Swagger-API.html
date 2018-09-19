@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>Test Your Swagger API &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="Test Your Swagger API &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="Test Your Swagger API &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/Test-Your-Swagger-API">
+    <meta name="description" content="Introducing support for Swagger in Dredd and more. &mdash; Apiary Blog">
+    <meta name="twitter:description" content="Introducing support for Swagger in Dredd and more. &mdash; Apiary Blog">
+    <meta property="og:description" content="Introducing support for Swagger in Dredd and more. &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/Test-Your-Swagger-API">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,47 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Test Your Swagger API</h1>
+    
+      <p><span class="minority">By</span> <strong>Honza Javorek</strong>
+        (<a href="https://twitter.com/@honzajavorek">@honzajavorek</a>, <a href="mailto:honza@apiary.io">honza@apiary.io</a>) <span class="minority">on</span>&nbsp;25&nbsp;Aug&nbsp;2016
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>At Apiary we’re proponents of design-first approach when it comes to building APIs. However, it’s hard to do design-first and have your “single source of truth” in the API description document, if you can’t easily test your API implementation against it.</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<p><img width="640" src="/images/2016-08-26-Test-Your-Swagger-API/dredd-swagger.png" alt="dredd-swagger" /></p>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<h2 id="support-for-swagger-in-dredd">Support for Swagger in Dredd</h2>
+
+<p>It’s a <a href="https://blog.apiary.io/2013/10/10/No-more-outdated-API-documentation">long time</a> since we announced <a href="http://dredd.readthedocs.io/">Dredd</a>, an Open Source framework for testing HTTP-based APIs. Over the years it grown into a fully-featured, mature, and very popular tool. Until now it supported only <a href="http://apiblueprint.org/">API Blueprint</a>, but we want to empower everybody to test their API, regardless of the chosen description format.</p>
+
+<p>Good news everyone! With <a href="https://github.com/apiaryio/dredd/releases/tag/v1.1.0">1.1.0</a> release, all Dredd’s features are now available also for users of the <a href="http://swagger.io/">Swagger</a> API description format. Since version <a href="https://github.com/apiaryio/dredd/releases/tag/v1.5.0">1.5.0</a> the Swagger support is considered production-ready. Here we would like to thank to all the adventurous minds who helped us to improve the initial implementation. Only thanks to you we could remove the “experimental” label so soon!</p>
+
+<p>Please follow the <a href="http://dredd.readthedocs.io/en/latest/quickstart/">Quickstart</a> tutorial to see how easy is to employ Dredd in your API’s life cycle. Also, there’s an <a href="https://github.com/apiaryio/dredd-example/">example application</a> you can use as a starting point.</p>
+
+<h2 id="write-dredd-hooks-in-your-favorite-language">Write Dredd Hooks in Your Favorite Language</h2>
+
+<p>Expressive power of API description formats has its limits and testing can easily get rather complex when it meets real-world situations. One of the coolest features of Dredd is its extensivity by so-called <a href="http://dredd.readthedocs.io/en/latest/hooks/">hooks</a>. Hooks are pieces of arbitrary code you can get executed before or after every test case.</p>
+
+<p>Originally Dredd was able to execute only hooks written in JavaScript, but in recent months it got first-class support for many other languages, namely <a href="http://dredd.readthedocs.io/en/latest/hooks-perl/">Perl</a>, <a href="http://dredd.readthedocs.io/en/latest/hooks-php/">PHP</a>, <a href="http://dredd.readthedocs.io/en/latest/hooks-python/">Python</a>, <a href="http://dredd.readthedocs.io/en/latest/hooks-ruby/">Ruby</a>, and <a href="http://dredd.readthedocs.io/en/latest/hooks-go/">Go</a>. Since there’s a <a href="http://dredd.readthedocs.io/en/latest/hooks-new-language/">tutorial</a> on how to implement new hook handler, every now and then contributors come with support for their favorite language.</p>
+
+<p>Here we would like to thank especially to <a href="https://github.com/ddelnano/">Dom Del Nano</a>, who did tremendous job with his PHP hooks and with Go support.</p>
+
+<h2 id="theres-more">There’s More!</h2>
+
+<p>Dredd’s changelog is getting significantly longer every week now, so even if you already use the framework, there’s a big chance there’s something new you have yet to discover. Check out Dredd’s updated <a href="http://dredd.readthedocs.io/">documentation</a>, try out its <a href="http://dredd.readthedocs.io/en/latest/how-to-guides/#using-apiary-reporter-and-apiary-tests">convenient integration with Apiary</a> or scan through growing <a href="http://dredd.readthedocs.io/en/latest/how-to-guides/">collection of how-to guides</a>.</p>
+
+<p>Finally, I can’t even express here how awesome it is to work on a project like Dredd and to see how helpful it is to people. Thank you all for using Dredd, reporting back issues and contributing code or ideas. By new <a href="https://dredd.readthedocs.io/en/latest/contributing/">contributing guidelines</a> I would like to make clear that everyone is very welcome to join us in the effort to make Dredd better!</p>
+
+
+
   </div>
 </div>
+
 
 </div>
 

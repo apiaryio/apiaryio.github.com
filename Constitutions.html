@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>Announcing Apiary Constitutions &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="Announcing Apiary Constitutions &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="Announcing Apiary Constitutions &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/Constitutions">
+    <meta name="description" content="How to write API Style Guide rules collaboratively &mdash; Apiary Blog">
+    <meta name="twitter:description" content="How to write API Style Guide rules collaboratively &mdash; Apiary Blog">
+    <meta property="og:description" content="How to write API Style Guide rules collaboratively &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/Constitutions">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,49 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Announcing Apiary Constitutions</h1>
+    
+      <p><span class="minority">By</span> <strong>Corvax</strong>
+        (<a href="https://twitter.com/@jedenbod">@jedenbod</a>, <a href="mailto:corvax@apiary.io">corvax@apiary.io</a>) <span class="minority">on</span>&nbsp;25&nbsp;Apr&nbsp;2018
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>We’ve been a long time proponents of practices like <a href="https://apiary.io/how-to-build-api">design-first</a> and contract-driven development. For a while, part of our Apiary Pro offerings are also <a href="https://help.apiary.io/tools/style-guide/">Style Guides</a>. It’s a way to programatically define and check your company API Style Guides. For most of the world, API Style Guides are these long, static PDFs written by architects, without any tools to apply them to the API design phase or check how well implemented they are.</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<p><a href="https://help.apiary.io/tools/style-guide/">Apiary Style Guides</a> are a tool for checking consistency of your API Designs. They are integrated into the <a href="https://help.apiary.io/tools/apiary-editor/">Apiary Editor</a>, but writing your own rules used to be a laborious task. We wanted to simplify the experience.</p>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<p><img src="/images/2018-04-25-Constitutions/constitutions-test.png" alt="Constitutions test runner" /></p>
+
+<h2 id="meet-constitutions">Meet Constitutions</h2>
+<blockquote>
+  <p><a href="https://github.com/apiaryio/constitutions">Apiary Constitutions</a> is a tool for writing, testing and managing Style Guide rules. Rules are written in JavaScript and works for both API Blueprint and OpenAPI Specification definitions, thanks to our <a href="http://apielements.org/">API Elements</a> tooling.</p>
+</blockquote>
+
+<p><a href="https://github.com/apiaryio/constitutions"><img src="/images/2018-04-25-Constitutions/constitutions-repo.png" alt="Apiary Constitutions repository" /></a></p>
+
+<p>It’s a repository prepared for the rules development. Comes with a default set of rules you have enabled when you start using Style Guide in Apiary. You can easily reuse them or make them your starting point for custom rules. Our goal was to supply you with a way to have a simple <code class="highlighter-rouge">build</code> and <code class="highlighter-rouge">test</code> commands.</p>
+
+<h3 id="how-does-it-work">How does it work?</h3>
+<p>To stay true to the example driven development, Constitutions will require of you to supply <strong>both passing and failing example documents</strong> for your Style Guide rule. So you can see how a correct usage looks like. This also helps you test the rules as you develop them. These examples are then reused for generating a readme, which should serve as a readable API Style Guide reference.</p>
+
+<p>We then use <a href="https://webpack.js.org">Webpack</a> to build a single file with all your rules, which is then run through our rules engine. We recommend to fork the Constitutions repo if you wish to have your own API Style Guides in git.</p>
+
+<p><img src="/images/2018-04-25-Constitutions/apiary-style-guide.png" alt="Apiary Style Guide" /></p>
+
+<h2 id="updates-to-the-apiary-cli">Updates to the Apiary CLI</h2>
+<p>Constitutions will simplify writing the rules. To allow you better integration of these rules into your API Design flow, we also added the <a href="https://help.apiary.io/tools/apiary-cli/#using-apiary-style-guide"><code class="highlighter-rouge">styleguide</code></a> option to the <a href="https://github.com/apiaryio/apiary-client">Apiary CLI</a>. With it, you can fetch and test your Apiary Style Guides against a local document.</p>
+
+<p>Next we added <code class="highlighter-rouge">--push</code> option to the CLI, so you could build rules locally or in your CI and synchronise them with the rules you enabled in <a href="https://help.apiary.io/tools/apiary-editor/">Apiary Editor</a>.</p>
+
+<p>We hope this will make live easier for both Style Guide creators and consumers! For any questions, let us know either on <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#097;&#112;&#105;&#097;&#114;&#121;&#046;&#105;&#111;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#097;&#112;&#105;&#097;&#114;&#121;&#046;&#105;&#111;</a> or in <a href="https://github.com/apiaryio/constitutions/issues">GitHub issues</a>.</p>
+
+
   </div>
 </div>
+
 
 </div>
 

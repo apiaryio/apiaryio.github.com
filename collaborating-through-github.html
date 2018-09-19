@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>Collaborating Through GitHub &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="Collaborating Through GitHub &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="Collaborating Through GitHub &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/collaborating-through-github">
+    <meta name="description" content="One of our most popular feature requests is collaboration among multiple users. Here&#39;s how you can use our GitHub integration to do that &mdash; Apiary Blog">
+    <meta name="twitter:description" content="One of our most popular feature requests is collaboration among multiple users. Here&#39;s how you can use our GitHub integration to do that &mdash; Apiary Blog">
+    <meta property="og:description" content="One of our most popular feature requests is collaboration among multiple users. Here&#39;s how you can use our GitHub integration to do that &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/collaborating-through-github">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,72 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Collaborating Through GitHub</h1>
+    
+      <p><span class="minority">By</span> <strong>Jakub Nesetril</strong>
+        (<a href="https://twitter.com/jakubnesetril">jakubnesetril</a>, <a href="mailto:jakub@apiary.io">jakub@apiary.io</a>) <span class="minority">on</span>&nbsp;08&nbsp;Oct&nbsp;2012
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>One of our most popular feature requests is <strong>collaboration among multiple users</strong>. We hear you and we’re working on it, but it will take time —we want to get the collaboration model right. However, that doesn’t mean you can’t start collaborating with your colleagues on your API design right away. We <a href="https://blog.apiary.io/to-our-wonderful-beta-testers/">launched our GitHub integration</a> a couple months back. Here’s how to use it to your advantage!</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<ol>
+  <li>Go to your <a href="https://apiary.io/settings">Settings page</a> and connect Apiary to any of your GitHub repositories</li>
+  <li>
+    <p>You can use both public and private repositories, but we recommend that you use a public one (unless your documentation is hidden from the world):</p>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+    <p><img src="/images/2012-09-13-github-repos.png" alt="Github Repos Association" /></p>
+  </li>
+  <li>Once you connect your GitHub repo, we automatically synchronize your API Blueprint into GitHub.</li>
+  <li>You can now edit the blueprint on your local computer and push it into GitHub—and your documentation changes instantly. We receive webhooks from GitHub and scan for changes to the API Blueprint.</li>
+  <li>
+    <p>You can cooperatively edit with everybody, and let Git take care of the merging and versioning. If you edit a file in Apiary, it will ask for a commit message and push to GitHub. If you edit a file on your computer and push to GitHub, we will pick up the changes automatically.</p>
+  </li>
+  <li>
+    <p>To simplify the workflow on your local computer (edit-preview-commit-push), we’ve created an <a href="https://github.com/apiaryio/apiary-client">Apiary Ruby Gem</a> to help you preview the documentation before pushing to GitHub. Just run:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code> sudo gem install apiaryio
+ &lt;...go to your blueprint directory...&gt;
+ apiary preview
+ &lt;...generates and previews your documentation...&gt;
+</code></pre>
+    </div>
+
+    <p>You can also just run <code class="highlighter-rouge">--help</code> to get a list of all commands:</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code> $ apiary --help
+
+ Usage: apiary command [options]
+ Try 'apiary help' for more information.
+
+ Currently available apiary commands are:
+
+    preview                                     Show API documentation in default browser
+    preview --browser [chrome|safari|firefox]   Show API documentation in specified browser
+    preview --path [PATH]                       Specify path to blueprint file
+    preview --api_host [HOST]                   Specify apiary host
+    preview --server                            Start standalone web server on port 8080
+    preview --server --port [PORT]              Start standalone web server on specified port
+
+    help                                        Show help
+
+    version                                     Show version
+</code></pre>
+    </div>
+  </li>
+</ol>
+
+<blockquote>
+  <p>We’re also working on syntax highlighting for your editor—<a href="http://support.apiary.io/forums/120125-general/suggestions/3078545-create-package-for-sublime-text">let us know</a> which editor you’re using!</p>
+</blockquote>
+
+
   </div>
 </div>
+
 
 </div>
 

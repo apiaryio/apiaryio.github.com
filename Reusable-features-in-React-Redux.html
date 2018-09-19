@@ -1,0 +1,341 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+
+  <title>Creating reusable features in React + Redux &mdash; Apiary Blog</title>
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <meta name="author" content="Apiary">
+  <link rel="alternate" type="application/rss+xml" title="The Apiary Blog Feed" href="https://blog.apiary.io/feed.xml" />
+
+  <meta name="application-name" content="Apiary">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type"  content="article">
+  <meta name="twitter:site" content="@apiaryio">
+  <meta name="twitter:creator" content="@apiaryio">
+
+  <meta name="twitter:title" content="Creating reusable features in React + Redux &mdash; Apiary Blog">
+  <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
+
+  <meta property="og:title" content="Creating reusable features in React + Redux &mdash; Apiary Blog">
+  <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  
+    <meta property="og:url" content="https://blog.apiary.io/Reusable-features-in-React-Redux">
+    <meta name="description" content="How to create standard and reusable features in React + Redux &mdash; Apiary Blog">
+    <meta name="twitter:description" content="How to create standard and reusable features in React + Redux &mdash; Apiary Blog">
+    <meta property="og:description" content="How to create standard and reusable features in React + Redux &mdash; Apiary Blog">
+  
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="canonical" href="https://blog.apiary.io/Reusable-features-in-React-Redux">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
+  <link rel="stylesheet" href="https://static.apiary.io/assets/styles/modules/footer/footer.css">
+  <link rel="stylesheet" href="https://static.apiary.io/assets/styles/modules/website.css">
+  <link rel="stylesheet" href="/syntax.css">
+  <!-- /Styles -->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18252923-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</head>
+<body class="website">
+
+<!-- website-header -->
+  <header id="websiteHeader"><div class="positioning">
+    <a class="headerLogotypeLink" href="http://apiary.io/"><h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1><div class="headerLogotype"></div></a>
+    <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
+  </div></header>
+<!-- /website-header -->
+
+<!-- website-navigation -->
+  <div id="navigation">
+    <nav class="websiteNav positioning">
+      <ul class="clearAfter websiteNavMenu">
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/how-it-works">How It Works</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/plans">Plans</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/products">Product</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://help.apiary.io/">Help</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/company">Company</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://login.apiary.io/login">Sign In</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink websiteNavLinkHighlighted signIn" href="https://login.apiary.io/register">Sign Up</a></li>
+      </ul>
+      <a class="websiteNavLink backToTop" href="javascript:;"><span class="visuallyhidden">Back to top</span></a>
+    </nav>
+  </div>
+<!-- /website-navigation -->
+
+<div>
+  <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Creating reusable features in React + Redux</h1>
+    
+      <p><span class="minority">By</span> <strong>char0n</strong>
+        (<a href="https://twitter.com/@vladimirgorej">@vladimirgorej</a>, <a href="mailto:vladimir.gorej@oracle.com">vladimir.gorej@oracle.com</a>) <span class="minority">on</span>&nbsp;12&nbsp;Feb&nbsp;2018
+      </p>
+    
+
+  <p>I’ve started writing applications in React and Redux more than two years ago. Since then it has changed the way I think.
+It introduced me to the concepts of Functional and Reactive programming 
+and showed me how easy and maintainable the development of a large scale Single Page Applications can be.
+The nightmare of state management became a delightful experience and after I started handling my side effects
+with <a href="https://redux-observable.js.org/">redux-observable</a> it has really become something special.</p>
+
+<p>Today I’d like to talk about how to create features in React+Redux application in standard
+and prescribed way. What do I mean by standard and prescribed ? Applying the same patters/rules
+over and over so that every part of the codebase looks the same regardless whether
+it was written by <em>Developer1</em> or <em>Developer2</em>.</p>
+
+<p>For the purpose of this article, I’ve implemented all the patterns that we will be talking about in this <a href="https://github.com/char0n/react-reusable-features">repository</a>. 
+Feel free to clone it and then run it using <strong>npm run start</strong>. I will start by explaining how I approach 
+implementing <strong>standard react features</strong>. Later we’ll cover creating reusable feature instances which 
+can be mounted with different state at different locations. I call these features <strong>reusable features</strong>.</p>
+
+<h2 id="standard-features">Standard features</h2>
+
+<p>You can imagine a standard feature as a directory that lives in your codebase. 
+I will demonstrate what a standard feature is in an example Todo List. 
+The standard feature directory has a prescribed structure that usually looks like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>src/
+ todo-feature/
+   components/ 
+     TodoList.js     
+     TodoListItem.js
+   containers/
+     TodoList.js  
+     TodoListItem.js
+   action.js
+   reducers.js
+   selectors.js
+   utils.js
+   middleware.js
+</code></pre>
+</div>
+
+<h4 id="components">components/</h4>
+
+<p>The directory where your components live.</p>
+
+<h4 id="containers">containers/</h4>
+
+<p>The directory where your containers live. If you don’t know what is the difference between the components 
+and containers you should read <a href="https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0">this article</a>
+from Dan Abramov why this separation exists and why it is necessary.</p>
+
+<h4 id="actionsjs">actions.js</h4>
+
+<p>The file where your <a href="https://redux.js.org/docs/basics/Actions.html#actions">action types</a> and
+<a href="https://redux.js.org/docs/basics/Actions.html#action-creators">action creators</a> are defined.</p>
+
+<h4 id="reducersjs">reducers.js</h4>
+
+<p>The file where your <a href="https://redux.js.org/docs/basics/Reducers.html">reducers</a> are defined. 
+This is also a place where you compose the reducers of your possible sub-features using <a href="https://redux.js.org/docs/api/combineReducers.html">combineReducers</a>.</p>
+
+<h4 id="selectorsjs">selectors.js</h4>
+
+<p>The file where you define your selectors. Selectors are pure functions that compose and know how
+to retrieve data from your state. If you’re not familiar with the concept, I highly recommend looking 
+at the <a href="https://github.com/reactjs/reselect">reselect</a> library. I strongly recommend dividing the selectors into two categories. 
+<em>Input selectors</em> that only retrieve data from the state and <em>combined selectors</em> that can combine
+multiple input-selectors and add some business logic or do some transformations.</p>
+
+<h4 id="utilsjs">utils.js</h4>
+
+<p>Everything related to your feature that doesn’t belong anywhere else. Usually it contains support utilities and helpers.</p>
+
+<h4 id="middlewarejs">middleware.js</h4>
+
+<p>This is where our feature handles its side effects, such as catching some Redux actions and dispatching new ones,
+synchronize the API calls, etc…</p>
+
+<p>You can check the <a href="https://github.com/char0n/react-reusable-features/tree/master/src/app/standard-feature">reference repository</a> to see how this looks in a real project. 
+What the standard feature directory contains will depend on your use case.
+There are situations that you may need reducers but don’t need actions and so on.
+Regardless, the full representation of the standard feature should look like the one described below this paragraph. 
+If the number of components in the standard feature becomes too big, you should break the feature into separate sub-features. 
+These sub-features should adhere to the same rules as its parent feature.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>src/
+ todo-feature/
+   components/ 
+     TodoList.js
+   containers/
+     TodoList.js
+   todo-item/
+     components/
+       TodoListItem.js
+     containers/
+       TodoListItem.js
+     actions.js
+     selectors.js 
+   action.js
+   reducers.js
+   selectors.js
+   utils.js
+   middleware.js
+</code></pre>
+</div>
+
+<p>It is always good to break features into smaller sub-features with encapsulated logic to reduce the complexity.
+Try to think of it as applying The Single Responsibility Principle. 
+Each feature only does one thing, and it is isolated in its own directory.
+As you applications grows and you add more and more features, 
+it really pays of to structure your code using these rules. Somebody that will come to work on a project after
+you will really thank you ;]</p>
+
+<p>The standard feature has unfortunately one disadvantage. It is statically mounted at a specific place in a state. 
+Imagine a situation when you want to display two Todo Lists on the same page.
+If you do that, it will work and the Todo Lists will display. The problem arises when you try to interact with them. 
+Changing state in one, for example marking an item as done, or re-ordering the items, will cause the items in the second list to be updated.
+The cause of this effect is the fact that they are both focused on the same place in the Redux state and 
+act accordingly based on Redux state changes. You may never experience this situation, it really depends
+on the type of the application you are building and the use cases. If you do, there is a solution.
+Enter the realm of <strong>reusable features</strong>.</p>
+
+<h2 id="reusable-features">Reusable features</h2>
+
+<p><a href="https://kickstarter.engineering/namespacing-actions-for-redux-d9b55a88b1b1">Some people</a> have already dealt with this problem. My solution is a little bit different but
+at the end we’re trying to solve the same thing. So what is a <strong>reusable feature</strong> ?
+It’s basically a standard feature but instead of things defined statically, everything (except components)
+are defined inside <strong>factory functions</strong>. Factory functions allow us to create things in a lazy configurable manner.
+Observe, for example, the difference between standard feature actions and reusable one.</p>
+
+<h4 id="standard-feature-actionsjs">Standard feature actions.js</h4>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">const</span> <span class="nx">STANDARD_FEATURE_INCREMENT_CLICK</span> <span class="o">=</span> <span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">namespace</span><span class="p">}</span><span class="nx">_STANDARD_FEATURE_INCREMENT_CLICK</span><span class="err">`</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="kr">const</span> <span class="nx">incrementClick</span> <span class="o">=</span> <span class="nx">createAction</span><span class="p">(</span><span class="nx">STANDARD_FEATURE_INCREMENT_CLICK</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<h4 id="reusable-feature-actionsjs">Reusable feature actions.js</h4>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">createActions</span><span class="p">(</span><span class="nx">namespace</span><span class="p">,</span> <span class="nx">selectors</span><span class="p">)</span> <span class="p">{</span>
+
+  <span class="kr">const</span> <span class="nx">REUSABLE_FEATURE_INCREMENT_CLICK</span> <span class="o">=</span> <span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">namespace</span><span class="p">}</span><span class="nx">_REUSABLE_FEATURE_INCREMENT_CLICK</span><span class="err">`</span><span class="p">;</span>
+
+  <span class="kr">const</span> <span class="nx">incrementClick</span> <span class="o">=</span> <span class="nx">createAction</span><span class="p">(</span><span class="nx">REUSABLE_FEATURE_INCREMENT_CLICK</span><span class="p">);</span>
+
+
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="na">REUSABLE_FEATURE_INCREMENT_CLICK</span><span class="p">:</span> <span class="nx">REUSABLE_FEATURE_INCREMENT_CLICK</span><span class="p">,</span>
+
+    <span class="nx">incrementClick</span><span class="p">,</span>
+  <span class="p">};</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>And that’s it. You define everything inside these factory functions. 
+At this stage the reusable feature acts as a mere template. Check how the full
+implementation of a <a href="https://github.com/char0n/react-reusable-features/tree/master/src/app/reusable-feature">reusable feature looks</a> in our <a href="https://github.com/char0n/react-reusable-features">reference repository</a>.
+Features like these cannot be used and mounted to your React application.
+You have to create an <strong>instance</strong> from it.</p>
+
+<p>Creating an instance is as easy as calling the factory functions defined in the reusable feature template.
+Again we adhere to the same rules about directory structure and file names as we did for standard features
+and reusable feature templates. To see how instances are created from the templates please refer 
+to the <a href="https://github.com/char0n/react-reusable-features">reference repository</a> where we create <a href="https://github.com/char0n/react-reusable-features/tree/master/src/app/reusable-feature-instance-1">instance-1</a> and <a href="https://github.com/char0n/react-reusable-features/tree/master/src/app/reusable-feature-instance-2">instance-2</a> from our reusable <a href="https://github.com/char0n/react-reusable-features/tree/master/src/app/reusable-feature">feature template</a>.
+Describing it here in code examples will really be out of scope of this article. 
+Now if you mount these two instances into the React application they work completely independently,
+one doesn’t interfere with another, but they share the same code.
+And that’s the most important point about reusable features: write once, but use many times…</p>
+
+<p>One last note about React+Redux: Even if you are currently using another framework or library like Angular or Vue,
+I think it’s important to understand how React and Redux work and how they changed the development of Single Page Applications.</p>
+
+<p>Like always, I end my article with the following axiom: Define your code-base as pure functions and
+lift them only if needed. And then compose, compose, compose…</p>
+
+<p>PS: I’d like to thank to Kyle Fuller for proofreading this article.</p>
+
+
+  </div>
+</div>
+
+
+</div>
+
+<!-- website-footer -->
+  <hr>
+
+<footer class="applicationFooter">
+
+  <div class="applicationFooterRow">
+    <div class="applicationFooterColumns">
+    <div class="applicationFooterColumn">
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Platform</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiary.io/how-it-works">How It Works</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/products">Product</a></li>
+        <li><a class="applicationFooterListLink" href="http://enterprise.apiary.io/">Enterprise</a></li>
+	<li><a class="applicationFooterListLink" href="http://apiary.io/plans">Plans</a></li>
+        <li><a class="applicationFooterListLink" href="https://help.apiary.io">Help</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Company</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://blog.apiary.io/">Blog</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#team">Team</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/jobs">Jobs</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#contact">Contact</a></li>
+        <li><a class="applicationFooterListLink" href="https://static.apiary.io/assets/files/apiary-press-kit.zip">Press Kit</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Open Source</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiblueprint.org">API Blueprint</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/snowcrash">Snowcrash</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
+        <li><a class="applicationFooterListLink" href="http://client.apiary.io">Apiary CLI</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Social</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
+        <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="applicationFooterRow">
+    <p class="applicationFooterCopyright">Copyright &copy; 2017, Oracle and/or its affiliates. All rights reserved. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners. <span class="applicationFooterCopyrightLinks"><a href="https://apiary.io/tos" class="applicationFooterCopyrightLink">Terms</a> • <a href="https://apiary.io/privacy" class="applicationFooterCopyrightLink">Privacy</a> • <span id="teconsent"></span></span></p>
+  </div>
+</footer>
+<!-- /website-footer -->
+
+<script src="https://static.apiary.io/assets/js/website-scroll.js"></script>
+<script>
+  websiteScroll();
+  document.documentElement.className += ' js';
+</script>
+<script src="https://consent.trustarc.com/notice?domain=apiary.io&amp;c=teconsent&amp;text=true&amp;js=nj&amp;noticeType=bb" async="async" crossorigin=""></script>
+
+</body>
+</html>

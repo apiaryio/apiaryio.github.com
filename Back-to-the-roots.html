@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Page not found &mdash; Apiary Blog</title>
+  <title>Back to the roots. Meet HTTP. &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Page not found &mdash; Apiary Blog">
+  <meta name="twitter:title" content="Back to the roots. Meet HTTP. &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Page not found &mdash; Apiary Blog">
+  <meta property="og:title" content="Back to the roots. Meet HTTP. &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io">
-    <meta name="description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta name="twitter:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
-    <meta property="og:description" content="The Apiary Blog &mdash; Build beautiful APIs and read a few lines of text too. The life in Apiary and people around.">
+    <meta property="og:url" content="https://blog.apiary.io/Back-to-the-roots">
+    <meta name="description" content="When was the last time you actually saw HTTP? &mdash; Apiary Blog">
+    <meta name="twitter:description" content="When was the last time you actually saw HTTP? &mdash; Apiary Blog">
+    <meta property="og:description" content="When was the last time you actually saw HTTP? &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/404.html">
+  <link rel="canonical" href="https://blog.apiary.io/Back-to-the-roots">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -87,34 +87,72 @@
 
 <div>
   <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>Back to the roots. Meet HTTP.</h1>
+    
+      <p><span class="minority">By</span> <strong>netmilk</strong>
+        (<a href="https://twitter.com/ntmlk">ntmlk</a>, <a href="mailto:adam@apiary.io">adam@apiary.io</a>) <span class="minority">on</span>&nbsp;22&nbsp;Jul&nbsp;2013
+      </p>
+    
 
-  <div class="blogArticles">
-    <h1>Page not found</h1>
-    <p>Go back to <a href="/">Blog homepage</a> or <a href="https://apiary.io">Apiary.io</a></p>
+  <p>There are a lot of people talking about HTTP. Really. <a href="http://www.w3.org/Protocols/HTTP/1.0/spec.html">For a long time.</a> <a href="http://www.w3.org/Protocols/">Academics</a>, <a href="http://roy.gbiv.com/">visionaries</a>, <a href="http://www.steveklabnik.com/">hipsters</a>. Everybody and everything is talking HTTP. Twitter, Facebook, Web applications in general, browsers, APIs, mobile devices. Even your <a href="http://www.belkin.com/us/wemo">house</a>, <a href="http://developers.meethue.com/">lamp</a> and even a <a href="http://docs.timdorr.apiary.io/">car</a> can speak HTTP. It has been said that it is so simple it can be used in even the most <a href="http://arduino.cc/en/Tutorial/WebServer">simple computer processors</a>. <a href="http://web.archive.org/web/20131006112904/http://api500.com/post/52003926392/the-next-conferences-on-apis-to-attend-in-2013">Everyone is talking about it.</a> But oh my, where is it? Can I touch it? When was the last time you actually saw it? It’s so abstract! It’s hidden on the lowest level. It’s incredible how hard it is to get a raw, naked <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html">HTTP messages</a>. So where is HTTP and what does it actually look like?</p>
 
-    <h2 style="margin-top: 50px; padding-top: 50px; border-top: 1px solid #efefef">See our latest post:</h2>
+<p>There are ways to find it. You can see what is happening in your <a href="http://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome">browser</a> or <a href="http://stackoverflow.com/questions/11267540/how-to-log-specific-request-details-to-rails-server-logs">in your backend server</a>. But this is not the raw, un-pre-processed ASCII representation of a <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html">HTTP message</a> you are looking for. If you are not <a href="http://www.wireshark.org/">a networking expert</a> or <a href="http://www.circlemud.org/jelson/software/tcpflow/">a hundred year old professor of computer science</a> you’re lost.</p>
 
-    
-        <div class="blogPost"><a href="/Hive-Talks-Ladies">
-          <h1>Hive Talks - Ladies' Edition</h1>
-          <p>Join the meetup we're organizing at Apiary's Prague office on 20th of August</p>
-          <p class="authorDate inline">Daria Grudzien — 16 Aug 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Constitutions">
-          <h1>Announcing Apiary Constitutions</h1>
-          <p>How to write API Style Guide rules collaboratively</p>
-          <p class="authorDate inline">Jakub Mikulas — 25 Apr 2018</p>
-        </a></div>
-    
-        <div class="blogPost"><a href="/Evolving-Embed">
-          <h1>Evolving Embed</h1>
-          <p>What's new with our Embed feature</p>
-          <p class="authorDate inline">Vladimír Gorej — 25 Apr 2018</p>
-        </a></div>
-    
+<p>What now? What is the most common and simplest HTTP client? It’s <a href="http://curl.haxx.se/docs/manpage.html"><code class="highlighter-rouge">curl</code></a>, of course. But cURL <code class="highlighter-rouge">--verbose</code> output does not contain <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html">HTTP Request</a> <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.3">message body</a>:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -s -v -d "foo=bar" http://curltraceparser.apiary.io/shopping-cart
+&gt; POST /shopping-cart HTTP/1.1
+&gt; User-Agent: curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8x zlib/1.2.5
+&gt; Host: curltraceparser.apiary.io
+&gt; Accept: */*
+&gt; Content-Length: 7
+&gt; Content-Type: application/x-www-form-urlencoded
+&gt;
+* upload completely sent off: 7 out of 7 bytes
+&lt; HTTP/1.1 201 Created
+...
+</code></pre>
+</div>
+
+<h2 id="the-solution">The solution</h2>
+<p>Did you know that <a href="http://curl.haxx.se/docs/manpage.html">cURL</a> can save whole raw HTTP communication to a trace file? Unfortunately the trace file format is not really human friendly.</p>
+
+<p>That why we have created and open-sourced our simple <a href="https://github.com/apiaryio/curl-trace-parser">parser for <code class="highlighter-rouge">curl --trace</code> option</a>. So from now on, anytime you want to see a raw and pristine HTTP message, this is the simplest way to do it:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ npm install -g curl-trace-praser
+$ curl --trace - -s -d "foo=bar" http://curltraceparser.apiary.io/shopping-cart | curl-trace-parser
+&gt; POST /shopping-cart HTTP/1.1
+&gt; ser-Agent: curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8x zlib/1.2.5
+&gt; Host: curltraceparser.apiary.io
+&gt; Accept: */*
+&gt; Content-Length: 7
+&gt; Content-Type: application/x-www-form-urlencoded
+&gt;
+&gt; foo=bar
+&gt;
+
+&lt; HTTP/1.1 201 Created
+&lt; Content-Type: application/json
+&lt; Date: Mon, 22 Jul 2013 13:24:33 GMT
+&lt; X-Apiary-Ratelimit-Limit: 120
+&lt; X-Apiary-Ratelimit-Remaining: 118
+&lt; Content-Length: 50
+&lt; Connection: keep-alive
+&lt;
+&lt; { "status": "created", "url": "/shopping-cart/2" }
+</code></pre>
+</div>
+
+<p>There it is! Let’s introduce ourselves. <strong>This is the HTTP message</strong>.</p>
+
+
+
   </div>
 </div>
+
 
 </div>
 
