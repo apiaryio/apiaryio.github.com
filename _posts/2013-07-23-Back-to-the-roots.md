@@ -60,7 +60,6 @@ There it is! Let's introduce ourselves. **This is the HTTP message**.
 [w3c]: http://www.w3.org/Protocols/
 [roy]: http://roy.gbiv.com/
 [steve]: http://www.steveklabnik.com/
-[hue]: http://developers.meethue.com/
 [tesla]: http://docs.timdorr.apiary.io/
 [house]: http://www.belkin.com/us/wemo
 [wireshark]: http://www.wireshark.org/
