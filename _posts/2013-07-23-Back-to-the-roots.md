@@ -56,8 +56,8 @@ That why we have created and open-sourced our simple [parser for `curl --trace` 
 
 There it is! Let's introduce ourselves. **This is the HTTP message**.
 
-[http1]: http://www.w3.org/Protocols/HTTP/1.0/spec.html
-[w3c]: http://www.w3.org/Protocols/
+[http1]: https://www.w3.org/Protocols/HTTP/1.0/spec.html
+[w3c]: https://www.w3.org/Protocols/
 [roy]: http://roy.gbiv.com/
 [steve]: http://www.steveklabnik.com/
 [tesla]: http://docs.timdorr.apiary.io/
@@ -66,10 +66,10 @@ There it is! Let's introduce ourselves. **This is the HTTP message**.
 [tcpflow]: http://www.circlemud.org/jelson/software/tcpflow/
 [chromehowto]: http://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome
 [railshowto]: http://stackoverflow.com/questions/11267540/how-to-log-specific-request-details-to-rails-server-logs
-[message]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html
+[message]: https://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html
 [apiconfs]: http://web.archive.org/web/20131006112904/http://api500.com/post/52003926392/the-next-conferences-on-apis-to-attend-in-2013
 [curl]: http://curl.haxx.se/docs/manpage.html
 [parser]: https://github.com/apiaryio/curl-trace-parser
 [arduinohttp]: http://arduino.cc/en/Tutorial/WebServer
-[messagebody]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.3
-[request]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
+[messagebody]: https://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.3
+[request]: https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
