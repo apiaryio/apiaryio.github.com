@@ -19,7 +19,7 @@ Join us, grab a drink and enjoy the talks:
 
 - Dite Gashi ([Cryptelo](https://www.cryptelo.com/), [Decissio](https://decissio.com/), [Bethereum](https://www.bethereum.com/)) will talk about blockchain-powered trust-less data storing and processing. One of Dite's projects, Cryptelo, raised $1 Million USD during a single night of its ICO pre-sale.
 
-- Petr Somol ([Cisco Systems](https://cognitive.cisco.com/), [University of Economics](https://www.vse.cz/), [Department of Pattern Recognition](http://ro.utia.cas.cz/)) will introduce us to the pains of machine learning applied to threat analysis. Petr is the Head of Cognitive Research at Cisco, the team behind Cognitive Threat Analytics capable of detecting attacks based on web traffic, endpoint and network data.
+- Petr Somol Cisco Systems, [University of Economics](https://www.vse.cz/), [Department of Pattern Recognition](http://ro.utia.cas.cz/)) will introduce us to the pains of machine learning applied to threat analysis. Petr is the Head of Cognitive Research at Cisco, the team behind Cognitive Threat Analytics capable of detecting attacks based on web traffic, endpoint and network data.
 
 *Date:* 6th of March, 2018
 
