@@ -77,6 +77,7 @@ task :test do
     :url_ignore => [
       /relishapp.com/, # blacklisted?
       /nike.com/, # blacklisted?
+      /cognitive.cisco.com/, # blacklisted?
       /https:\/\/blog.apiary.io\/20/, # Prevent checking for unpublished articles
       /https:\/\/github\.com\/search/, # Prevent 429 limiting
     ],
