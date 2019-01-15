@@ -14,7 +14,7 @@ With that, Apiary Blueprint Format is now defined as a proper grammar.
 Both grammar and javascript parser (works both in browser and in
 [node.js](http://nodejs.org/)) are open-source and
 [available on github](https://github.com/apiaryio/blueprint-parser).
-It is based on [PEG.js](http://pegjs.majda.cz/)
+It is based on [PEG.js](https://pegjs.org/)
 and I'd like to thank its author, [David Majda](http://majda.cz/),
 for writing it and also contributing enormously to Apiary blueprint grammar.
 
