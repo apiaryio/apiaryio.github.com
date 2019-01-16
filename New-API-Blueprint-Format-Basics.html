@@ -115,22 +115,21 @@
 
 <p>For example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code># GET /message_of_the_day
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># GET /message_of_the_day
 Retrieves message of the day.
 
 ## Response 200 (application/json)
 	{ "message" : "Hello World" }
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<p>represents an endpoint “message_of_the_day”, which upon being requested with the HTTP GET method will return a status code of <code class="highlighter-rouge">200</code> with the response header <code class="highlighter-rouge">Content-Type: application/json</code> and response body <code class="highlighter-rouge"><span class="p">{</span><span class="w"> </span><span class="nt">"message"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Hello World!"</span><span class="w"> </span><span class="p">}</span></code>.</p>
+<p>represents an endpoint “message_of_the_day”, which upon being requested with the HTTP GET method will return a status code of <code class="highlighter-rouge">200</code> with the response header <code class="highlighter-rouge">Content-Type: application/json</code> and response body <code class="highlighter-rouge">{ "message" : "Hello World!" }</code>.</p>
 
 <h2 id="defining-parameters">Defining parameters</h2>
 <p>One of much requested features of the new format is the ability to define both URI and payload parameters. While you can always do this on your own using any Markdown-formatted text in the endpoint description, the New API Blueprint Format will introduce direct support for defining parameters and body payload.</p>
 
 <p>Consider an endpoint that allows you to retrieve a message of the day for any given date:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code># GET /message_of_the_day{/date}
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># GET /message_of_the_day{/date}
 Retrieves message of the day. If no @date is specified a message for the current day is returned.
 
 ## Parameters
@@ -140,8 +139,7 @@ Retrieves message of the day. If no @date is specified a message for the current
 @.message (string) ... Extraordinaire message of the day.
 
 	{ "message" : "Hello World" }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>As you can see the <code class="highlighter-rouge">@</code> sign denotes a URI parameter while <code class="highlighter-rouge">@.</code> stands for local scope parameters. Also in this example we have used MongoDB - style <a href="http://docs.mongodb.org/manual/core/document/#dot-notation">dot notation</a> for reaching into a JSON object.</p>
 
@@ -150,7 +148,7 @@ Retrieves message of the day. If no @date is specified a message for the current
 
 <p>Consider an endpoint that allows you to create a new message of the day either as a copy of a message from another day or as a completely new one:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code># PUT /message_of_the_day
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># PUT /message_of_the_day
 Creates message of the day for the current day either from **scratch** or as a **copy** of an existing message.
 
 ## New MOTD Request (application/json)
@@ -164,8 +162,7 @@ Creates message of the day for the current day either from **scratch** or as a *
 
 ## Response 404 (application/json)
 	{ "status" : "not found" }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Note that “New MOTD” and “Duplicate MOTD” strings in the request headers are just identifiers of the particular <code class="highlighter-rouge">Request</code> section. Also note we usually suggest documenting only regular state responses and saving error states for the general API Overview discussion.</p>
 
@@ -178,7 +175,7 @@ Creates message of the day for the current day either from **scratch** or as a *
 <h2 id="coming-up-next">Coming up next</h2>
 <p>In the next post I will be discussing intermediate features of New API Blueprint Format such as Blueprint Modules, References, User-specific tokens, Multimedia and Authentication.</p>
 
-<p>Until then, I would love to hear from you. Please do not hesitate to share with us your thoughts and comments. You can contact me directly at <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#122;&#064;&#097;&#112;&#105;&#097;&#114;&#121;&#046;&#105;&#111;">my email</a> or comment on <a href="http://support.apiary.io/forums/120125-general/suggestions/2970802-new-api-blueprint-format">New API Blueprint Format</a>.</p>
+<p>Until then, I would love to hear from you. Please do not hesitate to share with us your thoughts and comments. You can contact me directly at <a href="mailto:z@apiary.io">my email</a> or comment on <a href="http://support.apiary.io/forums/120125-general/suggestions/2970802-new-api-blueprint-format">New API Blueprint Format</a>.</p>
 
 
   </div>

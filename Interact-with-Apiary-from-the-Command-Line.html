@@ -103,9 +103,8 @@
 
 <p>With the Apiary CLI tool, you can <a href="http://client.apiary.io/#preview">preview</a> what your API Blueprint would look like on Apiary while working in your favorite editor.</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>apiary preview --server
-</code></pre>
-</div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apiary preview <span class="nt">--server</span>
+</code></pre></div></div>
 
 <p>By default, this is going to be looking in the current directory for an API Blueprint file named <code class="highlighter-rouge">apiary.apib</code>, which can be changed with the <code class="highlighter-rouge">--path</code> flag. Every refresh of the page will send your API Blueprint to Apiary to be rendered and sent back to you.</p>
 
@@ -115,9 +114,8 @@
 
 <p>To make this work even better with your workflow, you can also <a href="http://client.apiary.io/#fetch">fetch</a> and <a href="http://client.apiary.io/#publish">publish</a> your API Blueprints. If you have existing documentation at Apiary, you can easily grab that document for developing and previewing locally.</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>apiary fetch --api-name<span class="o">=</span>API_NAME
-</code></pre>
-</div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apiary fetch <span class="nt">--api-name</span><span class="o">=</span>API_NAME
+</code></pre></div></div>
 
 <p>This command grabs the published documentation and saves it as <code class="highlighter-rouge">apiary.apib</code>.</p>
 
@@ -125,9 +123,8 @@
 
 <p>Once you’ve made your changes and previewed how they look locally, you can publish those changes directly to Apiary with another simple command.</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>apiary publish --api-name<span class="o">=</span>API_NAME
-</code></pre>
-</div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apiary publish <span class="nt">--api-name</span><span class="o">=</span>API_NAME
+</code></pre></div></div>
 
 <p>No need to copy and paste to Apiary–just publish your changes and keep working.</p>
 

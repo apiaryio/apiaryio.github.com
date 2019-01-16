@@ -119,7 +119,7 @@ can be mounted with different state at different locations. I call these feature
 I will demonstrate what a standard feature is in an example Todo List. 
 The standard feature directory has a prescribed structure that usually looks like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>src/
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>src/
  todo-feature/
    components/ 
      TodoList.js     
@@ -132,8 +132,7 @@ The standard feature directory has a prescribed structure that usually looks lik
    selectors.js
    utils.js
    middleware.js
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="components">components/</h4>
 
@@ -179,7 +178,7 @@ Regardless, the full representation of the standard feature should look like the
 If the number of components in the standard feature becomes too big, you should break the feature into separate sub-features. 
 These sub-features should adhere to the same rules as its parent feature.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>src/
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>src/
  todo-feature/
    components/ 
      TodoList.js
@@ -197,8 +196,7 @@ These sub-features should adhere to the same rules as its parent feature.</p>
    selectors.js
    utils.js
    middleware.js
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>It is always good to break features into smaller sub-features with encapsulated logic to reduce the complexity.
 Try to think of it as applying The Single Responsibility Principle. 
@@ -226,19 +224,18 @@ Observe, for example, the difference between standard feature actions and reusab
 
 <h4 id="standard-feature-actionsjs">Standard feature actions.js</h4>
 
-<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">const</span> <span class="nx">STANDARD_FEATURE_INCREMENT_CLICK</span> <span class="o">=</span> <span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">namespace</span><span class="p">}</span><span class="nx">_STANDARD_FEATURE_INCREMENT_CLICK</span><span class="err">`</span><span class="p">;</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">STANDARD_FEATURE_INCREMENT_CLICK</span> <span class="o">=</span> <span class="s2">`</span><span class="p">${</span><span class="nx">namespace</span><span class="p">}</span><span class="s2">_STANDARD_FEATURE_INCREMENT_CLICK`</span><span class="p">;</span>
 
-<span class="kr">export</span> <span class="kr">const</span> <span class="nx">incrementClick</span> <span class="o">=</span> <span class="nx">createAction</span><span class="p">(</span><span class="nx">STANDARD_FEATURE_INCREMENT_CLICK</span><span class="p">);</span>
-</code></pre>
-</div>
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">incrementClick</span> <span class="o">=</span> <span class="nx">createAction</span><span class="p">(</span><span class="nx">STANDARD_FEATURE_INCREMENT_CLICK</span><span class="p">);</span>
+</code></pre></div></div>
 
 <h4 id="reusable-feature-actionsjs">Reusable feature actions.js</h4>
 
-<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">createActions</span><span class="p">(</span><span class="nx">namespace</span><span class="p">,</span> <span class="nx">selectors</span><span class="p">)</span> <span class="p">{</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">createActions</span><span class="p">(</span><span class="nx">namespace</span><span class="p">,</span> <span class="nx">selectors</span><span class="p">)</span> <span class="p">{</span>
 
-  <span class="kr">const</span> <span class="nx">REUSABLE_FEATURE_INCREMENT_CLICK</span> <span class="o">=</span> <span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">namespace</span><span class="p">}</span><span class="nx">_REUSABLE_FEATURE_INCREMENT_CLICK</span><span class="err">`</span><span class="p">;</span>
+  <span class="kd">const</span> <span class="nx">REUSABLE_FEATURE_INCREMENT_CLICK</span> <span class="o">=</span> <span class="s2">`</span><span class="p">${</span><span class="nx">namespace</span><span class="p">}</span><span class="s2">_REUSABLE_FEATURE_INCREMENT_CLICK`</span><span class="p">;</span>
 
-  <span class="kr">const</span> <span class="nx">incrementClick</span> <span class="o">=</span> <span class="nx">createAction</span><span class="p">(</span><span class="nx">REUSABLE_FEATURE_INCREMENT_CLICK</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">incrementClick</span> <span class="o">=</span> <span class="nx">createAction</span><span class="p">(</span><span class="nx">REUSABLE_FEATURE_INCREMENT_CLICK</span><span class="p">);</span>
 
 
   <span class="k">return</span> <span class="p">{</span>
@@ -247,8 +244,7 @@ Observe, for example, the difference between standard feature actions and reusab
     <span class="nx">incrementClick</span><span class="p">,</span>
   <span class="p">};</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>And that’s it. You define everything inside these factory functions. 
 At this stage the reusable feature acts as a mere template. Check how the full

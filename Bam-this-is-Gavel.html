@@ -115,23 +115,21 @@
 
 <p>Gavel comes with CLI interface so the first version is very minimalistic:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ npm install -g gavel curl-trace-parser
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ npm install -g gavel curl-trace-parser
 $ curl --trace - http://httpbin.org/ip | curl-trace-parser  &gt; expected
 $ curl --trace - http://httpbin.org/ip | curl-trace-parser  &gt; real
 $ cat real | gavel expected
 $ echo $?
 0
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Let’s see what happens if CORS headers are missing in the response</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ cat real | grep -v 'Access-Control-Allow-Origin' &gt; real_without_cors
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat real | grep -v 'Access-Control-Allow-Origin' &gt; real_without_cors
 $ cat real_without_cors | gavel expected
 $ echo $?
 1 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>If you are a Node.js ninja, you can enjoy using the <a href="https://github.com/apiaryio/gavel.js">Gavel JS API</a></p>
 

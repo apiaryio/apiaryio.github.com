@@ -145,19 +145,18 @@
 
 <p>Let’s look at the <code class="highlighter-rouge">Folder</code> resource - a data model as used in backend, perhaps coming from a database:</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Folder</span>
-  <span class="kp">attr_accessor</span> <span class="ss">:id</span>
-  <span class="kp">attr_accessor</span> <span class="ss">:name</span>
-  <span class="kp">attr_accessor</span> <span class="ss">:description</span>
-  <span class="kp">attr_accessor</span> <span class="ss">:parent</span>
-  <span class="kp">attr_accessor</span> <span class="ss">:meta</span>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Folder</span>
+  <span class="nb">attr_accessor</span> <span class="ss">:id</span>
+  <span class="nb">attr_accessor</span> <span class="ss">:name</span>
+  <span class="nb">attr_accessor</span> <span class="ss">:description</span>
+  <span class="nb">attr_accessor</span> <span class="ss">:parent</span>
+  <span class="nb">attr_accessor</span> <span class="ss">:meta</span>
 <span class="k">end</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>In REST we do not send the resources around as they are. Instead we interact with their <em>representations</em>. With <a href="https://github.com/apotonick/roar">Roar</a> I can easily create a resource representation using the appropriate representer, specifying what attributes to represent:</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">module</span> <span class="nn">FolderJSONRepresentation</span>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="nn">FolderJSONRepresentation</span>
   <span class="kp">include</span> <span class="no">Roar</span><span class="o">::</span><span class="no">Representer</span><span class="o">::</span><span class="no">JSON</span>
 
   <span class="n">property</span> <span class="ss">:id</span>
@@ -166,16 +165,14 @@
   <span class="n">property</span> <span class="ss">:parent</span>
   <span class="n">property</span> <span class="ss">:meta</span>
 <span class="k">end</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>and then apply the representer on a resource:</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="n">folder</span> <span class="o">=</span> <span class="no">Folder</span><span class="p">.</span><span class="nf">new</span>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">folder</span> <span class="o">=</span> <span class="no">Folder</span><span class="p">.</span><span class="nf">new</span>
 <span class="n">folder</span><span class="p">.</span><span class="nf">extend</span><span class="p">(</span><span class="no">FolderJSONRepresentation</span><span class="p">)</span>
 <span class="n">folder</span><span class="p">.</span><span class="nf">to_json</span>  <span class="c1"># returning JSON representation of Folder</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Similarly I can define and use the HAL or any other (e.g. XML) representation for the <code class="highlighter-rouge">Folder</code> resource. Following this pattern we can keep the backend data models free of any representation clutter and also radically simplify the API content negotiation.</p>
 
@@ -193,7 +190,7 @@
 
 <p>How hard can this be using Ruby and <a href="https://github.com/gamache/hyperresource">HyperResource</a>?</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="n">api</span> <span class="o">=</span> <span class="no">HyperResource</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">root: </span><span class="s1">'http://mock-gtdtodoapi.apiary.io'</span><span class="p">)</span>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">api</span> <span class="o">=</span> <span class="no">HyperResource</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">root: </span><span class="s1">'http://mock-gtdtodoapi.apiary.io'</span><span class="p">)</span>
 <span class="n">api</span><span class="p">.</span><span class="nf">folders</span><span class="p">.</span><span class="nf">get</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span>
 
   <span class="n">folder</span> <span class="o">=</span> <span class="no">Folder</span><span class="p">.</span><span class="nf">new</span>
@@ -206,30 +203,26 @@
   <span class="nb">puts</span> <span class="s2">"  parent: </span><span class="si">#{</span><span class="n">folder</span><span class="p">.</span><span class="nf">parent</span><span class="si">}</span><span class="s2">"</span>
   <span class="nb">puts</span> <span class="s2">"  meta: </span><span class="si">#{</span><span class="n">folder</span><span class="p">.</span><span class="nf">meta</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">"</span>
 <span class="k">end</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>What happens here?</p>
 
 <p>First I navigate to the root of GTD Todo API. In this case using the Apiary mock server:</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="n">api</span> <span class="o">=</span> <span class="no">HyperResource</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">root: </span><span class="s1">'http://mock-gtdtodoapi.apiary.io'</span><span class="p">)</span>
-</code></pre>
-</div>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">api</span> <span class="o">=</span> <span class="no">HyperResource</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">root: </span><span class="s1">'http://mock-gtdtodoapi.apiary.io'</span><span class="p">)</span>
+</code></pre></div></div>
 
 <p>Then I follow the <code class="highlighter-rouge">folders</code> link retrieving the <code class="highlighter-rouge">folders</code> resource HAL representation and iterate every embedded <code class="highlighter-rouge">folder</code> in it:</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="n">api</span><span class="p">.</span><span class="nf">folders</span><span class="p">.</span><span class="nf">get</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span>
-</code></pre>
-</div>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">api</span><span class="p">.</span><span class="nf">folders</span><span class="p">.</span><span class="nf">get</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span>
+</code></pre></div></div>
 
 <p>Finally I will create an empty instance of the <code class="highlighter-rouge">Folder</code> resource (sharing the same data model with the server). Extend it with HAL Roar representer and fetch in the folder body following the <code class="highlighter-rouge">self</code> link of the embedded item:</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="n">folder</span> <span class="o">=</span> <span class="no">Folder</span><span class="p">.</span><span class="nf">new</span>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">folder</span> <span class="o">=</span> <span class="no">Folder</span><span class="p">.</span><span class="nf">new</span>
 <span class="n">folder</span><span class="p">.</span><span class="nf">extend</span><span class="p">(</span><span class="no">FolderHALRepresentation</span><span class="p">)</span>
 <span class="n">folder</span><span class="p">.</span><span class="nf">from_hash</span><span class="p">(</span><span class="n">f</span><span class="p">.</span><span class="nf">get</span><span class="p">.</span><span class="nf">body</span><span class="p">)</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Voilà, here is one of the folders ready to print out!</p>
 

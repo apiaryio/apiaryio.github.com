@@ -121,15 +121,14 @@
 
 <p>Dredd is a command-line test runner for testing of your backend API application on the HTTP layer. <strong>Dredd enables documentation-driven development and test-driven development of your APIs.</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ npm install -g dredd
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ npm install -g dredd
 $ dredd ./apiary.apib http://localhost:3000
 Machines &gt; Machines collection &gt; Create a Machine &gt; :
   POST /machines "{\n  \"type\": \"b...
   PASS
 $ echo $?
 0
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Testing API Blueprint amplifies the contract benefits. When you negotiate a change in the contract tests will fail until your implementation is in accordance with the documentation. Similarly, should you rename a key in an HTTP response JSON you have to discuss it with the contract to make the tests pass.</p>
 

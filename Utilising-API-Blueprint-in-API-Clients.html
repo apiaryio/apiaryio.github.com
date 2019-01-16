@@ -113,15 +113,14 @@
 
 <p>Let’s walk though how to load an API Blueprint and perform transitions in Swift. First of all, we’re going to load our blueprint file that’s embedded in our application. You’re not limited to embedding it in your application. You could even retrieve it dynamically at run-time.</p>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">let</span> <span class="nv">blueprint</span> <span class="o">=</span> <span class="kt">Blueprint</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="s">"blueprint.json"</span><span class="p">,</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
-</code></pre>
-</div>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="nv">blueprint</span> <span class="o">=</span> <span class="kt">Blueprint</span><span class="p">(</span><span class="nv">named</span><span class="p">:</span> <span class="s">"blueprint.json"</span><span class="p">,</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+</code></pre></div></div>
 
 <p>Once you’ve loaded your blueprint, you can retrieve the different resource actions as <a href="https://github.com/the-hypermedia-project/charter/blob/master/reference/hypermedia-elements.md#transitions">transitions</a>.</p>
 
 <p>This example is going to make use of one of our example blueprints, “Polls API”. I’ve pulled out an excerpt of the example blueprint and it looks something like the following. Take a look at the <a href="http://docs.pollsapi.apiary.io/">full version</a> (<a href="https://github.com/apiaryio/api-blueprint/blob/be00b000e47561419f654374dd975a02083354e8/examples/Polls%20API.md">source</a>).</p>
 
-<div class="language-apib highlighter-rouge"><pre class="highlight"><code><span class="gh"># Polls</span>
+<div class="language-apib highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># Polls</span>
 Polls is a simple web service that allows consumers to view polls and vote in them.
 
 <span class="p">##</span><span class="k"> Group </span><span class="gh">Question</span>
@@ -149,34 +148,31 @@ This action allows you to vote on a question's choice.
 
 <span class="p">###</span><span class="gh"> List all questions </span><span class="s">[GET]</span>
 <span class="p">###</span><span class="gh"> Create a new question </span><span class="s">[POST]</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>We can pull out any of the actions from our blueprint by the resource and action name in Swift:</p>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">if</span> <span class="k">let</span> <span class="nv">transition</span> <span class="o">=</span> <span class="n">blueprint</span><span class="p">?</span><span class="o">.</span><span class="nf">transition</span><span class="p">(</span><span class="s">"Choice"</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="s">"Vote"</span><span class="p">)</span> <span class="p">{</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="k">let</span> <span class="nv">transition</span> <span class="o">=</span> <span class="n">blueprint</span><span class="p">?</span><span class="o">.</span><span class="nf">transition</span><span class="p">(</span><span class="s">"Choice"</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="s">"Vote"</span><span class="p">)</span> <span class="p">{</span>
   <span class="c1">// Perform, or introspect your transition.</span>
 <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
   <span class="c1">// Gracefully handle the absence of the transition.</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This transition allows us to introspect values at run-time, retrieving protocol information such as the HTTP method and URI along with all the URI parameters.</p>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="nf">println</span><span class="p">(</span><span class="n">transition</span><span class="o">.</span><span class="n">uri</span><span class="p">)</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">println</span><span class="p">(</span><span class="n">transition</span><span class="o">.</span><span class="n">uri</span><span class="p">)</span>
 <span class="nf">println</span><span class="p">(</span><span class="n">transition</span><span class="o">.</span><span class="n">method</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">parameter</span><span class="p">)</span> <span class="k">in</span> <span class="n">transition</span><span class="o">.</span><span class="n">parameters</span> <span class="p">{</span>
   <span class="nf">println</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
   <span class="nf">println</span><span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">parameter</span><span class="o">.</span><span class="n">value</span><span class="se">)</span><span class="s"> </span><span class="se">\(</span><span class="n">parameter</span><span class="o">.</span><span class="n">defaultValue</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>We can use the elegant Swift HTTP networking library <a href="https://github.com/Alamofire/Alamofire">Alamofire</a> along with some convenience methods we’ve built to perform HTTP requests from our transition directly.</p>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">let</span> <span class="nv">baseURL</span> <span class="o">=</span> <span class="kt">NSURL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"http://polls.apiblueprint.org/"</span><span class="p">)</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="nv">baseURL</span> <span class="o">=</span> <span class="kt">NSURL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"http://polls.apiblueprint.org/"</span><span class="p">)</span>
 <span class="k">let</span> <span class="nv">poll</span> <span class="o">=</span> <span class="p">[</span>
   <span class="s">"title"</span><span class="p">:</span> <span class="s">"What's your favourite programming language?"</span>
 <span class="p">]</span>
@@ -184,13 +180,12 @@ This action allows you to vote on a question's choice.
 <span class="nf">request</span><span class="p">(</span><span class="n">baseURL</span><span class="p">,</span> <span class="n">transition</span><span class="p">,</span> <span class="nv">attributes</span><span class="p">:</span><span class="n">poll</span><span class="p">)</span><span class="o">.</span><span class="n">responseJSON</span> <span class="p">{</span> <span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="kt">JSON</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span> <span class="k">in</span>
   <span class="nf">println</span><span class="p">(</span><span class="kt">JSON</span><span class="p">)</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>For the other action, to vote on a question by it’s ID. We have a URI parameter
 <code class="highlighter-rouge">id</code> and <code class="highlighter-rouge">choice_id</code>. We can substitute this into the URI and make the request like so:</p>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">let</span> <span class="nv">params</span> <span class="o">=</span> <span class="p">[</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="nv">params</span> <span class="o">=</span> <span class="p">[</span>
   <span class="s">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
   <span class="s">"choice_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
 <span class="p">]</span>
@@ -198,8 +193,7 @@ This action allows you to vote on a question's choice.
 <span class="nf">request</span><span class="p">(</span><span class="n">baseURL</span><span class="p">,</span> <span class="n">transition</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span><span class="n">params</span><span class="p">)</span><span class="o">.</span><span class="n">responseJSON</span> <span class="p">{</span> <span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="kt">JSON</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span> <span class="k">in</span>
   <span class="nf">println</span><span class="p">(</span><span class="kt">JSON</span><span class="p">)</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This will result in performing a PUT request to <code class="highlighter-rouge">/questions/1/choices/2</code>.</p>
 

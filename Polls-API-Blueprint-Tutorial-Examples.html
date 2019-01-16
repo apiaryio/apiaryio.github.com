@@ -123,27 +123,25 @@
 <h2 id="backend-implementation">Backend Implementation</h2>
 <p>The Polls API comes with an <a href="http://github.com/apiaryio/polls-api">example implementation</a> so you can use it as a real API:</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>curl https://polls.apiblueprint.org/questions/1
-</code></pre>
-</div>
-<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nt">"question"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Favourite programming language?"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"published_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2014-11-11T08:40:51.620Z"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/questions/2"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"choices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>curl https://polls.apiblueprint.org/questions/1
+</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"question"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Favourite programming language?"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"published_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2014-11-11T08:40:51.620Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/questions/2"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"choices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"choice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Swift"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/questions/1/choices/1"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"votes"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+            </span><span class="s2">"choice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Swift"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/questions/1/choices/1"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"votes"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
         </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"choice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Python"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/questions/1/choices/2"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"votes"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+            </span><span class="s2">"choice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Python"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/questions/1/choices/2"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"votes"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
+</span></code></pre></div></div>
 
 <p>We’ve deployed an instance of this API and it’s accessible for anyone to experiment with: <code class="highlighter-rouge">https://polls.apiblueprint.org/</code>. You can also deploy your own instance of the Polls API to Heroku with a single click:</p>
 

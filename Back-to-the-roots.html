@@ -103,7 +103,7 @@
 
 <p>What now? What is the most common and simplest HTTP client? It’s <a href="http://curl.haxx.se/docs/manpage.html"><code class="highlighter-rouge">curl</code></a>, of course. But cURL <code class="highlighter-rouge">--verbose</code> output does not contain <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html">HTTP Request</a> <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.3">message body</a>:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ curl -s -v -d "foo=bar" http://curltraceparser.apiary.io/shopping-cart
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ curl -s -v -d "foo=bar" http://curltraceparser.apiary.io/shopping-cart
 &gt; POST /shopping-cart HTTP/1.1
 &gt; User-Agent: curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8x zlib/1.2.5
 &gt; Host: curltraceparser.apiary.io
@@ -114,15 +114,14 @@
 * upload completely sent off: 7 out of 7 bytes
 &lt; HTTP/1.1 201 Created
 ...
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="the-solution">The solution</h2>
 <p>Did you know that <a href="http://curl.haxx.se/docs/manpage.html">cURL</a> can save whole raw HTTP communication to a trace file? Unfortunately the trace file format is not really human friendly.</p>
 
 <p>That why we have created and open-sourced our simple <a href="https://github.com/apiaryio/curl-trace-parser">parser for <code class="highlighter-rouge">curl --trace</code> option</a>. So from now on, anytime you want to see a raw and pristine HTTP message, this is the simplest way to do it:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ npm install -g curl-trace-praser
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ npm install -g curl-trace-praser
 $ curl --trace - -s -d "foo=bar" http://curltraceparser.apiary.io/shopping-cart | curl-trace-parser
 &gt; POST /shopping-cart HTTP/1.1
 &gt; ser-Agent: curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8x zlib/1.2.5
@@ -143,8 +142,7 @@ $ curl --trace - -s -d "foo=bar" http://curltraceparser.apiary.io/shopping-cart 
 &lt; Connection: keep-alive
 &lt;
 &lt; { "status": "created", "url": "/shopping-cart/2" }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>There it is! Let’s introduce ourselves. <strong>This is the HTTP message</strong>.</p>
 
