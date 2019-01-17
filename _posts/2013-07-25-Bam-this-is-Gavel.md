@@ -52,7 +52,7 @@ Gavel's first version is very thin. It comes only with a boolean interface which
 [Gavel]: https://github.com/apiaryio/gavel
 [gavel.js]: https://github.com/apiaryio/gavel.js
 [gavelrelish]: https://www.relishapp.com/apiary/gavel/docs
-[http]: http://www.w3.org/Protocols/rfc2616/rfc2616.html
+[http]: https://www.w3.org/Protocols/rfc2616/rfc2616.html
 [Cucumber]: http://cukes.info/
 [Relish]: https://www.relishapp.com/
 [API Blueprint]: https://apiblueprint.org
