@@ -1,0 +1,281 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+
+  <title>ApiaryUI &mdash; Apiary Blog</title>
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <meta name="author" content="Apiary">
+  <link rel="alternate" type="application/rss+xml" title="The Apiary Blog Feed" href="https://blog.apiary.io/feed.xml" />
+
+  <meta name="application-name" content="Apiary">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type"  content="article">
+  <meta name="twitter:site" content="@apiaryio">
+  <meta name="twitter:creator" content="@apiaryio">
+
+  <meta name="twitter:title" content="ApiaryUI &mdash; Apiary Blog">
+  <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
+
+  <meta property="og:title" content="ApiaryUI &mdash; Apiary Blog">
+  <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  
+    <meta property="og:url" content="https://blog.apiary.io/ApiaryUI">
+    <meta name="description" content="Introduction of new version of Apiary Interactive Documentation &mdash; Apiary Blog">
+    <meta name="twitter:description" content="Introduction of new version of Apiary Interactive Documentation &mdash; Apiary Blog">
+    <meta property="og:description" content="Introduction of new version of Apiary Interactive Documentation &mdash; Apiary Blog">
+  
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="canonical" href="https://blog.apiary.io/ApiaryUI">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
+  <link rel="stylesheet" href="https://static.apiary.io/assets/styles/modules/footer/footer.css">
+  <link rel="stylesheet" href="https://static.apiary.io/assets/styles/modules/website.css">
+  <link rel="stylesheet" href="/syntax.css">
+  <!-- /Styles -->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18252923-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</head>
+<body class="website">
+
+<!-- website-header -->
+  <header id="websiteHeader"><div class="positioning">
+    <a class="headerLogotypeLink" href="http://apiary.io/"><h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1><div class="headerLogotype"></div></a>
+    <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
+  </div></header>
+<!-- /website-header -->
+
+<!-- website-navigation -->
+  <div id="navigation">
+    <nav class="websiteNav positioning">
+      <ul class="clearAfter websiteNavMenu">
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/how-it-works">How It Works</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/plans">Plans</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/products">Product</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://help.apiary.io/">Help</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/company">Company</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://login.apiary.io/login">Sign In</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink websiteNavLinkHighlighted signIn" href="https://login.apiary.io/register">Sign Up</a></li>
+      </ul>
+      <a class="websiteNavLink backToTop" href="javascript:;"><span class="visuallyhidden">Back to top</span></a>
+    </nav>
+  </div>
+<!-- /website-navigation -->
+
+<div>
+  <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>ApiaryUI</h1>
+    
+      <p><span class="minority">By</span> <strong>char0n</strong>
+        (<a href="https://twitter.com/@vladimirgorej">@vladimirgorej</a>, <a href="mailto:vladimir.gorej@oracle.com">vladimir.gorej@oracle.com</a>) <span class="minority">on</span>&nbsp;17&nbsp;Jan&nbsp;2019
+      </p>
+    
+
+  <h4 id="new-apiary-interactive-documentation">New Apiary Interactive Documentation</h4>
+
+<p>After months of hard work and burning the midnight oil I am very proud to announce
+<strong>ApiaryUI</strong> - our brand new, fully rethought, and refactored version of 
+<a href="https://help.apiary.io/tools/interactive-documentation/">our existing Interactive Documentation</a>.</p>
+
+<p>We already gave ApiaryUI to our betatesters as a Christmas gift. We are now making it available for everyone,
+but before it will become THE API documentation, we want to hear from you.</p>
+
+<p>ApiaryUI is implemented in a way that allows complete separation from <a href="https://apiary.io/">apiary.io</a>
+and possibly forming a new standalone product in the future. Some features from our existing documentation product are still missing
+in ApiaryUI. We’ll implement them as soon as possible. These features include:</p>
+
+<ul>
+  <li><a href="https://help.apiary.io/tools/interactive-documentation-v4/#api-style-guide">API Style Guide integration</a></li>
+  <li><a href="https://help.apiary.io/tools/interactive-documentation-v4/#console">Console</a></li>
+  <li><a href="https://help.apiary.io/tools/interactive-documentation-v4/#speed">Caching</a></li>
+</ul>
+
+<p>Other features everyone asked for in existing documentation product were implemented to ApiaryUI. This
+includes the ones that we’re highlighting in the rest of the article. We’ve also managed to fix tonnes of existing bugs
+in our new ApiaryUI.</p>
+
+<p>As the architecture of ApiaryUI is very simple and solid, we are able to add new features and fix bugs at a rapid pace.
+Our extensive suite of unit, integration and e2e tests are helping with that.</p>
+
+<h3 id="whats-new-in-apiaryui">What’s new in ApiaryUI</h3>
+
+<p>ApiaryUI went through major product decisions. The concept of having three column layout stayed,
+but we reorganized the information displayed on each of them. Human Column (provides visibility into the long-form description of your AP)
+is now designed to contain all the information needed for consumer of API documentation to fully understand what the API is all about.
+Machine Column’s (displays the information that clients and servers will be interested in when interacting with your API)
+sole responsibility is to display machine processing related information about one HTTP Transaction (a single pair of corresponding request and response).</p>
+
+<p>Although ApiaryUI exclusively uses <a href="https://apielements.org/">API Elements</a> as a data format, it can also consume
+API Description Document formats like <a href="https://apiblueprint.org/">API Blueprint</a> or <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md">OpenAPI 2.0</a> (<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md">OpenAPI 3.0</a> coming soon)
+and it parses the documents in Web Worker inside the browser. This means that ApiaryUI is completely
+backend-less.</p>
+
+<h4 id="stability-and-predictability">Stability and predictability</h4>
+
+<p>ApiaryUI is React/Redux SPA (Single Page Application). We’ve used industry standard architectures
+and patterns to produce a simple and standardized codebase. As I mentioned earlier, our extensive
+test suite guarantees the stability of the ApiaryUI and makes further development predictable.</p>
+
+<h4 id="code-highlighting">Code highlighting</h4>
+
+<p>ApiaryUI highlights code examples in the following languages:</p>
+
+<ul>
+  <li>JavaScript</li>
+  <li>JSON</li>
+  <li>XML</li>
+  <li>Python</li>
+  <li>Ruby</li>
+  <li>Java</li>
+</ul>
+
+<h4 id="print-support">Print support</h4>
+
+<p>ApiaryUI is fully print-friendly. You can easily print the rendered documentation directly on paper or into a PDF.</p>
+
+<h4 id="accessibility">Accessibility</h4>
+
+<p>ApiaryUI complies with latest accessibility standards. We care about correctness of HTML semantics and proper use of 
+<a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">Aria</a> attributes.
+ApiaryUI supports the usage of screen readers and keyboard navigation. 
+Whether you have a disability, or a personal usage preference, it allows you to choose
+how to interact with the interface.</p>
+
+<h5 id="keyboard-navigation">Keyboard navigation</h5>
+
+<p>ApiaryUI supports keyboard navigation for people who cannot use a mouse or other pointing device, 
+or who want to use a keyboard as much as possible.</p>
+
+<h4 id="mobile-first-building-for-the-future">Mobile first (building for the future)</h4>
+
+<p>Mobile devices are already eclipsing desktops in adoption and internet use — that’s why ApiaryUI was built from
+the ground up to support any kind of device, any size screen, with any resolution. 
+ApiaryUI behaves and looks differently on mobile and desktop resolutions to maximize the user experience.</p>
+
+<h4 id="error-boundaries">Error boundaries</h4>
+
+<p>ApiaryUI is able to gracefully recover from errors. This means that if there is any problem, 
+you are still in control of your data, but you may decide to share it with us—and we’ll have your complete state,
+which will allow us to fix bugs much faster. This is all thanks to the fact we had the concept
+of <a href="https://reactjs.org/docs/error-boundaries.html">error boundaries</a> in mind when we were designing ApiaryUI.</p>
+
+<h3 id="next-steps">Next steps</h3>
+
+<h4 id="speed">Speed</h4>
+
+<p>We’re currently parsing your API Description Documentation on every browser view. This makes
+displaying of your API projects via ApiaryUI unnecessarily slower. We’ll cache the result
+of the parsing and skip the parsing phase of ApiaryUI. This should rapidly increase the
+rendering times.</p>
+
+<h4 id="deprecation-strategies">Deprecation strategies</h4>
+
+<p>We are currently in a process of creating deprecation strategies for<br />
+existing <a href="https://help.apiary.io/tools/interactive-documentation/">Apiary Interactive Documentation</a> product
+and <a href="https://help.apiary.io/tools/embed/">Embed</a>. When we have those strategies fully formed
+we’ll announce them here, on the <a href="https://blog.apiary.io/">Apiary Blog</a>.</p>
+
+<h4 id="development-of-missing-features">Development of missing features</h4>
+
+<p>We’ll be continuously delivering missing features from existing <a href="https://help.apiary.io/tools/interactive-documentation/">Apiary Interactive Documentation</a> product into ApiaryUI.
+To learn more about the missing features, please refer to <a href="https://help.apiary.io/tools/interactive-documentation-v4/">ApiaryUI help page</a>.</p>
+
+<h3 id="how-do-i-get-to-try-apiaryui-">How do I get to try ApiaryUI ?</h3>
+
+<p>We are thrilled to welcome all Apiary users to try the new ApiaryUI. 
+Follow <a href="https://help.apiary.io/tools/interactive-documentation-v4/">this tutorial in Apiary Help</a> to learn about how you can start using ApiaryUI on your Apiary projects today.</p>
+
+<p>Happy New Year!</p>
+
+
+  </div>
+</div>
+
+
+</div>
+
+<!-- website-footer -->
+  <hr>
+
+<footer class="applicationFooter">
+
+  <div class="applicationFooterRow">
+    <div class="applicationFooterColumns">
+    <div class="applicationFooterColumn">
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Platform</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiary.io/how-it-works">How It Works</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/products">Product</a></li>
+        <li><a class="applicationFooterListLink" href="http://enterprise.apiary.io/">Enterprise</a></li>
+	<li><a class="applicationFooterListLink" href="http://apiary.io/plans">Plans</a></li>
+        <li><a class="applicationFooterListLink" href="https://help.apiary.io">Help</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Company</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://blog.apiary.io/">Blog</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#team">Team</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/jobs">Jobs</a></li>
+        <li><a class="applicationFooterListLink" href="http://apiary.io/company#contact">Contact</a></li>
+        <li><a class="applicationFooterListLink" href="https://static.apiary.io/assets/files/apiary-press-kit.zip">Press Kit</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Open Source</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="http://apiblueprint.org">API Blueprint</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/snowcrash">Snowcrash</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
+        <li><a class="applicationFooterListLink" href="http://client.apiary.io">Apiary CLI</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Social</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
+        <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="applicationFooterRow">
+    <p class="applicationFooterCopyright">Copyright &copy; 2017, Oracle and/or its affiliates. All rights reserved. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners. <span class="applicationFooterCopyrightLinks"><a href="https://apiary.io/tos" class="applicationFooterCopyrightLink">Terms</a> • <a href="https://apiary.io/privacy" class="applicationFooterCopyrightLink">Privacy</a> • <span id="teconsent"></span></span></p>
+  </div>
+</footer>
+<!-- /website-footer -->
+
+<script src="https://static.apiary.io/assets/js/website-scroll.js"></script>
+<script>
+  websiteScroll();
+  document.documentElement.className += ' js';
+</script>
+<script src="https://consent.trustarc.com/notice?domain=apiary.io&amp;c=teconsent&amp;text=true&amp;js=nj&amp;noticeType=bb" async="async" crossorigin=""></script>
+
+</body>
+</html>

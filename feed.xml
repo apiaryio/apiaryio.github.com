@@ -7,6 +7,14 @@
     <atom:link href="https://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>ApiaryUI</title>
+        <description>Introduction of new version of Apiary Interactive Documentation</description>
+        <pubDate>Thu, 17 Jan 2019 12:00:00 +0200</pubDate>
+        <link>https://blog.apiary.io/ApiaryUI</link>
+        <guid isPermaLink="true">https://blog.apiary.io/ApiaryUI</guid>
+      </item>
+    
+      <item>
         <title>Hive Talks - Ladies' Edition</title>
         <description>Join the meetup we're organizing at Apiary's Prague office on 20th of August</description>
         <pubDate>Thu, 16 Aug 2018 10:00:00 +0200</pubDate>
@@ -78,14 +86,6 @@
         <pubDate>Wed, 22 Jun 2016 00:00:00 +0200</pubDate>
         <link>https://blog.apiary.io/Securing-APIs</link>
         <guid isPermaLink="true">https://blog.apiary.io/Securing-APIs</guid>
-      </item>
-    
-      <item>
-        <title>World’s First API Design Hackathon</title>
-        <description>We were at the World's first API Design Hackathon.</description>
-        <pubDate>Thu, 21 Apr 2016 00:00:00 -0700</pubDate>
-        <link>https://blog.apiary.io/API-Design-Hackaton</link>
-        <guid isPermaLink="true">https://blog.apiary.io/API-Design-Hackaton</guid>
       </item>
     
   </channel>
