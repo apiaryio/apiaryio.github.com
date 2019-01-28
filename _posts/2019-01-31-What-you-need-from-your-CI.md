@@ -11,7 +11,7 @@ Apiary is using multiple Continuous Integration Engines (CIE). Our testing tool 
 For a couple of projects we use [Wercker](https://www.oracle.com/corporate/acquisitions/wercker/) which supports the Oracle Managed Kubernetes running our workload.
 
 
-While our stack is based on Node.JS, we use many other languages including CPP, Python, Ruby and Go. We also use Git as source control management.  The Apiary team consists of about 25 engineers working across more than 100 projects. In this post I will focus on the biggest Apiary project, a big monolith app in Node.JS with external services using FaaS (AWS Lambda).
+While our stack is based on Node.JS, we use many other languages including C++, Python, Ruby and Go. We use Git as our source control management. The Apiary team consists of about 25 engineers working across more than 100 projects. In this post I will focus on the biggest Apiary project, a big monolith app in Node.JS with external services using FaaS (AWS Lambda).
 
 We started using [CircleCI](https://circleci.com/) for our application in 2012. In 2015 we introduced parallelism for tests, initially with 2 nodes which we have since increased to 8. In 2016 we moved our testing to Docker to improve the isolation. Since 2017 we have been using [CircleCI 2.0](https://circleci.com/blog/say-hello-to-circleci-2-0/) (docker native).
 
@@ -20,7 +20,7 @@ We started using [CircleCI](https://circleci.com/) for our application in 2012. 
 
 ## What do you need from your CIE?
 
-In my point of view these are the most important features of a CIE:
+In my point of view, these are the most important features of a CIE:
 
 1. Speed
 2. Reliability
@@ -48,13 +48,13 @@ We launched an engineering project to solve the problem of the long time it took
 - Parallelism
 
 We looked for easy ways to improve the results. We invested more money and divided the test suite to run in parallel containers, going from 4 to 8 containers and eventually ended up using 33 containers in CircleCI.
-We created our own tooling - [Testmon](#Monitoring - Testmon) can trigger builds running during the night, collect metrics from those builds, and produce reports which we display in the office to increase visibility of problematic tests. All metrics are pushed into our monitoring, and using PagerDuty we have set up alerting on possible problems, as well as creating incidents to make sure those issues are resolved.
+We created our own tooling called Testmon that can trigger builds running during the night, collect metrics from those builds, and produce reports which we display in the office to increase visibility of problematic tests. All metrics are pushed into our monitoring, and using PagerDuty we have set up alerting on possible problems, as well as creating incidents to make sure those issues are resolved.
 
 On the graph below you can see how we split the tests into groups. We moved the longest running tests and the least frequently changing parts into nightly builds. We ended up splitting the master test suite into 8 containers. We used Testmon for autobalancing, because every day it calculates the test suite configuration using the [LPT algorithm](https://en.wikipedia.org/wiki/Multiprocessor_scheduling#Algorithms).
 
 ![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/timing_small.png)
 
-CircleCI does have its own metrics called Insights. They aren't very helpful for making decisions, because you can only see the build times for the past 3 months, and it's impossible to see the details or modify them for your specific use case.
+CircleCI does have its own metrics called [Insights](https://circleci.com/docs/2.0/insights/). They aren't very helpful for making decisions, because you can only see the build times for the past 3 months, and it's impossible to see the details or modify them for your specific use case.
 
 ![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/circleci-insights_small.jpg)
 
