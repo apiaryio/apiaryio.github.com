@@ -1,13 +1,13 @@
 ---
 title: What you need from your CI
-excerpt: We start using CircleCI in 2012. This is our experience with them in last 7 years.
+excerpt: The main things to focus on regarding a CI. This is our experience with CIEs in the last 7 years.
 layout: post
 date: 2019-01-31 00:00:00 +0100
 author: abtris
 published: true
 ---
 
-Apiary is using multiple Continuous Integration Engines (CIE). Our testing tool [Dredd](https://dredd.org/en/latest/), for example, uses [TravisCI](https://travis-ci.org/) to support multiple versions of Node.JS, and [AppVeyor](https://www.appveyor.com/) to support Windows.
+Apiary is using multiple Continuous Integration Engines (CIE). Our testing tool [Dredd](https://dredd.org/en/latest/), for example, uses [Travis CI](https://travis-ci.org/) to support multiple versions of Node.JS, and [AppVeyor](https://www.appveyor.com/) to support Windows.
 For a couple of projects we use [Wercker](https://www.oracle.com/corporate/acquisitions/wercker/) which supports the Oracle Managed Kubernetes running our workload.
 
 
@@ -155,6 +155,6 @@ The benefit of using SaaS solution is a flat price, which works very well for st
 
 ## Summary
 
-Every team has a different approach to CIE problems and we are lucky to have many tools to choose from. At Apiary, we always prefer TravisCI for open-source. AppVeyor allows us to support Windows users, which was a significant problem in years before that CIE for OSS projects launched.
+Every team has a different approach to CIE problems and we are lucky to have many tools to choose from. At Apiary, we always prefer Travis CI for open-source. AppVeyor allows us to support Windows users, which was a significant problem in years before that CIE for OSS projects launched.
 
 We've also been very satisfied with CircleCI, and if we will migrate to another solution to be more consistent with other Oracle teams, we will maintain the current approach and try monitoring everything important to us. Getting data is critical, so don't hesitate to add CIE metrics to your production monitoring. If something doesn't work on your CIE, it can be treated as an incident in the same way the production issues are.
