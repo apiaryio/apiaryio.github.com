@@ -15,7 +15,7 @@ While our stack is based on Node.JS, we use many other languages including C++, 
 
 We started using [CircleCI](https://circleci.com/) for our application in 2012. In 2015 we introduced parallelism for tests, initially with 2 nodes which we have since increased to 8. In 2016 we moved our testing to Docker to improve the isolation. Since 2017 we have been using [CircleCI 2.0](https://circleci.com/blog/say-hello-to-circleci-2-0/) (docker native).
 
-![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/apiary_timeline_small.jpg)
+[![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/apiary_timeline_small.jpg)](/images/2019-01-11-Why-is-Apiary-using-CircleCI/apiary_timeline.jpg)
 
 
 ## What do you need from your CIE?
@@ -52,11 +52,11 @@ We created our own tooling called Testmon that can trigger builds running during
 
 On the graph below you can see how we split the tests into groups. We moved the longest running tests and the least frequently changing parts into nightly builds. We ended up splitting the master test suite into 8 containers. We used Testmon for autobalancing, because every day it calculates the test suite configuration using the [LPT algorithm](https://en.wikipedia.org/wiki/Multiprocessor_scheduling#Algorithms).
 
-![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/timing_small.png)
+[![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/timing_small.png)](/images/2019-01-11-Why-is-Apiary-using-CircleCI/timing.png)
 
 CircleCI does have its own metrics called [Insights](https://circleci.com/docs/2.0/insights/). They aren't very helpful for making decisions, because you can only see the build times for the past 3 months, and it's impossible to see the details or modify them for your specific use case.
 
-![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/circleci-insights_small.jpg)
+[![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/circleci-insights_small.jpg)](/images/2019-01-11-Why-is-Apiary-using-CircleCI/circleci-insights.jpg)
 
 That is why we are using Testmon to collect these metrics:
 
@@ -85,11 +85,11 @@ We get the data from out tests using a [test reporter](https://github.com/michae
 
 Testmon uses junit data with metrics to create dashboards as seen on the next screenshot:
 
-![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/long-running-dashboard_small.jpg)
+[![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/long-running-dashboard_small.jpg)](/images/2019-01-11-Why-is-Apiary-using-CircleCI/long-running-dashboard.jpg)
 
 and to generate full reports, too:
 
-![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/long-running-full-report-05-2018_small.jpg)
+[![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/long-running-full-report-05-2018_small.jpg)](/images/2019-01-11-Why-is-Apiary-using-CircleCI/long-running-full-report-05-2018.jpg)
 
 
 ## 2. Reliability
@@ -105,14 +105,14 @@ To solve the reliability problem we used a similar approach to long running test
 
 We created a report showing flaky tests. That helped increase awareness, but the main focus was on changing the approach to the problem whatsoever.
 
-![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/flaky-full-report_small.jpg)
+[![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/flaky-full-report_small.jpg)](/images/2019-01-11-Why-is-Apiary-using-CircleCI/flaky-full-report.jpg)
 
 We changed the procedure for managing the tests and we started by focusing on the responsibility. Every test and helper needed to be clearly assigned to a particular team which could be consulted if any issue occured. As a second step we adjusted the maintenance - now that there was a team responsible for every test,  flaky and long running tests could and should be a part of the regular sprint work.
 
 
 From our experience there is a very big difference between a build time and cumulative time, as you can see on this screenshot:
 
-![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/datadog-ci-cumulative-time-1y_small.jpg)
+[![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/datadog-ci-cumulative-time-1y_small.jpg)](/images/2019-01-11-Why-is-Apiary-using-CircleCI/datadog-ci-cumulative-time-1y.jpg)
 
 I think that is caused by shared hardware used in CircleCI. We are currently working with Wercker to be able to use our [Oracle Container Native Services](https://cloud.oracle.com/en_US/containers) instead.
 
@@ -128,15 +128,15 @@ Are you thinking about your scalability? Try answering these questions:
 
 We are always looking at a problem from the perspective of adding more people into team, and the impact on their work. You can see from the screenshot below that the waiting time in a queue is minimal, increasing only in some parts of the year.
 
-![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/datadog-ci-queue-time-trend-1y_small.jpg)
+[![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/datadog-ci-queue-time-trend-1y_small.jpg)](/images/2019-01-11-Why-is-Apiary-using-CircleCI/datadog-ci-queue-time-trend-1y.jpg)
 
 We focus on being able to deliver as fast and safely as possible. You can see that in the past year we had a good trend and the average time was stable or decreasing.
 
-![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/datadog-ci-build-time-master-1y_small.jpg)
+[![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/datadog-ci-build-time-master-1y_small.jpg)](/images/2019-01-11-Why-is-Apiary-using-CircleCI/datadog-ci-build-time-master-1y.jpg)
 
 
 
-![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/datadog-ci-container-time-trend-1y_small.jpg)
+[![](/images/2019-01-11-Why-is-Apiary-using-CircleCI/datadog-ci-container-time-trend-1y_small.jpg)](/images/2019-01-11-Why-is-Apiary-using-CircleCI/datadog-ci-container-time-trend-1y.jpg)
 
 
 
