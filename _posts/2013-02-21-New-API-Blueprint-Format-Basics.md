@@ -9,7 +9,7 @@ author: zdenek
 This is the second article in the series about upcoming API Blueprint format changes. As promised [earlier](https://blog.apiary.io/New-API-Blueprint-Format/) I will continue to introduce changes to the API Blueprint Format. Today we will discuss the basics of the New API Blueprint Format upon which we will later build.
 
 ## Markdown
-New API Blueprints will be written entirely in [Markdown](http://daringfireball.net/projects/markdown/). In addition to Markdown, advanced blueprints will rely on several [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) features. However, for discussing basics, all that matters is that the New API Blueprint is completely Markdown from the first line to the end.
+New API Blueprints will be written entirely in [Markdown](http://daringfireball.net/projects/markdown/). In addition to Markdown, advanced blueprints will rely on several [MultiMarkdown](https://fletcherpenney.net/multimarkdown/) features. However, for discussing basics, all that matters is that the New API Blueprint is completely Markdown from the first line to the end.
 
 A Markdown API Blueprint document follows a given structure. At the very heart of this structure is an API endpoint. In fact, a New API Blueprint document is essentially a collection of API endpoints. There are additional components such as the API Overview Section but for now we will focus only on API endpoints.
 
