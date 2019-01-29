@@ -47,7 +47,7 @@ We launched an engineering project to solve the problem of the long time it took
 - Groups
 - Parallelism
 
-We looked for easy ways to improve the results. We invested more money and divided the test suite to run in parallel containers, going from 4 to 8 containers and eventually ended up using 33 containers in CircleCI.
+We looked for easy ways to improve the results. We invested more money and divided the test suite to run in parallel containers, going from 4 to 8 containers per single build and eventually ended up using 33 containers in CircleCI (enabling 4 parallel builds of the monolith).
 We created our own tooling called Testmon that can trigger builds running during the night, collect metrics from those builds, and produce reports which we display in the office to increase visibility of problematic tests. All metrics are pushed into our monitoring, and using PagerDuty we have set up alerting on possible problems, as well as creating incidents to make sure those issues are resolved.
 
 On the graph below you can see how we split the tests into groups. We moved the longest running tests and the least frequently changing parts into nightly builds. We ended up splitting the master test suite into 8 containers. We used Testmon for autobalancing, because every day it calculates the test suite configuration using the [LPT algorithm](https://en.wikipedia.org/wiki/Multiprocessor_scheduling#Algorithms).
