@@ -113,6 +113,11 @@ authors:
     display_name: Daria Grudzien
     email: "daria.grudzien@oracle.com"
     twitter: "@dariagrudzien"
+  abtris:
+    name: Ladislav Prskavec
+    display_name: Ladislav Prskavec
+    email: "ladislav.prskavec@oracle.com"
+    twitter: "@abtris"
 
 
 keywords:     rest, api, tools, json, debugging, proxy, documentation, testing, tests, support
