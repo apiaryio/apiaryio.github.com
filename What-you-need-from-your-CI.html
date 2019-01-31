@@ -1,0 +1,323 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+
+  <title>What you need from your CI &mdash; Apiary Blog</title>
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <meta name="author" content="Apiary">
+  <link rel="alternate" type="application/rss+xml" title="The Apiary Blog Feed" href="https://blog.apiary.io/feed.xml" />
+
+  <meta name="application-name" content="Apiary">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type"  content="article">
+  <meta name="twitter:site" content="@apiaryio">
+  <meta name="twitter:creator" content="@apiaryio">
+
+  <meta name="twitter:title" content="What you need from your CI &mdash; Apiary Blog">
+  <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
+
+  <meta property="og:title" content="What you need from your CI &mdash; Apiary Blog">
+  <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  
+    <meta property="og:url" content="https://blog.apiary.io/What-you-need-from-your-CI">
+    <meta name="description" content="The main things to focus on regarding a CI. This is our experience with CIEs in the last 7 years. &mdash; Apiary Blog">
+    <meta name="twitter:description" content="The main things to focus on regarding a CI. This is our experience with CIEs in the last 7 years. &mdash; Apiary Blog">
+    <meta property="og:description" content="The main things to focus on regarding a CI. This is our experience with CIEs in the last 7 years. &mdash; Apiary Blog">
+  
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="canonical" href="https://blog.apiary.io/What-you-need-from-your-CI">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
+  <link rel="stylesheet" href="https://static.apiary.io/assets/styles/modules/footer/footer.css">
+  <link rel="stylesheet" href="https://static.apiary.io/assets/styles/modules/website.css">
+  <link rel="stylesheet" href="/syntax.css">
+  <!-- /Styles -->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18252923-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</head>
+<body class="website">
+
+<!-- website-header -->
+  <header id="websiteHeader"><div class="positioning">
+    <a class="headerLogotypeLink" href="https://apiary.io"><h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1><div class="headerLogotype"></div></a>
+    <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
+  </div></header>
+<!-- /website-header -->
+
+<!-- website-navigation -->
+  <div id="navigation">
+    <nav class="websiteNav positioning">
+      <ul class="clearAfter websiteNavMenu">
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/how-it-works">How It Works</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/plans">Plans</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/products">Product</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://help.apiary.io/">Help</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://apiary.io/company">Company</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink" href="https://login.apiary.io/login">Sign In</a></li>
+        
+        <li class="websiteNavItem"><a class="websiteNavLink websiteNavLinkHighlighted signIn" href="https://login.apiary.io/register">Sign Up</a></li>
+      </ul>
+      <a class="websiteNavLink backToTop" href="javascript:;"><span class="visuallyhidden">Back to top</span></a>
+    </nav>
+  </div>
+<!-- /website-navigation -->
+
+<div>
+  <div class="blog">
+  
+  <div class="blogArticle">
+    <a href="/" class="backToArticles">Back to Articles</a>
+    <h1>What you need from your CI</h1>
+    
+      <p><span class="minority">By</span> <strong>Ladislav Prskavec</strong>
+        (<a href="https://twitter.com/@abtris">@abtris</a>, <a href="mailto:ladislav.prskavec@oracle.com">ladislav.prskavec@oracle.com</a>) <span class="minority">on</span>&nbsp;30&nbsp;Jan&nbsp;2019
+      </p>
+    
+
+  <p>Apiary is using multiple Continuous Integration Engines (CIE). Our testing tool <a href="https://dredd.org/en/latest/">Dredd</a>, for example, uses <a href="https://travis-ci.org/">Travis CI</a> to support multiple versions of Node.JS, and <a href="https://www.appveyor.com/">AppVeyor</a> to support Windows.
+For a couple of projects we use <a href="https://www.oracle.com/corporate/acquisitions/wercker/">Wercker</a> which supports the Oracle Managed Kubernetes running our workload.</p>
+
+<p>While our stack is based on Node.JS, we use many other languages including C++, Python, Ruby and Go. We use Git as our source control management. The Apiary team consists of about 25 engineers working across more than 100 projects. In this post I will focus on the biggest Apiary project, a big monolith app in Node.JS with external services using FaaS (AWS Lambda).</p>
+
+<p>We started using <a href="https://circleci.com/">CircleCI</a> for our application in 2012. In 2015 we introduced parallelism for tests, initially with 2 nodes which we have since increased to 8. In 2016 we moved our testing to Docker to improve the isolation. Since 2017 we have been using <a href="https://circleci.com/blog/say-hello-to-circleci-2-0/">CircleCI 2.0</a> (docker native).</p>
+
+<p><a href="/images/2019-01-31-What-you-need-from-your-CI/apiary_timeline.jpg"><img src="/images/2019-01-31-What-you-need-from-your-CI/apiary_timeline_small.jpg" alt="apiary timeline" /></a></p>
+
+<h2 id="what-do-you-need-from-your-cie">What do you need from your CIE?</h2>
+
+<p>In my point of view, these are the most important features of a CIE:</p>
+
+<ol>
+  <li>Speed</li>
+  <li>Reliability</li>
+  <li>Scalability</li>
+  <li>Maintenance costs</li>
+</ol>
+
+<h2 id="1-speed">1. Speed</h2>
+
+<p>Firstly let me ask this: do you ever think about your builds? Try answering these questions:</p>
+
+<ul>
+  <li>Do you know your time to deploy?</li>
+  <li>Do you know how much time is spent in queue?</li>
+  <li>What is the maximum acceptable time for your build (5, 15, 30 min, 4h)?</li>
+  <li>Do you monitor those times or are you just guessing?</li>
+</ul>
+
+<p>In 2016 we had problems with the speed of our test suite. As you can see on the graph below, our tests in that year took 28 min in May and ended up taking up to 50 min in November. This caused multiple problems and affected the team morale. People started ignoring flaky tests and running more retries. The time to deploy was horrible and we couldn’t deploy new features as fast as we built them.</p>
+
+<p><img src="/images/2019-01-31-What-you-need-from-your-CI/buildtimes.png" alt="build times" /></p>
+
+<p>We launched an engineering project to solve the problem of the long time it took to deploy. We started with these main points:</p>
+
+<ul>
+  <li>Awareness</li>
+  <li>Groups</li>
+  <li>Parallelism</li>
+</ul>
+
+<p>We looked for easy ways to improve the results. We invested more money and divided the test suite to run in parallel containers, going from 4 to 8 containers per single build and eventually ended up using 33 containers in CircleCI (enabling 4 parallel builds of the monolith).
+We created our own tooling called Testmon that can trigger builds running during the night, collect metrics from those builds, and produce reports which we display in the office to increase visibility of problematic tests. All metrics are pushed into our monitoring, and using PagerDuty we have set up alerting on possible problems, as well as creating incidents to make sure those issues are resolved.</p>
+
+<p>On the graph below you can see how we split the tests into groups. We moved the longest running tests and the least frequently changing parts into nightly builds. We ended up splitting the master test suite into 8 containers. We used Testmon for autobalancing, because every day it calculates the test suite configuration using the <a href="https://en.wikipedia.org/wiki/Multiprocessor_scheduling#Algorithms">LPT algorithm</a>.</p>
+
+<p><a href="/images/2019-01-31-What-you-need-from-your-CI/timing.png"><img src="/images/2019-01-31-What-you-need-from-your-CI/timing_small.png" alt="timing" /></a></p>
+
+<p>CircleCI does have its own metrics called <a href="https://circleci.com/docs/2.0/insights/">Insights</a>. They aren’t very helpful for making decisions, because you can only see the build times for the past 3 months, and it’s impossible to see the details or modify them for your specific use case.</p>
+
+<p><a href="/images/2019-01-31-What-you-need-from-your-CI/circleci-insights.jpg"><img src="/images/2019-01-31-What-you-need-from-your-CI/circleci-insights_small.jpg" alt="circleci insights" /></a></p>
+
+<p>That is why we are using Testmon to collect these metrics:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">ci.&lt;APP_NAME&gt;.overall_time</code> - Duration of the whole CI run since submission</li>
+  <li><code class="highlighter-rouge">ci.&lt;APP_NAME&gt;.build_time</code> - Duration of the job run</li>
+  <li><code class="highlighter-rouge">ci.&lt;APP_NAME&gt;.queue_time</code> - How long this job was queued for before the run</li>
+  <li><code class="highlighter-rouge">ci.&lt;APP_NAME&gt;.cumulative_time</code> - The sum of all containers’ <code class="highlighter-rouge">build_time</code></li>
+  <li><code class="highlighter-rouge">ci.&lt;APP_NAME&gt;.cumulative_test_time</code> - The sum of the running times of all tests</li>
+  <li><code class="highlighter-rouge">ci.&lt;APP_NAME&gt;.build_time.containerX</code> - <code class="highlighter-rouge">build_time</code> on container X</li>
+  <li><code class="highlighter-rouge">ci.&lt;APP_NAME&gt;.test_time.containerX</code> - test running times on container X</li>
+  <li><code class="highlighter-rouge">&lt;APP_NAME&gt;.eslint_errors</code> - linting errors</li>
+</ul>
+
+<p>and tags:</p>
+
+<ul>
+  <li>success</li>
+  <li>failed</li>
+  <li>canceled</li>
+  <li>timedout</li>
+  <li>infrastructure_fail</li>
+  <li>retry</li>
+  <li>master</li>
+</ul>
+
+<p>All times are in seconds unless stated otherwise.</p>
+
+<p>We get the data from out tests using a <a href="https://github.com/michaelleeallen/mocha-junit-reporter">test reporter</a> in <a href="https://junit.org/">junit</a> format.</p>
+
+<p>Testmon uses junit data with metrics to create dashboards as seen on the next screenshot:</p>
+
+<p><a href="/images/2019-01-31-What-you-need-from-your-CI/long-running-dashboard.jpg"><img src="/images/2019-01-31-What-you-need-from-your-CI/long-running-dashboard_small.jpg" alt="long running tests dashboard" /></a></p>
+
+<p>and to generate full reports, too:</p>
+
+<p><a href="/images/2019-01-31-What-you-need-from-your-CI/long-running-full-report-05-2018.jpg"><img src="/images/2019-01-31-What-you-need-from-your-CI/long-running-full-report-05-2018_small.jpg" alt="long running tests - full report" /></a></p>
+
+<h2 id="2-reliability">2. Reliability</h2>
+
+<p>As explained in the previous section, in 2016 we had problems with tests running for way too long. But another issue with our test suite was its reliability - we had many flaky tests. Not being able to depend on the tests had a horrible impact on the team. We noticed that the engineers developed notification fatigue to tests which failed randomly. Instead on fixing the problems, people would instead rerun the tests and hope they would pass on the retry.</p>
+
+<p>To solve the reliability problem we used a similar approach to long running tests. We focused on:</p>
+
+<ul>
+  <li>Detection of flaky tests (2 builds with 1 git hash)</li>
+  <li>Awareness (dashboards, metrics)</li>
+  <li>Procedure</li>
+  <li>Consistency</li>
+</ul>
+
+<p>We created a report showing flaky tests. That helped increase awareness, but the main focus was on changing the approach to the problem whatsoever.</p>
+
+<p><a href="/images/2019-01-31-What-you-need-from-your-CI/flaky-full-report.jpg"><img src="/images/2019-01-31-What-you-need-from-your-CI/flaky-full-report_small.jpg" alt="flaky tests - full report" /></a></p>
+
+<p>We changed the procedure for managing the tests and we started by focusing on the responsibility. Every test and helper needed to be clearly assigned to a particular team which could be consulted if any issue occured. As a second step we adjusted the maintenance - now that there was a team responsible for every test,  flaky and long running tests could and should be a part of the regular sprint work.</p>
+
+<p>From our experience there is a very big difference between a build time and cumulative time, as you can see on this screenshot:</p>
+
+<p><a href="/images/2019-01-31-What-you-need-from-your-CI/datadog-ci-cumulative-time-1y.jpg"><img src="/images/2019-01-31-What-you-need-from-your-CI/datadog-ci-cumulative-time-1y_small.jpg" alt="cumulative times for 1y" /></a></p>
+
+<p>I think that is caused by shared hardware used in CircleCI. We are currently working with Wercker to be able to use our <a href="https://cloud.oracle.com/en_US/containers">Oracle Container Native Services</a> instead.</p>
+
+<h2 id="3-scalability">3. Scalability</h2>
+
+<p>Are you thinking about your scalability? Try answering these questions:</p>
+
+<ul>
+  <li>How long are your people waiting for CI results?</li>
+  <li>Can you run your tests in parallel?</li>
+  <li>Can you add 10 developers into the team and time to deploy will stay the same?</li>
+  <li>How much does your build infrastructure cost?</li>
+  <li>Do you have budget for build/test infrastructure?</li>
+</ul>
+
+<p>We are always looking at a problem from the perspective of adding more people into team, and the impact on their work. You can see from the screenshot below that the waiting time in a queue is minimal, increasing only in some parts of the year.</p>
+
+<p><a href="/images/2019-01-31-What-you-need-from-your-CI/datadog-ci-queue-time-trend-1y.jpg"><img src="/images/2019-01-31-What-you-need-from-your-CI/datadog-ci-queue-time-trend-1y_small.jpg" alt="ci queue time trend for 1y" /></a></p>
+
+<p>We focus on being able to deliver as fast and safely as possible. You can see that in the past year we had a good trend and the average time was stable or decreasing.</p>
+
+<p><a href="/images/2019-01-31-What-you-need-from-your-CI/datadog-ci-build-time-master-1y.jpg"><img src="/images/2019-01-31-What-you-need-from-your-CI/datadog-ci-build-time-master-1y_small.jpg" alt="ci build in master for 1y" /></a></p>
+
+<p><a href="/images/2019-01-31-What-you-need-from-your-CI/datadog-ci-container-time-trend-1y.jpg"><img src="/images/2019-01-31-What-you-need-from-your-CI/datadog-ci-container-time-trend-1y_small.jpg" alt="containers time trend for 1y" /></a></p>
+
+<h2 id="4-maintenance-costs">4. Maintenance costs</h2>
+
+<p>The fourth important thing is the cost. I’m focusing on the operations costs, and don’t calculate costs for tests maintenance as those are included in development itself.</p>
+
+<p>Your costs are different depending on the type of your CIE:</p>
+
+<ul>
+  <li>SaaS (Circle, flat fee: $50 per container, dedicated support)</li>
+  <li>On-Premise (Jenkins master + workers)</li>
+  <li>Hybrid (Wercker, use managed K8S cluster for workers)</li>
+  <li>Combinations (JenkinsX, Gitlab, …)</li>
+</ul>
+
+<p>The benefit of using SaaS solution is a flat price, which works very well for startups. If you get free credit from the cloud provider you can spare money using a hybrid solution to combine credits for running instances.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>Every team has a different approach to CIE problems and we are lucky to have many tools to choose from. At Apiary, we always prefer Travis CI for open-source. AppVeyor allows us to support Windows users, which was a significant problem in years before that CIE for OSS projects launched.</p>
+
+<p>We’ve also been very satisfied with CircleCI, and if we will migrate to another solution to be more consistent with other Oracle teams, we will maintain the current approach and try monitoring everything important to us. Getting data is critical, so don’t hesitate to add CIE metrics to your production monitoring. If something doesn’t work on your CIE, it can be treated as an incident in the same way the production issues are.</p>
+
+
+  </div>
+</div>
+
+
+</div>
+
+<!-- website-footer -->
+  <hr>
+
+<footer class="applicationFooter">
+
+  <div class="applicationFooterRow">
+    <div class="applicationFooterColumns">
+    <div class="applicationFooterColumn">
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Platform</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="https://apiary.io/how-it-works">How It Works</a></li>
+        <li><a class="applicationFooterListLink" href="https://apiary.io/products">Product</a></li>
+        <li><a class="applicationFooterListLink" href="https://apiary.io/plans">Plans</a></li>
+        <li><a class="applicationFooterListLink" href="https://help.apiary.io">Help</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Company</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="https://blog.apiary.io/">Blog</a></li>
+        <li><a class="applicationFooterListLink" href="https://apiary.io/company">Team</a></li>
+        <li><a class="applicationFooterListLink" href="https://apiary.io/jobs">Jobs</a></li>
+        <li><a class="applicationFooterListLink" href="https://apiary.io/oracle">Oracle</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Open Source</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="https://apiblueprint.org">API Blueprint</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
+        <li><a class="applicationFooterListLink" href="https://help.apiary.io/tools/apiary-cli/">Apiary CLI</a></li>
+      </ul>
+    </div><div class="applicationFooterColumn">
+      <h3 class="applicationFooterTitle">Social</h3>
+      <ul class="applicationFooterList">
+        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
+        <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
+      </ul>
+    </div></div>
+  </div>
+
+  <div class="applicationFooterRow">
+    <p class="applicationFooterCopyright">Copyright &copy; 2019, Oracle and/or its affiliates. All rights reserved. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.
+      <span class="applicationFooterCopyrightLinks"><a href="https://apiary.io/tos" class="applicationFooterCopyrightLink">Terms</a> • <a href="https://apiary.io/privacy" class="applicationFooterCopyrightLink">Privacy</a> • <span id="teconsent"></span></span>
+    </p>
+  </div>
+</footer>
+<!-- /website-footer -->
+
+<script src="https://static.apiary.io/assets/js/website-scroll.js"></script>
+<script>
+  websiteScroll();
+  document.documentElement.className += ' js';
+</script>
+<script src="https://consent.trustarc.com/notice?domain=apiary.io&amp;c=teconsent&amp;text=true&amp;js=nj&amp;noticeType=bb" async="async" crossorigin=""></script>
+
+</body>
+</html>

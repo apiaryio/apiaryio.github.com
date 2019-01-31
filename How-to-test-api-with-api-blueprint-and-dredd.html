@@ -145,7 +145,7 @@
 
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c">#!/bin/sh</span>
   ./node_modules/coffee-script/bin/coffee app.coffee &amp;
-  sleep 5
+  <span class="nb">sleep </span>5
   <span class="nv">PID</span><span class="o">=</span><span class="nv">$!</span>
   dredd apiary.apib http://localhost:3000/
   <span class="nv">RESULT</span><span class="o">=</span><span class="nv">$?</span>
