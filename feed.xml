@@ -7,6 +7,14 @@
     <atom:link href="https://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Welcoming OpenAPI&nbsp;3.0 to Apiary</title>
+        <description>Try out OpenAPI 3.0 in Apiary!</description>
+        <pubDate>Wed, 06 Feb 2019 16:00:00 +0000</pubDate>
+        <link>https://blog.apiary.io/OAS-3</link>
+        <guid isPermaLink="true">https://blog.apiary.io/OAS-3</guid>
+      </item>
+    
+      <item>
         <title>What you need from your CI</title>
         <description>The main things to focus on regarding a CI. This is our experience with CIEs in the last 7 years.</description>
         <pubDate>Wed, 30 Jan 2019 23:00:00 +0000</pubDate>
@@ -76,16 +84,6 @@
         <pubDate>Thu, 25 Aug 2016 23:00:00 +0000</pubDate>
         <link>https://blog.apiary.io/Test-Your-Swagger-API</link>
         <guid isPermaLink="true">https://blog.apiary.io/Test-Your-Swagger-API</guid>
-      </item>
-    
-      <item>
-        <title>Scaling Your API Design Workflow</title>
-        <description>&lt;p&gt;These days, software development is faster paced than ever before, and it’s laser focused on rapid iteration, continuous delivery pipelines, and automating away the boring parts.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 10 Jul 2016 22:00:00 +0000</pubDate>
-        <link>https://blog.apiary.io/Scaling-Your-API-Design-Workflow</link>
-        <guid isPermaLink="true">https://blog.apiary.io/Scaling-Your-API-Design-Workflow</guid>
       </item>
     
   </channel>

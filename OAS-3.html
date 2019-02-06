@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Paw Integration &mdash; Apiary Blog</title>
+  <title>Welcoming OpenAPI&nbsp;3.0 to Apiary &mdash; Apiary Blog</title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <meta name="author" content="Apiary">
@@ -15,23 +15,23 @@
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
-  <meta name="twitter:title" content="Paw Integration &mdash; Apiary Blog">
+  <meta name="twitter:title" content="Welcoming OpenAPI&nbsp;3.0 to Apiary &mdash; Apiary Blog">
   <meta name="twitter:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
 
-  <meta property="og:title" content="Paw Integration &mdash; Apiary Blog">
+  <meta property="og:title" content="Welcoming OpenAPI&nbsp;3.0 to Apiary &mdash; Apiary Blog">
   <meta property="og:image" content="https://blog.apiary.io/images/apiary-logotype-3D-only.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io/Paw-Integration">
-    <meta name="description" content="Using Paw, a fully-featured HTTP API client for Mac with API Blueprint integration. &mdash; Apiary Blog">
-    <meta name="twitter:description" content="Using Paw, a fully-featured HTTP API client for Mac with API Blueprint integration. &mdash; Apiary Blog">
-    <meta property="og:description" content="Using Paw, a fully-featured HTTP API client for Mac with API Blueprint integration. &mdash; Apiary Blog">
+    <meta property="og:url" content="https://blog.apiary.io/OAS-3">
+    <meta name="description" content="Try out OpenAPI 3.0 in Apiary! &mdash; Apiary Blog">
+    <meta name="twitter:description" content="Try out OpenAPI 3.0 in Apiary! &mdash; Apiary Blog">
+    <meta property="og:description" content="Try out OpenAPI 3.0 in Apiary! &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="canonical" href="https://blog.apiary.io/Paw-Integration">
+  <link rel="canonical" href="https://blog.apiary.io/OAS-3">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
@@ -90,33 +90,105 @@
   
   <div class="blogArticle">
     <a href="/" class="backToArticles">Back to Articles</a>
-    <h1>Paw Integration</h1>
+    <h1>Welcoming OpenAPI&nbsp;3.0 to Apiary</h1>
     
       <p><span class="minority">By</span> <strong>Kyle</strong>
-        (<a href="https://twitter.com/@kylefuller">@kylefuller</a>, <a href="mailto:kyle.fuller@oracle.com">kyle.fuller@oracle.com</a>) <span class="minority">on</span>&nbsp;02&nbsp;Dec&nbsp;2014
+        (<a href="https://twitter.com/@kylefuller">@kylefuller</a>, <a href="mailto:kyle.fuller@oracle.com">kyle.fuller@oracle.com</a>) <span class="minority">on</span>&nbsp;06&nbsp;Feb&nbsp;2019
       </p>
     
 
-  <p>We’ve been collaborating with the team behind <a href="http://luckymarmot.com/paw">Paw</a>, “The ultimate REST client for Mac.” You can now <a href="http://luckymarmot.com/paw/extensions/?q=api+blueprint">download our API Blueprint extensions</a> for Paw which allow you to import and export API Blueprints to and from Paw.</p>
+  <p>I’m delighted to announce experimental support for OpenAPI 3.0 in Apiary.
+OpenAPI 3 is the new major version of the OpenAPI Specification, the successor
+to OpenAPI 2 (or formerly known as Swagger 2).</p>
 
-<p>Paw is a full-featured and beautifully designed Mac app that makes interaction with HTTP APIs delightful. It offers a powerful set of features and stands out from the other clients.</p>
+<p><a href="https://oaspetstore.docs.apiary.io/"><img width="640" src="/images/2019-02-06-Petstore.jpg" alt="OpenAPI 3.0 in Apiary" /></a></p>
 
-<p>One of my favourites is dynamic values. This feature allows you to populate generated data into your requests, such as OAuth signature or a timestamp. Even better, you can create your own custom values using the <a href="http://luckymarmot.com/paw/doc/Extensions/Overview">JavaScript extension API</a>.</p>
+<p>While we are not yet supporting all of the new features added OAS 3 such as
+<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#callbackObject">callbacks</a>
+and
+<a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#linkObject">links</a>
+, we’ve built a solid foundation of our parser which will allow us to
+incrementally roll out support for new features across our entire product line.
+Whether it be in our <a href="https://help.apiary.io/tools/mock-server/">mock server</a>,
+<a href="https://dredd.org/en/latest/">Dredd</a>, our <a href="https://blog.apiary.io/ApiaryUI">new documentation
+renderer</a> or our <a href="https://help.apiary.io/tools/style-guide/">API Style
+Guide</a> product.</p>
 
-<p>We offer two extensions for Paw. The first one allows you to import your API Blueprints into Paw. This allows you to perform the requests in your API Blueprint and introspect the responses directly from a GUI application on your Mac.</p>
+<p>Our OpenAPI 3 parser is designed with user experience in mind. It brings
+significant improvements over our OpenAPI 2 parser.</p>
 
-<p><a href="https://www.youtube.com/watch?v=NZQXpDyqfGI" target="_blank"><img width="560" height="315" src="/images/2014-12-02-Paw-Integration/video.png" alt="API Blueprint in Paw" /></a></p>
+<h3 id="better-warning-and-error-reporting">Better Warning and Error Reporting</h3>
 
-<p>Our second extension allows you to export your requests in Paw as an API Blueprint so you can copy the request and response into your blueprint.</p>
+<p>The most significant difference is the parser is able to emit much clearer
+warnings and errors when the OpenAPI syntax is not semantically correct. This
+was a large source of user frustration for our OpenAPI 2 users. With OpenAPI 2
+you’d often get hard to understand warnings or errors due to the OpenAPI 2
+parser relying on the JSON Schema from OpenAPI Initiative as the base of
+validations. JSON Schema validations often produce unclear error messages.</p>
 
-<p><img width="599" height="386" src="/images/2014-12-02-Paw-Integration/code-generator.png" alt="API Blueprint Code Generator in Paw" /></p>
+<p>We’ve taken validation completely into our own hands so we can have far greater
+control over the user experience.</p>
 
-<p>Whether you are an API creator or consumer, the integration with Paw helps you build and test HTTP requests from your API Blueprint. It allows you to inspect the server’s response and even generate client code.</p>
+<p>As an example, if you miss a required <code class="highlighter-rouge">in</code> property for a Parameter Object in
+OpenAPI 2, you’ll often see a confusing error such as the following:</p>
 
-<p>The API Blueprint extensions are completely <a href="https://github.com/apiaryio?query=Paw">open source</a>, and we welcome any feedback or pull requests.</p>
+<blockquote>
+  <p>Data does not match any schemas from ‘oneOf’</p>
+</blockquote>
 
-<p><del>To celebrate the launch of our Paw extensions, we’ve got a couple of coupon codes to give-away to the first few people who email <a href="mailto:kyle@apiary.io">kyle@apiary.io</a>.</del></p>
+<p>You’ll see the exact same error message if the value of <code class="highlighter-rouge">in</code> is not a permitted
+value or is not a string.</p>
 
+<p>Whereas for similar semantic issues, our OpenAPI 3 parser will emit clearer
+errors:</p>
+
+<blockquote>
+  <p>‘Parameter Object’ is missing required property ‘in’</p>
+</blockquote>
+
+<blockquote>
+  <p>‘Parameter Object’ ‘in’ must be either ‘query’, ‘header’, ‘path’ or ‘cookie’”</p>
+</blockquote>
+
+<p>The state of the errors and warnings in our OpenAPI 2 parser can also fall down
+further when you are dealing with referencing as the entire OAS 2 document is
+dereferenced (stripped of <code class="highlighter-rouge">$ref</code>) up front, which means that the context of an
+error can be missing and it can be hard to pin-point the exact line which
+caused a parsing error.</p>
+
+<h3 id="validation-speed">Validation Speed</h3>
+
+<p>Another key user experience improvement will be with the performance of our new
+parser in comparison to our OAS 2 parser. We can parse extremely large OAS 3
+documents (multiple megabytes) in an order of magnitude faster than we could
+for OAS 2 so you can get much quicker feedback in our editor.</p>
+
+<h3 id="try-openapi-30-today">Try OpenAPI 3.0 Today</h3>
+
+<p>You can try OpenAPI 3.0 today in both Apiary and our open source tools such as
+such as Dredd - see example usage in our <a href="https://github.com/apiaryio/api-elements.js/issues/71">GitHub
+issue#71</a>.</p>
+
+<p>When our OpenAPI 3 support reaches maturity, we will be providing you the
+ability to create a new API Project in Apiary using OpenAPI 3. In this stage of
+rollout you can copy in an OpenAPI 3 document into an existing Apiary API
+Project in the Apiary Editor and our editor will detect and support OAS 3
+documents.</p>
+
+<p>We’re building our parser out in the open and we welcome any contributions or
+feedback however small, <a href="https://github.com/apiaryio/api-elements.js/blob/d8d8e292c5240918506fe75d075fbbe406b8d472/packages/fury-adapter-oas3-parser/lib/parser/annotations.js">whether its improving the wording of our warnings and
+error
+messages</a>
+or providing valuable feedback in our <a href="https://github.com/apiaryio/api-elements.js/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Aopenapi3">issue
+tracker</a>.</p>
+
+<p>You can track the <a href="https://github.com/apiaryio/api-elements.js/blob/master/packages/fury-adapter-oas3-parser/STATUS.md">current status of supported OAS 3
+functionality</a>,
+we are also publishing a <a href="https://github.com/apiaryio/api-elements.js/blob/master/packages/fury-adapter-oas3-parser/CHANGELOG.md">list of the changes we make to our
+parser</a>
+so you can keep up to date on further developments.</p>
+
+<p>Try OpenAPI 3 with our <a href="https://blog.apiary.io/ApiaryUI">new ApiaryUI documentation</a>!</p>
 
 
   </div>
