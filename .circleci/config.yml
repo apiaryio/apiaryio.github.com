@@ -1,30 +1,61 @@
 version: 2
+
+defaults: &defaults
+  docker:
+    - image: circleci/ruby:2.5.3
+  environment:
+    BUNDLE_JOBS: 3
+    BUNDLE_RETRY: 3
+    BUNDLE_PATH: vendor/bundle
+
 jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - gems2-{{ checksum "Gemfile.lock" }}
+      - run:
+          name: Install Ruby Dependencies
+          command: bundle check || bundle install
+      - save_cache:
+          key: gems2-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+
   test:
-    docker:
-      - image: jekyll/jekyll
-    working_directory: /srv/jekyll
+    <<: *defaults
     steps:
       - checkout
-      - run: bundle
+      - restore_cache:
+          keys:
+            - gems2-{{ checksum "Gemfile.lock" }}
       - run: bundle exec rake test
+
   deploy:
-    docker:
-      - image: jekyll/jekyll
-    working_directory: /srv/jekyll
+    <<: *defaults
     steps:
       - checkout
-      - run: bundle
+      - restore_cache:
+          keys:
+            - gems-{{ checksum "Gemfile.lock" }}
       - run: ./deploy.sh
 
 workflows:
   version: 2
+
   build:
     jobs:
+      - build
+
       - test:
+          requires:
+            - build
           filters:
             branches:
               ignore: gh-pages
+
       - deploy:
           requires:
             - test
