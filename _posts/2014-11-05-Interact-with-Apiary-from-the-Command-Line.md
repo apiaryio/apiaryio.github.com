@@ -8,7 +8,7 @@ published: true
 comments: true
 ---
 
-We thought we'd put together a blog post to highlight another way for you to work with Apiary, and that is through using our [Apiary CLI tool](http://client.apiary.io/). Everyone has their own workflow, and sometimes that workflow involves their favorite editor and the command line. This Apiary CLI tool can allow you to stay in that workflow while interacting directly with Apiary through our [API](http://docs.apiary.apiary.io/).
+We thought we'd put together a blog post to highlight another way for you to work with Apiary, and that is through using our [Apiary CLI tool](http://client.apiary.io/). Everyone has their own workflow, and sometimes that workflow involves their favorite editor and the command line. This Apiary CLI tool can allow you to stay in that workflow while interacting directly with Apiary through our [API](http://apiary.docs.apiary.io/).
 
 ## Previewing Locally
 

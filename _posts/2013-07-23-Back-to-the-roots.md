@@ -60,7 +60,7 @@ There it is! Let's introduce ourselves. **This is the HTTP message**.
 [w3c]: https://www.w3.org/Protocols/
 [roy]: http://roy.gbiv.com/
 [steve]: http://www.steveklabnik.com/
-[tesla]: http://docs.timdorr.apiary.io/
+[tesla]: http://timdorr.docs.apiary.io/
 [house]: http://www.belkin.com/us/wemo
 [wireshark]: http://www.wireshark.org/
 [tcpflow]: http://www.circlemud.org/jelson/software/tcpflow/
