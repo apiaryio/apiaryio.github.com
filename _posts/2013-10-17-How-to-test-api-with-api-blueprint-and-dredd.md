@@ -115,7 +115,7 @@ Dredd works with several Continuous Integration Services. I've tested it with [T
 [Readme]: https://github.com/apiaryio/dredd-example/blob/master/README.md
 [blueprint]: https://gist.github.com/netmilk/6885268
 [documentation]: https://dreddexample.docs.apiary.io/
-[mock]: https://dreddexample.docs..apiary.io/traffic
+[mock]: https://dreddexample.docs.apiary.io/traffic
 [dredd-example]: http://github.com/apiaryio/dredd-example
 [Express.js]: http://expressjs.com/
 [issues]: https://github.com/apiaryio/dredd-example/issues
