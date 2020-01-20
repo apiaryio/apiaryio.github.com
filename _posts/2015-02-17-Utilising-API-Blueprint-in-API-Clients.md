@@ -30,7 +30,7 @@ let blueprint = Blueprint(named: "blueprint.json", bundle: nil)
 
 Once you’ve loaded your blueprint, you can retrieve the different resource actions as [transitions](https://github.com/the-hypermedia-project/charter/blob/master/reference/hypermedia-elements.md#transitions).
 
-This example is going to make use of one of our example blueprints, “Polls API”. I’ve pulled out an excerpt of the example blueprint and it looks something like the following. Take a look at the [full version](http://docs.pollsapi.apiary.io/) ([source](https://github.com/apiaryio/api-blueprint/blob/be00b000e47561419f654374dd975a02083354e8/examples/Polls%20API.md)).
+This example is going to make use of one of our example blueprints, “Polls API”. I’ve pulled out an excerpt of the example blueprint and it looks something like the following. Take a look at the [full version](https://pollsapi.docs.apiary.io/) ([source](https://github.com/apiaryio/api-blueprint/blob/be00b000e47561419f654374dd975a02083354e8/examples/Polls%20API.md)).
 
 ```apib
 # Polls

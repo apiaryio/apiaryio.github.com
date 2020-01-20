@@ -53,6 +53,6 @@ from our CEO and Founder. Hope to see you there!
 
 [roadmap]: https://github.com/apiaryio/api-blueprint/wiki/Roadmap
 [mson]: https://github.com/apiaryio/mson
-[start]: https://docs.apiary.io/swagger/
-[features]: https://docs.apiary.io/api_101/swagger/#supported-apiary-functionality-for-swagger-projects
+[start]: https://help.apiary.io/swagger/
+[features]: https://help.apiary.io/api_101/swagger/#supported-apiary-functionality-for-swagger-projects
 [webinar]: https://plus.google.com/events/ca861m5eqljso89vq7sp2vfnit0
