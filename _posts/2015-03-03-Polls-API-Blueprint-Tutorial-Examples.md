@@ -22,12 +22,12 @@ They say _"A picture is worth a thousand words"_. We think the same. This is why
 ### HTTP API
  The tutorial is using a _simplified_ Polls API version – without hypermedia controls and advanced API Blueprint features.
 
- The full version of this **simplified Polls API** can be found at <http://pollsapi.docs.apiary.io> or in the API Blueprint GitHub [repository](https://github.com/apiaryio/api-blueprint/blob/master/examples/Polls%20API.md).
+ The full version of this **simplified Polls API** can be found at <https://pollsapi.docs.apiary.io> or in the API Blueprint GitHub [repository](https://github.com/apiaryio/api-blueprint/blob/master/examples/Polls%20API.md).
 
 ### REST API
 As we believe following REST constraints may bring competitive advantage in fields where API provider does not control clients we have also prepared a truly REST – _hypermedia_ – version of the Polls API.
 
-You can find the **hypermedia Polls API** at <http://pollshypermedia.docs.apiary.io/> or in the API Blueprint GitHub [repository](https://github.com/apiaryio/api-blueprint/blob/master/examples/Polls%20Hypermedia%20API.md)
+You can find the **hypermedia Polls API** at <https://pollshypermedia.docs.apiary.io/> or in the API Blueprint GitHub [repository](https://github.com/apiaryio/api-blueprint/blob/master/examples/Polls%20Hypermedia%20API.md)
 
 This API offers both HAL and Siren media types through content-negotiation. If you are interested in hypermedia API design – please let us know on Twitter  [@apiaryio](https://twitter.com/apiaryio) or in the discussion under this article – we will be happy to talk about it in-depth.
 
