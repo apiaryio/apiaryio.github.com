@@ -8,21 +8,21 @@ def slugify(title)
 end
 
 def get_filename(slug)
-  File.join File.dirname(__FILE__), "_posts", "#{slug}.md"
+  File.join File.dirname(__FILE__), '_posts', "#{slug}.md"
 end
 
 def make_image_dir(slug)
-  new_dir = File.join File.dirname(__FILE__), "images", slug
+  new_dir = File.join File.dirname(__FILE__), 'images', slug
   Dir.mkdir new_dir
 end
 
 desc 'Create an unpublished post'
-task :post, :title, :with_images do |t, args|
-  args.with_defaults title: "New Post", with_images: false
+task :post, :title, :with_images do |_t, args|
+  args.with_defaults title: 'New Post', with_images: false
   title = args.title
   slug = slugify title
 
-  File.open get_filename(slug), "w" do |f|
+  File.open get_filename(slug), 'w' do |f|
     f << <<-EOS.gsub(/^    /, '')
     ---
     title: #{title}
@@ -40,8 +40,8 @@ task :post, :title, :with_images do |t, args|
 end
 
 desc 'Create an image directory'
-task :image_dir, :title do |t, args|
-  args.with_defaults title: "New Post"
+task :image_dir, :title do |_t, args|
+  args.with_defaults title: 'New Post'
   title = args.title
   slug = slugify title
   make_image_dir slug
@@ -64,27 +64,26 @@ namespace :serve do
 end
 
 desc 'Runs a local server with draft posts and watches for changes'
-task :serve => 'serve:drafts'
+task serve: 'serve:drafts'
 
-task :default => :serve
+task default: :serve
 
 desc 'Test build'
 task :test do
   sh 'bundle exec jekyll doctor'
   sh 'bundle exec jekyll build --config _config.yml,_config_test.yml'
 
-  HTMLProofer.check_directory('./_site', {
-    :url_ignore => [
-      /relishapp.com/, # blacklisted?
-      /nike.com/, # blacklisted?
-      /cognitive.cisco.com/, # blacklisted?
-      /https:\/\/blog.apiary.io\/20/, # Prevent checking for unpublished articles
-      /https:\/\/github\.com\/search/, # Prevent 429 limiting
-    ],
-    :typhoeus => {
-      :headers => {
-        "User-Agent" => "ApiaryBlogBot/1.0"
-      }
-    }
-  }).run
+  HTMLProofer.check_directory('./_site', url_ignore: [
+                                /relishapp.com/, # blacklisted?
+                                /nike.com/, # blacklisted?
+                                /cognitive.cisco.com/, # blacklisted?
+                                /www.oracle.com/, # blacklisted? getting 403
+                                /https:\/\/blog.apiary.io\/20/, # Prevent checking for unpublished articles
+                                /https:\/\/github\.com\/search/, # Prevent 429 limiting
+                              ],
+                                         typhoeus: {
+                                           headers: {
+                                             'User-Agent' => 'ApiaryBlogBot/1.0'
+                                           }
+                                         }).run
 end

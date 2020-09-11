@@ -114,7 +114,7 @@ From our experience there is a very big difference between a build time and cumu
 
 [![cumulative times for 1y](/images/2019-01-31-What-you-need-from-your-CI/datadog-ci-cumulative-time-1y_small.jpg)](/images/2019-01-31-What-you-need-from-your-CI/datadog-ci-cumulative-time-1y.jpg)
 
-I think that is caused by shared hardware used in CircleCI. We are currently working with Wercker to be able to use our [Oracle Container Native Services](https://cloud.oracle.com/en_US/containers) instead.
+I think that is caused by shared hardware used in CircleCI. We are currently working with Wercker to be able to use our [Oracle Container Native Services](https://www.oracle.com/cloud/compute/) instead.
 
 ## 3. Scalability
 
