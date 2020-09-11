@@ -19,7 +19,7 @@ Could this be done with an API? Is it possible explore and consume API resources
 In this article I will demonstrate how to turn a mind map into an API that can be browsed by its clients. To achieve this I will be using API Blueprint and Apiary. The server will be written in Ruby as well as the client surfing the API.
 
 ## Building the API with Apiary
-Following Elmer's footsteps I will first describe (a portion of) the GTD Todo API in [API Blueprint]. Doing so will instantly rewards me with the *interactive documentation*, *mock server*, *call inspector* and most importantly with the *tests for a continuous integration*. 
+Following Elmer's footsteps I will first describe (a portion of) the GTD Todo API in [API Blueprint]. Doing so will instantly rewards me with the *interactive documentation*, *mock server*, *call inspector* and most importantly with the *tests for a continuous integration*.
 
 ## Mind mapping the API
 Mind mapping as the way of thinking about our API is a great idea. Let's zoom in on the folders portion of GTD Todo API and (mind) map it for the purpose of this article. Note I have put a little bit more emphasis on the distinction between resources attributes (starting with `@`) and links:
@@ -31,7 +31,7 @@ Having an idea what the API should look like I can start writing its API bluepri
 
 One last thing that I need to figure out before writing the blueprint is what media type to use for representing our resources including the links. There is [plenty][media-types] to choose from. I will go with [HAL][] for the purpose of this article due to its low footprint and lots of great tools supporting it.
 
-The basics of writing a blueprint were already covered in the [*Quickly Prototype APIs with Apiary*][sendgrind-article] article so I won't repeat it here. You can also use the [API Blueprint tutorial][] to quickly dive into the API Blueprint format. In case of questions check the API Blueprint at [Stack Overflow][] or ask directly the Apiary support. 
+The basics of writing a blueprint were already covered in the [*Quickly Prototype APIs with Apiary*][sendgrind-article] article so I won't repeat it here. You can also use the [API Blueprint tutorial][] to quickly dive into the API Blueprint format. In case of questions check the API Blueprint at [Stack Overflow][] or ask directly the Apiary support.
 
 Here is the completed blueprint and the documentation rendered from it:
 
@@ -50,7 +50,7 @@ It is a good habit to have the API blueprint living in the repository next to th
 
 The example server is written in Ruby using [Sinatra][] and [Roar][] to better demonstrate another good paradigm: *Abstraction of a resource from its representation(s)*:
 
-Let's look at the `Folder` resource - a data model as used in backend, perhaps coming from a database: 
+Let's look at the `Folder` resource - a data model as used in backend, perhaps coming from a database:
 
 ```ruby
 class Folder
@@ -86,7 +86,7 @@ folder.to_json  # returning JSON representation of Folder
 
 Similarly I can define and use the HAL or any other (e.g. XML) representation for the `Folder` resource. Following this pattern we can keep the backend data models free of any representation clutter and also radically simplify the API content negotiation.
 
-Here is the complete implementation: 
+Here is the complete implementation:
 
 + [**GTD Todo API server**](https://github.com/zdne/todoapi/blob/master/app.rb)
 + [**GTD Todo API resources & representations**](https://github.com/zdne/todoapi/blob/master/domain_model.rb)
@@ -94,7 +94,7 @@ Here is the complete implementation:
 ## Writing the client
 Time to go surfing.
 
-Having my cake and eat it I will demonstrate using the API on this (slightly contrived) example: Iterate every folder in the API and print all of its attributes. 
+Having my cake and eat it I will demonstrate using the API on this (slightly contrived) example: Iterate every folder in the API and print all of its attributes.
 
 How hard can this be using Ruby and [HyperResource](https://github.com/gamache/hyperresource)?
 
@@ -116,7 +116,7 @@ end
 
 What happens here?
 
-First I navigate to the root of GTD Todo API. In this case using the Apiary mock server: 
+First I navigate to the root of GTD Todo API. In this case using the Apiary mock server:
 
 ```ruby
 api = HyperResource.new(root: 'http://mock-gtdtodoapi.apiary.io')
@@ -156,7 +156,7 @@ The original GTD Todo API mind map and the GTD Todo API idea is courtesy of [Elm
 [affordances]: http://en.wikipedia.org/wiki/Affordance
 [REST]: http://smizell.com/weblog/2013/restful-static-site
 [API Blueprint]: https://apiblueprint.org
-[media-types]: https://blog.apigee.com/detail/api_design_harnessing_hypermedia_types
+[media-types]: https://www.oreilly.com/content/how-a-restful-api-represents-resources/#:~:text=Common%20Media%20Types%20for%20RESTful%20APIs
 [HAL]: http://stateless.co/hal_specification.html
 [API Blueprint tutorial]: http://apiary.io/blueprint
 [Stack Overflow]: http://stackoverflow.com/questions/tagged/apiblueprint
