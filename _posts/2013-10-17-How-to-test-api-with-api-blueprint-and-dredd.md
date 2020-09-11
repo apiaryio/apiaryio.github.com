@@ -129,7 +129,7 @@ Dredd works with several Continuous Integration Services. I've tested it with [T
 [Jenkins]: http://jenkins-ci.org/
 [Hudson]: http://hudson-ci.org/
 [Atlassian Bamboo]: https://www.atlassian.com/software/bamboo
-[Semaphore]: https://semaphoreapp.com/
+[Semaphore]: https://semaphoreci.com/
 [Node.js]: http://nodejs.org/
 [NPM]: https://npmjs.org/
 [NVM]: https://github.com/creationix/nvm
