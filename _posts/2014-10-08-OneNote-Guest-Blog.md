@@ -13,7 +13,7 @@ From its inception the [OneNote API][dondc] team has been committed to
 delivering developers a modern, first-class developer experience. Ardent
 admirers of [Stripe][stripe], [Twilio][twilio], and [Akamai's][akamai-apiary]
 intuitive APIs and documentation, we were keen to provide a similar experience
-when we launched our [completely redesigned developer portal][dondc]. 
+when we launched our [completely redesigned developer portal][dondc].
 
 ![OneNote](/images/2014-10-08-OneNote-Guest-Blog/OneNote.png)
 
@@ -35,7 +35,7 @@ With a decision made, adopting Apiary was a breeze. We were able to setup our
 team on GitHub and use a standard code review process to audit changes and
 ensure all of our reference materials were correct as we ported from our former
 documentation host. Our new developer portal, which prominently features the new
-reference documentation, [launched][] on the 15th September and has been a huge
+reference documentation, launched on the 15th September and has been a huge
 success with our customers, in no small part due to Apiary.
 
 Long story short: we've since recommended Apiary to several other teams at
@@ -48,6 +48,5 @@ developers the thoughtfully designed APIs and documentation that they deserve.
 [akamai-apiary]: https://developer.akamai.com
 [apiary-gh]: https://github.com/apiaryio
 [apib-prs]: https://github.com/apiaryio/api-blueprint/pulls?q=is%3Apr+is%3Aclosed
-[launched]: http://blogs.msdn.com/b/onenotedev/archive/2014/09/17/announcing-the-new-onenote-dev-center-with-interactive-docs.aspx
 [pandoc]: http://johnmacfarlane.net/pandoc/
 [git]: http://git-scm.com/

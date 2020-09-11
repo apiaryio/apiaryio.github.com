@@ -27,7 +27,7 @@ Over the last 12 months, you've created over **25,000 APIs in Apiary**, making i
 
 [our platform tools]: https://apiblueprint.org/#tooling
 [examples]: https://www.mysql.com/
-[David]: http://www.flybridge.com/team/David-Aronoff
+[David]: https://www.flybridge.com/david-aronoff
 [Steve]: http://baselinev.com/founder/
 [API Blueprint]: https://github.com/apiaryio/api-blueprint
 [Snowcrash]: https://github.com/apiaryio/snowcrash

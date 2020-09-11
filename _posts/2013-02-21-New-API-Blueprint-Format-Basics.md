@@ -48,7 +48,7 @@ Consider an endpoint that allows you to retrieve a message of the day for any gi
 
 		{ "message" : "Hello World" }
 
-As you can see the `@` sign denotes a URI parameter while `@.` stands for local scope parameters. Also in this example we have used MongoDB - style [dot notation](http://docs.mongodb.org/manual/core/document/#dot-notation) for reaching into a JSON object.
+As you can see the `@` sign denotes a URI parameter while `@.` stands for local scope parameters. Also in this example we have used MongoDB - style [dot notation](https://docs.mongodb.com/manual/core/document/#dot-notation) for reaching into a JSON object.
 
 ## Multiple requests and responses
 Occasionally it may be a good design to have an endpoint that accepts multiple different requests. A far more common situation is that an endpoint will offer more than one response. The new format is built with that in mind.

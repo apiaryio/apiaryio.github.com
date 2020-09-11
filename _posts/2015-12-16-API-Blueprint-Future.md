@@ -79,8 +79,6 @@ For the first time, we have prepared the public [API Blueprint roadmap][11]. The
 
 We have also revised the API Blueprint GitHub issues and the systems of [labels][12]. Starting today you can, for the first time [track [13] the status of all these features.
 
-There is now a [Slack channel][14] so you can discuss the API Blueprint and API design in general.
-
 While we have all these ideas about the API Blueprint future, it is now too big to be a one man—or company—show! The API Blueprint is open. Please [join us][15] and make the difference in the world of API design!
 
 [1]: https://github.com/apiaryio/api-blueprint

@@ -32,7 +32,7 @@ Lukáš ([@almadcz](http://twitter.com/almadcz)) has a talk at [RuPy 2012](http:
 [View Larger Map](https://maps.google.com/maps?q=Botanick%C3%A1+68a+602+00+Brno+Czech+Republic+Europe&amp;ie=UTF8&amp;hq=&amp;hnear=Botanick%C3%A1+554%2F68A,+602+00+Brno,+Czech+Republic&amp;t=m&amp;ll=49.209944,16.598969&amp;spn=0.006729,0.012875&amp;z=15&amp;source=embed)
 
 **Dec 4 @ Paris, France**
-Jakub will present at [API Days 2012](http://apidays.io/) on API Documentation best practices (full agenda details still pending)
+Jakub will present at [API Days 2012](http://apidays.co/) on API Documentation best practices (full agenda details still pending)
 
 [View Larger Map](https://maps.google.com/maps?q=EPITA+14+Rue+Voltaire+94270+Le+Kremlin-Bic%C3%A8tre+France&amp;ie=UTF8&amp;hq=EPITA+14+Rue+Voltaire+94270+Le+Kremlin-Bic%C3%A8tre+France&amp;t=m&amp;cid=6348805043946748990&amp;hnear=&amp;ll=48.815851,2.36249&amp;spn=0.003391,0.006416&amp;z=16&amp;source=embed)
 
