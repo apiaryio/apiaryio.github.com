@@ -1,5 +1,6 @@
 <!doctype html>
 <html prefix="og: http://ogp.me/ns#">
+
 <head>
   <meta charset="utf-8">
 
@@ -11,7 +12,7 @@
 
   <meta name="application-name" content="Apiary">
   <meta name="twitter:card" content="summary">
-  <meta property="og:type"  content="article">
+  <meta property="og:type" content="article">
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
@@ -24,44 +25,38 @@
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io/Evolving-Embed">
-    <meta name="description" content="What&#39;s new with our Embed feature &mdash; Apiary Blog">
-    <meta name="twitter:description" content="What&#39;s new with our Embed feature &mdash; Apiary Blog">
-    <meta property="og:description" content="What&#39;s new with our Embed feature &mdash; Apiary Blog">
+  <meta property="og:url" content="https://blog.apiary.io/Evolving-Embed">
+  <meta name="description" content="What&#39;s new with our Embed feature &mdash; Apiary Blog">
+  <meta name="twitter:description" content="What&#39;s new with our Embed feature &mdash; Apiary Blog">
+  <meta property="og:description" content="What&#39;s new with our Embed feature &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="canonical" href="https://blog.apiary.io/Evolving-Embed">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/modules/footer/footer.css">
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/modules/website.css">
   <link rel="stylesheet" href="/syntax.css">
   <!-- /Styles -->
 
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-18252923-10', 'auto');
-  ga('send', 'pageview');
-</script>
-
-
 </head>
+
 <body class="website">
 
-<!-- website-header -->
-  <header id="websiteHeader"><div class="positioning">
-    <a class="headerLogotypeLink" href="https://apiary.io"><h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1><div class="headerLogotype"></div></a>
-    <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
-  </div></header>
-<!-- /website-header -->
+  <!-- website-header -->
+  <header id="websiteHeader">
+    <div class="positioning">
+      <a class="headerLogotypeLink" href="https://apiary.io">
+        <h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1>
+        <div class="headerLogotype"></div>
+      </a>
+      <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
+    </div>
+  </header>
+  <!-- /website-header -->
 
-<!-- website-navigation -->
+  <!-- website-navigation -->
   <div id="navigation">
     <nav class="websiteNav positioning">
       <ul class="clearAfter websiteNavMenu">
@@ -78,15 +73,16 @@
         
         <li class="websiteNavItem"><a class="websiteNavLink" href="https://login.apiary.io/login">Sign In</a></li>
         
-        <li class="websiteNavItem"><a class="websiteNavLink websiteNavLinkHighlighted signIn" href="https://login.apiary.io/register">Sign Up</a></li>
+        <li class="websiteNavItem"><a class="websiteNavLink websiteNavLinkHighlighted signIn"
+            href="https://login.apiary.io/register">Sign Up</a></li>
       </ul>
       <a class="websiteNavLink backToTop" href="javascript:;"><span class="visuallyhidden">Back to top</span></a>
     </nav>
   </div>
-<!-- /website-navigation -->
+  <!-- /website-navigation -->
 
-<div>
-  <div class="blog">
+  <div>
+    <div class="blog">
   
   <div class="blogArticle">
     <a href="/" class="backToArticles">Back to Articles</a>
@@ -117,8 +113,8 @@ documentation is instantly displayed on your own domain.</p>
     <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://api.apiary.io/seeds/embed.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
     <span class="nt">&lt;script&gt;</span>
       <span class="kd">const</span> <span class="nx">embed</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Apiary</span><span class="p">.</span><span class="nx">Embed</span><span class="p">({</span>
-        <span class="na">subdomain</span><span class="p">:</span> <span class="s1">'your-api-project-subdomain'</span><span class="p">,</span>
-        <span class="na">element</span><span class="p">:</span> <span class="s1">'.container'</span><span class="p">,</span>
+        <span class="na">subdomain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">your-api-project-subdomain</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">element</span><span class="p">:</span> <span class="dl">'</span><span class="s1">.container</span><span class="dl">'</span><span class="p">,</span>
         <span class="na">preferences</span><span class="p">:</span> <span class="p">{</span>
           <span class="na">permalinks</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="p">},</span>
@@ -154,16 +150,16 @@ You can now pace multiple Embed elements in a single HTML page.</p>
     <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://api.apiary.io/seeds/embed.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
     <span class="nt">&lt;script&gt;</span>
       <span class="kd">const</span> <span class="nx">embed1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Apiary</span><span class="p">.</span><span class="nx">Embed</span><span class="p">({</span>
-        <span class="na">subdomain</span><span class="p">:</span> <span class="s1">'your-api-project-subdomain'</span><span class="p">,</span>
-        <span class="na">element</span><span class="p">:</span> <span class="s1">'.container1'</span><span class="p">,</span>
+        <span class="na">subdomain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">your-api-project-subdomain</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">element</span><span class="p">:</span> <span class="dl">'</span><span class="s1">.container1</span><span class="dl">'</span><span class="p">,</span>
         <span class="na">preferences</span><span class="p">:</span> <span class="p">{</span>
           <span class="na">permalinks</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="p">},</span>
       <span class="p">});</span>
 
      <span class="kd">const</span> <span class="nx">embed2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Apiary</span><span class="p">.</span><span class="nx">Embed</span><span class="p">({</span>
-        <span class="na">subdomain</span><span class="p">:</span> <span class="s1">'your-api-project-subdomain2'</span><span class="p">,</span>
-        <span class="na">element</span><span class="p">:</span> <span class="s1">'.container2'</span><span class="p">,</span>
+        <span class="na">subdomain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">your-api-project-subdomain2</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">element</span><span class="p">:</span> <span class="dl">'</span><span class="s1">.container2</span><span class="dl">'</span><span class="p">,</span>
         <span class="na">preferences</span><span class="p">:</span> <span class="p">{</span>
           <span class="na">permalinks</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="p">},</span>
@@ -183,8 +179,8 @@ You can now pace multiple Embed elements in a single HTML page.</p>
 show a spinning wheel while the documentation is loading.</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">embed</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Apiary</span><span class="p">.</span><span class="nx">Embed</span><span class="p">({</span>
-    <span class="na">subdomain</span><span class="p">:</span> <span class="s1">'pollsapi'</span><span class="p">,</span>
-    <span class="na">element</span><span class="p">:</span> <span class="s1">'#embedHere'</span>
+    <span class="na">subdomain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">pollsapi</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">element</span><span class="p">:</span> <span class="dl">'</span><span class="s1">#embedHere</span><span class="dl">'</span>
 <span class="p">});</span>
 
 <span class="nx">embed</span><span class="p">.</span><span class="nx">onLoaded</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">iframeElement</span><span class="p">,</span> <span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
@@ -199,8 +195,8 @@ show a spinning wheel while the documentation is loading.</p>
 When subscribing to an event, a function is returned which can be used to unsubscribe the registered hook handler. By calling the returned function, the event is unsubscribed immediately.</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">embed</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Apiary</span><span class="p">.</span><span class="nx">Embed</span><span class="p">({</span>
-  <span class="na">subdomain</span><span class="p">:</span> <span class="s1">'pollsapi'</span><span class="p">,</span>
-  <span class="na">element</span><span class="p">:</span> <span class="s1">'#embedHere'</span><span class="p">,</span>
+  <span class="na">subdomain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">pollsapi</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">element</span><span class="p">:</span> <span class="dl">'</span><span class="s1">#embedHere</span><span class="dl">'</span><span class="p">,</span>
 <span class="p">});</span>
 
 <span class="kd">const</span> <span class="nx">unsubscribe1</span> <span class="o">=</span> <span class="nx">embed</span><span class="p">.</span><span class="nx">onReady</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">iframeElement</span><span class="p">,</span> <span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
@@ -219,14 +215,14 @@ When subscribing to an event, a function is returned which can be used to unsubs
 
 <h3 id="destroying-embeds">Destroying embeds</h3>
 
-<p>Embed instances can be destroyed. Destroying restores the <code class="highlighter-rouge">element</code> to the state before Embed was initialized.</p>
+<p>Embed instances can be destroyed. Destroying restores the <code class="language-plaintext highlighter-rouge">element</code> to the state before Embed was initialized.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"embedHere"</span><span class="nt">&gt;&lt;/div&gt;</span>
 
 <span class="nt">&lt;script&gt;</span>
   <span class="kd">const</span> <span class="nx">embed</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Apiary</span><span class="p">.</span><span class="nx">Embed</span><span class="p">({</span>
-    <span class="na">subdomain</span><span class="p">:</span> <span class="s1">'pollsapi'</span><span class="p">,</span>
-    <span class="na">element</span><span class="p">:</span> <span class="s1">'#embedHere'</span>
+    <span class="na">subdomain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">pollsapi</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">element</span><span class="p">:</span> <span class="dl">'</span><span class="s1">#embedHere</span><span class="dl">'</span>
   <span class="p">});</span> 
   
   <span class="c1">// destroy the embed some time later</span>
@@ -240,63 +236,75 @@ When subscribing to an event, a function is returned which can be used to unsubs
 </div>
 
 
-</div>
+  </div>
 
-<!-- website-footer -->
+  <!-- website-footer -->
   <hr>
 
-<footer class="applicationFooter">
+  <footer class="applicationFooter">
 
-  <div class="applicationFooterRow">
-    <div class="applicationFooterColumns">
-    <div class="applicationFooterColumn">
-    </div><div class="applicationFooterColumn">
-      <h3 class="applicationFooterTitle">Platform</h3>
-      <ul class="applicationFooterList">
-        <li><a class="applicationFooterListLink" href="https://apiary.io/how-it-works">How It Works</a></li>
-        <li><a class="applicationFooterListLink" href="https://apiary.io/products">Product</a></li>
-        <li><a class="applicationFooterListLink" href="https://apiary.io/plans">Plans</a></li>
-        <li><a class="applicationFooterListLink" href="https://help.apiary.io">Help</a></li>
-      </ul>
-    </div><div class="applicationFooterColumn">
-      <h3 class="applicationFooterTitle">Company</h3>
-      <ul class="applicationFooterList">
-        <li><a class="applicationFooterListLink" href="https://blog.apiary.io/">Blog</a></li>
-        <li><a class="applicationFooterListLink" href="https://apiary.io/company">Team</a></li>
-        <li><a class="applicationFooterListLink" href="https://apiary.io/jobs">Jobs</a></li>
-        <li><a class="applicationFooterListLink" href="https://apiary.io/oracle">Oracle</a></li>
-      </ul>
-    </div><div class="applicationFooterColumn">
-      <h3 class="applicationFooterTitle">Open Source</h3>
-      <ul class="applicationFooterList">
-        <li><a class="applicationFooterListLink" href="https://apiblueprint.org">API Blueprint</a></li>
-        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
-        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
-        <li><a class="applicationFooterListLink" href="https://help.apiary.io/tools/apiary-cli/">Apiary CLI</a></li>
-      </ul>
-    </div><div class="applicationFooterColumn">
-      <h3 class="applicationFooterTitle">Social</h3>
-      <ul class="applicationFooterList">
-        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
-        <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
-      </ul>
-    </div></div>
-  </div>
+    <div class="applicationFooterRow">
+      <div class="applicationFooterColumns">
+        <div class="applicationFooterColumn">
+        </div>
+        <div class="applicationFooterColumn">
+          <h3 class="applicationFooterTitle">Platform</h3>
+          <ul class="applicationFooterList">
+            <li><a class="applicationFooterListLink" href="https://apiary.io/how-it-works">How It Works</a></li>
+            <li><a class="applicationFooterListLink" href="https://apiary.io/products">Product</a></li>
+            <li><a class="applicationFooterListLink" href="https://apiary.io/plans">Plans</a></li>
+            <li><a class="applicationFooterListLink" href="https://help.apiary.io">Help</a></li>
+          </ul>
+        </div>
+        <div class="applicationFooterColumn">
+          <h3 class="applicationFooterTitle">Company</h3>
+          <ul class="applicationFooterList">
+            <li><a class="applicationFooterListLink" href="https://blog.apiary.io/">Blog</a></li>
+            <li><a class="applicationFooterListLink" href="https://apiary.io/company">Team</a></li>
+            <li><a class="applicationFooterListLink" href="https://apiary.io/jobs">Jobs</a></li>
+            <li><a class="applicationFooterListLink" href="https://www.oracle.com/index.html">Oracle</a></li>
+          </ul>
+        </div>
+        <div class="applicationFooterColumn">
+          <h3 class="applicationFooterTitle">Open Source</h3>
+          <ul class="applicationFooterList">
+            <li><a class="applicationFooterListLink" href="https://apiblueprint.org">API Blueprint</a></li>
+            <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
+            <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
+            <li><a class="applicationFooterListLink" href="https://help.apiary.io/tools/apiary-cli/">Apiary CLI</a></li>
+          </ul>
+        </div>
+        <div class="applicationFooterColumn">
+          <h3 class="applicationFooterTitle">Social</h3>
+          <ul class="applicationFooterList">
+            <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
+            <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-  <div class="applicationFooterRow">
-    <p class="applicationFooterCopyright">Copyright &copy; 2019, Oracle and/or its affiliates. All rights reserved. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.
-      <span class="applicationFooterCopyrightLinks"><a href="https://apiary.io/tos" class="applicationFooterCopyrightLink">Terms</a> • <a href="https://apiary.io/privacy" class="applicationFooterCopyrightLink">Privacy</a> • <span id="teconsent"></span></span>
-    </p>
-  </div>
-</footer>
-<!-- /website-footer -->
+    <div class="applicationFooterRow">
+      <p class="applicationFooterCopyright">Copyright &copy; 2020, Oracle and/or its affiliates.
+        All rights reserved. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may
+        be trademarks of their respective owners.
+        <span class="applicationFooterCopyrightLinks"><a href="https://apiary.io/tos"
+            class="applicationFooterCopyrightLink">Terms</a> • <a href="https://apiary.io/privacy"
+            class="applicationFooterCopyrightLink">Privacy</a> • <span id="teconsent"></span></span>
+      </p>
+    </div>
+  </footer>
+  <!-- /website-footer -->
 
-<script src="https://static.apiary.io/assets/js/website-scroll.js"></script>
-<script>
-  websiteScroll();
-  document.documentElement.className += ' js';
-</script>
-<script src="https://consent.trustarc.com/notice?domain=apiary.io&amp;c=teconsent&amp;text=true&amp;js=nj&amp;noticeType=bb" async="async" crossorigin=""></script>
+  <script src="https://static.apiary.io/assets/js/website-scroll.js"></script>
+  <script>
+    websiteScroll();
+    document.documentElement.className += ' js';
+  </script>
+  <script
+    src="https://consent.trustarc.com/notice?domain=apiary.io&amp;c=teconsent&amp;text=true&amp;js=nj&amp;noticeType=bb"
+    async="async" crossorigin=""></script>
 
 </body>
+
 </html>

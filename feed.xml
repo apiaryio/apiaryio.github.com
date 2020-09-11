@@ -7,7 +7,7 @@
     <atom:link href="https://blog.apiary.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Welcoming OpenAPI&nbsp;3.0 to Apiary</title>
+        <title>Welcoming OpenAPI 3.0 to Apiary</title>
         <description>Try out OpenAPI 3.0 in Apiary!</description>
         <pubDate>Wed, 06 Feb 2019 16:00:00 +0000</pubDate>
         <link>https://blog.apiary.io/OAS-3</link>

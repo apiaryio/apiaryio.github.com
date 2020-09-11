@@ -1,5 +1,6 @@
 <!doctype html>
 <html prefix="og: http://ogp.me/ns#">
+
 <head>
   <meta charset="utf-8">
 
@@ -11,7 +12,7 @@
 
   <meta name="application-name" content="Apiary">
   <meta name="twitter:card" content="summary">
-  <meta property="og:type"  content="article">
+  <meta property="og:type" content="article">
   <meta name="twitter:site" content="@apiaryio">
   <meta name="twitter:creator" content="@apiaryio">
 
@@ -24,44 +25,38 @@
   <meta property="og:image:height" content="630">
 
   
-    <meta property="og:url" content="https://blog.apiary.io/Interact-with-Apiary-from-the-Command-Line">
-    <meta name="description" content="Use our CLI tool to preview, fetch, and publish your API Blueprints &mdash; Apiary Blog">
-    <meta name="twitter:description" content="Use our CLI tool to preview, fetch, and publish your API Blueprints &mdash; Apiary Blog">
-    <meta property="og:description" content="Use our CLI tool to preview, fetch, and publish your API Blueprints &mdash; Apiary Blog">
+  <meta property="og:url" content="https://blog.apiary.io/Interact-with-Apiary-from-the-Command-Line">
+  <meta name="description" content="Use our CLI tool to preview, fetch, and publish your API Blueprints &mdash; Apiary Blog">
+  <meta name="twitter:description" content="Use our CLI tool to preview, fetch, and publish your API Blueprints &mdash; Apiary Blog">
+  <meta property="og:description" content="Use our CLI tool to preview, fetch, and publish your API Blueprints &mdash; Apiary Blog">
   
 
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="canonical" href="https://blog.apiary.io/Interact-with-Apiary-from-the-Command-Line">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="https://static.apiary.io/assets/styles/fonts.css">
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/modules/footer/footer.css">
   <link rel="stylesheet" href="https://static.apiary.io/assets/styles/modules/website.css">
   <link rel="stylesheet" href="/syntax.css">
   <!-- /Styles -->
 
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-18252923-10', 'auto');
-  ga('send', 'pageview');
-</script>
-
-
 </head>
+
 <body class="website">
 
-<!-- website-header -->
-  <header id="websiteHeader"><div class="positioning">
-    <a class="headerLogotypeLink" href="https://apiary.io"><h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1><div class="headerLogotype"></div></a>
-    <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
-  </div></header>
-<!-- /website-header -->
+  <!-- website-header -->
+  <header id="websiteHeader">
+    <div class="positioning">
+      <a class="headerLogotypeLink" href="https://apiary.io">
+        <h1 class="visuallyhidden" title="Apiary Ltd.">Apiary</h1>
+        <div class="headerLogotype"></div>
+      </a>
+      <a class="to_nav" href="#navigation"><span class="visuallyhidden">Go to Navigation</span></a>
+    </div>
+  </header>
+  <!-- /website-header -->
 
-<!-- website-navigation -->
+  <!-- website-navigation -->
   <div id="navigation">
     <nav class="websiteNav positioning">
       <ul class="clearAfter websiteNavMenu">
@@ -78,15 +73,16 @@
         
         <li class="websiteNavItem"><a class="websiteNavLink" href="https://login.apiary.io/login">Sign In</a></li>
         
-        <li class="websiteNavItem"><a class="websiteNavLink websiteNavLinkHighlighted signIn" href="https://login.apiary.io/register">Sign Up</a></li>
+        <li class="websiteNavItem"><a class="websiteNavLink websiteNavLinkHighlighted signIn"
+            href="https://login.apiary.io/register">Sign Up</a></li>
       </ul>
       <a class="websiteNavLink backToTop" href="javascript:;"><span class="visuallyhidden">Back to top</span></a>
     </nav>
   </div>
-<!-- /website-navigation -->
+  <!-- /website-navigation -->
 
-<div>
-  <div class="blog">
+  <div>
+    <div class="blog">
   
   <div class="blogArticle">
     <a href="/" class="backToArticles">Back to Articles</a>
@@ -97,7 +93,7 @@
       </p>
     
 
-  <p>We thought we’d put together a blog post to highlight another way for you to work with Apiary, and that is through using our <a href="http://client.apiary.io/">Apiary CLI tool</a>. Everyone has their own workflow, and sometimes that workflow involves their favorite editor and the command line. This Apiary CLI tool can allow you to stay in that workflow while interacting directly with Apiary through our <a href="http://docs.apiary.apiary.io/">API</a>.</p>
+  <p>We thought we’d put together a blog post to highlight another way for you to work with Apiary, and that is through using our <a href="http://client.apiary.io/">Apiary CLI tool</a>. Everyone has their own workflow, and sometimes that workflow involves their favorite editor and the command line. This Apiary CLI tool can allow you to stay in that workflow while interacting directly with Apiary through our <a href="https://apiary.docs.apiary.io/">API</a>.</p>
 
 <h2 id="previewing-locally">Previewing Locally</h2>
 
@@ -106,7 +102,7 @@
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apiary preview <span class="nt">--server</span>
 </code></pre></div></div>
 
-<p>By default, this is going to be looking in the current directory for an API Blueprint file named <code class="highlighter-rouge">apiary.apib</code>, which can be changed with the <code class="highlighter-rouge">--path</code> flag. Every refresh of the page will send your API Blueprint to Apiary to be rendered and sent back to you.</p>
+<p>By default, this is going to be looking in the current directory for an API Blueprint file named <code class="language-plaintext highlighter-rouge">apiary.apib</code>, which can be changed with the <code class="language-plaintext highlighter-rouge">--path</code> flag. Every refresh of the page will send your API Blueprint to Apiary to be rendered and sent back to you.</p>
 
 <p>This is great for allowing Apiary to be part of your current workflow without requiring you to use our editor, and since you see exactly what we generate, you know your changes will be right when you publish them.</p>
 
@@ -117,7 +113,7 @@
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apiary fetch <span class="nt">--api-name</span><span class="o">=</span>API_NAME
 </code></pre></div></div>
 
-<p>This command grabs the published documentation and saves it as <code class="highlighter-rouge">apiary.apib</code>.</p>
+<p>This command grabs the published documentation and saves it as <code class="language-plaintext highlighter-rouge">apiary.apib</code>.</p>
 
 <h2 id="publishing-to-apiary">Publishing to Apiary</h2>
 
@@ -137,63 +133,75 @@
 </div>
 
 
-</div>
+  </div>
 
-<!-- website-footer -->
+  <!-- website-footer -->
   <hr>
 
-<footer class="applicationFooter">
+  <footer class="applicationFooter">
 
-  <div class="applicationFooterRow">
-    <div class="applicationFooterColumns">
-    <div class="applicationFooterColumn">
-    </div><div class="applicationFooterColumn">
-      <h3 class="applicationFooterTitle">Platform</h3>
-      <ul class="applicationFooterList">
-        <li><a class="applicationFooterListLink" href="https://apiary.io/how-it-works">How It Works</a></li>
-        <li><a class="applicationFooterListLink" href="https://apiary.io/products">Product</a></li>
-        <li><a class="applicationFooterListLink" href="https://apiary.io/plans">Plans</a></li>
-        <li><a class="applicationFooterListLink" href="https://help.apiary.io">Help</a></li>
-      </ul>
-    </div><div class="applicationFooterColumn">
-      <h3 class="applicationFooterTitle">Company</h3>
-      <ul class="applicationFooterList">
-        <li><a class="applicationFooterListLink" href="https://blog.apiary.io/">Blog</a></li>
-        <li><a class="applicationFooterListLink" href="https://apiary.io/company">Team</a></li>
-        <li><a class="applicationFooterListLink" href="https://apiary.io/jobs">Jobs</a></li>
-        <li><a class="applicationFooterListLink" href="https://apiary.io/oracle">Oracle</a></li>
-      </ul>
-    </div><div class="applicationFooterColumn">
-      <h3 class="applicationFooterTitle">Open Source</h3>
-      <ul class="applicationFooterList">
-        <li><a class="applicationFooterListLink" href="https://apiblueprint.org">API Blueprint</a></li>
-        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
-        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
-        <li><a class="applicationFooterListLink" href="https://help.apiary.io/tools/apiary-cli/">Apiary CLI</a></li>
-      </ul>
-    </div><div class="applicationFooterColumn">
-      <h3 class="applicationFooterTitle">Social</h3>
-      <ul class="applicationFooterList">
-        <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
-        <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
-      </ul>
-    </div></div>
-  </div>
+    <div class="applicationFooterRow">
+      <div class="applicationFooterColumns">
+        <div class="applicationFooterColumn">
+        </div>
+        <div class="applicationFooterColumn">
+          <h3 class="applicationFooterTitle">Platform</h3>
+          <ul class="applicationFooterList">
+            <li><a class="applicationFooterListLink" href="https://apiary.io/how-it-works">How It Works</a></li>
+            <li><a class="applicationFooterListLink" href="https://apiary.io/products">Product</a></li>
+            <li><a class="applicationFooterListLink" href="https://apiary.io/plans">Plans</a></li>
+            <li><a class="applicationFooterListLink" href="https://help.apiary.io">Help</a></li>
+          </ul>
+        </div>
+        <div class="applicationFooterColumn">
+          <h3 class="applicationFooterTitle">Company</h3>
+          <ul class="applicationFooterList">
+            <li><a class="applicationFooterListLink" href="https://blog.apiary.io/">Blog</a></li>
+            <li><a class="applicationFooterListLink" href="https://apiary.io/company">Team</a></li>
+            <li><a class="applicationFooterListLink" href="https://apiary.io/jobs">Jobs</a></li>
+            <li><a class="applicationFooterListLink" href="https://www.oracle.com/index.html">Oracle</a></li>
+          </ul>
+        </div>
+        <div class="applicationFooterColumn">
+          <h3 class="applicationFooterTitle">Open Source</h3>
+          <ul class="applicationFooterList">
+            <li><a class="applicationFooterListLink" href="https://apiblueprint.org">API Blueprint</a></li>
+            <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/gavel">Gavel</a></li>
+            <li><a class="applicationFooterListLink" href="https://github.com/apiaryio/dredd">Dredd</a></li>
+            <li><a class="applicationFooterListLink" href="https://help.apiary.io/tools/apiary-cli/">Apiary CLI</a></li>
+          </ul>
+        </div>
+        <div class="applicationFooterColumn">
+          <h3 class="applicationFooterTitle">Social</h3>
+          <ul class="applicationFooterList">
+            <li><a class="applicationFooterListLink" href="https://github.com/apiaryio">GitHub</a></li>
+            <li><a class="applicationFooterListLink" href="https://twitter.com/apiaryio">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-  <div class="applicationFooterRow">
-    <p class="applicationFooterCopyright">Copyright &copy; 2019, Oracle and/or its affiliates. All rights reserved. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.
-      <span class="applicationFooterCopyrightLinks"><a href="https://apiary.io/tos" class="applicationFooterCopyrightLink">Terms</a> • <a href="https://apiary.io/privacy" class="applicationFooterCopyrightLink">Privacy</a> • <span id="teconsent"></span></span>
-    </p>
-  </div>
-</footer>
-<!-- /website-footer -->
+    <div class="applicationFooterRow">
+      <p class="applicationFooterCopyright">Copyright &copy; 2020, Oracle and/or its affiliates.
+        All rights reserved. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may
+        be trademarks of their respective owners.
+        <span class="applicationFooterCopyrightLinks"><a href="https://apiary.io/tos"
+            class="applicationFooterCopyrightLink">Terms</a> • <a href="https://apiary.io/privacy"
+            class="applicationFooterCopyrightLink">Privacy</a> • <span id="teconsent"></span></span>
+      </p>
+    </div>
+  </footer>
+  <!-- /website-footer -->
 
-<script src="https://static.apiary.io/assets/js/website-scroll.js"></script>
-<script>
-  websiteScroll();
-  document.documentElement.className += ' js';
-</script>
-<script src="https://consent.trustarc.com/notice?domain=apiary.io&amp;c=teconsent&amp;text=true&amp;js=nj&amp;noticeType=bb" async="async" crossorigin=""></script>
+  <script src="https://static.apiary.io/assets/js/website-scroll.js"></script>
+  <script>
+    websiteScroll();
+    document.documentElement.className += ' js';
+  </script>
+  <script
+    src="https://consent.trustarc.com/notice?domain=apiary.io&amp;c=teconsent&amp;text=true&amp;js=nj&amp;noticeType=bb"
+    async="async" crossorigin=""></script>
 
 </body>
+
 </html>
