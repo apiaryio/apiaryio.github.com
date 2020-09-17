@@ -27,5 +27,5 @@ git checkout gh-pages
 git pull origin gh-pages
 git ls-files --deleted -z | xargs -0 git rm;
 git add .
-git commit -m "Deploy"
+git commit -m "Deploy [ci skip]"
 git push
