@@ -15,6 +15,6 @@ When it comes to Internet infrastructure, it doesn't get much bigger than [Akama
 
 So did owners of 30,000 other APIs. We're deeply humbled and thankful. And we're working very hard to offer products that will blow your mind.
 
-[Akamai]: http://www.akamai.com
-[launching]: http://www.akamai.com/html/about/press/releases/2013/press_100913.html
-[new Open platform]: http://developer.akamai.com
+[Akamai]: https://www.akamai.com
+[launching]: https://www.akamai.com/html/about/press/releases/2013/press_100913.html
+[new Open platform]: https://developer.akamai.com

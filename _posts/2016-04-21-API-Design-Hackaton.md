@@ -39,7 +39,7 @@ At 3:30pm, the teams got together in the auditorium and presented their [finding
 
 <img width="640" src="/images/2016-04-21-API-Design-Hackaton/emmanuel.jpg" alt="boss" />
 
-> From [apicraft.org](http://www.apicraft.org): We are a collection of people from all over the world who care about the art of building, maintaining and consuming APIs.
+> From apicraft.org: We are a collection of people from all over the world who care about the art of building, maintaining and consuming APIs.
 
 > We got started in 2013, when a small group of API fanatics gathered for an Open Space conference in Detroit. Since then, local API Craft groups have sprouted up all over the world and we have come together as a global group every year to continue the conversation.
 
