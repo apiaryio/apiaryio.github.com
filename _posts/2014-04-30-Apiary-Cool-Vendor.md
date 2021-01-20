@@ -22,7 +22,7 @@ There's a bright future for Apiary helping companies small and large be savvy wi
 [premium plans]: http://apiary.io/#plans
 
 [Rackspace]: http://www.rackspace.com
-[Akamai]: http://www.akamai.com/
+[Akamai]: https://www.akamai.com/
 [ExactTarget]: http://www.exacttarget.com/
 [Nike]: https://www.nike.com/
 [GoDaddy]: https://www.godaddy.com/

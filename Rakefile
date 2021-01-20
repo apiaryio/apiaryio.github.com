@@ -78,6 +78,7 @@ task :test do
                                 /nike.com/, # blacklisted?
                                 /cognitive.cisco.com/, # blacklisted?
                                 /www.oracle.com/, # blacklisted? getting 403
+                                /www.akamai.com/, # blacklisted? getting 403
                                 /https:\/\/blog.apiary.io\/20/, # Prevent checking for unpublished articles
                                 /https:\/\/github\.com\/search/, # Prevent 429 limiting
                               ],
