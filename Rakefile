@@ -81,6 +81,7 @@ task :test do
                                 /www.akamai.com/, # blacklisted? getting 403
                                 /https:\/\/blog.apiary.io\/20/, # Prevent checking for unpublished articles
                                 /https:\/\/github\.com\/search/, # Prevent 429 limiting
+                                /https:\/\/signalvnoise\.com/, # Prevent TLS issue
                               ],
                                          typhoeus: {
                                            headers: {
