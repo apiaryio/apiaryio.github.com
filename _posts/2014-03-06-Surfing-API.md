@@ -154,7 +154,6 @@ The original GTD Todo API mind map and the GTD Todo API idea is courtesy of [Elm
 [Elmer Thomas]: https://twitter.com/thinkingserious
 [SendGrid]: http://sendgrid.com
 [affordances]: http://en.wikipedia.org/wiki/Affordance
-[REST]: http://smizell.com/weblog/2013/restful-static-site
 [API Blueprint]: https://apiblueprint.org
 [media-types]: https://www.oreilly.com/content/how-a-restful-api-represents-resources/#:~:text=Common%20Media%20Types%20for%20RESTful%20APIs
 [HAL]: http://stateless.co/hal_specification.html
@@ -167,4 +166,4 @@ The original GTD Todo API mind map and the GTD Todo API idea is courtesy of [Elm
 [Dredd]: https://github.com/apiaryio/dredd
 [Travis CI]: https://travis-ci.org
 [hypermedia-api]: https://coderwall.com/p/xvzu-g
-[restful-site]: http://smizell.com/weblog/2013/restful-static-site
+

@@ -23,6 +23,6 @@ We thank everyone who came to this meetup and made it such a great success! Apia
 
 There are more pictures from the meetup on our [Facebook album](https://www.facebook.com/media/set/?set=a.726137290811445.1073741828.121823441242836&type=3&uploaded=62).
 
-Our next event will be in the Big Apple, New York City! API Craft-NYC is hosting a meetup on December 10th and Jason from XO Group will be talking about their experience with Apiary and API Blueprint. Click here to [register for the meetup](http://www.meetup.com/API-Craft-NYC/events/218687910/).
+Our next event will be in the Big Apple, New York City! API Craft-NYC is hosting a meetup on December 10th and Jason from XO Group will be talking about their experience with Apiary and API Blueprint.
 
 As always, we would love to hear back from you.
