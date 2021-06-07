@@ -8,27 +8,23 @@ published: YES
 comments: true
 ---
 
-Everybody needs an inspiration. Moreover when on the quest for a better API. Inspiring or offending, instructive or just simply time saving – it is often worth looking how others dealt with the challenges one have to face. 
+Everybody needs an inspiration. Moreover when on the quest for a better API. Inspiring or offending, instructive or just simply time saving – it is often worth looking how others dealt with the challenges one have to face.
 
-I have prepared a brief compilation of  API designs – open sourced blueprints, Apiary users have created. 
+I have prepared a brief compilation of  API designs – open sourced blueprints, Apiary users have created.
 
-Bellow you can find a short list of selected blueprints alongside with notes on some perks of the respective API designs. Each entry includes a link to the blueprint in its GitHub repository as well as a link to load it directly into editor at [Apiary.io](http://apiary.io). 
+Bellow you can find a short list of selected blueprints alongside with notes on some perks of the respective API designs. Each entry includes a link to the blueprint in its GitHub repository as well as a link to load it directly into editor at [Apiary.io](http://apiary.io).
 
 *Note: You need to be signed in to Apiary in order view the blueprint in the editor*
 
 ## Selected API blueprints:
 
 - [**GHD Registration Portal**](https://github.com/worldspawn/apiary/blob/master/apiary.apib)
- 
+
 	*application/hal+json, error codes, URI parameters, resource description, resource model*
-	
+
 - [**H2O REST API**](https://github.com/mmalohlava/babylon4apiaryio/blob/master/apiary.apib)
 
 	*error codes, URI parameters*
-	
-- [**Open Ed**](https://github.com/openedinc/openedapi/blob/master/apiary.apib)
-
-	*authentication, error codes, URI parameters*
 
 - [**Appliance API**](https://github.com/t0mpr1c3/homenet-apib/blob/master/apiary.apib)
 
